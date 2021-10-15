@@ -11,6 +11,7 @@ using namespace std;
 #include "session_uv.h"
 
 #include "../utils/cache_alloc.h"
+#include "ws_protocol.h"
 
 #define SESSION_CACHE_CAPACITY 6000
 #define WQ_CACHE_CAPACITY 4096
@@ -76,6 +77,9 @@ void uv_session::init()
 	this->c_port = 0;
 	this->recved = 0;
 	this->is_shutdown = false;
+	this->is_ws_shake = 0;
+	this->long_pkg = NULL;
+	this->long_pkg_size = 0;
 }
 
 void uv_session::exit()
@@ -93,7 +97,7 @@ void uv_session::close()
 	this->is_shutdown = true;
 	uv_shutdown_t* reg = &this->shutdown;
 	memset(reg, 0, sizeof(uv_shutdown_t));
-	uv_shutdown(reg,(uv_stream_t*)&this->tcp_handle, on_shutdown);
+	uv_shutdown(reg,(uv_stream_t*)&this->tcp_handler, on_shutdown);
 }
 
 void uv_session::send_data(unsigned char* body, int len)
@@ -102,8 +106,19 @@ void uv_session::send_data(unsigned char* body, int len)
 	uv_write_t* w_req = (uv_write_t*)cache_alloc(wr_allocer, sizeof(uv_write_t));
 	uv_buf_t w_buf;
 
-	w_buf = uv_buf_init((char*)body, len);
-	uv_write(w_req, (uv_stream_t*)&this->tcp_handle, &w_buf, 1, after_write);
+	if (this->socket_type == WS_SOCKET && this->is_ws_shake)
+	{
+		int ws_pkg_len;
+		unsigned char* ws_pkg = ws_protocol::package_ws_send_data(body, len, &ws_pkg_len);
+		w_buf = uv_buf_init((char*)ws_pkg, ws_pkg_len);
+		uv_write(w_req, (uv_stream_t*)&this->tcp_handler, &w_buf, 1, after_write);
+		ws_protocol::free_ws_send_pkg(ws_pkg);
+	}
+	else
+	{
+		w_buf = uv_buf_init((char*)body, len);
+		uv_write(w_req, (uv_stream_t*)&this->tcp_handler, &w_buf, 1, after_write);
+	}
 }
 
 const char* uv_session::get_address(int* port)

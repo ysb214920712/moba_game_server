@@ -1,5 +1,4 @@
-﻿  main.cc
-  netbus.cc
+﻿  netbus.cc
   session_uv.cc
   正在生成代码...
   moba_game_server.vcxproj -> E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\moba_game_server.exe

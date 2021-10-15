@@ -10,7 +10,7 @@ enum {
 
 class uv_session : session {
 public:
-	uv_tcp_t tcp_handle;
+	uv_tcp_t tcp_handler;
 	char c_address[32];
 	int c_port;
 
@@ -21,6 +21,12 @@ public:
 	char recv_buf[RECV_LEN];
 	int recved;
 	int socket_type;
+
+	char* long_pkg;
+	int long_pkg_size;
+
+public:
+	int is_ws_shake;
 
 private:
 	void init();

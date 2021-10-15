@@ -87,13 +87,16 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\3rd\crypto;E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalOptions>ws2_32.lib Iphlpapi.lib Psapi.lib Userenv.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -115,13 +118,15 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>ws2_32.lib Iphlpapi.lib Psapi.lib Userenv.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -129,18 +134,25 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>ws2_32.lib Iphlpapi.lib Psapi.lib Userenv.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\3rd\crypto\base64_decoder.cc" />
+    <ClCompile Include="..\..\3rd\crypto\base64_encoder.cc" />
+    <ClCompile Include="..\..\3rd\crypto\md5.cc" />
+    <ClCompile Include="..\..\3rd\crypto\sha1.cc" />
+    <ClCompile Include="..\..\3rd\http_parser\http_parser.c" />
     <ClCompile Include="..\..\3rd\libuv\src\fs-poll.c" />
     <ClCompile Include="..\..\3rd\libuv\src\inet.c" />
     <ClCompile Include="..\..\3rd\libuv\src\threadpool.c" />
@@ -175,9 +187,15 @@
     <ClCompile Include="..\..\apps\test\main.cc" />
     <ClCompile Include="..\..\netbus\netbus.cc" />
     <ClCompile Include="..\..\netbus\session_uv.cc" />
+    <ClCompile Include="..\..\netbus\ws_protocol.cc" />
     <ClCompile Include="..\..\utils\cache_alloc.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\3rd\crypto\base64_decoder.h" />
+    <ClInclude Include="..\..\3rd\crypto\base64_encoder.h" />
+    <ClInclude Include="..\..\3rd\crypto\md5.h" />
+    <ClInclude Include="..\..\3rd\crypto\sha1.h" />
+    <ClInclude Include="..\..\3rd\http_parser\http_parser.h" />
     <ClInclude Include="..\..\3rd\libuv\include\android-ifaddrs.h" />
     <ClInclude Include="..\..\3rd\libuv\include\pthread-barrier.h" />
     <ClInclude Include="..\..\3rd\libuv\include\stdint-msvc2008.h" />
@@ -206,6 +224,7 @@
     <ClInclude Include="..\..\netbus\netbus.h" />
     <ClInclude Include="..\..\netbus\session.h" />
     <ClInclude Include="..\..\netbus\session_uv.h" />
+    <ClInclude Include="..\..\netbus\ws_protocol.h" />
     <ClInclude Include="..\..\utils\cache_alloc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
