@@ -36,4 +36,6 @@ public:
 	virtual const char* get_address(int* client_port);
 };
 
+void init_session_allocer();
+
 #endif // !__SESSION_UV_H__

@@ -10,6 +10,25 @@ using namespace std;
 #include "session.h"
 #include "session_uv.h"
 
+#include "../utils/cache_alloc.h"
+
+#define SESSION_CACHE_CAPACITY 6000
+#define WQ_CACHE_CAPACITY 4096
+struct cache_allocer* session_allocer = NULL;
+static cache_allocer* wr_allocer = NULL;
+void init_session_allocer()
+{
+	if (session_allocer == NULL)
+	{
+		session_allocer = create_cache_allocer(SESSION_CACHE_CAPACITY, sizeof(uv_session));
+	}
+
+	if (wr_allocer == NULL)
+	{
+		wr_allocer = create_cache_allocer(WQ_CACHE_CAPACITY, sizeof(uv_write_t));
+	}
+}
+
 extern "C" {
 	static void after_write(uv_write_t* req, int status)
 	{
@@ -17,7 +36,8 @@ extern "C" {
 		{
 			printf("write success\n");
 		}
-		free(req);
+		//free(req);
+		cache_free(wr_allocer, req);
 	}
 
 	static void on_close(uv_handle_t* handle)
@@ -35,7 +55,9 @@ extern "C" {
 
 uv_session* uv_session::create()
 {
-	uv_session* uv_s = new uv_session();
+	//uv_session* uv_s = new uv_session();
+	uv_session* uv_s = (uv_session*)cache_alloc(session_allocer, sizeof(uv_session));
+	uv_s->uv_session::uv_session();
 	uv_s->init();
 	return uv_s;
 }
@@ -43,7 +65,9 @@ uv_session* uv_session::create()
 void uv_session::destroy(uv_session* s)
 {
 	s->exit();
-	delete s;
+	//delete s;
+	s->uv_session::~uv_session();
+	cache_free(session_allocer, s);
 }
 
 void uv_session::init()
@@ -74,8 +98,10 @@ void uv_session::close()
 
 void uv_session::send_data(unsigned char* body, int len)
 {
-	uv_write_t* w_req = (uv_write_t*)malloc(sizeof(uv_write_t));
+	//uv_write_t* w_req = (uv_write_t*)malloc(sizeof(uv_write_t));
+	uv_write_t* w_req = (uv_write_t*)cache_alloc(wr_allocer, sizeof(uv_write_t));
 	uv_buf_t w_buf;
+
 	w_buf = uv_buf_init((char*)body, len);
 	uv_write(w_req, (uv_stream_t*)&this->tcp_handle, &w_buf, 1, after_write);
 }

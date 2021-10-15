@@ -106,3 +106,8 @@ void netbus::run()
 {
 	uv_run(uv_default_loop(), UV_RUN_DEFAULT);
 }
+
+void netbus::init()
+{
+	init_session_allocer();
+}
