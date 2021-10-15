@@ -17,6 +17,7 @@ extern "C" {
 		{
 			printf("write success\n");
 		}
+		free(req);
 	}
 
 	static void on_close(uv_handle_t* handle)
@@ -50,6 +51,7 @@ void uv_session::init()
 	memset(this->c_address, 0, sizeof(this->c_address));
 	this->c_port = 0;
 	this->recved = 0;
+	this->is_shutdown = false;
 }
 
 void uv_session::exit()
@@ -59,6 +61,12 @@ void uv_session::exit()
 
 void uv_session::close()
 {
+	if (this->is_shutdown)
+	{
+		return;
+	}
+
+	this->is_shutdown = true;
 	uv_shutdown_t* reg = &this->shutdown;
 	memset(reg, 0, sizeof(uv_shutdown_t));
 	uv_shutdown(reg,(uv_stream_t*)&this->tcp_handle, on_shutdown);
@@ -66,10 +74,10 @@ void uv_session::close()
 
 void uv_session::send_data(unsigned char* body, int len)
 {
-	uv_write_t* w_req = &this->w_req;
-	uv_buf_t* w_buf = &this->w_buf;
-	*w_buf = uv_buf_init((char*)body, len);
-	uv_write(w_req, (uv_stream_t*)&this->tcp_handle, w_buf, 1, after_write);
+	uv_write_t* w_req = (uv_write_t*)malloc(sizeof(uv_write_t));
+	uv_buf_t w_buf;
+	w_buf = uv_buf_init((char*)body, len);
+	uv_write(w_req, (uv_stream_t*)&this->tcp_handle, &w_buf, 1, after_write);
 }
 
 const char* uv_session::get_address(int* port)

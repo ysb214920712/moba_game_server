@@ -15,8 +15,7 @@ public:
 	int c_port;
 
 	uv_shutdown_t shutdown;
-	uv_write_t w_req;
-	uv_buf_t w_buf;
+	bool is_shutdown;
 
 public:
 	char recv_buf[RECV_LEN];
