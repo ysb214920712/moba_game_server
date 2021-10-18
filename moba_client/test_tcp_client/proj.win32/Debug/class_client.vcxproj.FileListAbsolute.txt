@@ -1,0 +1,2 @@
+E:\CProject\moba_game_server\moba_client\test_tcp_client\proj.win32\Debug\class_client.exe
+E:\CProject\moba_game_server\moba_client\test_tcp_client\proj.win32\Debug\class_client.pdb

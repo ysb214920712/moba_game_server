@@ -14,6 +14,9 @@ using namespace std;
 #include "session.h"
 #include "ws_protocol.h"
 
+#include "../utils/cache_alloc.h"
+extern cache_allocer* wbuf_allocer;
+
 // 
 static char* wb_migic = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
 // base64(sha1(key + wb_migic))
@@ -153,7 +156,8 @@ ws_protocol::package_ws_send_data(const unsigned char* raw_data, int len, int* w
 		return NULL;
 	}
 	// cache malloc
-	unsigned char* data_buf = (unsigned char*)malloc(head_size + len);
+	// unsigned char* data_buf = (unsigned char*)malloc(head_size + len);
+	unsigned char* data_buf = (unsigned char*)cache_alloc(wbuf_allocer, (head_size + len));
 	data_buf[0] = 0x81;
 	if (len <= 125) {
 		data_buf[1] = len;
@@ -173,5 +177,6 @@ ws_protocol::package_ws_send_data(const unsigned char* raw_data, int len, int* w
 void
 ws_protocol::free_ws_send_pkg(unsigned char* ws_pkg) {
 	// cache free
-	free(ws_pkg);
+	//free(ws_pkg);
+	cache_free(wbuf_allocer, ws_pkg);
 }
