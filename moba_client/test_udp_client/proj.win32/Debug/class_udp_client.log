@@ -1,0 +1,4 @@
+﻿  main.c
+E:\CProject\moba_game_server\moba_client\test_udp_client\main.c(27,59): warning C4133: “函数”: 从“SOCKADDR_IN *”到“sockaddr *”的类型不兼容
+E:\CProject\moba_game_server\moba_client\test_udp_client\main.c(18,30): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  class_udp_client.vcxproj -> E:\CProject\moba_game_server\moba_client\test_udp_client\proj.win32\Debug\class_udp_client.exe

@@ -181,6 +181,24 @@
     <ClCompile Include="..\..\netbus\proto_man.cc">
       <Filter>netbus</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\netbus\service.cc">
+      <Filter>netbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netbus\service_man.cc">
+      <Filter>netbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils\time_list.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils\timestamp.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils\logger.cc">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\netbus\udp_session.cc">
+      <Filter>netbus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\3rd\libuv\include\android-ifaddrs.h">
@@ -301,6 +319,24 @@
       <Filter>apps\test\proto</Filter>
     </ClInclude>
     <ClInclude Include="..\..\netbus\proto_man.h">
+      <Filter>netbus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netbus\service.h">
+      <Filter>netbus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netbus\service_man.h">
+      <Filter>netbus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils\time_list.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils\timestamp.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils\logger.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\netbus\udp_session.h">
       <Filter>netbus</Filter>
     </ClInclude>
   </ItemGroup>

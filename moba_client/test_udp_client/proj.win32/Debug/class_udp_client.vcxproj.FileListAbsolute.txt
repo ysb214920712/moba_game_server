@@ -1,0 +1,2 @@
+E:\CProject\moba_game_server\moba_client\test_udp_client\proj.win32\Debug\class_udp_client.exe
+E:\CProject\moba_game_server\moba_client\test_udp_client\proj.win32\Debug\class_udp_client.pdb

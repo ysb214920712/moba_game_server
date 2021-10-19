@@ -195,10 +195,16 @@
     <ClCompile Include="..\..\apps\test\proto\pf_cmd_map.cc" />
     <ClCompile Include="..\..\netbus\netbus.cc" />
     <ClCompile Include="..\..\netbus\proto_man.cc" />
+    <ClCompile Include="..\..\netbus\service.cc" />
+    <ClCompile Include="..\..\netbus\service_man.cc" />
     <ClCompile Include="..\..\netbus\session_uv.cc" />
     <ClCompile Include="..\..\netbus\tp_protocol.cc" />
+    <ClCompile Include="..\..\netbus\udp_session.cc" />
     <ClCompile Include="..\..\netbus\ws_protocol.cc" />
     <ClCompile Include="..\..\utils\cache_alloc.c" />
+    <ClCompile Include="..\..\utils\logger.cc" />
+    <ClCompile Include="..\..\utils\timestamp.c" />
+    <ClCompile Include="..\..\utils\time_list.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\3rd\crypto\base64_decoder.h" />
@@ -236,11 +242,17 @@
     <ClInclude Include="..\..\apps\test\proto\pf_cmd_map.h" />
     <ClInclude Include="..\..\netbus\netbus.h" />
     <ClInclude Include="..\..\netbus\proto_man.h" />
+    <ClInclude Include="..\..\netbus\service.h" />
+    <ClInclude Include="..\..\netbus\service_man.h" />
     <ClInclude Include="..\..\netbus\session.h" />
     <ClInclude Include="..\..\netbus\session_uv.h" />
     <ClInclude Include="..\..\netbus\tp_protocol.h" />
+    <ClInclude Include="..\..\netbus\udp_session.h" />
     <ClInclude Include="..\..\netbus\ws_protocol.h" />
     <ClInclude Include="..\..\utils\cache_alloc.h" />
+    <ClInclude Include="..\..\utils\logger.h" />
+    <ClInclude Include="..\..\utils\timestamp.h" />
+    <ClInclude Include="..\..\utils\time_list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
