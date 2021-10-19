@@ -1,0 +1,2 @@
+E:\CProject\moba_game_server\moba_client\test_protobuf\proj.win32\Debug\class_protobuf.exe
+E:\CProject\moba_game_server\moba_client\test_protobuf\proj.win32\Debug\class_protobuf.pdb

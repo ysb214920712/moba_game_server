@@ -1,6 +1,3 @@
-﻿  session_uv.cc
-  tp_protocol.cc
-  ws_protocol.cc
-  正在生成代码...
-  cache_alloc.c
+﻿  proto_man.cc
+E:\CProject\moba_game_server\moba_server\netbus\proto_man.cc(151,19): warning C4996: 'google::protobuf::MessageLite::ByteSize': Please use ByteSizeLong() instead
   moba_game_server.vcxproj -> E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\moba_game_server.exe

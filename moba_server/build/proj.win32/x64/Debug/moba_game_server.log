@@ -1,164 +1,26 @@
-﻿  base64_decoder.c
-E:\CProject\moba_game_server\moba_server\3rd\crypto\base64_decoder.c(27,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  base64_encoder.c
-  md5.c
-  sha1.c
-E:\CProject\moba_game_server\moba_server\3rd\crypto\sha1.c(199,36): warning C4267: “+=”: 从“size_t”转换到“uint32_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\crypto\sha1.c(200,34): warning C4267: “+=”: 从“size_t”转换到“uint32_t”，可能丢失数据
-  http_parser.c
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(1410,9): warning C4244: “+=”: 从“__int64”转换到“uint32_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(1521,13): warning C4244: “+=”: 从“__int64”转换到“uint32_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(1690,9): warning C4244: “+=”: 从“__int64”转换到“uint32_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(2278,47): warning C4244: “=”: 从“__int64”转换到“uint16_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(2285,47): warning C4244: “=”: 从“__int64”转换到“uint16_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(2297,47): warning C4244: “=”: 从“__int64”转换到“uint16_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(2306,52): warning C4244: “=”: 从“__int64”转换到“uint16_t”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\http_parser\http_parser.c(2406,36): warning C4244: “=”: 从“__int64”转换到“uint16_t”，可能丢失数据
-  fs-poll.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\fs-poll.c(188,31): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\fs-poll.c(191,38): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
-  inet.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\inet.c(62,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\inet.c(139,11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\inet.c(152,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\inet.c(171,20): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\inet.c(198,1): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\inet.c(294,1): warning C4244: “初始化”: 从“__int64”转换到“const int”，可能丢失数据
-  threadpool.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\threadpool.c(147,9): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  uv-common.c
-  version.c
-  async.c
-  core.c
-  dl.c
-  error.c
-  fs-event.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(78,3): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(84,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(102,13): warning C4996: 'wcsdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _wcsdup. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(109,7): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(117,5): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(402,62): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(409,43): warning C4477: “_snwprintf”: 格式字符串“%.*s”需要类型“int”的参数，但可变参数 2 拥有了类型“size_t”
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(409,43): message : 此参数用作精度
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs-event.c(409,15): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  fs.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(118,3): warning C4996: '__p__fmode': This function or variable may be unsafe. Consider using _get_fmode instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(185,44): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(199,48): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(401,19): warning C4996: 'umask': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _umask. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(402,3): warning C4996: 'umask': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _umask. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(808,7): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(921,52): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(953,40): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(955,39): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1328,66): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1515,28): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1572,79): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1573,77): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1601,74): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1602,72): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1550,3): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1916,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1930,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(1966,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2002,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2023,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2046,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2066,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2086,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2109,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2130,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2153,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2174,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2199,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2220,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2234,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2254,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2274,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2288,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2309,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2323,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2337,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2354,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2367,38): warning C4267: “=”: 从“size_t”转换到“ULONG”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2374,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2400,21): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2422,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2439,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2463,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\fs.c(2481,23): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
-  getaddrinfo.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\getaddrinfo.c(127,50): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
-  getnameinfo.c
-  handle.c
-  loop-watcher.c
-  正在生成代码...
-  正在编译...
-  pipe.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\pipe.c(188,5): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\pipe.c(1053,68): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\pipe.c(1072,68): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\pipe.c(2064,54): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-  poll.c
-  process-stdio.c
-  process.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(204,3): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(214,3): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(224,3): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(235,5): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(463,5): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(474,5): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(515,3): warning C4996: 'wcsrev': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _wcsrev. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(589,7): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(628,16): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(748,44): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(784,45): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(803,34): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\process.c(791,9): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  req.c
-  signal.c
-  snprintf.c
-  stream.c
-  tcp.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\tcp.c(369,68): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\tcp.c(388,68): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
-  thread.c
-  timer.c
-  tty.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\tty.c(911,1): warning C4244: “初始化”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\tty.c(2069,37): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\tty.c(2100,5): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
-  udp.c
-  util.c
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\util.c(432,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\util.c(634,11): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\util.c(1147,40): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\3rd\libuv\src\win\util.c(1222,38): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
-  winapi.c
-  winsock.c
-  cache_alloc.c
-  正在生成代码...
+﻿  base64_decoder.cc
+E:\CProject\moba_game_server\moba_server\3rd\crypto\base64_decoder.cc(27,40): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  base64_encoder.cc
+  md5.cc
+  sha1.cc
+E:\CProject\moba_game_server\moba_server\3rd\crypto\sha1.cc(199,5): warning C4267: “+=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\3rd\crypto\sha1.cc(200,34): warning C4267: “+=”: 从“size_t”转换到“uint32_t”，可能丢失数据
   main.cc
+  game.pb.cc
+E:\CProject\moba_game_server\moba_server\apps\test\proto\game.pb.h(10,10): fatal error C1083: 无法打开包括文件: “google/protobuf/port_def.inc”: No such file or directory
+  pf_cmd_map.cc
   netbus.cc
-E:\CProject\moba_game_server\moba_server\netbus\netbus.cc(48,21): warning C4244: “+=”: 从“ssize_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\netbus\netbus.cc(84,37): warning C4311: “类型强制转换”: 从“void *”到“int”的指针截断
-E:\CProject\moba_game_server\moba_server\netbus\netbus.cc(84,37): warning C4302: “类型强制转换”: 从“void *”到“int”截断
+E:\CProject\moba_game_server\moba_server\netbus\netbus.cc(171,21): warning C4244: “+=”: 从“ssize_t”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\netbus\netbus.cc(202,39): warning C4311: “类型强制转换”: 从“void *”到“int”的指针截断
+E:\CProject\moba_game_server\moba_server\netbus\netbus.cc(202,39): warning C4302: “类型强制转换”: 从“void *”到“int”截断
+  proto_man.cc
+E:\CProject\moba_game_server\moba_server\netbus\proto_man.cc(9,10): fatal error C1083: 无法打开包括文件: “google/protobuf/message.h”: No such file or directory
   session_uv.cc
+  tp_protocol.cc
   ws_protocol.cc
-E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(57,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(90,103): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(96,64): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(89,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(93,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(60,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(91,103): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(97,64): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(90,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\CProject\moba_game_server\moba_server\netbus\ws_protocol.cc(94,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   正在生成代码...
-ws_protocol.obj : error LNK2019: 无法解析的外部符号 "char * __cdecl base64_encode(unsigned char *,int,int *)" (?base64_encode@@YAPEADPEAEHPEAH@Z)，函数 "public: static bool __cdecl ws_protocol::ws_shake_hand(class session *,char *,int)" (?ws_shake_hand@ws_protocol@@SA_NPEAVsession@@PEADH@Z) 中引用了该符号
-    已定义且可能匹配的符号上的提示:
-      base64_encode
-ws_protocol.obj : error LNK2019: 无法解析的外部符号 "void __cdecl base64_encode_free(char *)" (?base64_encode_free@@YAXPEAD@Z)，函数 "public: static bool __cdecl ws_protocol::ws_shake_hand(class session *,char *,int)" (?ws_shake_hand@ws_protocol@@SA_NPEAVsession@@PEADH@Z) 中引用了该符号
-    已定义且可能匹配的符号上的提示:
-      base64_encode_free
-ws_protocol.obj : error LNK2019: 无法解析的外部符号 "void __cdecl crypt_sha1(unsigned char *,int,unsigned char *,int *)" (?crypt_sha1@@YAXPEAEH0PEAH@Z)，函数 "public: static bool __cdecl ws_protocol::ws_shake_hand(class session *,char *,int)" (?ws_shake_hand@ws_protocol@@SA_NPEAVsession@@PEADH@Z) 中引用了该符号
-    已定义且可能匹配的符号上的提示:
-      crypt_sha1
-E:\CProject\moba_game_server\moba_server\build\proj.win32\x64\Debug\moba_game_server.exe : fatal error LNK1120: 3 个无法解析的外部命令
