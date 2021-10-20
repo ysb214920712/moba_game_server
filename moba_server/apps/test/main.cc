@@ -14,6 +14,7 @@ using namespace std;
 #include "../../utils/timestamp.h"
 #include "../../database/mysql_wrapper.h"
 #include "../../database/redis_wrapper.h"
+#include "../../lua_wrapper/lua_wrapper.h"
 
 static void on_logger_timer(void* udata)
 {
@@ -62,7 +63,12 @@ int main(int argc, char** argv)
 	netbus::instance()->start_tcp_server(6080);
 	netbus::instance()->start_ws_server(8001);
 	netbus::instance()->start_udp_server(8002);
+
+	lua_wrapper::init();
+	lua_wrapper::exe_lua_file("./main.lua");
+
 	netbus::instance()->run();
+	lua_wrapper::exit();
 	system("pause");
 	return 0;
 }

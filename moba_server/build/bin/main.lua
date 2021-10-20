@@ -1,0 +1,1 @@
+print("HelloWorld by Lua")

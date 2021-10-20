@@ -88,7 +88,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>false</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\build\proj.win32\hiredis\include;E:\CProject\moba_game_server\moba_server\build\proj.win32\mysqlclient\x86\include;E:\CProject\moba_game_server\moba_server\3rd\protobuf\src;E:\CProject\moba_game_server\moba_server\3rd\crypto;E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\3rd\lua-5.4.3\src;E:\CProject\moba_game_server\moba_server\build\proj.win32\hiredis\include;E:\CProject\moba_game_server\moba_server\build\proj.win32\mysqlclient\x86\include;E:\CProject\moba_game_server\moba_server\3rd\protobuf\src;E:\CProject\moba_game_server\moba_server\3rd\crypto;E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <LanguageStandard>Default</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -189,12 +189,45 @@
     <ClCompile Include="..\..\3rd\libuv\src\win\util.c" />
     <ClCompile Include="..\..\3rd\libuv\src\win\winapi.c" />
     <ClCompile Include="..\..\3rd\libuv\src\win\winsock.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lapi.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lauxlib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lbaselib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lcode.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lcorolib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lctype.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\ldblib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\ldebug.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\ldo.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\ldump.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lfunc.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lgc.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\linit.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\liolib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\llex.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lmathlib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lmem.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\loadlib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lobject.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lopcodes.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\loslib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lparser.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lstate.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lstring.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lstrlib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\ltable.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\ltablib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\ltm.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lundump.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lutf8lib.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lvm.c" />
+    <ClCompile Include="..\..\3rd\lua-5.4.3\src\lzio.c" />
     <ClCompile Include="..\..\3rd\mjson\json.c" />
     <ClCompile Include="..\..\apps\test\main.cc" />
     <ClCompile Include="..\..\apps\test\proto\game.pb.cc" />
     <ClCompile Include="..\..\apps\test\proto\pf_cmd_map.cc" />
     <ClCompile Include="..\..\database\mysql_wrapper.cc" />
     <ClCompile Include="..\..\database\redis_wrapper.cc" />
+    <ClCompile Include="..\..\lua_wrapper\lua_wrapper.cc" />
     <ClCompile Include="..\..\netbus\netbus.cc" />
     <ClCompile Include="..\..\netbus\proto_man.cc" />
     <ClCompile Include="..\..\netbus\service.cc" />
@@ -239,11 +272,40 @@
     <ClInclude Include="..\..\3rd\libuv\src\win\stream-inl.h" />
     <ClInclude Include="..\..\3rd\libuv\src\win\winapi.h" />
     <ClInclude Include="..\..\3rd\libuv\src\win\winsock.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lapi.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lauxlib.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lcode.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lctype.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\ldebug.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\ldo.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lfunc.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lgc.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\ljumptab.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\llex.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\llimits.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lmem.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lobject.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lopcodes.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lopnames.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lparser.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lprefix.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lstate.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lstring.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\ltable.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\ltm.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lua.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lua.hpp" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\luaconf.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lualib.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lundump.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lvm.h" />
+    <ClInclude Include="..\..\3rd\lua-5.4.3\src\lzio.h" />
     <ClInclude Include="..\..\3rd\mjson\json.h" />
     <ClInclude Include="..\..\apps\test\proto\game.pb.h" />
     <ClInclude Include="..\..\apps\test\proto\pf_cmd_map.h" />
     <ClInclude Include="..\..\database\mysql_wrapper.h" />
     <ClInclude Include="..\..\database\redis_wrapper.h" />
+    <ClInclude Include="..\..\lua_wrapper\lua_wrapper.h" />
     <ClInclude Include="..\..\netbus\netbus.h" />
     <ClInclude Include="..\..\netbus\proto_man.h" />
     <ClInclude Include="..\..\netbus\service.h" />
