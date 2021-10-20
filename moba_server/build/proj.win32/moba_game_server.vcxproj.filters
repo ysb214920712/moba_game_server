@@ -205,6 +205,9 @@
     <ClCompile Include="..\..\database\mysql_wrapper.cc">
       <Filter>database</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\database\redis_wrapper.cc">
+      <Filter>database</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\3rd\libuv\include\android-ifaddrs.h">
@@ -346,6 +349,9 @@
       <Filter>netbus</Filter>
     </ClInclude>
     <ClInclude Include="..\..\database\mysql_wrapper.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\database\redis_wrapper.h">
       <Filter>database</Filter>
     </ClInclude>
   </ItemGroup>
