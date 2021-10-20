@@ -12,6 +12,7 @@ using namespace std;
 #include "../../utils/logger.h"
 #include "../../utils/time_list.h"
 #include "../../utils/timestamp.h"
+#include "../../database/mysql_wrapper.h"
 
 static void on_logger_timer(void* udata)
 {
