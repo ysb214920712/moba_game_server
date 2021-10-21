@@ -1,7 +1,7 @@
 #ifndef __REDIS_WRAPPER_H__
 #define __REDIS_WRAPPER_H__
 
-struct redisReply;
+#include <hiredis.h>
 
 class redis_wrapper {
 public:

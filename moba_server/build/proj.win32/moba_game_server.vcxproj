@@ -88,7 +88,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>false</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\3rd\lua-5.4.3\src;E:\CProject\moba_game_server\moba_server\build\proj.win32\hiredis\include;E:\CProject\moba_game_server\moba_server\build\proj.win32\mysqlclient\x86\include;E:\CProject\moba_game_server\moba_server\3rd\protobuf\src;E:\CProject\moba_game_server\moba_server\3rd\crypto;E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\CProject\moba_game_server\moba_server\3rd\tolua;E:\CProject\moba_game_server\moba_server\3rd\lua-5.4.3\src;E:\CProject\moba_game_server\moba_server\build\proj.win32\hiredis\include;E:\CProject\moba_game_server\moba_server\build\proj.win32\mysqlclient\x86\include;E:\CProject\moba_game_server\moba_server\3rd\protobuf\src;E:\CProject\moba_game_server\moba_server\3rd\crypto;E:\CProject\moba_game_server\moba_server\3rd\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <LanguageStandard>Default</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -222,12 +222,19 @@
     <ClCompile Include="..\..\3rd\lua-5.4.3\src\lvm.c" />
     <ClCompile Include="..\..\3rd\lua-5.4.3\src\lzio.c" />
     <ClCompile Include="..\..\3rd\mjson\json.c" />
+    <ClCompile Include="..\..\3rd\tolua\tolua_event.c" />
+    <ClCompile Include="..\..\3rd\tolua\tolua_fix.cc" />
+    <ClCompile Include="..\..\3rd\tolua\tolua_is.c" />
+    <ClCompile Include="..\..\3rd\tolua\tolua_map.c" />
+    <ClCompile Include="..\..\3rd\tolua\tolua_push.c" />
+    <ClCompile Include="..\..\3rd\tolua\tolua_to.c" />
     <ClCompile Include="..\..\apps\test\main.cc" />
     <ClCompile Include="..\..\apps\test\proto\game.pb.cc" />
     <ClCompile Include="..\..\apps\test\proto\pf_cmd_map.cc" />
     <ClCompile Include="..\..\database\mysql_wrapper.cc" />
     <ClCompile Include="..\..\database\redis_wrapper.cc" />
     <ClCompile Include="..\..\lua_wrapper\lua_wrapper.cc" />
+    <ClCompile Include="..\..\lua_wrapper\mysql_export_to_lua.cc" />
     <ClCompile Include="..\..\netbus\netbus.cc" />
     <ClCompile Include="..\..\netbus\proto_man.cc" />
     <ClCompile Include="..\..\netbus\service.cc" />
@@ -301,11 +308,15 @@
     <ClInclude Include="..\..\3rd\lua-5.4.3\src\lvm.h" />
     <ClInclude Include="..\..\3rd\lua-5.4.3\src\lzio.h" />
     <ClInclude Include="..\..\3rd\mjson\json.h" />
+    <ClInclude Include="..\..\3rd\tolua\tolua++.h" />
+    <ClInclude Include="..\..\3rd\tolua\tolua_event.h" />
+    <ClInclude Include="..\..\3rd\tolua\tolua_fix.h" />
     <ClInclude Include="..\..\apps\test\proto\game.pb.h" />
     <ClInclude Include="..\..\apps\test\proto\pf_cmd_map.h" />
     <ClInclude Include="..\..\database\mysql_wrapper.h" />
     <ClInclude Include="..\..\database\redis_wrapper.h" />
     <ClInclude Include="..\..\lua_wrapper\lua_wrapper.h" />
+    <ClInclude Include="..\..\lua_wrapper\mysql_export_to_lua.h" />
     <ClInclude Include="..\..\netbus\netbus.h" />
     <ClInclude Include="..\..\netbus\proto_man.h" />
     <ClInclude Include="..\..\netbus\service.h" />

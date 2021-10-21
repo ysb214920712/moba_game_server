@@ -2,3 +2,83 @@
 HelloWorld by Lua log
 20211021 10:05:14 DEBUG ./main.lua:2  
 HelloWorld by Lua log
+20211021 10:45:08 DEBUG ./main.lua:2  
+HelloWorld by Lua log
+20211021 10:45:35 DEBUG ./main.lua:2  
+HelloWorld by Lua log
+20211021 10:47:42 ERROR trunk:0  
+./main.lua:1: global 'requere' is not callable (a nil value)
+20211021 10:48:27 ERROR trunk:0  
+./main.lua:1: module 'mysql_wrapper' not found:
+	no field package.preload['mysql_wrapper']
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\mysql_wrapper.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\mysql_wrapper\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\mysql_wrapper.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\mysql_wrapper\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\mysql_wrapper.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\mysql_wrapper\init.lua'
+	no file '.\mysql_wrapper.lua'
+	no file '.\mysql_wrapper\init.lua'
+	no file 'D:\Lua\5.1\lua\mysql_wrapper.luac'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\mysql_wrapper.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\lib\lua\5.4\mysql_wrapper.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\loadall.dll'
+	no file '.\mysql_wrapper.dll'
+20211021 10:48:49 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 10:50:28 ERROR trunk:0  
+attempt to call a nil value
+20211021 10:50:44 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 10:51:22 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 10:52:21 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 10:52:21 ERROR trunk:0  
+./main.lua:2: field 'connect' is not callable (a nil value)
+20211021 10:53:25 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 10:53:25 ERROR trunk:0  
+./main.lua:2: attempt to index a nil value (global 'mysql_wrapper')
+20211021 11:34:16 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 11:34:17 DEBUG ./main.lua:4  
+mysql_wrapper.connect
+20211021 11:35:10 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 11:35:10 DEBUG ./main.lua:4  
+mysql_wrapper.connect
+20211021 11:38:23 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 11:38:23 DEBUG ./main.lua:4  
+mysql_wrapper.connect
+20211021 11:39:23 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 11:41:15 DEBUG ./main.lua:4  
+mysql_wrapper.connect
+20211021 14:02:20 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 14:02:20 DEBUG ./main.lua:4  
+mysql_wrapper.connect
+20211021 14:02:41 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 14:02:41 DEBUG ./main.lua:4  
+mysql_wrapper.connect
+20211021 14:02:41 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:187  
+[LUA ERROR] ./main.lua:16: global 'DT' is not callable (a nil value)
+20211021 14:08:07 ERROR trunk:0  
+./main.lua:23: ')' expected near '='
+20211021 14:08:31 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 14:08:31 DEBUG ./main.lua:32  
+mysql_wrapper.connect
+20211021 14:08:31 DEBUG ./main.lua:43  
+success
+
+20211021 14:09:14 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 14:09:14 DEBUG ./main.lua:32  
+mysql_wrapper.connect
+20211021 14:09:14 DEBUG ./main.lua:43  
+success
+
