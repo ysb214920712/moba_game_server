@@ -1,2 +1,7 @@
-﻿  mysql_export_to_lua.cc
+﻿  redis_wrapper.cc
+  lua_wrapper.cc
+  mysql_export_to_lua.cc
+  redis_export_to_lua.cc
+E:\CProject\moba_game_server\moba_server\lua_wrapper\redis_export_to_lua.cc(81,21): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
   moba_game_server.vcxproj -> E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\moba_game_server.exe

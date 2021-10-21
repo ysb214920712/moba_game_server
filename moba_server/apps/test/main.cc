@@ -21,7 +21,7 @@ static void on_logger_timer(void* udata)
 	log_debug("on_logger_timer");
 }
 
-static void on_redis_query(const char* err, redisReply* result)
+static void on_redis_query(const char* err, redisReply* result, void* udata)
 {
 	if (err)
 	{
@@ -31,7 +31,7 @@ static void on_redis_query(const char* err, redisReply* result)
 	printf("success\n");
 }
 
-static void on_redis_open_cb(const char* err, void* context)
+static void on_redis_open_cb(const char* err, void* context, void* udata)
 {
 	if (err != NULL)
 	{

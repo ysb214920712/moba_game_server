@@ -14,6 +14,7 @@ extern "C" {
 #endif // __cplusplus
 
 #include "tolua_fix.h"
+#include "mysql_export_to_lua.h"
 
 static void on_open_cb(const char* err, void* context, void* udata)
 {

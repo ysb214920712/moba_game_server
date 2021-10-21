@@ -82,3 +82,43 @@ mysql_wrapper.connect
 20211021 14:09:14 DEBUG ./main.lua:43  
 success
 
+20211021 14:55:36 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 14:55:36 DEBUG ./main.lua:55  
+redis connect success
+
+20211021 14:55:53 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 14:55:53 DEBUG ./main.lua:55  
+redis connect success
+
+20211021 14:56:46 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 14:56:51 ERROR ./main.lua:51  
+系统试图将驱动器合并到合并驱动器上的目录。
+20211021 15:01:05 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 15:01:05 DEBUG ./main.lua:55  
+redis connect success
+
+20211021 15:01:31 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 15:01:31 DEBUG ./main.lua:55  
+redis connect success
+
+20211021 15:02:22 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 15:02:22 DEBUG ./main.lua:55  
+redis connect success
+20211021 15:03:51 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 15:03:51 DEBUG ./main.lua:55  
+redis connect success
+20211021 15:04:19 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 15:04:19 DEBUG ./main.lua:55  
+redis connect success
+20211021 15:05:11 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211021 15:05:11 DEBUG ./main.lua:55  
+redis connect success

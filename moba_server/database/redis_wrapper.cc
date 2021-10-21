@@ -21,10 +21,11 @@ struct connect_req {
 	char* ip;
 	int port;
 
-	void(*open_cb)(const char* err, void* context);
+	void(*open_cb)(const char* err, void* context, void* udata);
 
 	char* err;
 	void* context;
+	void* udata;
 };
 
 struct redis_context
@@ -61,7 +62,7 @@ static void connect_work(uv_work_t* req)
 static void on_connect_complete(uv_work_t* req, int status)
 {
 	struct connect_req* r = (struct connect_req*)req->data;
-	r->open_cb(r->err, r->context);
+	r->open_cb(r->err, r->context, r->udata);
 
 	if (r->ip)
 	{
@@ -78,7 +79,7 @@ static void on_connect_complete(uv_work_t* req, int status)
 }
 
 void redis_wrapper::connect(char* ip, int port,
-							void(*open_cb)(const char* err, void* context))
+							void(*open_cb)(const char* err, void* context, void* udata), void* udata)
 {
 	uv_work_t* w = (uv_work_t*)my_malloc(sizeof(uv_work_t));
 	memset(w, 0, sizeof(uv_work_t));
@@ -89,6 +90,7 @@ void redis_wrapper::connect(char* ip, int port,
 	r->ip = strdup(ip);
 	r->port = port;
 	r->open_cb = open_cb;
+	r->udata = udata;
 	w->data = (void*) r;
 	uv_queue_work(uv_default_loop(), w, connect_work, on_connect_complete);
 }
@@ -129,10 +131,11 @@ void redis_wrapper::close_redis(void* context)
 struct query_req {
 	void* context;
 	char* cmd;
-	void(*query_cb)(const char* err, redisReply* result);
+	void(*query_cb)(const char* err, redisReply* result, void* udata);
 
 	char* err;
 	redisReply* result;
+	void* udata;
 };
 
 static void query_work(uv_work_t* req)
@@ -141,13 +144,20 @@ static void query_work(uv_work_t* req)
 
 	struct redis_context* my_conn = (struct redis_context*)(r->context);
 	struct redisContext* rc = (struct redisContext*)my_conn->pConn;
+
 	uv_mutex_lock(&my_conn->lock);
 
-	r->err = NULL;
 	redisReply* replay = (redisReply*)redisCommand(rc, r->cmd);
-	if (replay)
+	if (replay->type == REDIS_REPLY_ERROR)
+	{
+		r->err = strdup(replay->str);
+		r->result = NULL;
+		freeReplyObject(replay);
+	}
+	else
 	{
 		r->result = replay;
+		r->err = NULL;
 	}
 	
 	uv_mutex_unlock(&my_conn->lock);
@@ -156,7 +166,7 @@ static void query_work(uv_work_t* req)
 static void on_query_complete(uv_work_t* req, int status)
 {
 	query_req* r = (query_req*)req->data;
-	r->query_cb(r->err, r->result);
+	r->query_cb(r->err, r->result, r->udata);
 
 	if (r->cmd)
 	{
@@ -177,7 +187,7 @@ static void on_query_complete(uv_work_t* req, int status)
 }
 
 void redis_wrapper::query(void* context, char* cmd,
-						  void(*query_cb)(const char* err, redisReply* result))
+						  void(*query_cb)(const char* err, redisReply* result, void* udata), void* udata)
 {
 	struct redis_context* c = (struct redis_context*)context;
 	if (c->is_closed)
@@ -193,6 +203,7 @@ void redis_wrapper::query(void* context, char* cmd,
 	r->context = context;
 	r->cmd = strdup(cmd);
 	r->query_cb = query_cb;
+	r->udata = udata;
 
 	w->data = r;
 	uv_queue_work(uv_default_loop(), w, query_work, on_query_complete);
