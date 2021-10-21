@@ -1,4 +1,2 @@
-﻿  main.cc
-  lua_wrapper.cc
-  正在生成代码...
+﻿  lua_wrapper.cc
   moba_game_server.vcxproj -> E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\moba_game_server.exe

@@ -9,6 +9,9 @@ public:
 	static void exit();
 
 	static bool exe_lua_file(const char* lua_file);
+
+public:
+	static void reg_func2lua(const char* name, int (*c_func)(lua_State* L));
 };
 
 #endif // !__LUA_WRAPPER_H__
