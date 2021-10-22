@@ -1,7 +1,14 @@
-﻿  redis_wrapper.cc
+﻿  main.cc
   lua_wrapper.cc
-  mysql_export_to_lua.cc
-  redis_export_to_lua.cc
-E:\CProject\moba_game_server\moba_server\lua_wrapper\redis_export_to_lua.cc(81,21): warning C4018: “<”: 有符号/无符号不匹配
+  scheduler_export_to_lua.cc
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(52,19): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(52,17): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(58,21): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(58,19): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(68,20): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(68,18): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(98,19): warning C4002: 类函数宏的调用“lua_tointeger”参数过多
+E:\CProject\moba_game_server\moba_server\lua_wrapper\scheduler_export_to_lua.cc(98,17): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
   正在生成代码...
+  time_list.c
   moba_game_server.vcxproj -> E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\moba_game_server.exe

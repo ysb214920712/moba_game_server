@@ -1,4 +1,6 @@
-log_debug("HelloWorld by Lua log")
+logger.debug("HelloWorld by Lua log")
+logger.warning("Warning")
+logger.error("Error")
 
 key = ""
 function PrintTable(table, level)
@@ -29,18 +31,18 @@ end
 
 -- mysql_wrapper.connect("127.0.0.1", 3306, "class_sql", "root", "ysb214920712", function(err, context)
 --     -- print("mysql_wrapper.connect")
---     log_debug("mysql_wrapper.connect")
+--     logger.debug("mysql_wrapper.connect")
 --     if err then
---         log_debug("%s", err)
+--         logger.debug("%s", err)
 --         return
 --     end
 
 --     mysql_wrapper.query(context, "select * from class_test", function(err, ret)
 --         if err then
---             log_debug("%s", err)
+--             logger.debug("%s", err)
 --             return
 --         end
---         log_debug("success\n")
+--         logger.debug("success\n")
 --         PrintTable(ret)
 --     end)
 --     -- mysql_wrapper.close(context);
@@ -48,25 +50,47 @@ end
 
 -- redis_wrapper.connect("127.0.0.1", 6379, function(err, result)
 --      if (err) then
---         log_error(err)
+--         logger.error(err)
 --         return
 --      end
 
---      log_debug("redis connect success")
+--      logger.debug("redis connect success")
 
 --     --  redis_wrapper.close_redis(result)
 --     -- redis_wrapper.query(result, "hmset 001001 name \"ysb\" age \"24\"", function(err, result)
 --     --     if err then
---     --         log_error(err)
+--     --         logger.error(err)
 --     --         return    
 --     --     end
 --     --     print(result)
 --     -- end)
 --     redis_wrapper.query(result, "hgetall 001001", function(err, result)
 --         if err then
---             log_error(err)
+--             logger.error(err)
 --             return
 --         end
 --         PrintTable(result)
 --     end)
 -- end)
+
+local my_service = {
+    -- msg {1: stype, 2: ctype, 3: utag, 4: body_table_or_string
+    on_session_recv_cmd = function(session, msg)
+
+    end,
+    on_session_disconnect = function(session)
+
+    end,
+}
+
+local ret = service.register(100, my_service)
+print(ret)
+
+local timer = scheduler.schedule(function()
+    print("scheduler.schedule called")
+end, 5000, -1, 1000)
+
+scheduler.once(function()
+    print("schedule once")
+    scheduler.cancel(timer)
+end, 8000)

@@ -122,3 +122,5 @@ redis connect success
 HelloWorld by Lua log
 20211021 15:05:11 DEBUG ./main.lua:55  
 redis connect success
+20211021 15:56:35 DEBUG ./main.lua:1  
+HelloWorld by Lua log

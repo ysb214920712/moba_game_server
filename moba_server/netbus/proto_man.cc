@@ -4,18 +4,17 @@
 
 #include <iostream>
 #include <string>
+#include <map>
 using namespace std;
 
 #include "google/protobuf/message.h"
 
 #include "proto_man.h"
 
-#define MAX_PF_MAP_SIZE 1024
 #define CMD_HEADER 8
 
 static int g_proto_type = PROTO_BUF;
-static char* g_pf_map[MAX_PF_MAP_SIZE];
-static int g_cmd_count = 0;
+static std::map<int, std::string> g_pb_cmd_map;
 
 void
 proto_man::init(int proto_type) {
@@ -27,19 +26,22 @@ proto_man::proto_type() {
 	return g_proto_type;
 }
 
-void
-proto_man::register_pf_cmd_map(char** pf_map, int len) {
-	len = (MAX_PF_MAP_SIZE - g_cmd_count) < len ? ((MAX_PF_MAP_SIZE - g_cmd_count)) : len;
-
-	for (int i = 0; i < len; i++) {
-		g_pf_map[g_cmd_count + i] = strdup(pf_map[i]);
+void proto_man::register_pb_cmd_map(std::map<int, std::string>& map)
+{
+	std::map<int, std::string>::iterator it;
+	for(it = map.begin(); it != map.end(); it++)
+	{
+		g_pb_cmd_map[it->first] = it->second;
 	}
-
-	g_cmd_count += len;
 }
 
-static google::protobuf::Message*
-create_message(const char* type_name) {
+const char* proto_man::protobuf_cmd_name(int ctype)
+{
+	return g_pb_cmd_map[ctype].c_str();
+}
+
+google::protobuf::Message*
+proto_man::create_message(const char* type_name) {
 	google::protobuf::Message* message = NULL;
 
 	const google::protobuf::Descriptor* descriptor =
@@ -54,8 +56,8 @@ create_message(const char* type_name) {
 	return message;
 }
 
-static void
-release_message(google::protobuf::Message* m) {
+void
+proto_man::release_message(google::protobuf::Message* m) {
 	delete m;
 }
 
@@ -88,13 +90,7 @@ proto_man::decode_cmd_msg(unsigned char* cmd, int cmd_len, struct cmd_msg** out_
 		msg->body = (void*)json_str;
 	}
 	else { // protobuf
-		if (msg->ctype < 0 || msg->ctype >= g_cmd_count || g_pf_map[msg->ctype] == NULL) {
-			free(msg);
-			*out_msg = NULL;
-			return false;
-		}
-
-		google::protobuf::Message* p_m = create_message(g_pf_map[msg->ctype]);
+		google::protobuf::Message* p_m = create_message(g_pb_cmd_map[msg->ctype].c_str());
 		if (p_m == NULL) {
 			free(msg);
 			*out_msg = NULL;

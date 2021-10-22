@@ -72,7 +72,7 @@ format_time() {
 }
 
 void 
-logger::init(char* path, char* prefix, bool std_output) {
+logger::init(const char* path, const char* prefix, bool std_output) {
 	g_prefix = prefix;
 	g_log_path = path;
 	g_std_out = std_output;

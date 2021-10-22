@@ -1,0 +1,58 @@
+20211022 11:40:58 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 11:43:02 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 11:43:02 ERROR trunk:0  
+./main.lua:84: bad argument #-1 to 'log_debug' (string expected, got boolean)
+20211022 11:43:28 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 13:41:59 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 14:57:18 ERROR trunk:0  
+./main.lua:1: global 'log_debug' is not callable (a nil value)
+20211022 15:34:55 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 15:34:55 DEBUG ./main.lua:85  
+true
+20211022 15:35:46 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 15:35:46 WARNING ./main.lua:2  
+Warning
+20211022 15:35:46 ERROR ./main.lua:3  
+Error
+20211022 15:35:46 DEBUG ./main.lua:87  
+true
+20211022 15:37:19 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 15:37:19 WARNING ./main.lua:2  
+Warning
+20211022 15:37:19 ERROR ./main.lua:3  
+Error
+20211022 15:37:19 DEBUG ./main.lua:87  
+true
+20211022 15:37:24 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:37:25 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:37:26 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:37:27 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:37:28 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:39:37 DEBUG ./main.lua:1  
+HelloWorld by Lua log
+20211022 15:39:37 WARNING ./main.lua:2  
+Warning
+20211022 15:39:37 ERROR ./main.lua:3  
+Error
+20211022 15:39:37 DEBUG ./main.lua:87  
+true
+20211022 15:39:42 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:39:43 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:39:44 DEBUG ./main.lua:90  
+scheduler.schedule called
+20211022 15:39:45 DEBUG ./main.lua:94  
+schedule once

@@ -9,12 +9,14 @@ extern "C" {
 	// on_timer执行的时候 udata,就是你这个udata;
 	// after_sec: 多少秒开始执行;
 	// repeat_count: 执行多少次, repeat_count == -1一直执行;
+	// repeat_msec: 后面每隔多长时间执行一次
 	// 返回timer的句柄;
 	struct timer;
-	struct timer* schedule(void(*on_timer)(void* udata),
+	struct timer* schedule_repeat(void(*on_timer)(void* udata),
 							void* udata,
 							int after_msec,
-							int repeat_count);
+							int repeat_count,
+							int repeat_msec);
 
 
 	// 取消掉这个timer;
@@ -23,6 +25,8 @@ extern "C" {
 	struct timer* schedule_once(void(*on_timer)(void* udata),
 								void* udata,
 								int after_msec);
+	
+	void* get_timer_udata(struct timer* t);
 #ifdef __cplusplus
 }
 #endif
