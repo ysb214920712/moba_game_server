@@ -7,9 +7,9 @@ public:
 
 public:
 	void init();
-	void start_tcp_server(int port);
-	void start_ws_server(int port);
-	void start_udp_server(int port);
+	void tcp_listen(int port);
+	void ws_listen(int port);
+	void udp_listen(int port);
 	void run();
 };
 
