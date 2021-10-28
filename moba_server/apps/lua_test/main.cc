@@ -39,9 +39,7 @@ int main(int argc, char** argv)
 		std::string lua_file = search_path + argv[2];
 		lua_wrapper::do_file(lua_file);
 	}
-
 	
-
 	netbus::instance()->run();
 	lua_wrapper::exit();
 	system("pause");

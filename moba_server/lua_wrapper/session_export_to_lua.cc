@@ -2,44 +2,43 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "lua_wrapper.h"
 #include "../netbus/service.h"
 #include "../netbus/session.h"
 #include "../netbus/proto_man.h"
 #include "../netbus/service_man.h"
 #include "../utils/logger.h"
 
+#include "lua_wrapper.h"
+
 #include "google/protobuf/message.h"
 using namespace google::protobuf;
 
 #ifdef __cplusplus
 extern "C" {
-#endif // __cplusplus
+#endif
 #include "tolua++.h"
 #ifdef __cplusplus
 }
-#endif // __cplusplus
+#endif
 
-#include "tolua_fix.h"
 #include "session_export_to_lua.h"
-
-static int lua_session_close(lua_State* tolua_S)
-{
+// session.close(session)
+static int
+lua_session_close(lua_State* tolua_S) {
 	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
-	if (s == NULL)
-	{
+	if (s == NULL) {
 		goto lua_failed;
 	}
+
 	s->close();
 
 lua_failed:
 	return 0;
 }
 
-static google::protobuf::Message* lua_table_to_protobuf(lua_State* L, int stack_index, const char* msg_name)
-{
-	if (!lua_istable(L, stack_index))
-	{
+static google::protobuf::Message*
+lua_table_to_protobuf(lua_State* L, int stack_index, const char* msg_name) {
+	if (!lua_istable(L, stack_index)) {
 		return NULL;
 	}
 
@@ -239,7 +238,7 @@ static google::protobuf::Message* lua_table_to_protobuf(lua_State* L, int stack_
 				Message* value = lua_table_to_protobuf(L, lua_gettop(L), fd->message_type()->name().c_str());
 				if (!value) {
 					log_error("convert to message %s failed whith value %s \n", fd->message_type()->name().c_str(), name.c_str());
-					proto_man::release_message(value);
+					proto_man::release_message(message);
 					return NULL;
 				}
 				Message* msg = reflection->MutableMessage(message, fd);
@@ -259,59 +258,65 @@ static google::protobuf::Message* lua_table_to_protobuf(lua_State* L, int stack_
 	return message;
 }
 
-static int lua_send_msg(lua_State* tolua_S)
-{
+// {1: stype, 2: ctype, 3: utag, 4 body}
+static int
+lua_send_msg(lua_State* tolua_S) {
 	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
-	if (s == NULL)
-	{
+	if (s == NULL) {
 		goto lua_failed;
 	}
 
-	if (!lua_istable(tolua_S, 2))
-	{
+	// stack: 1 s, 2, table,
+	if (!lua_istable(tolua_S, 2)) {
 		goto lua_failed;
 	}
-
-	lua_getfield(tolua_S, 2, "1");
-	lua_getfield(tolua_S, 2, "2");
-	lua_getfield(tolua_S, 2, "3");
-	lua_getfield(tolua_S, 2, "4");
 
 	struct cmd_msg msg;
-	msg.stype = lua_tointeger(tolua_S, 3);
-	msg.ctype = lua_tointeger(tolua_S, 4);
-	msg.utag = lua_tointeger(tolua_S, 5);
-	
-	if (proto_man::proto_type() == PROTO_JSON)
-	{
-		msg.body = (char*)lua_tostring(tolua_S, 6);
+
+	int n = luaL_len(tolua_S, 2);
+	if (n != 4) {
+		goto lua_failed;
+	}
+
+	lua_pushnumber(tolua_S, 1);
+	lua_gettable(tolua_S, 2);
+	msg.stype = luaL_checkinteger(tolua_S, -1);
+
+	lua_pushnumber(tolua_S, 2);
+	lua_gettable(tolua_S, 2);
+	msg.ctype = luaL_checkinteger(tolua_S, -1);
+
+	lua_pushnumber(tolua_S, 3);
+	lua_gettable(tolua_S, 2);
+	msg.utag = luaL_checkinteger(tolua_S, -1);
+
+	lua_pushnumber(tolua_S, 4);
+	lua_gettable(tolua_S, 2);
+
+	if (proto_man::proto_type() == PROTO_JSON) {
+		msg.body = (char*)lua_tostring(tolua_S, -1);
 		s->send_msg(&msg);
 	}
-	else
-	{
-		if (!lua_istable(tolua_S, 6))
-		{
+	else {
+		if (!lua_istable(tolua_S, -1)) {
 			msg.body = NULL;
 			s->send_msg(&msg);
 		}
-		else
-		{
+		else { // protobuf message table
 			const char* msg_name = proto_man::protobuf_cmd_name(msg.ctype);
-			msg.body = lua_table_to_protobuf(tolua_S, 6, msg_name);
+			msg.body = lua_table_to_protobuf(tolua_S, lua_gettop(tolua_S), msg_name);
 			s->send_msg(&msg);
-			proto_man::release_message((google::protobuf::Message*)msg.body);
+			proto_man::release_message((google::protobuf::Message*)(msg.body));
 		}
 	}
-
 lua_failed:
 	return 0;
 }
 
-static int lua_get_addr(lua_State* tolua_S)
-{
+static int
+lua_get_addr(lua_State* tolua_S) {
 	session* s = (session*)tolua_touserdata(tolua_S, 1, NULL);
-	if (s == NULL)
-	{
+	if (s == NULL) {
 		goto lua_failed;
 	}
 
@@ -326,21 +331,20 @@ lua_failed:
 	return 0;
 }
 
-int register_session_export(lua_State* tolua_S)
-{
+int
+register_session_export(lua_State* tolua_S) {
 	lua_getglobal(tolua_S, "_G");
-	if (lua_istable(tolua_S, -1))
-	{
+	if (lua_istable(tolua_S, -1)) {
 		tolua_open(tolua_S);
+		tolua_module(tolua_S, "Session", 0);
+		tolua_beginmodule(tolua_S, "Session");
 
-		tolua_module(tolua_S, "session", 0);
-		tolua_beginmodule(tolua_S, "session");
 		tolua_function(tolua_S, "close", lua_session_close);
 		tolua_function(tolua_S, "send_msg", lua_send_msg);
 		tolua_function(tolua_S, "get_address", lua_get_addr);
-
 		tolua_endmodule(tolua_S);
 	}
 	lua_pop(tolua_S, 1);
+
 	return 0;
 }

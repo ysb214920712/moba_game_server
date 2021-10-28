@@ -14,8 +14,10 @@
 #include "uv.h"
 #include "redis_wrapper.h"
 
-#define my_malloc malloc
-#define my_free free
+#include "../../utils/small_alloc.h"
+
+#define my_malloc small_alloc
+#define my_free small_free
 
 struct connect_req {
 	char* ip;
@@ -36,6 +38,19 @@ struct redis_context
 	int is_closed;
 };
 
+static char* my_strdup(const char* src)
+{
+	int len = strlen(src) + 1;
+	char* dst = (char*)my_malloc(len);
+	strcpy(dst, src);
+	return dst;
+}
+
+static void free_strdup(char* str)
+{
+	my_free(str);
+}
+
 static void connect_work(uv_work_t* req)
 {
 	struct connect_req* r = (struct connect_req*)req->data;
@@ -44,7 +59,7 @@ static void connect_work(uv_work_t* req)
 	if (rc->err)
 	{
 		printf("Connection error: %s\n", rc->errstr);
-		r->err = strdup(rc->errstr);
+		r->err = my_strdup(rc->errstr);
 		r->context = NULL;
 		redisFree(rc);
 	}
@@ -66,12 +81,12 @@ static void on_connect_complete(uv_work_t* req, int status)
 
 	if (r->ip)
 	{
-		free(r->ip);
+		free_strdup(r->ip);
 	}
 
 	if (r->err)
 	{
-		free(r->err);
+		free_strdup(r->err);
 	}
 
 	my_free(r);
@@ -87,7 +102,7 @@ void redis_wrapper::connect(char* ip, int port,
 	struct connect_req* r = (struct connect_req*)my_malloc(sizeof(struct connect_req));
 	memset(r, 0, sizeof(struct connect_req));
 
-	r->ip = strdup(ip);
+	r->ip = my_strdup(ip);
 	r->port = port;
 	r->open_cb = open_cb;
 	r->udata = udata;
@@ -150,7 +165,7 @@ static void query_work(uv_work_t* req)
 	redisReply* replay = (redisReply*)redisCommand(rc, r->cmd);
 	if (replay->type == REDIS_REPLY_ERROR)
 	{
-		r->err = strdup(replay->str);
+		r->err = my_strdup(replay->str);
 		r->result = NULL;
 		freeReplyObject(replay);
 	}
@@ -170,7 +185,7 @@ static void on_query_complete(uv_work_t* req, int status)
 
 	if (r->cmd)
 	{
-		free(r->cmd);
+		free_strdup(r->cmd);
 	}
 
 	if (r->result)
@@ -180,7 +195,7 @@ static void on_query_complete(uv_work_t* req, int status)
 
 	if (r->err)
 	{
-		free(r->err);
+		free_strdup(r->err);
 	}
 	my_free(r);
 	my_free(req);
@@ -201,7 +216,7 @@ void redis_wrapper::query(void* context, char* cmd,
 	query_req* r = (query_req*)my_malloc(sizeof(query_req));
 	memset(r, 0, sizeof(query_req));
 	r->context = context;
-	r->cmd = strdup(cmd);
+	r->cmd = my_strdup(cmd);
 	r->query_cb = query_cb;
 	r->udata = udata;
 

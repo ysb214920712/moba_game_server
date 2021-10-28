@@ -222,8 +222,8 @@ static int register_logger_export(lua_State* tolua_S)
 	{
 		tolua_open(tolua_S);
 
-		tolua_module(tolua_S, "logger", 0);
-		tolua_beginmodule(tolua_S, "logger");
+		tolua_module(tolua_S, "Logger", 0);
+		tolua_beginmodule(tolua_S, "Logger");
 		tolua_function(tolua_S, "debug", lua_log_debug);
 		tolua_function(tolua_S, "warning", lua_log_warning);
 		tolua_function(tolua_S, "error", lua_log_error);
@@ -268,6 +268,7 @@ void lua_wrapper::init()
 
 void lua_wrapper::exit()
 {
+	printf(" lua_wrapper::exit");
 	if (g_lua_State != NULL)
 	{
 		lua_close(g_lua_State);

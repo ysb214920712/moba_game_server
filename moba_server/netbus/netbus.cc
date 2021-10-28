@@ -158,7 +158,15 @@ extern "C" {
 					s->long_pkg = (char*)malloc(pkg_size);
 					memcpy(s->long_pkg, s->recv_buf, s->recved);
 				}
-				else { // tcp > RECV_LEN's package
+				else 
+				{
+					// tcp > RECV_LEN's package
+					int pkg_size;
+					int head_size;
+					tp_protocol::read_header((unsigned char*)s->recv_buf, s->recved, &pkg_size, &head_size);
+					s->long_pkg_size = pkg_size;
+					s->long_pkg = (char*)malloc(pkg_size);
+					memcpy(s->long_pkg, s->recv_buf, s->recved);
 				}
 			}
 			*buf = uv_buf_init(s->long_pkg + s->recved, s->long_pkg_size - s->recved);
@@ -312,4 +320,69 @@ void netbus::run() {
 void netbus::init() {
 	service_man::init();
 	init_session_allocer();
+}
+
+struct connect_cb {
+	void(*on_connected)(int err, session* s, void* udata);
+	void* udata;
+};
+
+static void after_connect(uv_connect_t* handle, int status)
+{
+	uv_session* s = (uv_session*)handle->handle->data;
+	struct connect_cb* cb = (struct connect_cb*)handle->data;
+
+	if (status)
+	{
+		if (cb->on_connected)
+		{
+			cb->on_connected(1, NULL, cb->udata);
+		}
+		s->close();
+		free(cb);
+		free(handle);
+		return;
+	}
+
+	if (cb->on_connected)
+	{
+		cb->on_connected(0, (session*)s, cb->udata);
+	}
+	uv_read_start((uv_stream_t*)handle->handle, uv_alloc_buf, after_read);
+
+	free(cb);
+	free(handle);
+}
+
+void netbus::tcp_connect(char* server_ip, int port,
+						 void(*on_connected)(int err, session* s, void* udata),
+						 void* udata)
+{
+	struct sockaddr_in bind_addr;
+	int iret = uv_ip4_addr(server_ip, port, &bind_addr);
+	if (iret)
+	{
+		return;
+	}
+
+	uv_session* s = uv_session::create();
+	uv_tcp_t* client = &s->tcp_handler;
+	memset(client, 0, sizeof(uv_tcp_t));
+	uv_tcp_init(uv_default_loop(), client);
+	client->data = (void*)s;
+	s->as_client = 1;
+	s->socket_type = TCP_SOCKET;
+	strcpy(s->c_address, server_ip);
+	s->c_port = port;
+
+	uv_connect_t* connect_req = (uv_connect_t*)malloc(sizeof(uv_connect_t));
+	struct connect_cb* cb = (struct connect_cb*)malloc(sizeof(struct connect_cb));
+	cb->on_connected = on_connected;
+	cb->udata = udata;
+	connect_req->data = (void*)cb;
+	iret = uv_tcp_connect(connect_req, client, (struct sockaddr*)&bind_addr, after_connect);
+	if (iret)
+	{
+		return;
+	}
 }

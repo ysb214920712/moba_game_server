@@ -1,2 +1,28 @@
 ﻿  main.cc
+  netbus_export_to_lua.cc
+  service_export_to_lua.cc
+  session_export_to_lua.cc
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(92,18): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(98,20): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(104,21): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(110,20): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(118,20): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(124,21): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(187,17): warning C4244: “初始化”: 从“lua_Number”转换到“float”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(193,19): warning C4244: “初始化”: 从“lua_Number”转换到“int64_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(199,20): warning C4244: “初始化”: 从“lua_Number”转换到“uint64_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(205,19): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(213,19): warning C4244: “初始化”: 从“lua_Number”转换到“int32_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(219,20): warning C4244: “初始化”: 从“lua_Number”转换到“uint32_t”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(276,8): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(283,31): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(287,31): warning C4244: “=”: 从“lua_Integer”转换到“int”，可能丢失数据
+E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc(291,30): warning C4244: “=”: 从“lua_Integer”转换到“unsigned int”，可能丢失数据
+  netbus.cc
+  service.cc
+  service_man.cc
+  session_uv.cc
+  udp_session.cc
+  ws_protocol.cc
+  正在生成代码...
   moba_game_server.vcxproj -> E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\moba_game_server.exe

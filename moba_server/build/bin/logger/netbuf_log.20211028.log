@@ -1,0 +1,1117 @@
+20211028 10:20:44 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 10:20:44 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 10:20:44 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 10:21:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+trm_sesseion_disconnect 127.0.0.1:5550
+20211028 10:22:29 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 10:22:29 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 10:22:29 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 10:24:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:42  
+trm_sesseion_disconnect 127.0.0.1:6647
+20211028 10:24:18 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 10:24:18 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 10:24:18 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 10:24:28 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+加入聊天室
+20211028 10:25:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:44  
+trm_sesseion_disconnect 127.0.0.1:8648
+20211028 10:28:08 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 10:28:08 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 10:28:08 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 10:28:17 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+加入聊天室
+20211028 10:28:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:46  
+remove form talkroom
+20211028 10:28:31 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\service_export_to_lua.cc:105  
+[LUA ERROR] ../../apps/lua_test/scripts/trm_server.lua:47: bad argument #1 to 'remove' (table expected, got number)
+20211028 10:29:03 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 10:29:03 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 10:29:03 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 10:29:12 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+加入聊天室
+20211028 10:29:21 DEBUG ../../apps/lua_test/scripts/trm_server.lua:46  
+remove form talkroom
+20211028 10:29:40 DEBUG ../../apps/lua_test/scripts/trm_server.lua:51  
+trm_sesseion_disconnect 127.0.0.1:2486
+20211028 10:33:06 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 10:33:06 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 10:33:06 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 10:33:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+join talkroom
+20211028 10:33:28 DEBUG ../../apps/lua_test/scripts/trm_server.lua:43  
+trm_sesseion_disconnect 127.0.0.1:3411
+20211028 10:33:28 DEBUG ../../apps/lua_test/scripts/trm_server.lua:46  
+remove form talkroom
+20211028 10:36:09 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 10:36:09 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 10:36:09 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 10:59:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:43  
+trm_sesseion_disconnect 127.0.0.1:9308
+20211028 10:59:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+join talkroom
+20211028 11:00:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:43  
+trm_sesseion_disconnect 127.0.0.1:1691
+20211028 11:00:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:46  
+remove form talkroom
+20211028 11:02:38 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:02:38 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:02:38 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:02:50 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+join talkroom
+20211028 11:16:08 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:16:08 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:16:08 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:16:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+join talkroom
+20211028 11:21:49 DEBUG ../../apps/lua_test/scripts/trm_server.lua:43  
+trm_sesseion_disconnect 127.0.0.1:8155
+20211028 11:21:49 DEBUG ../../apps/lua_test/scripts/trm_server.lua:46  
+remove form talkroom
+20211028 11:24:05 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:24:05 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:24:05 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:24:36 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:24:36 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:24:36 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:24:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length0
+20211028 11:24:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:18  
+join talkroom
+20211028 11:26:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:49  
+trm_sesseion_disconnect 127.0.0.1:14480
+20211028 11:26:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:52  
+remove form talkroom
+20211028 11:28:22 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:28:22 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:28:22 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:28:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length0
+20211028 11:28:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:35:28 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:35:28 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:35:28 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:35:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:36  
+ctype = 1
+20211028 11:35:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:35:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:35:47 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\service_export_to_lua.cc:105  
+[LUA ERROR] ../../apps/lua_test/scripts/trm_server.lua:36: attempt to concatenate a nil value (field 'integer index')
+20211028 11:39:25 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:39:25 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:39:25 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:39:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:36  
+ctype = 1
+20211028 11:39:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:39:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:39:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:36  
+ctype = 1
+20211028 11:39:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:39:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:39:39 DEBUG ../../apps/lua_test/scripts/trm_server.lua:36  
+ctype = 1
+20211028 11:39:39 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:39:39 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:39:40 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+trm_sesseion_disconnect 127.0.0.1:12228
+20211028 11:39:40 DEBUG ../../apps/lua_test/scripts/trm_server.lua:53  
+remove form talkroom
+20211028 11:43:17 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:43:17 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:43:17 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:43:29 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:43:29 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:43:29 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:43:32 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:43:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:43:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:43:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:43:43 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:43:44 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:43:45 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:43:45 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:43:45 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:43:47 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:43:47 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:43:47 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:43:50 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:43:52 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:43:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:43:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:43:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:43:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:43:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:43:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:43:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:43:58 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:43:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:43:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:43:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:44:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:02 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:02 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:02 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:44:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:44:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:44:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:44:27 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:44:29 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:29 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:44:29 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:44:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:44:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:44:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:44:32 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:44:33 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:44:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:55  
+trm_sesseion_disconnect 127.0.0.1:13521
+20211028 11:45:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:45:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:45:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:45:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:45:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:45:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:45:28 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:45:28 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:45:28 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:45:29 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:45:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:45:33 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:45:33 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:45:33 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:46:34 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:46:34 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:46:34 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:46:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:46:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:46:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:46:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:46:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:46:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:46:45 DEBUG ../../apps/lua_test/scripts/trm_server.lua:55  
+trm_sesseion_disconnect 127.0.0.1:14180
+20211028 11:46:45 DEBUG ../../apps/lua_test/scripts/trm_server.lua:58  
+remove form talkroom
+20211028 11:47:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:47:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:47:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:47:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:47:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:47:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:47:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:47:17 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:47:18 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:47:18 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:47:18 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:47:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:47:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:47:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:47:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:47:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:47:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:47:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:47:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:47:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:47:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:55  
+trm_sesseion_disconnect 127.0.0.1:3820
+20211028 11:47:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:58  
+remove form talkroom
+20211028 11:48:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:48:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:48:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:14 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:28 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:34 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:48:36 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:48:37 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:48:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:48:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:40 DEBUG ../../apps/lua_test/scripts/trm_server.lua:55  
+trm_sesseion_disconnect 127.0.0.1:11216
+20211028 11:48:52 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:48:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:48:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:54 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:54 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:54 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:48:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:48:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:48:58 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:58 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:48:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:00 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:49:01 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:49:02 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:04 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 1
+20211028 11:49:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:49:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:49:12 DEBUG ../../apps/lua_test/scripts/trm_server.lua:41  
+ctype = 3
+20211028 11:49:13 DEBUG ../../apps/lua_test/scripts/trm_server.lua:55  
+trm_sesseion_disconnect 127.0.0.1:6545
+20211028 11:53:54 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 11:53:54 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 11:53:54 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 11:54:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+ctype = 5
+20211028 11:54:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+ctype = 1
+20211028 11:54:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:54:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:54:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+ctype = 5
+20211028 11:54:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+ctype = 1
+20211028 11:54:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 1
+20211028 11:54:38 DEBUG ../../apps/lua_test/scripts/trm_server.lua:8  
+It's already in the chat room
+20211028 11:54:40 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+ctype = 5
+20211028 11:54:42 DEBUG ../../apps/lua_test/scripts/trm_server.lua:64  
+trm_sesseion_disconnect 127.0.0.1:7308
+20211028 11:54:42 DEBUG ../../apps/lua_test/scripts/trm_server.lua:67  
+remove form talkroom
+20211028 11:55:17 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+ctype = 1
+20211028 11:55:17 DEBUG ../../apps/lua_test/scripts/trm_server.lua:5  
+session.length: 0
+20211028 11:55:17 DEBUG ../../apps/lua_test/scripts/trm_server.lua:15  
+join talkroom
+20211028 11:55:22 DEBUG ../../apps/lua_test/scripts/trm_server.lua:50  
+ctype = 5
+20211028 11:55:34 DEBUG ../../apps/lua_test/scripts/trm_server.lua:64  
+trm_sesseion_disconnect 127.0.0.1:12336
+20211028 11:55:34 DEBUG ../../apps/lua_test/scripts/trm_server.lua:67  
+remove form talkroom
+20211028 13:39:05 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 13:39:05 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 13:39:05 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 13:39:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 13:39:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 13:39:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 13:39:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 3
+20211028 13:39:21 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 13:39:21 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 13:39:21 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 13:39:21 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 3
+20211028 13:39:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 13:39:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 13:39:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 13:39:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 13:39:27 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 13:39:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:7473
+20211028 13:39:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:88  
+remove form talkroom
+20211028 14:09:21 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 14:09:21 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 14:09:21 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 14:09:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:09:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:09:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:10:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 3
+20211028 14:10:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:10:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:10:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:10:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 3
+20211028 14:10:25 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:11366
+20211028 14:10:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:11422
+20211028 14:13:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:11373
+20211028 14:13:03 DEBUG ../../apps/lua_test/scripts/trm_server.lua:88  
+remove form talkroom
+20211028 14:13:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:11756
+20211028 14:17:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:17:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:17:57 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:18:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:18:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:18:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:18:27 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 14:18:27 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:75  
+cant find required repeated field content
+
+20211028 14:19:00 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 14:19:00 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:75  
+cant find required repeated field content
+
+20211028 14:19:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 14:19:07 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:75  
+cant find required repeated field content
+
+20211028 14:19:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:12107
+20211028 14:19:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:88  
+remove form talkroom
+20211028 14:23:52 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:12136
+20211028 14:23:52 DEBUG ../../apps/lua_test/scripts/trm_server.lua:88  
+remove form talkroom
+20211028 14:24:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:24:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:24:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:24:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:24:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:24:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:24:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 14:24:31 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:75  
+cant find required repeated field content
+
+20211028 14:25:37 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:12595
+20211028 14:25:37 DEBUG ../../apps/lua_test/scripts/trm_server.lua:88  
+remove form talkroom
+20211028 14:25:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:12606
+20211028 14:25:59 DEBUG ../../apps/lua_test/scripts/trm_server.lua:88  
+remove form talkroom
+20211028 14:28:33 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:28:33 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:28:33 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:28:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:28:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:28:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:28:40 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 14:28:40 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:75  
+cant find required repeated field content
+
+20211028 14:31:58 DEBUG ../../apps/lua_test/scripts/trm_server.lua:85  
+trm_sesseion_disconnect 127.0.0.1:12923
+20211028 14:31:58 DEBUG ../../apps/lua_test/scripts/trm_server.lua:88  
+remove form talkroom
+20211028 14:32:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 1
+20211028 14:32:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:32:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:32:34 DEBUG ../../apps/lua_test/scripts/trm_server.lua:71  
+ctype = 5
+20211028 14:32:34 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:75  
+cant find required repeated field content
+
+20211028 14:33:07 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 14:33:07 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 14:33:07 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 14:33:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:33:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:33:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:33:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:33:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:33:24 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:33:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 5
+20211028 14:33:30 DEBUG ../../apps/lua_test/scripts/trm_server.lua:59  
+on_recv_send_msg_cmd: 123123123123
+20211028 14:33:30 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:75  
+cant find required repeated field content
+
+20211028 14:35:51 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 14:35:51 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 14:35:51 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 14:36:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:36:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:36:05 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:36:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:36:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:36:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:36:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 5
+20211028 14:36:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:59  
+on_recv_send_msg_cmd: 123123123
+20211028 14:36:09 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:74  
+cant find required repeated field content
+
+20211028 14:42:57 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 14:42:57 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 14:42:57 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 14:43:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:43:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:43:15 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:43:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:43:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:43:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:43:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 5
+20211028 14:43:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:59  
+on_recv_send_msg_cmd: 123123123
+20211028 14:43:20 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:74  
+cant find required repeated field content
+
+20211028 14:47:56 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 14:47:56 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 14:47:56 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 14:48:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:48:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 0
+20211028 14:48:26 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:48:27 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:48:27 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+session.length: 1
+20211028 14:48:27 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:48:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 5
+20211028 14:48:31 DEBUG ../../apps/lua_test/scripts/trm_server.lua:59  
+on_recv_send_msg_cmd: 123123
+20211028 14:48:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 5
+20211028 14:48:35 DEBUG ../../apps/lua_test/scripts/trm_server.lua:59  
+on_recv_send_msg_cmd: 3213123123
+20211028 14:49:43 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 14:49:49 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 14:49:55 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+trm_sesseion_disconnect 127.0.0.1:13917
+20211028 14:49:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+trm_sesseion_disconnect 127.0.0.1:13919
+20211028 14:56:01 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 14:56:01 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 14:56:01 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 14:56:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 14:56:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 0
+20211028 14:56:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 14:56:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 5
+20211028 14:56:16 DEBUG ../../apps/lua_test/scripts/trm_server.lua:59  
+on_recv_send_msg_cmd: 123123123
+20211028 14:56:18 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 14:56:23 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+trm_sesseion_disconnect 127.0.0.1:14376
+20211028 15:34:56 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 15:34:56 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 15:34:56 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 15:38:41 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 15:38:41 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 15:38:41 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 15:38:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:38:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 0
+20211028 15:38:53 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 15:38:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 5
+20211028 15:38:56 DEBUG ../../apps/lua_test/scripts/trm_server.lua:59  
+on_recv_send_msg_cmd: 123123123
+20211028 15:38:58 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:02 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:39:02 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 0
+20211028 15:39:02 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 15:39:06 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:07 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:39:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 0
+20211028 15:39:08 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+It's already in the chat room
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+It's already in the chat room
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+It's already in the chat room
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 1
+20211028 15:39:09 DEBUG ../../apps/lua_test/scripts/trm_server.lua:17  
+It's already in the chat room
+20211028 15:39:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:10 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:39:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:39:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 0
+20211028 15:39:11 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 15:39:13 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+trm_sesseion_disconnect 127.0.0.1:3260
+20211028 15:39:13 DEBUG ../../apps/lua_test/scripts/trm_server.lua:89  
+remove form talkroom
+20211028 15:47:13 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211028 15:47:13 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211028 15:47:13 DEBUG ../../apps/lua_test/scripts/main.lua:28  
+register trm service success
+20211028 15:47:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 1
+20211028 15:47:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:14  
+Session.length: 0
+20211028 15:47:19 DEBUG ../../apps/lua_test/scripts/trm_server.lua:24  
+join talkroom
+20211028 15:47:20 DEBUG ../../apps/lua_test/scripts/trm_server.lua:72  
+ctype = 3
+20211028 15:47:22 DEBUG ../../apps/lua_test/scripts/trm_server.lua:86  
+trm_sesseion_disconnect 127.0.0.1:3990

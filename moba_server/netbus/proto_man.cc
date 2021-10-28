@@ -11,6 +11,12 @@ using namespace std;
 
 #include "proto_man.h"
 
+#include "../utils/cache_alloc.h"
+#include "../utils/small_alloc.h"
+extern cache_allocer* wbuf_allocer;
+#define my_malloc small_alloc
+#define my_free small_free
+
 #define CMD_HEADER 8
 
 static int g_proto_type = PROTO_BUF;
@@ -70,7 +76,7 @@ proto_man::decode_cmd_msg(unsigned char* cmd, int cmd_len, struct cmd_msg** out_
 		return false;
 	}
 
-	struct cmd_msg* msg = (struct cmd_msg*)malloc(sizeof(struct cmd_msg));
+	struct cmd_msg* msg = (struct cmd_msg*)my_malloc(sizeof(struct cmd_msg));
 	msg->stype = cmd[0] | (cmd[1] << 8);
 	msg->ctype = cmd[2] | (cmd[3] << 8);
 	msg->utag = cmd[4] | (cmd[5] << 8) | (cmd[6] << 16) | (cmd[7] << 24);
@@ -83,7 +89,8 @@ proto_man::decode_cmd_msg(unsigned char* cmd, int cmd_len, struct cmd_msg** out_
 
 	if (g_proto_type == PROTO_JSON) {
 		int json_len = cmd_len - CMD_HEADER;
-		char* json_str = (char*)malloc(json_len + 1);
+		//char* json_str = (char*)malloc(json_len + 1);
+		char* json_str = (char*)cache_alloc(wbuf_allocer, json_len + 1);
 		memcpy(json_str, cmd + CMD_HEADER, json_len);
 		json_str[json_len] = 0;
 
@@ -92,13 +99,13 @@ proto_man::decode_cmd_msg(unsigned char* cmd, int cmd_len, struct cmd_msg** out_
 	else { // protobuf
 		google::protobuf::Message* p_m = create_message(g_pb_cmd_map[msg->ctype].c_str());
 		if (p_m == NULL) {
-			free(msg);
+			my_free(msg);
 			*out_msg = NULL;
 			return false;
 		}
 
 		if (!p_m->ParseFromArray(cmd + CMD_HEADER, cmd_len - CMD_HEADER)) {
-			free(msg);
+			my_free(msg);
 			*out_msg = NULL;
 			release_message(p_m);
 			return false;
@@ -114,7 +121,8 @@ void
 proto_man::cmd_msg_free(struct cmd_msg* msg) {
 	if (msg->body) {
 		if (g_proto_type == PROTO_JSON) {
-			free(msg->body);
+			//free(msg->body);
+			cache_free(wbuf_allocer, msg->body);
 			msg->body = NULL;
 		}
 		else {
@@ -124,7 +132,7 @@ proto_man::cmd_msg_free(struct cmd_msg* msg) {
 		}
 	}
 
-	free(msg);
+	my_free(msg);
 }
 
 unsigned char*
@@ -134,23 +142,52 @@ proto_man::encode_msg_to_raw(const struct cmd_msg* msg, int* out_len) {
 
 	*out_len = 0;
 
-	if (g_proto_type == PROTO_JSON) {
-		char* json_str = (char*)msg->body;
-		int len = strlen(json_str) + 1;
-		raw_data = (unsigned char*)malloc(CMD_HEADER + len);
-		memcpy(raw_data + CMD_HEADER, json_str, len - 1);
-		raw_data[8 + len] = 0;
+	if (g_proto_type == PROTO_JSON) 
+	{
+		char* json_str = NULL;
+		int len = 0;
+		if (msg->body)
+		{
+			json_str = (char*)msg->body;
+			len = strlen(json_str) + 1;
+		}
+
+		//raw_data = (unsigned char*)malloc(CMD_HEADER + len);
+		raw_data = (unsigned char*)cache_alloc(wbuf_allocer, CMD_HEADER + len);
+		if (msg->body != NULL)
+		{
+			memcpy(raw_data + CMD_HEADER, json_str, len - 1);
+			raw_data[8 + len] = 0;
+		}
+
 		*out_len = (len + CMD_HEADER);
 	}
-	else { // protobuf
-		google::protobuf::Message* p_m = (google::protobuf::Message*)msg->body;
-		int pf_len = p_m->ByteSize();
-		raw_data = (unsigned char*)malloc(CMD_HEADER + pf_len);
-		if (!p_m->SerializePartialToArray(raw_data + CMD_HEADER, pf_len)) {
-			free(raw_data);
-			return NULL;
+	else if (g_proto_type == PROTO_BUF)
+	{	// protobuf
+		google::protobuf::Message* p_m;
+		int pf_len = 0;
+		if (msg->body)
+		{
+			p_m = (google::protobuf::Message*)msg->body;
+			pf_len = p_m->ByteSize();
 		}
+		//raw_data = (unsigned char*)malloc(CMD_HEADER + pf_len);
+		raw_data = (unsigned char*)cache_alloc(wbuf_allocer, CMD_HEADER + pf_len);
+
+		if (msg->body != NULL)
+		{
+			if (!p_m->SerializePartialToArray(raw_data + CMD_HEADER, pf_len)) {
+				//free(raw_data);
+				cache_free(wbuf_allocer, raw_data);
+				return NULL;
+			}
+		}
+		
 		*out_len = (pf_len + CMD_HEADER);
+	}
+	else
+	{
+		return NULL;
 	}
 
 	// header
@@ -166,5 +203,5 @@ proto_man::encode_msg_to_raw(const struct cmd_msg* msg, int* out_len) {
 
 void
 proto_man::msg_raw_free(unsigned char* raw) {
-	free(raw);
+	cache_free(wbuf_allocer, raw);
 }

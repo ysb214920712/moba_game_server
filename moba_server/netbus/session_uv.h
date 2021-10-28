@@ -8,7 +8,7 @@ enum {
 	WS_SOCKET,
 };
 
-class uv_session : session {
+class uv_session : public session {
 public:
 	uv_tcp_t tcp_handler;
 	char c_address[32];

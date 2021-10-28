@@ -16,8 +16,9 @@ extern "C" {
 #include "tolua_fix.h"
 #include "scheduler_export_to_lua.h"
 
-#define my_malloc malloc
-#define my_free free
+#include "../utils/small_alloc.h"
+#define my_malloc small_alloc
+#define my_free small_free
 
 struct timer_repeat {
 	int handler;
@@ -141,8 +142,8 @@ int register_scheduler_export(lua_State* tolua_S)
 	{
 		tolua_open(tolua_S);
 
-		tolua_module(tolua_S, "scheduler", 0);
-		tolua_beginmodule(tolua_S, "scheduler");
+		tolua_module(tolua_S, "Scheduler", 0);
+		tolua_beginmodule(tolua_S, "Scheduler");
 		tolua_function(tolua_S, "schedule", lua_schedule_repeat);
 		tolua_function(tolua_S, "once", lua_schedule_once);
 		tolua_function(tolua_S, "cancel", lua_schedule_cancel);

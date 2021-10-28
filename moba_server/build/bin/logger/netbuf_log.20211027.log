@@ -1,0 +1,150 @@
+20211027 10:25:44 DEBUG ../../apps/lua_test/scripts/main.lua:22  
+start service success!!!!
+20211027 10:36:55 DEBUG ../../apps/lua_test/scripts/main.lua:22  
+start service success!!!!
+20211027 10:43:00 DEBUG ../../apps/lua_test/scripts/main.lua:22  
+start service success!!!!
+20211027 14:13:21 DEBUG ../../apps/lua_test/scripts/main.lua:22  
+start service success!!!!
+20211027 14:16:14 DEBUG ../../apps/lua_test/scripts/main.lua:22  
+start service success!!!!
+20211027 14:21:07 DEBUG ../../apps/lua_test/scripts/main.lua:22  
+start service success!!!!
+20211027 14:29:14 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map finded
+20211027 14:29:14 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 14:31:21 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map finded
+20211027 14:34:49 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 14:34:49 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 14:40:51 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 14:40:51 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 14:45:13 DEBUG ../../apps/lua_test/scripts/main.lua:15  
+cmd_name_map
+20211027 14:45:13 DEBUG ../../apps/lua_test/scripts/main.lua:25  
+start service success!!!!
+20211027 14:49:16 DEBUG ../../apps/lua_test/scripts/main.lua:15  
+cmd_name_map
+20211027 14:49:16 DEBUG ../../apps/lua_test/scripts/main.lua:25  
+start service success!!!!
+20211027 15:05:44 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 15:05:44 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 15:05:44 ERROR trunk:0  
+error loading module 'echo_server' from file '../../apps/lua_test/scripts/echo_server.lua':
+	../../apps/lua_test/scripts/echo_server.lua:21: unexpected symbol near '{'
+20211027 15:06:14 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 15:06:14 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 15:06:14 ERROR trunk:0  
+error loading module 'echo_server' from file '../../apps/lua_test/scripts/echo_server.lua':
+	../../apps/lua_test/scripts/echo_server.lua:21: unexpected symbol near '{'
+20211027 15:06:35 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 15:06:35 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 15:08:59 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 15:08:59 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 15:09:09 DEBUG ../../apps/lua_test/scripts/echo_server.lua:2  
+1
+20211027 15:09:09 DEBUG ../../apps/lua_test/scripts/echo_server.lua:3  
+1
+20211027 15:09:09 DEBUG ../../apps/lua_test/scripts/echo_server.lua:4  
+0
+20211027 15:09:09 DEBUG ../../apps/lua_test/scripts/echo_server.lua:7  
+ysb
+20211027 15:09:09 DEBUG ../../apps/lua_test/scripts/echo_server.lua:8  
+24
+20211027 15:09:09 DEBUG ../../apps/lua_test/scripts/echo_server.lua:9  
+214920712@qq.com
+20211027 15:20:14 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 15:20:14 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 15:20:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:2  
+1
+20211027 15:20:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:3  
+1
+20211027 15:20:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:4  
+0
+20211027 15:20:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:7  
+ysb
+20211027 15:20:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:8  
+24
+20211027 15:20:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:9  
+214920712@qq.com
+20211027 15:22:33 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 15:22:33 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 15:22:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:2  
+1
+20211027 15:22:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:3  
+1
+20211027 15:22:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:4  
+0
+20211027 15:22:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:7  
+ysb
+20211027 15:22:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:8  
+24
+20211027 15:22:44 DEBUG ../../apps/lua_test/scripts/echo_server.lua:9  
+214920712@qq.com
+20211027 15:58:35 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 15:58:35 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 15:58:45 DEBUG ../../apps/lua_test/scripts/echo_server.lua:2  
+1
+20211027 15:58:45 DEBUG ../../apps/lua_test/scripts/echo_server.lua:3  
+1
+20211027 15:58:45 DEBUG ../../apps/lua_test/scripts/echo_server.lua:4  
+0
+20211027 15:58:45 DEBUG ../../apps/lua_test/scripts/echo_server.lua:7  
+ysb
+20211027 15:58:45 DEBUG ../../apps/lua_test/scripts/echo_server.lua:8  
+24
+20211027 15:58:45 DEBUG ../../apps/lua_test/scripts/echo_server.lua:9  
+214920712@qq.com
+20211027 16:38:01 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 16:38:01 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 16:38:20 DEBUG ../../apps/lua_test/scripts/echo_server.lua:2  
+1
+20211027 16:38:20 DEBUG ../../apps/lua_test/scripts/echo_server.lua:3  
+1
+20211027 16:38:20 DEBUG ../../apps/lua_test/scripts/echo_server.lua:4  
+0
+20211027 16:38:20 DEBUG ../../apps/lua_test/scripts/echo_server.lua:7  
+ysb
+20211027 16:38:20 DEBUG ../../apps/lua_test/scripts/echo_server.lua:8  
+24
+20211027 16:38:20 DEBUG ../../apps/lua_test/scripts/echo_server.lua:9  
+214920712@qq.com
+20211027 16:38:46 DEBUG ../../apps/lua_test/scripts/echo_server.lua:20  
+echo_sesseion_disconnect127.0.0.1:5335
+20211027 16:58:37 DEBUG ../../apps/lua_test/scripts/main.lua:13  
+cmd_name_map
+20211027 16:58:37 DEBUG ../../apps/lua_test/scripts/main.lua:23  
+start service success!!!!
+20211027 16:58:48 DEBUG ../../apps/lua_test/scripts/echo_server.lua:2  
+1
+20211027 16:58:48 DEBUG ../../apps/lua_test/scripts/echo_server.lua:3  
+1
+20211027 16:58:48 DEBUG ../../apps/lua_test/scripts/echo_server.lua:4  
+0
+20211027 16:58:48 DEBUG ../../apps/lua_test/scripts/echo_server.lua:7  
+ysb
+20211027 16:58:48 DEBUG ../../apps/lua_test/scripts/echo_server.lua:8  
+24
+20211027 16:58:48 DEBUG ../../apps/lua_test/scripts/echo_server.lua:9  
+214920712@qq.com
