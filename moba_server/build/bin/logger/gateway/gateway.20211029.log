@@ -1,0 +1,40 @@
+20211029 10:37:54 DEBUG ../../apps/lua/scripts/gateway/main.lua:13  
+cmd_name_map
+20211029 10:37:54 ERROR trunk:0  
+../../apps/lua/scripts/gateway/main.lua:22: attempt to concatenate a nil value (field 'gateway_tcp_port')
+20211029 10:38:13 DEBUG ../../apps/lua/scripts/gateway/main.lua:13  
+cmd_name_map
+20211029 10:38:13 ERROR trunk:0  
+../../apps/lua/scripts/gateway/main.lua:22: attempt to concatenate a nil value (field 'gateway_tcp_port')
+20211029 10:38:45 DEBUG ../../apps/lua/scripts/gateway/main.lua:13  
+cmd_name_map
+20211029 10:38:45 DEBUG ../../apps/lua/scripts/gateway/main.lua:22  
+Server Start at 6080
+20211029 10:38:45 DEBUG ../../apps/lua/scripts/gateway/main.lua:24  
+Server Start at 6081
+20211029 10:38:45 DEBUG ../../apps/lua/scripts/gateway/main.lua:32  
+register gw_service:[1] success
+20211029 10:39:35 DEBUG ../../apps/lua/scripts/gateway/main.lua:13  
+cmd_name_map
+20211029 10:39:35 DEBUG ../../apps/lua/scripts/gateway/main.lua:22  
+Tcp Server listen at 6080
+20211029 10:39:35 DEBUG ../../apps/lua/scripts/gateway/main.lua:24  
+Ws Server listen at 6081
+20211029 10:39:35 DEBUG ../../apps/lua/scripts/gateway/main.lua:32  
+register gw_service:[1] success
+20211029 10:42:15 DEBUG ../../apps/lua/scripts/gateway/main.lua:13  
+cmd_name_map
+20211029 10:42:15 DEBUG ../../apps/lua/scripts/gateway/main.lua:22  
+Tcp Server listen at 6080
+20211029 10:42:15 DEBUG ../../apps/lua/scripts/gateway/main.lua:24  
+Ws Server listen at 6081
+20211029 10:42:15 DEBUG ../../apps/lua/scripts/gateway/main.lua:32  
+register gw_service:[1] success
+20211029 10:44:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:13  
+cmd_name_map
+20211029 10:44:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:22  
+Tcp Server listen at 6080
+20211029 10:44:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:24  
+Ws Server listen at 6081
+20211029 10:44:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:32  
+register gw_service:[1] success

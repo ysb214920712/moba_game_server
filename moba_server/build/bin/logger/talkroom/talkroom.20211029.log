@@ -1,0 +1,116 @@
+20211029 09:57:35 ERROR trunk:0  
+../../apps/lua/scripts/talkroom/main.lua:11: module 'cmd_name_map' not found:
+	no field package.preload['cmd_name_map']
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\cmd_name_map.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\cmd_name_map\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\cmd_name_map.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\cmd_name_map\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\cmd_name_map.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\cmd_name_map\init.lua'
+	no file '.\cmd_name_map.lua'
+	no file '.\cmd_name_map\init.lua'
+	no file 'D:\Lua\5.1\lua\cmd_name_map.luac'
+	no file '../../apps/lua/scripts/talkroom/cmd_name_map.lua'
+	no file '../../apps/lua/scripts/talkroom/cmd_name_map/init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\cmd_name_map.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\lib\lua\5.4\cmd_name_map.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\loadall.dll'
+	no file '.\cmd_name_map.dll'
+20211029 09:58:01 ERROR trunk:0  
+../../apps/lua/scripts/talkroom/main.lua:11: module '../cmd_name_map' not found:
+	no field package.preload['../cmd_name_map']
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\\\/cmd_name_map.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\\\/cmd_name_map\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\\\/cmd_name_map.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\\\/cmd_name_map\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\\\/cmd_name_map.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\\\/cmd_name_map\init.lua'
+	no file '.\\\/cmd_name_map.lua'
+	no file '.\\\/cmd_name_map\init.lua'
+	no file 'D:\Lua\5.1\lua\\\/cmd_name_map.luac'
+	no file '../../apps/lua/scripts/talkroom/\\/cmd_name_map.lua'
+	no file '../../apps/lua/scripts/talkroom/\\/cmd_name_map/init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\\\/cmd_name_map.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\lib\lua\5.4\\\/cmd_name_map.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\loadall.dll'
+	no file '.\\\/cmd_name_map.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\lib\lua\5.4\.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\loadall.dll'
+	no file '.\.dll'
+20211029 09:58:26 DEBUG ../../apps/lua/scripts/talkroom/main.lua:13  
+cmd_name_map
+20211029 09:58:26 DEBUG ../../apps/lua/scripts/talkroom/main.lua:23  
+start service success!!!!
+20211029 09:58:26 ERROR trunk:0  
+../../apps/lua/scripts/talkroom/main.lua:25: module 'trm_server' not found:
+	no field package.preload['trm_server']
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\trm_server.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\lua\trm_server\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\trm_server.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\trm_server\init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\trm_server.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\share\lua\5.4\trm_server\init.lua'
+	no file '.\trm_server.lua'
+	no file '.\trm_server\init.lua'
+	no file 'D:\Lua\5.1\lua\trm_server.luac'
+	no file '../../apps/lua/scripts/trm_server.lua'
+	no file '../../apps/lua/scripts/trm_server/init.lua'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\trm_server.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\..\lib\lua\5.4\trm_server.dll'
+	no file 'E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\loadall.dll'
+	no file '.\trm_server.dll'
+20211029 09:59:04 DEBUG ../../apps/lua/scripts/talkroom/main.lua:13  
+cmd_name_map
+20211029 09:59:04 DEBUG ../../apps/lua/scripts/talkroom/main.lua:23  
+start service success!!!!
+20211029 09:59:04 DEBUG ../../apps/lua/scripts/talkroom/main.lua:28  
+register trm service success
+20211029 10:00:12 DEBUG ../../apps/lua/scripts/talkroom/main.lua:13  
+cmd_name_map
+20211029 10:00:12 DEBUG ../../apps/lua/scripts/talkroom/main.lua:23  
+start service success!!!!
+20211029 10:00:12 DEBUG ../../apps/lua/scripts/talkroom/main.lua:28  
+register trm service success
+20211029 10:00:40 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:72  
+ctype = 1
+20211029 10:00:40 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:14  
+Session.length: 0
+20211029 10:00:40 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:24  
+join talkroom
+20211029 10:00:43 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:72  
+ctype = 3
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:72  
+ctype = 1
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:14  
+Session.length: 0
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:24  
+join talkroom
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:72  
+ctype = 1
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:14  
+Session.length: 1
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:17  
+It's already in the chat room
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:72  
+ctype = 1
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:14  
+Session.length: 1
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:17  
+It's already in the chat room
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:72  
+ctype = 1
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:14  
+Session.length: 1
+20211029 10:00:45 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:17  
+It's already in the chat room
+20211029 10:00:47 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:86  
+trm_sesseion_disconnect 127.0.0.1:3152
+20211029 10:00:47 DEBUG ../../apps/lua/scripts/talkroom/trm_server.lua:89  
+remove form talkroom
+20211029 10:46:27 DEBUG ../../apps/lua/scripts/talkroom/main.lua:13  
+cmd_name_map
+20211029 10:46:27 DEBUG ../../apps/lua/scripts/talkroom/main.lua:23  
+start service success!!!!
+20211029 10:46:27 DEBUG ../../apps/lua/scripts/talkroom/main.lua:28  
+register trm service success

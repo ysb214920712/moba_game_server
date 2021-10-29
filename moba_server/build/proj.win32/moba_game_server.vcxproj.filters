@@ -47,11 +47,11 @@
     <Filter Include="3rd\tolua">
       <UniqueIdentifier>{0f7fc3a2-dea4-4638-b8a0-7733713054c4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="apps\lua_test">
+    <Filter Include="apps\lua">
       <UniqueIdentifier>{e82dcc42-e2b2-49c5-b9fc-eb820f116df7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="apps\lua_test\proto">
-      <UniqueIdentifier>{a4ccdb75-51b5-4afb-8688-d2c49979b41b}</UniqueIdentifier>
+    <Filter Include="apps\lua\proto">
+      <UniqueIdentifier>{98650efc-c145-49b0-9461-683c2ef56956}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -346,14 +346,14 @@
     <ClCompile Include="..\..\lua_wrapper\proto_man_export_to_lua.cc">
       <Filter>lua_wrapper</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\apps\lua_test\main.cc">
-      <Filter>apps\lua_test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\apps\lua_test\proto\game.pb.cc">
-      <Filter>apps\lua_test\proto</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\utils\small_alloc.c">
       <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\apps\lua\main.cc">
+      <Filter>apps\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\apps\lua\proto\game.pb.cc">
+      <Filter>apps\lua\proto</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -612,11 +612,11 @@
     <ClInclude Include="..\..\lua_wrapper\proto_man_export_to_lua.h">
       <Filter>lua_wrapper</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\apps\lua_test\proto\game.pb.h">
-      <Filter>apps\lua_test\proto</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\utils\small_alloc.h">
       <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\apps\lua\proto\game.pb.h">
+      <Filter>apps\lua\proto</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

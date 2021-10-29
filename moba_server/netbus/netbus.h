@@ -13,7 +13,7 @@ public:
 	void ws_listen(int port);
 	void udp_listen(int port);
 	void run();
-	void tcp_connect(char* server_ip, int port,
+	void tcp_connect(const char* server_ip, int port,
 					 void(*on_connected)(int err, session* s, void* udata),
 					 void* udata);
 };
