@@ -1,0 +1,94 @@
+20211101 10:15:54 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 10:15:54 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 10:16:41 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 10:16:41 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 10:18:10 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 10:18:10 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 11:55:03 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 11:55:03 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:21:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:21:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:24:42 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:24:42 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:29:31 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:29:31 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:34:59 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:34:59 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:36:38 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:36:38 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:37:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:37:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:42:02 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:42:02 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:51:15 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211101 14:51:15 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success
+20211101 14:56:26 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 14:56:26 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 14:56:32 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 14:56:32 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 14:59:01 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 14:59:01 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:01:43 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 15:01:43 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:07:27 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 15:07:27 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:11:45 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 15:11:45 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:13:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 15:13:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:17:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 15:17:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:18:01 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:3  
+1	1	1
+20211101 15:47:28 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 15:47:28 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:47:43 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:6  
+1	1	1
+20211101 15:51:42 DEBUG ../../apps/lua/scripts/auth_server/main.lua:26  
+Auth Server Start at 8000
+20211101 15:51:42 DEBUG ../../apps/lua/scripts/auth_server/main.lua:33  
+register Auth service:[1] success!!!
+20211101 15:51:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:6  
+1	1	1

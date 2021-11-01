@@ -114,3 +114,5 @@ cmd_name_map
 start service success!!!!
 20211029 10:46:27 DEBUG ../../apps/lua/scripts/talkroom/main.lua:28  
 register trm service success
+20211029 15:59:49 DEBUG ../../apps/lua/scripts/talkroom/main.lua:25  
+register trm service success

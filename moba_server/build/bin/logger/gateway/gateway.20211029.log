@@ -38,3 +38,15 @@ Tcp Server listen at 6080
 Ws Server listen at 6081
 20211029 10:44:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:32  
 register gw_service:[1] success
+20211029 15:52:29 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211029 15:52:29 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211029 15:52:29 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211029 15:59:35 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211029 15:59:35 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211029 15:59:35 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success

@@ -15,7 +15,7 @@ function echo_recv_cmd(s, msg)
     Session.send_msg(s, to_client)
 end
 
-function echo_sesseion_disconnect(s)
+function echo_sesseion_disconnect(s, stype)
     local ip, port = Session.get_address(s)
     print("echo_sesseion_disconnect" .. ip .. ":" .. port)
 end

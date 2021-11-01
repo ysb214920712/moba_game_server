@@ -10,6 +10,11 @@ using namespace std;
 #include "proto_man.h"
 #include "service.h"
 
+service::service()
+{
+	this->using_raw_cmd = false;
+}
+
 // return false close socket
 // return true success
 bool service::on_session_recv_cmd(session* s, struct cmd_msg* msg)
@@ -17,7 +22,12 @@ bool service::on_session_recv_cmd(session* s, struct cmd_msg* msg)
 	return false;
 }
 
-void service::on_session_disconnect(session* s)
+void service::on_session_disconnect(session* s, int stype)
 {
 
+}
+
+bool service::on_session_recv_raw_cmd(session* s, struct raw_cmd* raw)
+{
+	return false;
 }

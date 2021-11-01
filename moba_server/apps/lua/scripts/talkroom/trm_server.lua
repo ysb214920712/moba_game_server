@@ -77,7 +77,7 @@ function on_trm_recv_cmd(s, msg)
     end
 end
 
-function on_trm_sesseion_disconnect(s)
+function on_trm_sesseion_disconnect(s, stype)
     local ip, port = Session.get_address(s)
     print("trm_sesseion_disconnect " .. ip .. ":" .. port)
     for i = 1, #session_set do

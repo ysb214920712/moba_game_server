@@ -14,3 +14,7 @@ cmd_name_map
 Auth Server Start at 8000
 20211029 10:44:51 DEBUG ../../apps/lua/scripts/auth_server/main.lua:29  
 register auth_service:[1] success
+20211029 15:59:37 DEBUG ../../apps/lua/scripts/auth_server/main.lua:22  
+Auth Server Start at 8000
+20211029 15:59:37 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+register auth_service:[1] success

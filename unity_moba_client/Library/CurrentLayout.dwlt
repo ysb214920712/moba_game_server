@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 24}
-  m_MinSize: {x: 950, y: 324}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_MinSize: {x: 1021, y: 274}
   m_MaxSize: {x: 26016, y: 10024}
   vertical: 0
-  controlID: 13
+  controlID: 25
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -553,7 +553,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1038
-  m_MinSize: {x: 950, y: 324}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &25
 MonoBehaviour:
@@ -896,20 +896,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/network/protos
+    - Assets/Scripts/Editor
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/network/protos
+  - Assets/Scripts/Editor
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\CProject\moba_game_server\unity_moba_client
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00280000
-    m_LastClickedID: 10240
-    m_ExpandedIDs: 00000000da26000092270000d6270000102800005c28000000ca9a3b
+    m_SelectedIDs: a6270000
+    m_LastClickedID: 10150
+    m_ExpandedIDs: 00000000dc26000094270000da270000142800006028000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -937,7 +937,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 13918}
     m_SelectedIDs: 96020000
     m_LastClickedID: 662
-    m_ExpandedIDs: 00000000da26000092270000d6270000102800005c280000
+    m_ExpandedIDs: 00000000dc26000094270000da2700001428000060280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000d22200008642000026460000c68d0000c0530000ea820000024c0000247f0000766e0000ae6600008a6e00009c47000022710000a28c0000e28c0000c8720000b80b0400bc0b0400b6970000000000002289000000470000ba760100be760100304a0000f45600005a570000a68f0000e2320200e6950000b8890000449c0000b096000002550000188200005047000020b50000a2820000fcb5000086470000545500005e970000fc9c0000ac7300005482000036500000869c0000a85700004058000032850000ca700000da78000090ac020098ac0200e2a40100dc440000327b00000adb0000feda00000c9b00004eb00100248d0000884a0000564200000e980000c0200300ce7a00007eba0000644800006eb400009e8c00007e640000b4c9010066530000c0c90100c08e0000c6b20000bed60000f45d0000546d000092510000686d0000a2cb02004e480000484800005648000058480000e87d0100e29800001a4c00008450000074dc00000ec700008c4d0000624c0000bc52000006c70000da4c0000425e0000b04b00000e520000d44f0000b6560000d6650000f27600003c970000da8f0000f0ac01009e6700009c4f0000bcb50000fada0000b26900004e930000348b0000ae690000ca7e00008eb10000907000004ac7000020b60000f0aa00005cd80000cec600007c4e0000606a00003ec80000e4b400004cad00004ca30000249d00001072000036510000ecbd00003ebc00003e6a000070af0000d6990000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -981,7 +981,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 21}
+      m_ClientGUIView: {fileID: 20}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1058,7 +1058,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aef6ffffd0f6fffffaf7ffffbefbffff
+      m_ExpandedIDs: d6fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

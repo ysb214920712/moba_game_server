@@ -56,3 +56,8 @@ void udp_session::send_msg(struct cmd_msg* msg)
 		proto_man::msg_raw_free(encode_pkg);
 	}
 }
+
+void udp_session::send_raw_cmd(struct raw_cmd* raw)
+{
+	this->send_data(raw->raw_data, raw->raw_len);	
+}
