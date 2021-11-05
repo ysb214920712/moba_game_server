@@ -2,6 +2,8 @@
 Logger.init("logger/auth_server/", "auth", true)
 --end
 
+require("database/mysql_auth_center")
+
 -- 初始化协议模块
 local proto_type = {
     PROTO_JSON = 0,

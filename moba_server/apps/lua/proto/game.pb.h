@@ -47,42 +47,26 @@ struct TableStruct_game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[7]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[3]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
   static const uint32_t offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_game_2eproto;
-class ExitRes;
-struct ExitResDefaultTypeInternal;
-extern ExitResDefaultTypeInternal _ExitRes_default_instance_;
-class LoginRes;
-struct LoginResDefaultTypeInternal;
-extern LoginResDefaultTypeInternal _LoginRes_default_instance_;
-class OnSendMsg;
-struct OnSendMsgDefaultTypeInternal;
-extern OnSendMsgDefaultTypeInternal _OnSendMsg_default_instance_;
-class OnUserExit;
-struct OnUserExitDefaultTypeInternal;
-extern OnUserExitDefaultTypeInternal _OnUserExit_default_instance_;
-class OnUserLogin;
-struct OnUserLoginDefaultTypeInternal;
-extern OnUserLoginDefaultTypeInternal _OnUserLogin_default_instance_;
-class SendMsgReq;
-struct SendMsgReqDefaultTypeInternal;
-extern SendMsgReqDefaultTypeInternal _SendMsgReq_default_instance_;
-class SendMsgRes;
-struct SendMsgResDefaultTypeInternal;
-extern SendMsgResDefaultTypeInternal _SendMsgRes_default_instance_;
+class GuestLoginReq;
+struct GuestLoginReqDefaultTypeInternal;
+extern GuestLoginReqDefaultTypeInternal _GuestLoginReq_default_instance_;
+class GuestLoginRes;
+struct GuestLoginResDefaultTypeInternal;
+extern GuestLoginResDefaultTypeInternal _GuestLoginRes_default_instance_;
+class UserCenterInfo;
+struct UserCenterInfoDefaultTypeInternal;
+extern UserCenterInfoDefaultTypeInternal _UserCenterInfo_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
-template<> ::ExitRes* Arena::CreateMaybeMessage<::ExitRes>(Arena*);
-template<> ::LoginRes* Arena::CreateMaybeMessage<::LoginRes>(Arena*);
-template<> ::OnSendMsg* Arena::CreateMaybeMessage<::OnSendMsg>(Arena*);
-template<> ::OnUserExit* Arena::CreateMaybeMessage<::OnUserExit>(Arena*);
-template<> ::OnUserLogin* Arena::CreateMaybeMessage<::OnUserLogin>(Arena*);
-template<> ::SendMsgReq* Arena::CreateMaybeMessage<::SendMsgReq>(Arena*);
-template<> ::SendMsgRes* Arena::CreateMaybeMessage<::SendMsgRes>(Arena*);
+template<> ::GuestLoginReq* Arena::CreateMaybeMessage<::GuestLoginReq>(Arena*);
+template<> ::GuestLoginRes* Arena::CreateMaybeMessage<::GuestLoginRes>(Arena*);
+template<> ::UserCenterInfo* Arena::CreateMaybeMessage<::UserCenterInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 enum Stype : int {
@@ -112,19 +96,14 @@ inline bool Stype_Parse(
 }
 enum Cmd : int {
   INVALID_CMD = 0,
-  eLoginReq = 1,
-  eLoginRes = 2,
-  eExitReq = 3,
-  eExitRes = 4,
-  eSendMsgReq = 5,
-  eSendMsgRes = 6,
-  eOnUserLogin = 7,
-  eOnUserExit = 8,
-  eOnSendMsg = 9
+  eGuestLoginReq = 1,
+  eGuestLoginRes = 2,
+  eRelogin = 3,
+  eUserLostConn = 4
 };
 bool Cmd_IsValid(int value);
 constexpr Cmd Cmd_MIN = INVALID_CMD;
-constexpr Cmd Cmd_MAX = eOnSendMsg;
+constexpr Cmd Cmd_MAX = eUserLostConn;
 constexpr int Cmd_ARRAYSIZE = Cmd_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Cmd_descriptor();
@@ -143,24 +122,24 @@ inline bool Cmd_Parse(
 }
 // ===================================================================
 
-class LoginRes final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LoginRes) */ {
+class GuestLoginReq final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GuestLoginReq) */ {
  public:
-  inline LoginRes() : LoginRes(nullptr) {}
-  ~LoginRes() override;
-  explicit constexpr LoginRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline GuestLoginReq() : GuestLoginReq(nullptr) {}
+  ~GuestLoginReq() override;
+  explicit constexpr GuestLoginReq(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  LoginRes(const LoginRes& from);
-  LoginRes(LoginRes&& from) noexcept
-    : LoginRes() {
+  GuestLoginReq(const GuestLoginReq& from);
+  GuestLoginReq(GuestLoginReq&& from) noexcept
+    : GuestLoginReq() {
     *this = ::std::move(from);
   }
 
-  inline LoginRes& operator=(const LoginRes& from) {
+  inline GuestLoginReq& operator=(const GuestLoginReq& from) {
     CopyFrom(from);
     return *this;
   }
-  inline LoginRes& operator=(LoginRes&& from) noexcept {
+  inline GuestLoginReq& operator=(GuestLoginReq&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -190,20 +169,20 @@ class LoginRes final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const LoginRes& default_instance() {
+  static const GuestLoginReq& default_instance() {
     return *internal_default_instance();
   }
-  static inline const LoginRes* internal_default_instance() {
-    return reinterpret_cast<const LoginRes*>(
-               &_LoginRes_default_instance_);
+  static inline const GuestLoginReq* internal_default_instance() {
+    return reinterpret_cast<const GuestLoginReq*>(
+               &_GuestLoginReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(LoginRes& a, LoginRes& b) {
+  friend void swap(GuestLoginReq& a, GuestLoginReq& b) {
     a.Swap(&b);
   }
-  inline void Swap(LoginRes* other) {
+  inline void Swap(GuestLoginReq* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -216,7 +195,7 @@ class LoginRes final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(LoginRes* other) {
+  void UnsafeArenaSwap(GuestLoginReq* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -224,13 +203,13 @@ class LoginRes final :
 
   // implements Message ----------------------------------------------
 
-  LoginRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<LoginRes>(arena);
+  GuestLoginReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GuestLoginReq>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const LoginRes& from);
+  void CopyFrom(const GuestLoginReq& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom(const LoginRes& from);
+  void MergeFrom(const GuestLoginReq& from);
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
   public:
@@ -247,15 +226,15 @@ class LoginRes final :
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(LoginRes* other);
+  void InternalSwap(GuestLoginReq* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LoginRes";
+    return "GuestLoginReq";
   }
   protected:
-  explicit LoginRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit GuestLoginReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   private:
   static void ArenaDtor(void* object);
@@ -272,22 +251,27 @@ class LoginRes final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kStatusFieldNumber = 1,
+    kGuestKeyFieldNumber = 1,
   };
-  // required int32 status = 1;
-  bool has_status() const;
+  // required string guest_key = 1;
+  bool has_guest_key() const;
   private:
-  bool _internal_has_status() const;
+  bool _internal_has_guest_key() const;
   public:
-  void clear_status();
-  int32_t status() const;
-  void set_status(int32_t value);
+  void clear_guest_key();
+  const std::string& guest_key() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_guest_key(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_guest_key();
+  PROTOBUF_NODISCARD std::string* release_guest_key();
+  void set_allocated_guest_key(std::string* guest_key);
   private:
-  int32_t _internal_status() const;
-  void _internal_set_status(int32_t value);
+  const std::string& _internal_guest_key() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_guest_key(const std::string& value);
+  std::string* _internal_mutable_guest_key();
   public:
 
-  // @@protoc_insertion_point(class_scope:LoginRes)
+  // @@protoc_insertion_point(class_scope:GuestLoginReq)
  private:
   class _Internal;
 
@@ -296,29 +280,29 @@ class LoginRes final :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  int32_t status_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr guest_key_;
   friend struct ::TableStruct_game_2eproto;
 };
 // -------------------------------------------------------------------
 
-class ExitRes final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ExitRes) */ {
+class UserCenterInfo final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:UserCenterInfo) */ {
  public:
-  inline ExitRes() : ExitRes(nullptr) {}
-  ~ExitRes() override;
-  explicit constexpr ExitRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline UserCenterInfo() : UserCenterInfo(nullptr) {}
+  ~UserCenterInfo() override;
+  explicit constexpr UserCenterInfo(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  ExitRes(const ExitRes& from);
-  ExitRes(ExitRes&& from) noexcept
-    : ExitRes() {
+  UserCenterInfo(const UserCenterInfo& from);
+  UserCenterInfo(UserCenterInfo&& from) noexcept
+    : UserCenterInfo() {
     *this = ::std::move(from);
   }
 
-  inline ExitRes& operator=(const ExitRes& from) {
+  inline UserCenterInfo& operator=(const UserCenterInfo& from) {
     CopyFrom(from);
     return *this;
   }
-  inline ExitRes& operator=(ExitRes&& from) noexcept {
+  inline UserCenterInfo& operator=(UserCenterInfo&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -348,20 +332,20 @@ class ExitRes final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const ExitRes& default_instance() {
+  static const UserCenterInfo& default_instance() {
     return *internal_default_instance();
   }
-  static inline const ExitRes* internal_default_instance() {
-    return reinterpret_cast<const ExitRes*>(
-               &_ExitRes_default_instance_);
+  static inline const UserCenterInfo* internal_default_instance() {
+    return reinterpret_cast<const UserCenterInfo*>(
+               &_UserCenterInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     1;
 
-  friend void swap(ExitRes& a, ExitRes& b) {
+  friend void swap(UserCenterInfo& a, UserCenterInfo& b) {
     a.Swap(&b);
   }
-  inline void Swap(ExitRes* other) {
+  inline void Swap(UserCenterInfo* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -374,7 +358,7 @@ class ExitRes final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(ExitRes* other) {
+  void UnsafeArenaSwap(UserCenterInfo* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -382,13 +366,13 @@ class ExitRes final :
 
   // implements Message ----------------------------------------------
 
-  ExitRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<ExitRes>(arena);
+  UserCenterInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<UserCenterInfo>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const ExitRes& from);
+  void CopyFrom(const UserCenterInfo& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom(const ExitRes& from);
+  void MergeFrom(const UserCenterInfo& from);
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
   public:
@@ -405,15 +389,15 @@ class ExitRes final :
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(ExitRes* other);
+  void InternalSwap(UserCenterInfo* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "ExitRes";
+    return "UserCenterInfo";
   }
   protected:
-  explicit ExitRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit UserCenterInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   private:
   static void ArenaDtor(void* object);
@@ -430,53 +414,121 @@ class ExitRes final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kStatusFieldNumber = 1,
+    kUnickFieldNumber = 1,
+    kUfaceFieldNumber = 2,
+    kUsexFieldNumber = 3,
+    kUvipFieldNumber = 4,
+    kUidFieldNumber = 5,
   };
-  // required int32 status = 1;
-  bool has_status() const;
+  // required string unick = 1;
+  bool has_unick() const;
   private:
-  bool _internal_has_status() const;
+  bool _internal_has_unick() const;
   public:
-  void clear_status();
-  int32_t status() const;
-  void set_status(int32_t value);
+  void clear_unick();
+  const std::string& unick() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_unick(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_unick();
+  PROTOBUF_NODISCARD std::string* release_unick();
+  void set_allocated_unick(std::string* unick);
   private:
-  int32_t _internal_status() const;
-  void _internal_set_status(int32_t value);
+  const std::string& _internal_unick() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_unick(const std::string& value);
+  std::string* _internal_mutable_unick();
   public:
 
-  // @@protoc_insertion_point(class_scope:ExitRes)
+  // required int32 uface = 2;
+  bool has_uface() const;
+  private:
+  bool _internal_has_uface() const;
+  public:
+  void clear_uface();
+  int32_t uface() const;
+  void set_uface(int32_t value);
+  private:
+  int32_t _internal_uface() const;
+  void _internal_set_uface(int32_t value);
+  public:
+
+  // required int32 usex = 3;
+  bool has_usex() const;
+  private:
+  bool _internal_has_usex() const;
+  public:
+  void clear_usex();
+  int32_t usex() const;
+  void set_usex(int32_t value);
+  private:
+  int32_t _internal_usex() const;
+  void _internal_set_usex(int32_t value);
+  public:
+
+  // required int32 uvip = 4;
+  bool has_uvip() const;
+  private:
+  bool _internal_has_uvip() const;
+  public:
+  void clear_uvip();
+  int32_t uvip() const;
+  void set_uvip(int32_t value);
+  private:
+  int32_t _internal_uvip() const;
+  void _internal_set_uvip(int32_t value);
+  public:
+
+  // required int32 uid = 5;
+  bool has_uid() const;
+  private:
+  bool _internal_has_uid() const;
+  public:
+  void clear_uid();
+  int32_t uid() const;
+  void set_uid(int32_t value);
+  private:
+  int32_t _internal_uid() const;
+  void _internal_set_uid(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:UserCenterInfo)
  private:
   class _Internal;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  int32_t status_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr unick_;
+  int32_t uface_;
+  int32_t usex_;
+  int32_t uvip_;
+  int32_t uid_;
   friend struct ::TableStruct_game_2eproto;
 };
 // -------------------------------------------------------------------
 
-class SendMsgReq final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SendMsgReq) */ {
+class GuestLoginRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GuestLoginRes) */ {
  public:
-  inline SendMsgReq() : SendMsgReq(nullptr) {}
-  ~SendMsgReq() override;
-  explicit constexpr SendMsgReq(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline GuestLoginRes() : GuestLoginRes(nullptr) {}
+  ~GuestLoginRes() override;
+  explicit constexpr GuestLoginRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  SendMsgReq(const SendMsgReq& from);
-  SendMsgReq(SendMsgReq&& from) noexcept
-    : SendMsgReq() {
+  GuestLoginRes(const GuestLoginRes& from);
+  GuestLoginRes(GuestLoginRes&& from) noexcept
+    : GuestLoginRes() {
     *this = ::std::move(from);
   }
 
-  inline SendMsgReq& operator=(const SendMsgReq& from) {
+  inline GuestLoginRes& operator=(const GuestLoginRes& from) {
     CopyFrom(from);
     return *this;
   }
-  inline SendMsgReq& operator=(SendMsgReq&& from) noexcept {
+  inline GuestLoginRes& operator=(GuestLoginRes&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -506,20 +558,20 @@ class SendMsgReq final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const SendMsgReq& default_instance() {
+  static const GuestLoginRes& default_instance() {
     return *internal_default_instance();
   }
-  static inline const SendMsgReq* internal_default_instance() {
-    return reinterpret_cast<const SendMsgReq*>(
-               &_SendMsgReq_default_instance_);
+  static inline const GuestLoginRes* internal_default_instance() {
+    return reinterpret_cast<const GuestLoginRes*>(
+               &_GuestLoginRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     2;
 
-  friend void swap(SendMsgReq& a, SendMsgReq& b) {
+  friend void swap(GuestLoginRes& a, GuestLoginRes& b) {
     a.Swap(&b);
   }
-  inline void Swap(SendMsgReq* other) {
+  inline void Swap(GuestLoginRes* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -532,7 +584,7 @@ class SendMsgReq final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(SendMsgReq* other) {
+  void UnsafeArenaSwap(GuestLoginRes* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -540,13 +592,13 @@ class SendMsgReq final :
 
   // implements Message ----------------------------------------------
 
-  SendMsgReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<SendMsgReq>(arena);
+  GuestLoginRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GuestLoginRes>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const SendMsgReq& from);
+  void CopyFrom(const GuestLoginRes& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom(const SendMsgReq& from);
+  void MergeFrom(const GuestLoginRes& from);
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
   public:
@@ -563,15 +615,15 @@ class SendMsgReq final :
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(SendMsgReq* other);
+  void InternalSwap(GuestLoginRes* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "SendMsgReq";
+    return "GuestLoginRes";
   }
   protected:
-  explicit SendMsgReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit GuestLoginRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   private:
   static void ArenaDtor(void* object);
@@ -588,171 +640,27 @@ class SendMsgReq final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kContentFieldNumber = 1,
-  };
-  // required string content = 1;
-  bool has_content() const;
-  private:
-  bool _internal_has_content() const;
-  public:
-  void clear_content();
-  const std::string& content() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_content(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_content();
-  PROTOBUF_NODISCARD std::string* release_content();
-  void set_allocated_content(std::string* content);
-  private:
-  const std::string& _internal_content() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_content(const std::string& value);
-  std::string* _internal_mutable_content();
-  public:
-
-  // @@protoc_insertion_point(class_scope:SendMsgReq)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr content_;
-  friend struct ::TableStruct_game_2eproto;
-};
-// -------------------------------------------------------------------
-
-class SendMsgRes final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SendMsgRes) */ {
- public:
-  inline SendMsgRes() : SendMsgRes(nullptr) {}
-  ~SendMsgRes() override;
-  explicit constexpr SendMsgRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  SendMsgRes(const SendMsgRes& from);
-  SendMsgRes(SendMsgRes&& from) noexcept
-    : SendMsgRes() {
-    *this = ::std::move(from);
-  }
-
-  inline SendMsgRes& operator=(const SendMsgRes& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline SendMsgRes& operator=(SendMsgRes&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const SendMsgRes& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const SendMsgRes* internal_default_instance() {
-    return reinterpret_cast<const SendMsgRes*>(
-               &_SendMsgRes_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    3;
-
-  friend void swap(SendMsgRes& a, SendMsgRes& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(SendMsgRes* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(SendMsgRes* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  SendMsgRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<SendMsgRes>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const SendMsgRes& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom(const SendMsgRes& from);
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(SendMsgRes* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "SendMsgRes";
-  }
-  protected:
-  explicit SendMsgRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
+    kUinfoFieldNumber = 2,
     kStatusFieldNumber = 1,
   };
+  // optional .UserCenterInfo uinfo = 2;
+  bool has_uinfo() const;
+  private:
+  bool _internal_has_uinfo() const;
+  public:
+  void clear_uinfo();
+  const ::UserCenterInfo& uinfo() const;
+  PROTOBUF_NODISCARD ::UserCenterInfo* release_uinfo();
+  ::UserCenterInfo* mutable_uinfo();
+  void set_allocated_uinfo(::UserCenterInfo* uinfo);
+  private:
+  const ::UserCenterInfo& _internal_uinfo() const;
+  ::UserCenterInfo* _internal_mutable_uinfo();
+  public:
+  void unsafe_arena_set_allocated_uinfo(
+      ::UserCenterInfo* uinfo);
+  ::UserCenterInfo* unsafe_arena_release_uinfo();
+
   // required int32 status = 1;
   bool has_status() const;
   private:
@@ -766,7 +674,7 @@ class SendMsgRes final :
   void _internal_set_status(int32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:SendMsgRes)
+  // @@protoc_insertion_point(class_scope:GuestLoginRes)
  private:
   class _Internal;
 
@@ -775,570 +683,8 @@ class SendMsgRes final :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::UserCenterInfo* uinfo_;
   int32_t status_;
-  friend struct ::TableStruct_game_2eproto;
-};
-// -------------------------------------------------------------------
-
-class OnUserLogin final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:OnUserLogin) */ {
- public:
-  inline OnUserLogin() : OnUserLogin(nullptr) {}
-  ~OnUserLogin() override;
-  explicit constexpr OnUserLogin(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  OnUserLogin(const OnUserLogin& from);
-  OnUserLogin(OnUserLogin&& from) noexcept
-    : OnUserLogin() {
-    *this = ::std::move(from);
-  }
-
-  inline OnUserLogin& operator=(const OnUserLogin& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline OnUserLogin& operator=(OnUserLogin&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const OnUserLogin& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const OnUserLogin* internal_default_instance() {
-    return reinterpret_cast<const OnUserLogin*>(
-               &_OnUserLogin_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    4;
-
-  friend void swap(OnUserLogin& a, OnUserLogin& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(OnUserLogin* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(OnUserLogin* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  OnUserLogin* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<OnUserLogin>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const OnUserLogin& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom(const OnUserLogin& from);
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(OnUserLogin* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "OnUserLogin";
-  }
-  protected:
-  explicit OnUserLogin(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kIpFieldNumber = 1,
-    kPortFieldNumber = 2,
-  };
-  // required string ip = 1;
-  bool has_ip() const;
-  private:
-  bool _internal_has_ip() const;
-  public:
-  void clear_ip();
-  const std::string& ip() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_ip(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_ip();
-  PROTOBUF_NODISCARD std::string* release_ip();
-  void set_allocated_ip(std::string* ip);
-  private:
-  const std::string& _internal_ip() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_ip(const std::string& value);
-  std::string* _internal_mutable_ip();
-  public:
-
-  // required int32 port = 2;
-  bool has_port() const;
-  private:
-  bool _internal_has_port() const;
-  public:
-  void clear_port();
-  int32_t port() const;
-  void set_port(int32_t value);
-  private:
-  int32_t _internal_port() const;
-  void _internal_set_port(int32_t value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:OnUserLogin)
- private:
-  class _Internal;
-
-  // helper for ByteSizeLong()
-  size_t RequiredFieldsByteSizeFallback() const;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ip_;
-  int32_t port_;
-  friend struct ::TableStruct_game_2eproto;
-};
-// -------------------------------------------------------------------
-
-class OnUserExit final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:OnUserExit) */ {
- public:
-  inline OnUserExit() : OnUserExit(nullptr) {}
-  ~OnUserExit() override;
-  explicit constexpr OnUserExit(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  OnUserExit(const OnUserExit& from);
-  OnUserExit(OnUserExit&& from) noexcept
-    : OnUserExit() {
-    *this = ::std::move(from);
-  }
-
-  inline OnUserExit& operator=(const OnUserExit& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline OnUserExit& operator=(OnUserExit&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const OnUserExit& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const OnUserExit* internal_default_instance() {
-    return reinterpret_cast<const OnUserExit*>(
-               &_OnUserExit_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    5;
-
-  friend void swap(OnUserExit& a, OnUserExit& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(OnUserExit* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(OnUserExit* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  OnUserExit* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<OnUserExit>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const OnUserExit& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom(const OnUserExit& from);
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(OnUserExit* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "OnUserExit";
-  }
-  protected:
-  explicit OnUserExit(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kIpFieldNumber = 1,
-    kPortFieldNumber = 2,
-  };
-  // required string ip = 1;
-  bool has_ip() const;
-  private:
-  bool _internal_has_ip() const;
-  public:
-  void clear_ip();
-  const std::string& ip() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_ip(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_ip();
-  PROTOBUF_NODISCARD std::string* release_ip();
-  void set_allocated_ip(std::string* ip);
-  private:
-  const std::string& _internal_ip() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_ip(const std::string& value);
-  std::string* _internal_mutable_ip();
-  public:
-
-  // required int32 port = 2;
-  bool has_port() const;
-  private:
-  bool _internal_has_port() const;
-  public:
-  void clear_port();
-  int32_t port() const;
-  void set_port(int32_t value);
-  private:
-  int32_t _internal_port() const;
-  void _internal_set_port(int32_t value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:OnUserExit)
- private:
-  class _Internal;
-
-  // helper for ByteSizeLong()
-  size_t RequiredFieldsByteSizeFallback() const;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ip_;
-  int32_t port_;
-  friend struct ::TableStruct_game_2eproto;
-};
-// -------------------------------------------------------------------
-
-class OnSendMsg final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:OnSendMsg) */ {
- public:
-  inline OnSendMsg() : OnSendMsg(nullptr) {}
-  ~OnSendMsg() override;
-  explicit constexpr OnSendMsg(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  OnSendMsg(const OnSendMsg& from);
-  OnSendMsg(OnSendMsg&& from) noexcept
-    : OnSendMsg() {
-    *this = ::std::move(from);
-  }
-
-  inline OnSendMsg& operator=(const OnSendMsg& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline OnSendMsg& operator=(OnSendMsg&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const OnSendMsg& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const OnSendMsg* internal_default_instance() {
-    return reinterpret_cast<const OnSendMsg*>(
-               &_OnSendMsg_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    6;
-
-  friend void swap(OnSendMsg& a, OnSendMsg& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(OnSendMsg* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(OnSendMsg* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  OnSendMsg* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<OnSendMsg>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const OnSendMsg& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom(const OnSendMsg& from);
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(OnSendMsg* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "OnSendMsg";
-  }
-  protected:
-  explicit OnSendMsg(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kIpFieldNumber = 1,
-    kContentFieldNumber = 3,
-    kPortFieldNumber = 2,
-  };
-  // required string ip = 1;
-  bool has_ip() const;
-  private:
-  bool _internal_has_ip() const;
-  public:
-  void clear_ip();
-  const std::string& ip() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_ip(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_ip();
-  PROTOBUF_NODISCARD std::string* release_ip();
-  void set_allocated_ip(std::string* ip);
-  private:
-  const std::string& _internal_ip() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_ip(const std::string& value);
-  std::string* _internal_mutable_ip();
-  public:
-
-  // required string content = 3;
-  bool has_content() const;
-  private:
-  bool _internal_has_content() const;
-  public:
-  void clear_content();
-  const std::string& content() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_content(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_content();
-  PROTOBUF_NODISCARD std::string* release_content();
-  void set_allocated_content(std::string* content);
-  private:
-  const std::string& _internal_content() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_content(const std::string& value);
-  std::string* _internal_mutable_content();
-  public:
-
-  // required int32 port = 2;
-  bool has_port() const;
-  private:
-  bool _internal_has_port() const;
-  public:
-  void clear_port();
-  int32_t port() const;
-  void set_port(int32_t value);
-  private:
-  int32_t _internal_port() const;
-  void _internal_set_port(int32_t value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:OnSendMsg)
- private:
-  class _Internal;
-
-  // helper for ByteSizeLong()
-  size_t RequiredFieldsByteSizeFallback() const;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ip_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr content_;
-  int32_t port_;
   friend struct ::TableStruct_game_2eproto;
 };
 // ===================================================================
@@ -1350,556 +696,387 @@ class OnSendMsg final :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// LoginRes
+// GuestLoginReq
 
-// required int32 status = 1;
-inline bool LoginRes::_internal_has_status() const {
+// required string guest_key = 1;
+inline bool GuestLoginReq::_internal_has_guest_key() const {
   bool value = (_has_bits_[0] & 0x00000001u) != 0;
   return value;
 }
-inline bool LoginRes::has_status() const {
-  return _internal_has_status();
+inline bool GuestLoginReq::has_guest_key() const {
+  return _internal_has_guest_key();
 }
-inline void LoginRes::clear_status() {
-  status_ = 0;
+inline void GuestLoginReq::clear_guest_key() {
+  guest_key_.ClearToEmpty();
   _has_bits_[0] &= ~0x00000001u;
 }
-inline int32_t LoginRes::_internal_status() const {
-  return status_;
-}
-inline int32_t LoginRes::status() const {
-  // @@protoc_insertion_point(field_get:LoginRes.status)
-  return _internal_status();
-}
-inline void LoginRes::_internal_set_status(int32_t value) {
-  _has_bits_[0] |= 0x00000001u;
-  status_ = value;
-}
-inline void LoginRes::set_status(int32_t value) {
-  _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:LoginRes.status)
-}
-
-// -------------------------------------------------------------------
-
-// ExitRes
-
-// required int32 status = 1;
-inline bool ExitRes::_internal_has_status() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool ExitRes::has_status() const {
-  return _internal_has_status();
-}
-inline void ExitRes::clear_status() {
-  status_ = 0;
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline int32_t ExitRes::_internal_status() const {
-  return status_;
-}
-inline int32_t ExitRes::status() const {
-  // @@protoc_insertion_point(field_get:ExitRes.status)
-  return _internal_status();
-}
-inline void ExitRes::_internal_set_status(int32_t value) {
-  _has_bits_[0] |= 0x00000001u;
-  status_ = value;
-}
-inline void ExitRes::set_status(int32_t value) {
-  _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:ExitRes.status)
-}
-
-// -------------------------------------------------------------------
-
-// SendMsgReq
-
-// required string content = 1;
-inline bool SendMsgReq::_internal_has_content() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool SendMsgReq::has_content() const {
-  return _internal_has_content();
-}
-inline void SendMsgReq::clear_content() {
-  content_.ClearToEmpty();
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const std::string& SendMsgReq::content() const {
-  // @@protoc_insertion_point(field_get:SendMsgReq.content)
-  return _internal_content();
+inline const std::string& GuestLoginReq::guest_key() const {
+  // @@protoc_insertion_point(field_get:GuestLoginReq.guest_key)
+  return _internal_guest_key();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void SendMsgReq::set_content(ArgT0&& arg0, ArgT... args) {
+void GuestLoginReq::set_guest_key(ArgT0&& arg0, ArgT... args) {
  _has_bits_[0] |= 0x00000001u;
- content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:SendMsgReq.content)
+ guest_key_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:GuestLoginReq.guest_key)
 }
-inline std::string* SendMsgReq::mutable_content() {
-  std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:SendMsgReq.content)
+inline std::string* GuestLoginReq::mutable_guest_key() {
+  std::string* _s = _internal_mutable_guest_key();
+  // @@protoc_insertion_point(field_mutable:GuestLoginReq.guest_key)
   return _s;
 }
-inline const std::string& SendMsgReq::_internal_content() const {
-  return content_.Get();
+inline const std::string& GuestLoginReq::_internal_guest_key() const {
+  return guest_key_.Get();
 }
-inline void SendMsgReq::_internal_set_content(const std::string& value) {
+inline void GuestLoginReq::_internal_set_guest_key(const std::string& value) {
   _has_bits_[0] |= 0x00000001u;
-  content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+  guest_key_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
 }
-inline std::string* SendMsgReq::_internal_mutable_content() {
+inline std::string* GuestLoginReq::_internal_mutable_guest_key() {
   _has_bits_[0] |= 0x00000001u;
-  return content_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+  return guest_key_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
 }
-inline std::string* SendMsgReq::release_content() {
-  // @@protoc_insertion_point(field_release:SendMsgReq.content)
-  if (!_internal_has_content()) {
+inline std::string* GuestLoginReq::release_guest_key() {
+  // @@protoc_insertion_point(field_release:GuestLoginReq.guest_key)
+  if (!_internal_has_guest_key()) {
     return nullptr;
   }
   _has_bits_[0] &= ~0x00000001u;
-  auto* p = content_.ReleaseNonDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+  auto* p = guest_key_.ReleaseNonDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (content_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    content_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  if (guest_key_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    guest_key_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   return p;
 }
-inline void SendMsgReq::set_allocated_content(std::string* content) {
-  if (content != nullptr) {
+inline void GuestLoginReq::set_allocated_guest_key(std::string* guest_key) {
+  if (guest_key != nullptr) {
     _has_bits_[0] |= 0x00000001u;
   } else {
     _has_bits_[0] &= ~0x00000001u;
   }
-  content_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), content,
+  guest_key_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), guest_key,
       GetArenaForAllocation());
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (content_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    content_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  if (guest_key_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    guest_key_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:SendMsgReq.content)
+  // @@protoc_insertion_point(field_set_allocated:GuestLoginReq.guest_key)
 }
 
 // -------------------------------------------------------------------
 
-// SendMsgRes
+// UserCenterInfo
 
-// required int32 status = 1;
-inline bool SendMsgRes::_internal_has_status() const {
+// required string unick = 1;
+inline bool UserCenterInfo::_internal_has_unick() const {
   bool value = (_has_bits_[0] & 0x00000001u) != 0;
   return value;
 }
-inline bool SendMsgRes::has_status() const {
-  return _internal_has_status();
+inline bool UserCenterInfo::has_unick() const {
+  return _internal_has_unick();
 }
-inline void SendMsgRes::clear_status() {
-  status_ = 0;
+inline void UserCenterInfo::clear_unick() {
+  unick_.ClearToEmpty();
   _has_bits_[0] &= ~0x00000001u;
 }
-inline int32_t SendMsgRes::_internal_status() const {
-  return status_;
-}
-inline int32_t SendMsgRes::status() const {
-  // @@protoc_insertion_point(field_get:SendMsgRes.status)
-  return _internal_status();
-}
-inline void SendMsgRes::_internal_set_status(int32_t value) {
-  _has_bits_[0] |= 0x00000001u;
-  status_ = value;
-}
-inline void SendMsgRes::set_status(int32_t value) {
-  _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:SendMsgRes.status)
-}
-
-// -------------------------------------------------------------------
-
-// OnUserLogin
-
-// required string ip = 1;
-inline bool OnUserLogin::_internal_has_ip() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool OnUserLogin::has_ip() const {
-  return _internal_has_ip();
-}
-inline void OnUserLogin::clear_ip() {
-  ip_.ClearToEmpty();
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const std::string& OnUserLogin::ip() const {
-  // @@protoc_insertion_point(field_get:OnUserLogin.ip)
-  return _internal_ip();
+inline const std::string& UserCenterInfo::unick() const {
+  // @@protoc_insertion_point(field_get:UserCenterInfo.unick)
+  return _internal_unick();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void OnUserLogin::set_ip(ArgT0&& arg0, ArgT... args) {
+void UserCenterInfo::set_unick(ArgT0&& arg0, ArgT... args) {
  _has_bits_[0] |= 0x00000001u;
- ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:OnUserLogin.ip)
+ unick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:UserCenterInfo.unick)
 }
-inline std::string* OnUserLogin::mutable_ip() {
-  std::string* _s = _internal_mutable_ip();
-  // @@protoc_insertion_point(field_mutable:OnUserLogin.ip)
+inline std::string* UserCenterInfo::mutable_unick() {
+  std::string* _s = _internal_mutable_unick();
+  // @@protoc_insertion_point(field_mutable:UserCenterInfo.unick)
   return _s;
 }
-inline const std::string& OnUserLogin::_internal_ip() const {
-  return ip_.Get();
+inline const std::string& UserCenterInfo::_internal_unick() const {
+  return unick_.Get();
 }
-inline void OnUserLogin::_internal_set_ip(const std::string& value) {
+inline void UserCenterInfo::_internal_set_unick(const std::string& value) {
   _has_bits_[0] |= 0x00000001u;
-  ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+  unick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
 }
-inline std::string* OnUserLogin::_internal_mutable_ip() {
+inline std::string* UserCenterInfo::_internal_mutable_unick() {
   _has_bits_[0] |= 0x00000001u;
-  return ip_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+  return unick_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
 }
-inline std::string* OnUserLogin::release_ip() {
-  // @@protoc_insertion_point(field_release:OnUserLogin.ip)
-  if (!_internal_has_ip()) {
+inline std::string* UserCenterInfo::release_unick() {
+  // @@protoc_insertion_point(field_release:UserCenterInfo.unick)
+  if (!_internal_has_unick()) {
     return nullptr;
   }
   _has_bits_[0] &= ~0x00000001u;
-  auto* p = ip_.ReleaseNonDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+  auto* p = unick_.ReleaseNonDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (ip_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    ip_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  if (unick_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    unick_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   return p;
 }
-inline void OnUserLogin::set_allocated_ip(std::string* ip) {
-  if (ip != nullptr) {
+inline void UserCenterInfo::set_allocated_unick(std::string* unick) {
+  if (unick != nullptr) {
     _has_bits_[0] |= 0x00000001u;
   } else {
     _has_bits_[0] &= ~0x00000001u;
   }
-  ip_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ip,
+  unick_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), unick,
       GetArenaForAllocation());
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (ip_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    ip_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  if (unick_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    unick_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:OnUserLogin.ip)
+  // @@protoc_insertion_point(field_set_allocated:UserCenterInfo.unick)
 }
 
-// required int32 port = 2;
-inline bool OnUserLogin::_internal_has_port() const {
+// required int32 uface = 2;
+inline bool UserCenterInfo::_internal_has_uface() const {
   bool value = (_has_bits_[0] & 0x00000002u) != 0;
   return value;
 }
-inline bool OnUserLogin::has_port() const {
-  return _internal_has_port();
+inline bool UserCenterInfo::has_uface() const {
+  return _internal_has_uface();
 }
-inline void OnUserLogin::clear_port() {
-  port_ = 0;
+inline void UserCenterInfo::clear_uface() {
+  uface_ = 0;
   _has_bits_[0] &= ~0x00000002u;
 }
-inline int32_t OnUserLogin::_internal_port() const {
-  return port_;
+inline int32_t UserCenterInfo::_internal_uface() const {
+  return uface_;
 }
-inline int32_t OnUserLogin::port() const {
-  // @@protoc_insertion_point(field_get:OnUserLogin.port)
-  return _internal_port();
+inline int32_t UserCenterInfo::uface() const {
+  // @@protoc_insertion_point(field_get:UserCenterInfo.uface)
+  return _internal_uface();
 }
-inline void OnUserLogin::_internal_set_port(int32_t value) {
+inline void UserCenterInfo::_internal_set_uface(int32_t value) {
   _has_bits_[0] |= 0x00000002u;
-  port_ = value;
+  uface_ = value;
 }
-inline void OnUserLogin::set_port(int32_t value) {
-  _internal_set_port(value);
-  // @@protoc_insertion_point(field_set:OnUserLogin.port)
-}
-
-// -------------------------------------------------------------------
-
-// OnUserExit
-
-// required string ip = 1;
-inline bool OnUserExit::_internal_has_ip() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool OnUserExit::has_ip() const {
-  return _internal_has_ip();
-}
-inline void OnUserExit::clear_ip() {
-  ip_.ClearToEmpty();
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const std::string& OnUserExit::ip() const {
-  // @@protoc_insertion_point(field_get:OnUserExit.ip)
-  return _internal_ip();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void OnUserExit::set_ip(ArgT0&& arg0, ArgT... args) {
- _has_bits_[0] |= 0x00000001u;
- ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:OnUserExit.ip)
-}
-inline std::string* OnUserExit::mutable_ip() {
-  std::string* _s = _internal_mutable_ip();
-  // @@protoc_insertion_point(field_mutable:OnUserExit.ip)
-  return _s;
-}
-inline const std::string& OnUserExit::_internal_ip() const {
-  return ip_.Get();
-}
-inline void OnUserExit::_internal_set_ip(const std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
-}
-inline std::string* OnUserExit::_internal_mutable_ip() {
-  _has_bits_[0] |= 0x00000001u;
-  return ip_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
-}
-inline std::string* OnUserExit::release_ip() {
-  // @@protoc_insertion_point(field_release:OnUserExit.ip)
-  if (!_internal_has_ip()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  auto* p = ip_.ReleaseNonDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (ip_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    ip_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void OnUserExit::set_allocated_ip(std::string* ip) {
-  if (ip != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  ip_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ip,
-      GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (ip_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    ip_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:OnUserExit.ip)
+inline void UserCenterInfo::set_uface(int32_t value) {
+  _internal_set_uface(value);
+  // @@protoc_insertion_point(field_set:UserCenterInfo.uface)
 }
 
-// required int32 port = 2;
-inline bool OnUserExit::_internal_has_port() const {
-  bool value = (_has_bits_[0] & 0x00000002u) != 0;
-  return value;
-}
-inline bool OnUserExit::has_port() const {
-  return _internal_has_port();
-}
-inline void OnUserExit::clear_port() {
-  port_ = 0;
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline int32_t OnUserExit::_internal_port() const {
-  return port_;
-}
-inline int32_t OnUserExit::port() const {
-  // @@protoc_insertion_point(field_get:OnUserExit.port)
-  return _internal_port();
-}
-inline void OnUserExit::_internal_set_port(int32_t value) {
-  _has_bits_[0] |= 0x00000002u;
-  port_ = value;
-}
-inline void OnUserExit::set_port(int32_t value) {
-  _internal_set_port(value);
-  // @@protoc_insertion_point(field_set:OnUserExit.port)
-}
-
-// -------------------------------------------------------------------
-
-// OnSendMsg
-
-// required string ip = 1;
-inline bool OnSendMsg::_internal_has_ip() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool OnSendMsg::has_ip() const {
-  return _internal_has_ip();
-}
-inline void OnSendMsg::clear_ip() {
-  ip_.ClearToEmpty();
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const std::string& OnSendMsg::ip() const {
-  // @@protoc_insertion_point(field_get:OnSendMsg.ip)
-  return _internal_ip();
-}
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void OnSendMsg::set_ip(ArgT0&& arg0, ArgT... args) {
- _has_bits_[0] |= 0x00000001u;
- ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:OnSendMsg.ip)
-}
-inline std::string* OnSendMsg::mutable_ip() {
-  std::string* _s = _internal_mutable_ip();
-  // @@protoc_insertion_point(field_mutable:OnSendMsg.ip)
-  return _s;
-}
-inline const std::string& OnSendMsg::_internal_ip() const {
-  return ip_.Get();
-}
-inline void OnSendMsg::_internal_set_ip(const std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
-}
-inline std::string* OnSendMsg::_internal_mutable_ip() {
-  _has_bits_[0] |= 0x00000001u;
-  return ip_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
-}
-inline std::string* OnSendMsg::release_ip() {
-  // @@protoc_insertion_point(field_release:OnSendMsg.ip)
-  if (!_internal_has_ip()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  auto* p = ip_.ReleaseNonDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (ip_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    ip_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void OnSendMsg::set_allocated_ip(std::string* ip) {
-  if (ip != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  ip_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ip,
-      GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (ip_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    ip_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:OnSendMsg.ip)
-}
-
-// required int32 port = 2;
-inline bool OnSendMsg::_internal_has_port() const {
+// required int32 usex = 3;
+inline bool UserCenterInfo::_internal_has_usex() const {
   bool value = (_has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
-inline bool OnSendMsg::has_port() const {
-  return _internal_has_port();
+inline bool UserCenterInfo::has_usex() const {
+  return _internal_has_usex();
 }
-inline void OnSendMsg::clear_port() {
-  port_ = 0;
+inline void UserCenterInfo::clear_usex() {
+  usex_ = 0;
   _has_bits_[0] &= ~0x00000004u;
 }
-inline int32_t OnSendMsg::_internal_port() const {
-  return port_;
+inline int32_t UserCenterInfo::_internal_usex() const {
+  return usex_;
 }
-inline int32_t OnSendMsg::port() const {
-  // @@protoc_insertion_point(field_get:OnSendMsg.port)
-  return _internal_port();
+inline int32_t UserCenterInfo::usex() const {
+  // @@protoc_insertion_point(field_get:UserCenterInfo.usex)
+  return _internal_usex();
 }
-inline void OnSendMsg::_internal_set_port(int32_t value) {
+inline void UserCenterInfo::_internal_set_usex(int32_t value) {
   _has_bits_[0] |= 0x00000004u;
-  port_ = value;
+  usex_ = value;
 }
-inline void OnSendMsg::set_port(int32_t value) {
-  _internal_set_port(value);
-  // @@protoc_insertion_point(field_set:OnSendMsg.port)
+inline void UserCenterInfo::set_usex(int32_t value) {
+  _internal_set_usex(value);
+  // @@protoc_insertion_point(field_set:UserCenterInfo.usex)
 }
 
-// required string content = 3;
-inline bool OnSendMsg::_internal_has_content() const {
+// required int32 uvip = 4;
+inline bool UserCenterInfo::_internal_has_uvip() const {
+  bool value = (_has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool UserCenterInfo::has_uvip() const {
+  return _internal_has_uvip();
+}
+inline void UserCenterInfo::clear_uvip() {
+  uvip_ = 0;
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline int32_t UserCenterInfo::_internal_uvip() const {
+  return uvip_;
+}
+inline int32_t UserCenterInfo::uvip() const {
+  // @@protoc_insertion_point(field_get:UserCenterInfo.uvip)
+  return _internal_uvip();
+}
+inline void UserCenterInfo::_internal_set_uvip(int32_t value) {
+  _has_bits_[0] |= 0x00000008u;
+  uvip_ = value;
+}
+inline void UserCenterInfo::set_uvip(int32_t value) {
+  _internal_set_uvip(value);
+  // @@protoc_insertion_point(field_set:UserCenterInfo.uvip)
+}
+
+// required int32 uid = 5;
+inline bool UserCenterInfo::_internal_has_uid() const {
+  bool value = (_has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool UserCenterInfo::has_uid() const {
+  return _internal_has_uid();
+}
+inline void UserCenterInfo::clear_uid() {
+  uid_ = 0;
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline int32_t UserCenterInfo::_internal_uid() const {
+  return uid_;
+}
+inline int32_t UserCenterInfo::uid() const {
+  // @@protoc_insertion_point(field_get:UserCenterInfo.uid)
+  return _internal_uid();
+}
+inline void UserCenterInfo::_internal_set_uid(int32_t value) {
+  _has_bits_[0] |= 0x00000010u;
+  uid_ = value;
+}
+inline void UserCenterInfo::set_uid(int32_t value) {
+  _internal_set_uid(value);
+  // @@protoc_insertion_point(field_set:UserCenterInfo.uid)
+}
+
+// -------------------------------------------------------------------
+
+// GuestLoginRes
+
+// required int32 status = 1;
+inline bool GuestLoginRes::_internal_has_status() const {
   bool value = (_has_bits_[0] & 0x00000002u) != 0;
   return value;
 }
-inline bool OnSendMsg::has_content() const {
-  return _internal_has_content();
+inline bool GuestLoginRes::has_status() const {
+  return _internal_has_status();
 }
-inline void OnSendMsg::clear_content() {
-  content_.ClearToEmpty();
+inline void GuestLoginRes::clear_status() {
+  status_ = 0;
   _has_bits_[0] &= ~0x00000002u;
 }
-inline const std::string& OnSendMsg::content() const {
-  // @@protoc_insertion_point(field_get:OnSendMsg.content)
-  return _internal_content();
+inline int32_t GuestLoginRes::_internal_status() const {
+  return status_;
 }
-template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void OnSendMsg::set_content(ArgT0&& arg0, ArgT... args) {
- _has_bits_[0] |= 0x00000002u;
- content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:OnSendMsg.content)
+inline int32_t GuestLoginRes::status() const {
+  // @@protoc_insertion_point(field_get:GuestLoginRes.status)
+  return _internal_status();
 }
-inline std::string* OnSendMsg::mutable_content() {
-  std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:OnSendMsg.content)
-  return _s;
-}
-inline const std::string& OnSendMsg::_internal_content() const {
-  return content_.Get();
-}
-inline void OnSendMsg::_internal_set_content(const std::string& value) {
+inline void GuestLoginRes::_internal_set_status(int32_t value) {
   _has_bits_[0] |= 0x00000002u;
-  content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+  status_ = value;
 }
-inline std::string* OnSendMsg::_internal_mutable_content() {
-  _has_bits_[0] |= 0x00000002u;
-  return content_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+inline void GuestLoginRes::set_status(int32_t value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:GuestLoginRes.status)
 }
-inline std::string* OnSendMsg::release_content() {
-  // @@protoc_insertion_point(field_release:OnSendMsg.content)
-  if (!_internal_has_content()) {
-    return nullptr;
+
+// optional .UserCenterInfo uinfo = 2;
+inline bool GuestLoginRes::_internal_has_uinfo() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || uinfo_ != nullptr);
+  return value;
+}
+inline bool GuestLoginRes::has_uinfo() const {
+  return _internal_has_uinfo();
+}
+inline void GuestLoginRes::clear_uinfo() {
+  if (uinfo_ != nullptr) uinfo_->Clear();
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const ::UserCenterInfo& GuestLoginRes::_internal_uinfo() const {
+  const ::UserCenterInfo* p = uinfo_;
+  return p != nullptr ? *p : reinterpret_cast<const ::UserCenterInfo&>(
+      ::_UserCenterInfo_default_instance_);
+}
+inline const ::UserCenterInfo& GuestLoginRes::uinfo() const {
+  // @@protoc_insertion_point(field_get:GuestLoginRes.uinfo)
+  return _internal_uinfo();
+}
+inline void GuestLoginRes::unsafe_arena_set_allocated_uinfo(
+    ::UserCenterInfo* uinfo) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(uinfo_);
   }
-  _has_bits_[0] &= ~0x00000002u;
-  auto* p = content_.ReleaseNonDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (content_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    content_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
-  }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  return p;
-}
-inline void OnSendMsg::set_allocated_content(std::string* content) {
-  if (content != nullptr) {
-    _has_bits_[0] |= 0x00000002u;
+  uinfo_ = uinfo;
+  if (uinfo) {
+    _has_bits_[0] |= 0x00000001u;
   } else {
-    _has_bits_[0] &= ~0x00000002u;
+    _has_bits_[0] &= ~0x00000001u;
   }
-  content_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), content,
-      GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (content_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
-    content_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:GuestLoginRes.uinfo)
+}
+inline ::UserCenterInfo* GuestLoginRes::release_uinfo() {
+  _has_bits_[0] &= ~0x00000001u;
+  ::UserCenterInfo* temp = uinfo_;
+  uinfo_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:OnSendMsg.content)
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::UserCenterInfo* GuestLoginRes::unsafe_arena_release_uinfo() {
+  // @@protoc_insertion_point(field_release:GuestLoginRes.uinfo)
+  _has_bits_[0] &= ~0x00000001u;
+  ::UserCenterInfo* temp = uinfo_;
+  uinfo_ = nullptr;
+  return temp;
+}
+inline ::UserCenterInfo* GuestLoginRes::_internal_mutable_uinfo() {
+  _has_bits_[0] |= 0x00000001u;
+  if (uinfo_ == nullptr) {
+    auto* p = CreateMaybeMessage<::UserCenterInfo>(GetArenaForAllocation());
+    uinfo_ = p;
+  }
+  return uinfo_;
+}
+inline ::UserCenterInfo* GuestLoginRes::mutable_uinfo() {
+  ::UserCenterInfo* _msg = _internal_mutable_uinfo();
+  // @@protoc_insertion_point(field_mutable:GuestLoginRes.uinfo)
+  return _msg;
+}
+inline void GuestLoginRes::set_allocated_uinfo(::UserCenterInfo* uinfo) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete uinfo_;
+  }
+  if (uinfo) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::UserCenterInfo>::GetOwningArena(uinfo);
+    if (message_arena != submessage_arena) {
+      uinfo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, uinfo, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  uinfo_ = uinfo;
+  // @@protoc_insertion_point(field_set_allocated:GuestLoginRes.uinfo)
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

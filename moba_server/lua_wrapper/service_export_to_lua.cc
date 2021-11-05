@@ -165,7 +165,7 @@ public:
 };
 
 
-static void
+void
 push_proto_message_tolua(const Message* message) {
 	lua_State* state = lua_wrapper::lua_state();
 	if (!message) {

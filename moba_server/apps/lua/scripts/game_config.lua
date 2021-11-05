@@ -26,6 +26,14 @@ local game_config = {
     gateway_ws_port = 6081,
 
     servers = remote_servers,
+
+    auth_mysql = {
+        host = "127.0.0.1",
+        port = 3306,
+        db_name = "auth_center",
+        uname = "root",
+        upwd = "ysb214920712",
+    },
 }
 
 return game_config

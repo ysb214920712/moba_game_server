@@ -10,51 +10,29 @@ enum Stype {
 enum Cmd {
 	INVALID_CMD = 0;
 	
-	eLoginReq = 1;
-	eLoginRes = 2;
-
-	eExitReq = 3;
-	eExitRes = 4;
-
-	eSendMsgReq = 5;
-	eSendMsgRes = 6;
-
-	eOnUserLogin = 7;
-	eOnUserExit = 8;
-	eOnSendMsg = 9;
+  eGuestLoginReq = 1;
+  eGuestLoginRes = 2;
+  eRelogin = 3;
+  eUserLostConn = 4;
 }
 
-message LoginRes {
+message GuestLoginReq {
+  required string guest_key = 1;
+}
+
+message UserCenterInfo {
+  required string unick = 1;
+  required int32 uface = 2;
+  required int32 usex = 3;
+  required int32 uvip = 4;
+  required int32 uid = 5;
+}
+
+message GuestLoginRes {
   required int32 status = 1;
+  optional UserCenterInfo uinfo = 2;
 }
 
-message ExitRes {
-  required int32 status = 1;
-}
-
-message SendMsgReq {
-  required string content = 1;
-}
-
-message SendMsgRes {
-  required int32 status = 1;
-}
-
-message OnUserLogin {
-  required string ip = 1;
-  required int32 port = 2;
-}
-
-message OnUserExit {
-  required string ip = 1;
-  required int32 port = 2;
-}
-
-message OnSendMsg {
-  required string ip = 1;
-  required int32 port = 2;
-  required string content = 3;
-}
 
 
 

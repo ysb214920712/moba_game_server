@@ -1,0 +1,88 @@
+20211103 10:08:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 10:08:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 10:08:51 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 10:11:08 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 10:11:08 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 10:11:08 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 10:11:21 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:6  
+1	1	1	k38qyqA9w1LaWbqPFbxFNxDTiSRYgWwF
+20211103 10:12:26 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:6  
+1	1	1	I7bD86AHe9bL4VngSp6wDuSeBRiL8ypt
+20211103 10:19:12 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 10:19:12 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 10:19:12 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 10:19:20 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	1	px05z1aII0p0LcDTHlambpkRrWfSRitT
+20211103 10:19:20 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:2  
+px05z1aII0p0LcDTHlambpkRrWfSRitT
+20211103 10:39:51 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 10:39:51 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 10:39:51 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 10:40:08 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	1	twWtRzXmJymIcu6NTwVwMNiz3fgokknn
+20211103 10:40:08 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\service_export_to_lua.cc:109  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/guest.lua:5: attempt to index a boolean value (upvalue 'mysql_center')
+20211103 10:44:19 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 10:44:19 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 10:44:19 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 10:44:31 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	2	fzWlcg3kXkJ0STUqCpJoKuLQ1ssOvGim
+20211103 10:46:06 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 10:46:06 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 10:46:06 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 10:46:10 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	2	svWFjXSJrpvOQdL5qu9OgTmnAEWM2j8M
+20211103 10:46:56 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	2	fdV986iy90aWMDIqBs47J6Yi6P1PbUhJ
+20211103 10:53:46 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 10:53:46 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 10:53:46 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 10:54:00 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	2	cvQOwbBiEy5rhlWiIaYUk4AJ4DkgcQvy
+20211103 11:00:23 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 11:00:23 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 11:00:23 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 11:00:27 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	2	8J6e72e8MUWPfop1eA7QX7h0UXfDOcon
+20211103 11:00:27 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:29  
+1	gst460395
+20211103 14:24:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 14:24:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 14:24:44 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211103 14:25:08 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:10  
+1	1	1	CsbVJq06cpATjyI7nnPTt5eKVTfIH4Qr
+20211103 14:25:09 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:49  
+2	gst904675
+20211103 15:14:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211103 15:14:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211103 15:14:58 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
