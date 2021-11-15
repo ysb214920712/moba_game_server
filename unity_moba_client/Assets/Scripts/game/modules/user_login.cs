@@ -20,6 +20,7 @@ public class user_login : Singleton<user_login>
         }
 
         UserCenterInfo uinfo = res.uinfo;
+        Debug.Log(uinfo.unick + " " + uinfo.usex);
     }
 
     void on_auth_server_return(cmd_msg msg)
