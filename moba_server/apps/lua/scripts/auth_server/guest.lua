@@ -18,6 +18,7 @@ function login(s, req)
 
     mysql_center.get_guest_uinfo(g_key, function(err, uinfo)
         if err then
+            Logger.error(err)
             local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
                     status = Respones.SystemErr,
                 }}
@@ -28,6 +29,7 @@ function login(s, req)
         if uinfo == nil then
             mysql_center.insert_guest_user(g_key, function(err, ret)
                 if err then
+                    Logger.error(err)
                     local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
                         status = Respones.SystemErr,
                     }}

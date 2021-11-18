@@ -15,7 +15,7 @@ MID.SHOW_LOWER_UI = 1003
 MID.HIDE_LOWER_UI = 1004
 -----------------------------------UIBase-----------------------------------
 -----------------------------------NetToUI----------------------------------
-MID.EDIT_PROFILE = 600
+MID.REFRESH_USER_INFO = 600
 MID.LOGIN_ACCOUNT_SUCCESS = 601
 MID.ACCOUNT_BIND_RESULT = 602
 -----------------------------------NetToUI----------------------------------

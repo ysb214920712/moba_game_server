@@ -218,3 +218,569 @@ hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 0 uvip 0 is_guest 0
 1	5	1	table
 20211118 10:48:28 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
 hmset moba_auth_center_user_uid_1 unick test111 usex 1 uface 10 uvip 0 is_guest 0
+20211118 11:02:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 11:02:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 11:02:44 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 11:02:44 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 11:03:27 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	1	table
+20211118 11:03:35 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 11:03:35 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	test111
+20211118 11:03:35 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick test111 usex 1 uface 10 uvip 0 is_guest 0
+20211118 11:03:40 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211118 11:03:40 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick test111 usex 0 uface 10 uvip 0 is_guest 0
+20211118 11:24:59 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 11:24:59 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 11:24:59 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 11:24:59 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 11:26:19 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	1	table
+20211118 11:26:19 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:26:25 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	1	table
+20211118 11:26:25 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:59  
+2	gst958410
+20211118 11:26:25 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_2 unick gst958410 usex 0 uface 9 uvip 0 is_guest 1
+20211118 11:26:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	7	2	table
+20211118 11:26:58 DEBUG ../../apps/lua/scripts/auth_server/account_upgrade.lua:61  
+ysb1	81dc9bdb52d04dc20036dbd8313ed055	2
+20211118 11:27:00 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	2	nil
+20211118 11:27:00 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user2 login out
+20211118 11:27:11 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211118 11:27:11 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+2	gst958410
+20211118 11:27:11 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_2 unick gst958410 usex 0 uface 9 uvip 0 is_guest 0
+20211118 11:27:22 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	2	table
+20211118 11:27:22 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_2 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211118 11:27:24 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	2	nil
+20211118 11:27:24 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user2 login out
+20211118 11:27:26 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:27:26 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:42 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:42 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:43 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:43 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:44 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:44 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:44 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:44 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:45 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:45 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:45 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:45 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:46 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:46 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:46 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:46 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:47 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:47 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:47 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:47 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:47 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:47 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:48 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:48 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:48 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:48 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:48 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:48 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:48 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:50 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:50 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:50 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:50 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:51 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:51 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:51 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:51 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:51 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:52 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:52 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:52 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:52 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:52 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:52 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:52 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:52 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:53 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:53 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:53 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:53 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:53 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:53 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:53 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:53 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:53 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:54 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:54 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:54 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:54 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:54 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:54 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:54 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:54 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:54 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:55 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:55 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:56 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:56 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:56 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:56 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:57 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:57 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:28:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:28:58 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:00 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:00 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:00 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:00 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:01 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:01 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:01 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:02 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:02 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:02 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:02 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:02 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:03 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:03 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:03 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:03 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:03 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:03 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:03 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:03 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:03 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:03 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:04 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:04 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:04 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:04 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:05 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:05 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:05 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:05 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:05 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:05 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:05 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:05 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:05 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:05 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:06 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:06 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:06 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:06 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:07 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:07 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:07 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:07 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:29:07 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	3	table
+20211118 11:29:07 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:336  
+[LUA ERROR] ../../apps/lua/scripts/auth_server/uname_login.lua:11: bad argument #1 to 'len' (string expected, got nil)
+20211118 11:32:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 11:32:50 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 11:32:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 11:32:50 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 11:33:15 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	1	table
+20211118 11:33:15 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:59  
+1	gst127413
+20211118 11:33:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick gst127413 usex 0 uface 2 uvip 0 is_guest 1
+20211118 11:33:28 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	7	1	table
+20211118 11:33:28 DEBUG ../../apps/lua/scripts/auth_server/account_upgrade.lua:61  
+ysb1	202cb962ac59075b964b07152d234b70	1
+20211118 11:33:29 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 11:33:29 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 11:33:41 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	2	table
+20211118 11:33:41 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:59  
+2	gst756062
+20211118 11:33:41 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_2 unick gst756062 usex 1 uface 6 uvip 0 is_guest 1
+20211118 11:33:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	7	2	table
+20211118 11:33:50 DEBUG ../../apps/lua/scripts/auth_server/account_upgrade.lua:61  
+ysb2	81dc9bdb52d04dc20036dbd8313ed055	2
+20211118 11:33:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	2	nil
+20211118 11:33:51 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user2 login out
+20211118 11:33:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211118 11:33:58 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	gst127413
+20211118 11:33:58 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick gst127413 usex 0 uface 2 uvip 0 is_guest 0
+20211118 11:34:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211118 11:34:04 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 2 uvip 0 is_guest 0
+20211118 11:34:07 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 11:34:07 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 11:34:12 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	4	table
+20211118 11:34:12 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:59  
+3	gst293408
+20211118 11:34:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_3 unick gst293408 usex 0 uface 9 uvip 0 is_guest 1
+20211118 11:34:26 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	3	table
+20211118 11:34:26 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_3 unick ysb11 usex 0 uface 5 uvip 0 is_guest 1
+20211118 11:34:33 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	3	nil
+20211118 11:34:33 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user3 login out
+20211118 11:34:37 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	5	table
+20211118 11:34:37 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:59  
+3	ysb11
+20211118 11:34:37 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_3 unick ysb11 usex 0 uface 5 uvip 0 is_guest 1
+20211118 11:34:40 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	3	nil
+20211118 11:34:40 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user3 login out
+20211118 14:20:21 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 14:20:21 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 14:20:21 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 14:20:21 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 14:21:43 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 14:21:43 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 14:21:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 14:21:44 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 14:23:41 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 14:23:56 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 14:24:17 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 14:24:17 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	ysb1
+20211118 14:24:17 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 2 uvip 0 is_guest 0
+20211118 14:31:49 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 14:31:49 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 14:31:49 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 14:31:49 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 14:32:44 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	1	1	table
+20211118 14:32:44 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:59  
+3	ysb11
+20211118 14:32:44 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_3 unick ysb11 usex 0 uface 5 uvip 0 is_guest 1
+20211118 15:21:26 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 15:21:26 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 15:21:26 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 15:21:31 ERROR ../../apps/lua/scripts/database/redis_center.lua:12  
+系统试图将驱动器合并到合并驱动器上的目录。
+20211118 15:21:41 ERROR ../../apps/lua/scripts/database/redis_center.lua:12  
+系统试图将驱动器合并到合并驱动器上的目录。
+20211118 15:21:51 ERROR ../../apps/lua/scripts/database/redis_center.lua:12  
+系统试图将驱动器合并到合并驱动器上的目录。
+20211118 15:22:01 ERROR ../../apps/lua/scripts/database/redis_center.lua:12  
+系统试图将驱动器合并到合并驱动器上的目录。
+20211118 15:22:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 15:22:30 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 15:22:30 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	ysb1
+20211118 15:22:30 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 2 uvip 0 is_guest 0
+20211118 15:26:09 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 15:26:09 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 15:26:09 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 15:26:09 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 15:26:25 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 15:26:25 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	ysb1
+20211118 15:26:25 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 2 uvip 0 is_guest 0
+20211118 15:30:11 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 15:30:11 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 15:30:11 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 15:30:11 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 15:30:43 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 15:30:43 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	ysb1
+20211118 15:30:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 2 uvip 0 is_guest 0
+20211118 15:31:35 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 15:31:35 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 15:31:35 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 15:31:35 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 15:31:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 15:31:51 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	ysb1
+20211118 15:31:51 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 2 uvip 0 is_guest 0
+20211118 15:32:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211118 15:32:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb2 usex 0 uface 2 uvip 0 is_guest 0
+20211118 15:32:13 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211118 15:32:13 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb2 usex 0 uface 5 uvip 0 is_guest 0
+20211118 15:32:15 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 15:32:15 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 15:32:20 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211118 15:32:20 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+2	gst756062
+20211118 15:32:20 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_2 unick gst756062 usex 1 uface 6 uvip 0 is_guest 0
+20211118 15:36:42 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 15:36:42 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 15:36:42 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 15:36:42 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 15:36:59 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 15:36:59 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb2
+20211118 15:36:59 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb2 usex 0 uface 5 uvip 0 is_guest 0

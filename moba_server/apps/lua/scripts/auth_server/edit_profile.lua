@@ -21,6 +21,7 @@ function do_edit_profile(s, req)
     local ret_handler = function(err, res)
         local ret_status = Respones.OK
         if err ~= nil then
+            Logger.error(err)
             ret_status = Respones.SystemErr
         end
 

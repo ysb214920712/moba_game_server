@@ -149,7 +149,8 @@ U.MaterialSwitch = CS.MaterialSwitch
 U.MaterialConfig = CS.MaterialConfig
 
 ---------- MyFrame
-U.user_login = CS.user_login
+U.auth_service_proxy = CS.auth_service_proxy
+U.system_service_proxy = CS.system_service_proxy
 U.event_mgr = CS.event_manager
 U.ugame = CS.ugame
 

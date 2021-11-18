@@ -7,6 +7,7 @@ local Cmd = require("Cmd")
 function _do_account_upgrade(s, req, uid, uname, upwd_md5)
     mysql_center.do_guest_account_upgrade(uid, uname, upwd_md5, function(err, ret)
         if err then
+            Logger.error(err)
             local msg = {Stype.Auth, Cmd.eAccountUpgradeRes, uid, {
                 status = Respones.SystemErr,
             }}
@@ -24,6 +25,7 @@ end
 function check_is_guest(s, req, uid, uname, upwd_md5)
     mysql_center.get_uinfo_by_uid(uid, function(err, uinfo)
         if err then
+            Logger.error(err)
             local msg = {Stype.Auth, Cmd.eAccountUpgradeRes, uid, {
                 status = Respones.SystemErr,
             }}
@@ -61,6 +63,7 @@ function do_upgrade(s, req)
     print(uname, upwd_md5, uid)
     mysql_center.check_uname_exist(uname, function(err, ret)
         if err then
+            Logger.error(err)
             local msg = {Stype.Auth, Cmd.eAccountUpgradeRes, uid, {
                 status = Respones.SystemErr,
             }}

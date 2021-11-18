@@ -53,7 +53,7 @@ function M:on_commit_btn_click()
 	end
 
 	local md5_pwd = U.GHelper.Md5Sum(self.gos.upwd_input_.text)
-	U.user_login.Instance:do_account_upgrade(self.gos.uname_input_.text, md5_pwd)
+	U.auth_service_proxy.Instance:do_account_upgrade(self.gos.uname_input_.text, md5_pwd)
 	ui_util.show_loading(true)
 end
 

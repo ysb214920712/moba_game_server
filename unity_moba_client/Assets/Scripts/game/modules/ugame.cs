@@ -14,6 +14,13 @@ public class ugame : Singleton<ugame>
     public bool is_guest = false;
     public string guest_key = null;
 
+    public UserGameInfo ugame_info;
+
+    public void save_ugame_info(UserGameInfo ugame_info)
+    {
+        this.ugame_info = ugame_info;
+    }
+
     public void save_uinfo(UserCenterInfo uinfo, bool is_guest, string guest_key = null)
     {
         this.unick = uinfo.unick;

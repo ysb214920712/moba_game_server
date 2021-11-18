@@ -21,8 +21,9 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(ugame);
-			Utils.BeginObjectRegister(type, L, translator, 0, 3, 6, 6);
+			Utils.BeginObjectRegister(type, L, translator, 0, 4, 7, 7);
 			
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "save_ugame_info", _m_save_ugame_info);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "save_uinfo", _m_save_uinfo);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "save_edit_profile", _m_save_edit_profile);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "user_login_out", _m_user_login_out);
@@ -34,6 +35,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "uvip", _g_get_uvip);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "is_guest", _g_get_is_guest);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "guest_key", _g_get_guest_key);
+            Utils.RegisterFunc(L, Utils.GETTER_IDX, "ugame_info", _g_get_ugame_info);
             
 			Utils.RegisterFunc(L, Utils.SETTER_IDX, "unick", _s_set_unick);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "uface", _s_set_uface);
@@ -41,6 +43,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "uvip", _s_set_uvip);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "is_guest", _s_set_is_guest);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "guest_key", _s_set_guest_key);
+            Utils.RegisterFunc(L, Utils.SETTER_IDX, "ugame_info", _s_set_ugame_info);
             
 			
 			Utils.EndObjectRegister(type, L, translator, null, null,
@@ -85,6 +88,34 @@ namespace XLua.CSObjectWrap
         
         
         
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_save_ugame_info(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                ugame gen_to_be_invoked = (ugame)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    gprotocol.UserGameInfo _ugame_info = (gprotocol.UserGameInfo)translator.GetObject(L, 2, typeof(gprotocol.UserGameInfo));
+                    
+                    gen_to_be_invoked.save_ugame_info( _ugame_info );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _m_save_uinfo(RealStatePtr L)
@@ -275,6 +306,20 @@ namespace XLua.CSObjectWrap
             return 1;
         }
         
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _g_get_ugame_info(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                ugame gen_to_be_invoked = (ugame)translator.FastGetCSObj(L, 1);
+                translator.Push(L, gen_to_be_invoked.ugame_info);
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 1;
+        }
+        
         
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
@@ -360,6 +405,21 @@ namespace XLua.CSObjectWrap
 			
                 ugame gen_to_be_invoked = (ugame)translator.FastGetCSObj(L, 1);
                 gen_to_be_invoked.guest_key = LuaAPI.lua_tostring(L, 2);
+            
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 0;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _s_set_ugame_info(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                ugame gen_to_be_invoked = (ugame)translator.FastGetCSObj(L, 1);
+                gen_to_be_invoked.ugame_info = (gprotocol.UserGameInfo)translator.GetObject(L, 2, typeof(gprotocol.UserGameInfo));
             
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);

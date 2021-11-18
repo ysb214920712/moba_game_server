@@ -47,7 +47,7 @@ struct TableStruct_game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[10]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -66,6 +66,9 @@ extern EditProfileReqDefaultTypeInternal _EditProfileReq_default_instance_;
 class EditProfileRes;
 struct EditProfileResDefaultTypeInternal;
 extern EditProfileResDefaultTypeInternal _EditProfileRes_default_instance_;
+class GetUgameInfoRes;
+struct GetUgameInfoResDefaultTypeInternal;
+extern GetUgameInfoResDefaultTypeInternal _GetUgameInfoRes_default_instance_;
 class GuestLoginReq;
 struct GuestLoginReqDefaultTypeInternal;
 extern GuestLoginReqDefaultTypeInternal _GuestLoginReq_default_instance_;
@@ -84,17 +87,22 @@ extern UnameLoginResDefaultTypeInternal _UnameLoginRes_default_instance_;
 class UserCenterInfo;
 struct UserCenterInfoDefaultTypeInternal;
 extern UserCenterInfoDefaultTypeInternal _UserCenterInfo_default_instance_;
+class UserGameInfo;
+struct UserGameInfoDefaultTypeInternal;
+extern UserGameInfoDefaultTypeInternal _UserGameInfo_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::AccountUpgradeReq* Arena::CreateMaybeMessage<::AccountUpgradeReq>(Arena*);
 template<> ::AccountUpgradeRes* Arena::CreateMaybeMessage<::AccountUpgradeRes>(Arena*);
 template<> ::EditProfileReq* Arena::CreateMaybeMessage<::EditProfileReq>(Arena*);
 template<> ::EditProfileRes* Arena::CreateMaybeMessage<::EditProfileRes>(Arena*);
+template<> ::GetUgameInfoRes* Arena::CreateMaybeMessage<::GetUgameInfoRes>(Arena*);
 template<> ::GuestLoginReq* Arena::CreateMaybeMessage<::GuestLoginReq>(Arena*);
 template<> ::GuestLoginRes* Arena::CreateMaybeMessage<::GuestLoginRes>(Arena*);
 template<> ::LoginOutRes* Arena::CreateMaybeMessage<::LoginOutRes>(Arena*);
 template<> ::UnameLoginReq* Arena::CreateMaybeMessage<::UnameLoginReq>(Arena*);
 template<> ::UnameLoginRes* Arena::CreateMaybeMessage<::UnameLoginRes>(Arena*);
 template<> ::UserCenterInfo* Arena::CreateMaybeMessage<::UserCenterInfo>(Arena*);
+template<> ::UserGameInfo* Arena::CreateMaybeMessage<::UserGameInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 enum Stype : int {
@@ -135,11 +143,13 @@ enum Cmd : int {
   eUnameLoginReq = 9,
   eUnameLoginRes = 10,
   eLoginOutReq = 11,
-  eLoginOutRes = 12
+  eLoginOutRes = 12,
+  eGetUgameInfoReq = 13,
+  eGetUgameInfoRes = 14
 };
 bool Cmd_IsValid(int value);
 constexpr Cmd Cmd_MIN = INVALID_CMD;
-constexpr Cmd Cmd_MAX = eLoginOutRes;
+constexpr Cmd Cmd_MAX = eGetUgameInfoRes;
 constexpr int Cmd_ARRAYSIZE = Cmd_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Cmd_descriptor();
@@ -1943,6 +1953,450 @@ class LoginOutRes final :
   int32_t status_;
   friend struct ::TableStruct_game_2eproto;
 };
+// -------------------------------------------------------------------
+
+class UserGameInfo final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:UserGameInfo) */ {
+ public:
+  inline UserGameInfo() : UserGameInfo(nullptr) {}
+  ~UserGameInfo() override;
+  explicit constexpr UserGameInfo(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  UserGameInfo(const UserGameInfo& from);
+  UserGameInfo(UserGameInfo&& from) noexcept
+    : UserGameInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline UserGameInfo& operator=(const UserGameInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline UserGameInfo& operator=(UserGameInfo&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const UserGameInfo& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const UserGameInfo* internal_default_instance() {
+    return reinterpret_cast<const UserGameInfo*>(
+               &_UserGameInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    10;
+
+  friend void swap(UserGameInfo& a, UserGameInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(UserGameInfo* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(UserGameInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  UserGameInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<UserGameInfo>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const UserGameInfo& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const UserGameInfo& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(UserGameInfo* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "UserGameInfo";
+  }
+  protected:
+  explicit UserGameInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUchipFieldNumber = 1,
+    kUexpFieldNumber = 2,
+    kUvipFieldNumber = 3,
+    kUchip2FieldNumber = 4,
+    kUchip3FieldNumber = 5,
+    kUdata1FieldNumber = 6,
+    kUdata2FieldNumber = 7,
+    kUdata3FieldNumber = 8,
+  };
+  // required int32 uchip = 1;
+  bool has_uchip() const;
+  private:
+  bool _internal_has_uchip() const;
+  public:
+  void clear_uchip();
+  int32_t uchip() const;
+  void set_uchip(int32_t value);
+  private:
+  int32_t _internal_uchip() const;
+  void _internal_set_uchip(int32_t value);
+  public:
+
+  // required int32 uexp = 2;
+  bool has_uexp() const;
+  private:
+  bool _internal_has_uexp() const;
+  public:
+  void clear_uexp();
+  int32_t uexp() const;
+  void set_uexp(int32_t value);
+  private:
+  int32_t _internal_uexp() const;
+  void _internal_set_uexp(int32_t value);
+  public:
+
+  // required int32 uvip = 3;
+  bool has_uvip() const;
+  private:
+  bool _internal_has_uvip() const;
+  public:
+  void clear_uvip();
+  int32_t uvip() const;
+  void set_uvip(int32_t value);
+  private:
+  int32_t _internal_uvip() const;
+  void _internal_set_uvip(int32_t value);
+  public:
+
+  // required int32 uchip2 = 4;
+  bool has_uchip2() const;
+  private:
+  bool _internal_has_uchip2() const;
+  public:
+  void clear_uchip2();
+  int32_t uchip2() const;
+  void set_uchip2(int32_t value);
+  private:
+  int32_t _internal_uchip2() const;
+  void _internal_set_uchip2(int32_t value);
+  public:
+
+  // required int32 uchip3 = 5;
+  bool has_uchip3() const;
+  private:
+  bool _internal_has_uchip3() const;
+  public:
+  void clear_uchip3();
+  int32_t uchip3() const;
+  void set_uchip3(int32_t value);
+  private:
+  int32_t _internal_uchip3() const;
+  void _internal_set_uchip3(int32_t value);
+  public:
+
+  // required int32 udata1 = 6;
+  bool has_udata1() const;
+  private:
+  bool _internal_has_udata1() const;
+  public:
+  void clear_udata1();
+  int32_t udata1() const;
+  void set_udata1(int32_t value);
+  private:
+  int32_t _internal_udata1() const;
+  void _internal_set_udata1(int32_t value);
+  public:
+
+  // required int32 udata2 = 7;
+  bool has_udata2() const;
+  private:
+  bool _internal_has_udata2() const;
+  public:
+  void clear_udata2();
+  int32_t udata2() const;
+  void set_udata2(int32_t value);
+  private:
+  int32_t _internal_udata2() const;
+  void _internal_set_udata2(int32_t value);
+  public:
+
+  // required int32 udata3 = 8;
+  bool has_udata3() const;
+  private:
+  bool _internal_has_udata3() const;
+  public:
+  void clear_udata3();
+  int32_t udata3() const;
+  void set_udata3(int32_t value);
+  private:
+  int32_t _internal_udata3() const;
+  void _internal_set_udata3(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:UserGameInfo)
+ private:
+  class _Internal;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  int32_t uchip_;
+  int32_t uexp_;
+  int32_t uvip_;
+  int32_t uchip2_;
+  int32_t uchip3_;
+  int32_t udata1_;
+  int32_t udata2_;
+  int32_t udata3_;
+  friend struct ::TableStruct_game_2eproto;
+};
+// -------------------------------------------------------------------
+
+class GetUgameInfoRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GetUgameInfoRes) */ {
+ public:
+  inline GetUgameInfoRes() : GetUgameInfoRes(nullptr) {}
+  ~GetUgameInfoRes() override;
+  explicit constexpr GetUgameInfoRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  GetUgameInfoRes(const GetUgameInfoRes& from);
+  GetUgameInfoRes(GetUgameInfoRes&& from) noexcept
+    : GetUgameInfoRes() {
+    *this = ::std::move(from);
+  }
+
+  inline GetUgameInfoRes& operator=(const GetUgameInfoRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetUgameInfoRes& operator=(GetUgameInfoRes&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetUgameInfoRes& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetUgameInfoRes* internal_default_instance() {
+    return reinterpret_cast<const GetUgameInfoRes*>(
+               &_GetUgameInfoRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    11;
+
+  friend void swap(GetUgameInfoRes& a, GetUgameInfoRes& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetUgameInfoRes* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetUgameInfoRes* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetUgameInfoRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetUgameInfoRes>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const GetUgameInfoRes& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const GetUgameInfoRes& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GetUgameInfoRes* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "GetUgameInfoRes";
+  }
+  protected:
+  explicit GetUgameInfoRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUinfoFieldNumber = 2,
+    kStatusFieldNumber = 1,
+  };
+  // optional .UserGameInfo uinfo = 2;
+  bool has_uinfo() const;
+  private:
+  bool _internal_has_uinfo() const;
+  public:
+  void clear_uinfo();
+  const ::UserGameInfo& uinfo() const;
+  PROTOBUF_NODISCARD ::UserGameInfo* release_uinfo();
+  ::UserGameInfo* mutable_uinfo();
+  void set_allocated_uinfo(::UserGameInfo* uinfo);
+  private:
+  const ::UserGameInfo& _internal_uinfo() const;
+  ::UserGameInfo* _internal_mutable_uinfo();
+  public:
+  void unsafe_arena_set_allocated_uinfo(
+      ::UserGameInfo* uinfo);
+  ::UserGameInfo* unsafe_arena_release_uinfo();
+
+  // required int32 status = 1;
+  bool has_status() const;
+  private:
+  bool _internal_has_status() const;
+  public:
+  void clear_status();
+  int32_t status() const;
+  void set_status(int32_t value);
+  private:
+  int32_t _internal_status() const;
+  void _internal_set_status(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:GetUgameInfoRes)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::UserGameInfo* uinfo_;
+  int32_t status_;
+  friend struct ::TableStruct_game_2eproto;
+};
 // ===================================================================
 
 
@@ -2961,9 +3415,363 @@ inline void LoginOutRes::set_status(int32_t value) {
   // @@protoc_insertion_point(field_set:LoginOutRes.status)
 }
 
+// -------------------------------------------------------------------
+
+// UserGameInfo
+
+// required int32 uchip = 1;
+inline bool UserGameInfo::_internal_has_uchip() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_uchip() const {
+  return _internal_has_uchip();
+}
+inline void UserGameInfo::clear_uchip() {
+  uchip_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline int32_t UserGameInfo::_internal_uchip() const {
+  return uchip_;
+}
+inline int32_t UserGameInfo::uchip() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.uchip)
+  return _internal_uchip();
+}
+inline void UserGameInfo::_internal_set_uchip(int32_t value) {
+  _has_bits_[0] |= 0x00000001u;
+  uchip_ = value;
+}
+inline void UserGameInfo::set_uchip(int32_t value) {
+  _internal_set_uchip(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.uchip)
+}
+
+// required int32 uexp = 2;
+inline bool UserGameInfo::_internal_has_uexp() const {
+  bool value = (_has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_uexp() const {
+  return _internal_has_uexp();
+}
+inline void UserGameInfo::clear_uexp() {
+  uexp_ = 0;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline int32_t UserGameInfo::_internal_uexp() const {
+  return uexp_;
+}
+inline int32_t UserGameInfo::uexp() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.uexp)
+  return _internal_uexp();
+}
+inline void UserGameInfo::_internal_set_uexp(int32_t value) {
+  _has_bits_[0] |= 0x00000002u;
+  uexp_ = value;
+}
+inline void UserGameInfo::set_uexp(int32_t value) {
+  _internal_set_uexp(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.uexp)
+}
+
+// required int32 uvip = 3;
+inline bool UserGameInfo::_internal_has_uvip() const {
+  bool value = (_has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_uvip() const {
+  return _internal_has_uvip();
+}
+inline void UserGameInfo::clear_uvip() {
+  uvip_ = 0;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline int32_t UserGameInfo::_internal_uvip() const {
+  return uvip_;
+}
+inline int32_t UserGameInfo::uvip() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.uvip)
+  return _internal_uvip();
+}
+inline void UserGameInfo::_internal_set_uvip(int32_t value) {
+  _has_bits_[0] |= 0x00000004u;
+  uvip_ = value;
+}
+inline void UserGameInfo::set_uvip(int32_t value) {
+  _internal_set_uvip(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.uvip)
+}
+
+// required int32 uchip2 = 4;
+inline bool UserGameInfo::_internal_has_uchip2() const {
+  bool value = (_has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_uchip2() const {
+  return _internal_has_uchip2();
+}
+inline void UserGameInfo::clear_uchip2() {
+  uchip2_ = 0;
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline int32_t UserGameInfo::_internal_uchip2() const {
+  return uchip2_;
+}
+inline int32_t UserGameInfo::uchip2() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.uchip2)
+  return _internal_uchip2();
+}
+inline void UserGameInfo::_internal_set_uchip2(int32_t value) {
+  _has_bits_[0] |= 0x00000008u;
+  uchip2_ = value;
+}
+inline void UserGameInfo::set_uchip2(int32_t value) {
+  _internal_set_uchip2(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.uchip2)
+}
+
+// required int32 uchip3 = 5;
+inline bool UserGameInfo::_internal_has_uchip3() const {
+  bool value = (_has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_uchip3() const {
+  return _internal_has_uchip3();
+}
+inline void UserGameInfo::clear_uchip3() {
+  uchip3_ = 0;
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline int32_t UserGameInfo::_internal_uchip3() const {
+  return uchip3_;
+}
+inline int32_t UserGameInfo::uchip3() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.uchip3)
+  return _internal_uchip3();
+}
+inline void UserGameInfo::_internal_set_uchip3(int32_t value) {
+  _has_bits_[0] |= 0x00000010u;
+  uchip3_ = value;
+}
+inline void UserGameInfo::set_uchip3(int32_t value) {
+  _internal_set_uchip3(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.uchip3)
+}
+
+// required int32 udata1 = 6;
+inline bool UserGameInfo::_internal_has_udata1() const {
+  bool value = (_has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_udata1() const {
+  return _internal_has_udata1();
+}
+inline void UserGameInfo::clear_udata1() {
+  udata1_ = 0;
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline int32_t UserGameInfo::_internal_udata1() const {
+  return udata1_;
+}
+inline int32_t UserGameInfo::udata1() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.udata1)
+  return _internal_udata1();
+}
+inline void UserGameInfo::_internal_set_udata1(int32_t value) {
+  _has_bits_[0] |= 0x00000020u;
+  udata1_ = value;
+}
+inline void UserGameInfo::set_udata1(int32_t value) {
+  _internal_set_udata1(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.udata1)
+}
+
+// required int32 udata2 = 7;
+inline bool UserGameInfo::_internal_has_udata2() const {
+  bool value = (_has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_udata2() const {
+  return _internal_has_udata2();
+}
+inline void UserGameInfo::clear_udata2() {
+  udata2_ = 0;
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline int32_t UserGameInfo::_internal_udata2() const {
+  return udata2_;
+}
+inline int32_t UserGameInfo::udata2() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.udata2)
+  return _internal_udata2();
+}
+inline void UserGameInfo::_internal_set_udata2(int32_t value) {
+  _has_bits_[0] |= 0x00000040u;
+  udata2_ = value;
+}
+inline void UserGameInfo::set_udata2(int32_t value) {
+  _internal_set_udata2(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.udata2)
+}
+
+// required int32 udata3 = 8;
+inline bool UserGameInfo::_internal_has_udata3() const {
+  bool value = (_has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_udata3() const {
+  return _internal_has_udata3();
+}
+inline void UserGameInfo::clear_udata3() {
+  udata3_ = 0;
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline int32_t UserGameInfo::_internal_udata3() const {
+  return udata3_;
+}
+inline int32_t UserGameInfo::udata3() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.udata3)
+  return _internal_udata3();
+}
+inline void UserGameInfo::_internal_set_udata3(int32_t value) {
+  _has_bits_[0] |= 0x00000080u;
+  udata3_ = value;
+}
+inline void UserGameInfo::set_udata3(int32_t value) {
+  _internal_set_udata3(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.udata3)
+}
+
+// -------------------------------------------------------------------
+
+// GetUgameInfoRes
+
+// required int32 status = 1;
+inline bool GetUgameInfoRes::_internal_has_status() const {
+  bool value = (_has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool GetUgameInfoRes::has_status() const {
+  return _internal_has_status();
+}
+inline void GetUgameInfoRes::clear_status() {
+  status_ = 0;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline int32_t GetUgameInfoRes::_internal_status() const {
+  return status_;
+}
+inline int32_t GetUgameInfoRes::status() const {
+  // @@protoc_insertion_point(field_get:GetUgameInfoRes.status)
+  return _internal_status();
+}
+inline void GetUgameInfoRes::_internal_set_status(int32_t value) {
+  _has_bits_[0] |= 0x00000002u;
+  status_ = value;
+}
+inline void GetUgameInfoRes::set_status(int32_t value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:GetUgameInfoRes.status)
+}
+
+// optional .UserGameInfo uinfo = 2;
+inline bool GetUgameInfoRes::_internal_has_uinfo() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || uinfo_ != nullptr);
+  return value;
+}
+inline bool GetUgameInfoRes::has_uinfo() const {
+  return _internal_has_uinfo();
+}
+inline void GetUgameInfoRes::clear_uinfo() {
+  if (uinfo_ != nullptr) uinfo_->Clear();
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const ::UserGameInfo& GetUgameInfoRes::_internal_uinfo() const {
+  const ::UserGameInfo* p = uinfo_;
+  return p != nullptr ? *p : reinterpret_cast<const ::UserGameInfo&>(
+      ::_UserGameInfo_default_instance_);
+}
+inline const ::UserGameInfo& GetUgameInfoRes::uinfo() const {
+  // @@protoc_insertion_point(field_get:GetUgameInfoRes.uinfo)
+  return _internal_uinfo();
+}
+inline void GetUgameInfoRes::unsafe_arena_set_allocated_uinfo(
+    ::UserGameInfo* uinfo) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(uinfo_);
+  }
+  uinfo_ = uinfo;
+  if (uinfo) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:GetUgameInfoRes.uinfo)
+}
+inline ::UserGameInfo* GetUgameInfoRes::release_uinfo() {
+  _has_bits_[0] &= ~0x00000001u;
+  ::UserGameInfo* temp = uinfo_;
+  uinfo_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::UserGameInfo* GetUgameInfoRes::unsafe_arena_release_uinfo() {
+  // @@protoc_insertion_point(field_release:GetUgameInfoRes.uinfo)
+  _has_bits_[0] &= ~0x00000001u;
+  ::UserGameInfo* temp = uinfo_;
+  uinfo_ = nullptr;
+  return temp;
+}
+inline ::UserGameInfo* GetUgameInfoRes::_internal_mutable_uinfo() {
+  _has_bits_[0] |= 0x00000001u;
+  if (uinfo_ == nullptr) {
+    auto* p = CreateMaybeMessage<::UserGameInfo>(GetArenaForAllocation());
+    uinfo_ = p;
+  }
+  return uinfo_;
+}
+inline ::UserGameInfo* GetUgameInfoRes::mutable_uinfo() {
+  ::UserGameInfo* _msg = _internal_mutable_uinfo();
+  // @@protoc_insertion_point(field_mutable:GetUgameInfoRes.uinfo)
+  return _msg;
+}
+inline void GetUgameInfoRes::set_allocated_uinfo(::UserGameInfo* uinfo) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete uinfo_;
+  }
+  if (uinfo) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::UserGameInfo>::GetOwningArena(uinfo);
+    if (message_arena != submessage_arena) {
+      uinfo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, uinfo, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  uinfo_ = uinfo;
+  // @@protoc_insertion_point(field_set_allocated:GetUgameInfoRes.uinfo)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -335,8 +335,9 @@
      <Compile Include="Assets\Scripts\game\Helper\UnityHelper.cs" />
      <Compile Include="Assets\Scripts\game\Helper\VibrateHelper.cs" />
      <Compile Include="Assets\Scripts\game\Helper\XOR.cs" />
+     <Compile Include="Assets\Scripts\game\modules\auth_service_proxy.cs" />
+     <Compile Include="Assets\Scripts\game\modules\system_service_proxy.cs" />
      <Compile Include="Assets\Scripts\game\modules\ugame.cs" />
-     <Compile Include="Assets\Scripts\game\modules\user_login.cs" />
      <Compile Include="Assets\Scripts\game\netLuaBridgeCS.cs" />
      <Compile Include="Assets\Scripts\game\Respones.cs" />
      <Compile Include="Assets\Scripts\game\ResSystem\BufferAsset.cs" />
@@ -371,6 +372,7 @@
      <Compile Include="Assets\XLua\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
      <Compile Include="Assets\XLua\Examples\ExampleGenConfig.cs" />
      <Compile Include="Assets\XLua\Gen\AmbientSoundWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\auth_service_proxyWrap.cs" />
      <Compile Include="Assets\XLua\Gen\CustomCryptographWrap.cs" />
      <Compile Include="Assets\XLua\Gen\DefinesWrap.cs" />
      <Compile Include="Assets\XLua\Gen\DelegatesGensBridge.cs" />
@@ -418,6 +420,7 @@
      <Compile Include="Assets\XLua\Gen\System_Collections_Generic_List_1_UnityEngine_Vector3_Wrap.cs" />
      <Compile Include="Assets\XLua\Gen\System_Collections_IEnumeratorBridge.cs" />
      <Compile Include="Assets\XLua\Gen\System_ObjectWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\system_service_proxyWrap.cs" />
      <Compile Include="Assets\XLua\Gen\TMPro_TMP_DropdownWrap.cs" />
      <Compile Include="Assets\XLua\Gen\TMPro_TMP_InputFieldWrap.cs" />
      <Compile Include="Assets\XLua\Gen\TMPro_TMP_TextWrap.cs" />
@@ -520,7 +523,6 @@
      <Compile Include="Assets\XLua\Gen\UnityEngine_WWWFormWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngineObjectExtentionWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityHelperWrap.cs" />
-     <Compile Include="Assets\XLua\Gen\user_loginWrap.cs" />
      <Compile Include="Assets\XLua\Gen\VibrateHelperWrap.cs" />
      <Compile Include="Assets\XLua\Gen\VirtualList_ListItemWrap.cs" />
      <Compile Include="Assets\XLua\Gen\VirtualListWrap.cs" />

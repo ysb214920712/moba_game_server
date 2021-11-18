@@ -48,7 +48,7 @@ end
 
 function M:on_btn_out_click()
 	ui_util.show_loading(true)
-	U.user_login.Instance:user_login_out()
+	U.auth_service_proxy.Instance:user_login_out()
 end
 
 function M:on_editprofile_commit()
@@ -58,7 +58,7 @@ function M:on_editprofile_commit()
 	end
 
 	ui_util.show_loading(true)
-	U.user_login.Instance:edit_profile(self.gos.input_.text, self.uface_, self.usex_)
+	U.auth_service_proxy.Instance:edit_profile(self.gos.input_.text, self.uface_, self.usex_)
 	self:close()
 end
 

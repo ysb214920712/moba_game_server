@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Linked\Scripts\Editor\EditorTool\ConfigFileCopy.cs" />
      <Compile Include="Assets\Linked\Scripts\Editor\EditorTool\CreatUILuaUtil.cs" />
      <Compile Include="Assets\Linked\Scripts\Editor\EditorTool\DevUtility.cs" />
      <Compile Include="Assets\Linked\Scripts\Editor\EditorTool\EditorDevHelper.cs" />

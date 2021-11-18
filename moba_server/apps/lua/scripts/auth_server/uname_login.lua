@@ -4,7 +4,7 @@ local Respones = require("Respones")
 local Stype = require("Stype")
 local Cmd = require("Cmd")
 
-function login(s, req)
+function do_uname_login(s, req)
     local utag = req[3]
     local uname_login_req = req[4]
 
@@ -19,6 +19,7 @@ function login(s, req)
 
     mysql_center.get_uinfo_by_uname_upwd(uname_login_req.uname, uname_login_req.upwd, function(err, uinfo)
         if err then
+            Logger.error(err)
             local msg = {Stype.Auth, Cmd.eUnameLoginRes, utag, {
                     status = Respones.SystemErr,
                 }}
@@ -67,7 +68,7 @@ function login(s, req)
 end
 
 local uname_login = {
-    login = login,
+    do_uname_login = do_uname_login,
 }
 
 return uname_login

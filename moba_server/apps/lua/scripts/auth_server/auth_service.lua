@@ -10,7 +10,7 @@ local auth_service_hanlders = {}
 auth_service_hanlders[Cmd.eGuestLoginReq] = guest.login
 auth_service_hanlders[Cmd.eEditProfileReq] = edit_profile.do_edit_profile
 auth_service_hanlders[Cmd.eAccountUpgradeReq] = account_upgrade.do_upgrade
-auth_service_hanlders[Cmd.eUnameLoginReq] = uname_login.login
+auth_service_hanlders[Cmd.eUnameLoginReq] = uname_login.do_uname_login
 auth_service_hanlders[Cmd.eLoginOutReq] = login_out.do_login_out
 
 
