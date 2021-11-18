@@ -1,0 +1,456 @@
+20211117 10:05:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 10:05:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 10:05:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 10:05:48 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 10:05:48 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 10:06:04 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 10:45:34 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 10:45:34 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 10:45:34 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 10:45:35 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 10:45:35 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 10:45:44 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 10:45:57 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 10:46:24 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 10:48:20 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 10:48:25 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 10:49:49 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 10:49:57 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 10:55:29 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 10:55:29 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 10:55:29 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 10:55:30 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 10:55:30 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 10:55:37 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 10:55:47 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 10:56:54 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 10:56:55 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 10:56:56 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 10:57:03 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 10:57:03 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 10:57:03 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 10:57:04 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 10:57:04 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 10:57:12 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 10:57:18 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:00:02 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 11:00:08 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:00:17 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:00:20 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:00:23 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:00:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:00:35 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:00:41 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:01:51 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:02:02 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:03:06 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 11:03:42 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 11:03:58 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:04:38 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:27:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 11:27:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 11:27:47 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 11:27:48 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:27:48 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 11:34:20 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 11:34:20 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 11:34:20 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 11:34:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:34:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 11:37:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 11:37:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:37:32 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 11:37:36 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:37:37 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 11:37:41 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:37:41 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 11:41:19 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 11:41:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:41:22 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 11:41:26 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:41:26 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 11:41:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 11:41:51 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:42:58 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 11:44:26 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 11:44:26 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 11:44:26 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 11:44:27 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:44:27 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 11:44:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 11:48:09 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 11:48:09 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 11:48:09 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 11:48:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:48:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 11:48:20 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 11:55:49 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 11:55:50 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:56:53 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 11:56:53 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 11:56:53 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 11:56:54 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 11:56:54 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 11:59:15 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 12:04:25 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 12:04:25 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 12:04:25 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 12:04:26 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:04:27 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:04:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:04:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 12:05:03 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 12:05:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 12:28:34 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 12:28:36 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:28:37 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:28:41 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:28:41 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 12:29:20 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 12:29:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:29:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 12:29:54 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 12:29:56 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:29:57 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:30:01 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:30:02 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:30:06 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:30:06 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 12:30:37 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 12:30:41 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:30:42 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:30:46 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:30:47 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:30:51 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:30:52 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:30:56 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:30:56 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 12:31:04 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 12:31:06 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:31:07 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:31:11 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:31:12 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 12:31:22 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 12:31:26 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 12:31:27 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 12:31:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 13:48:44 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 13:48:44 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 13:48:44 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 13:48:45 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 13:48:45 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 13:49:04 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 13:58:42 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 13:58:42 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 13:58:42 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 13:58:43 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 13:58:43 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 13:58:58 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 13:59:09 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 14:04:11 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 14:04:13 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 14:04:26 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 14:04:26 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 14:04:26 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 14:04:27 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 14:04:27 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 14:04:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 14:04:53 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	5	0
+20211117 14:07:22 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 14:07:22 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 14:07:23 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Auth server]127.0.0.1:8000
+20211117 14:59:42 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 14:59:42 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 14:59:42 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 14:59:43 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 14:59:43 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 15:00:33 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 15:02:03 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 15:03:25 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 15:03:49 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:04:19 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:04:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:04:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:04:22 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:04:22 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:04:22 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:04:40 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 15:04:49 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 15:04:49 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 15:04:49 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 15:04:50 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 15:04:50 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 15:04:57 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 15:05:09 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:05:48 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 15:05:48 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 15:05:48 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 15:05:49 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 15:05:49 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 15:05:55 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 15:06:03 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:09 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:11 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:06:11 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 15:07:14 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]
+20211117 16:32:28 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211117 16:32:28 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211117 16:32:28 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211117 16:32:29 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211117 16:32:29 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211117 16:32:58 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:33:12 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:34:04 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:34:18 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:35:23 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:35:31 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:36:30 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:36:50 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:36:58 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:37:40 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:37:48 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:38:38 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:38:47 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:40:09 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:40:15 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:42:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:42:49 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:42:57 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:44:42 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:44:53 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 16:47:32 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	1	0
+20211117 16:47:41 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:114  
+1	7	0
+20211117 17:23:43 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:157  
+gateway disconnect [Auth server]

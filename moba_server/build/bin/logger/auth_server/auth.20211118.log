@@ -1,0 +1,220 @@
+20211118 09:34:48 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 09:34:48 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 09:34:48 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 09:34:48 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 09:35:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+1	9	1	table
+20211118 09:35:55 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+1	1	1	table
+20211118 09:35:55 DEBUG ../../apps/lua/scripts/auth_server/guest.lua:59  
+1	testysb
+20211118 09:35:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 1
+20211118 09:36:05 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+1	7	1	table
+20211118 09:36:05 DEBUG ../../apps/lua/scripts/auth_server/account_upgrade.lua:61  
+ysb	202cb962ac59075b964b07152d234b70	1
+20211118 09:36:17 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+1	1	2	table
+20211118 09:36:23 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:17  
+1	9	2	table
+20211118 09:36:23 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 09:36:23 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:11:51 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211118 10:11:51 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211118 10:11:51 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211118 10:11:51 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211118 10:12:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211118 10:12:04 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:12:04 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:12:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:12:06 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:12:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211118 10:12:58 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:12:58 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:13:01 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:13:01 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:18:28 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211118 10:18:28 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:18:28 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:18:30 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:18:30 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:19:44 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	4	table
+20211118 10:19:46 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	4	table
+20211118 10:19:46 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:19:46 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:19:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:19:49 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:19:59 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	5	table
+20211118 10:19:59 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:19:59 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:20:37 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	6	table
+20211118 10:20:37 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:20:37 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:20:39 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:20:39 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:20:52 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	7	table
+20211118 10:20:52 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:20:52 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:28:30 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	8	table
+20211118 10:28:30 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:28:30 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:28:34 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:28:34 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:28:53 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	9	table
+20211118 10:28:53 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:28:53 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:28:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:28:58 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:32:11 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	10	table
+20211118 10:32:11 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:32:11 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:32:13 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:32:13 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:33:02 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	11	table
+20211118 10:33:02 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:33:02 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:33:04 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:33:04 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:36:27 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	12	table
+20211118 10:36:27 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:36:27 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:36:29 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:36:29 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:36:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	13	table
+20211118 10:36:58 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:36:58 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:37:01 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:37:01 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:37:10 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	14	table
+20211118 10:37:10 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:37:10 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:37:12 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:37:12 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:37:19 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	15	table
+20211118 10:37:19 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:37:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:37:22 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:37:22 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:40:48 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	16	table
+20211118 10:40:48 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:40:48 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:40:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:40:51 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:40:59 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	17	table
+20211118 10:40:59 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:40:59 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:41:02 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211118 10:41:02 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211118 10:46:21 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	18	table
+20211118 10:46:21 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:46:21 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 2 uvip 0 is_guest 0
+20211118 10:46:31 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211118 10:46:31 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 0 uvip 0 is_guest 0
+20211118 10:48:19 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	19	table
+20211118 10:48:19 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:45  
+1	testysb
+20211118 10:48:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick testysb usex 0 uface 0 uvip 0 is_guest 0
+20211118 10:48:28 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211118 10:48:28 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick test111 usex 1 uface 10 uvip 0 is_guest 0

@@ -126,9 +126,6 @@ end
 
 function M:reset_timescale_before_restart()
     U.Time.timeScale = 1
-    if Setting:is_sound_enable() then
-        U.AudioListener.pause = false
-    end
 end
 
 function M:_change_state(new_state)
@@ -140,15 +137,20 @@ function M:_change_state(new_state)
         self.next_state_ = _State.LoginAccount
         self:goto_next_state()
     elseif new_state == _State.LoginAccount then
+        UIGlobalScreen:open()
         self.next_state_ = _State.LoadGame
-        self:goto_next_state()
+        UILogin:open(nil, function()
+            self:goto_next_state()
+        end)
     elseif new_state == _State.LoadGame then
         self:load_game_over()
 
         coroutine.wrap(function()
             Yield(U.XLoader.LoadScene("home_scene"))
             self.next_state_ = _State.EndLoading
-            self:goto_next_state()
+            UIEntrance:open(function()
+                self:goto_next_state()
+            end)
         end)()
 
     elseif new_state == _State.EndLoading then

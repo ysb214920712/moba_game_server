@@ -163,8 +163,8 @@ public class network : UnitySingleton<network> {
             }
             catch (System.Exception e) {
                 Debug.Log(e.ToString());
-                this.client_socket.Disconnect(true);
-                this.client_socket.Shutdown(SocketShutdown.Both);
+                //this.client_socket.Disconnect(true);
+                // this.client_socket.Shutdown(SocketShutdown.Both);
                 this.client_socket.Close();
                 this.is_connect = false;
                 break;

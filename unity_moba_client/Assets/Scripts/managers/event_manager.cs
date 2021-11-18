@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using XLua;
 
+[LuaCallCSharp]
 public class event_manager : Singleton<event_manager>
 {
     public delegate void on_event_handler(string name, object udata);
@@ -37,6 +40,12 @@ public class event_manager : Singleton<event_manager>
         }
     }
 
+    public void remove_all_event()
+    {
+        this.event_listeners = new Dictionary<string, on_event_handler>();
+    }
+
+    [CSharpCallLua]
     public void dispatch_event(string name, object udata)
     {
         if (!this.event_listeners.ContainsKey(name))

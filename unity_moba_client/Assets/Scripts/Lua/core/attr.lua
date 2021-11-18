@@ -193,50 +193,6 @@ end
 -- 属性修改后处理
 -------------------------------------------------------------------------------
 
--- 最大血量变化引发当前hp计算
--- function func_regist_max_hp(self, old_val, rawindex, index)
---     if self:get_val(resmng.MHP) < 0 then
---         self._data_[resmng.MHP] = 0
---     end
---     if self:get_val(resmng.HP) > self:get_val(resmng.MHP) then
---         self:set_val(resmng.HP, self:get_val(resmng.MHP))
---     end
--- end
-
-function M:attr_hp_changed_func(old_val, rawindex, index)
-    if self:get_val(resmng.HP) < 0 then
-        self._data_[resmng.HP] = 0
-    elseif self:get_val(resmng.HP) > self:get_val(resmng.MAX_HP) then
-        self._data_[resmng.HP] = self:get_val(resmng.MAX_HP)
-    end
-end
-
-function M:attr_max_hp_changed_func(old_val, rawindex, index)
-    if self:get_val(resmng.MAX_HP) < 0 then
-        self._data_[resmng.MAX_HP] = 0
-    end
-    if self:get_val(resmng.MAX_HP) < self:get_val(resmng.HP) then
-        self._data_[resmng.HP] = self:get_val(resmng.MAX_HP)
-    end
-end
-
-function M:attr_shield_changed_func(old_val, rawindex, index)
-    if self:get_val(resmng.SHIELD) < 0 then
-        self._data_[resmng.SHIELD] = 0
-    elseif self:get_val(resmng.SHIELD) > self:get_val(resmng.MAX_SHIELD) then
-        self._data_[resmng.SHIELD] = self:get_val(resmng.MAX_SHIELD)
-    end
-end
-
-function M:attr_max_shield_changed_func(old_val, rawindex, index)
-    if self:get_val(resmng.MAX_SHIELD) < 0 then
-        self._data_[resmng.MAX_SHIELD] = 0
-    end
-    if self:get_val(resmng.MAX_SHIELD) < self:get_val(resmng.SHIELD) then
-        self._data_[resmng.SHIELD] = self:get_val(resmng.MAX_SHIELD)
-    end
-end
-
 ---当某个值发生变化后由回调更正其值时调用，用于直接修改其值，避免再次回调
 function M:reset_val_after_val_change(index, val)
     self._data_[index] = val
@@ -244,10 +200,6 @@ end
 
 function M:init_regist_func()
     self._regist_func_map_ = {}
-    self:regist_attr_func(resmng.HP, self.attr_hp_changed_func)
-    self:regist_attr_func(resmng.MAX_HP, self.attr_max_hp_changed_func)
-    self:regist_attr_func(resmng.SHIELD, self.attr_shield_changed_func)
-    self:regist_attr_func(resmng.MAX_SHIELD, self.attr_max_shield_changed_func)
 end
 
 function M:get_regist_func(index)
@@ -270,15 +222,6 @@ function M:on_val_change(old_val, rawindex, index)
         func(self, old_val, rawindex, index)
     end
 end
-
--- function copy(self)
---     return copyTab(self._data_)
--- end
-
--- function paste(self, data)
---     self._data_ = copyTab(data)
--- end
-
 
 function M:raw_data()
     return self._data_
@@ -453,71 +396,5 @@ function M.trans_attr_effects(effects, attr, lv, star)
     end
     return attr_effects
 end
-
---------------------属性名获取---------------------
-local ATTR_NAME_MAP
-
-local ATTR_SHOW_THOUSAND_TIMES_PERCENT = {
-    [resmng.SHIELD_RECOVER] = true,
-    [resmng.CHC] = true,
-    [resmng.CHD] = true,
-    [resmng.DODGE] = true,
-}
-
-local ATTR_SHOW_PERCENT = {
-    [resmng.AF] = true,
-}
-
-local ATTR_VALUE_UNIT_MAP
-
-function M.refresh_attr_name_map()
-    ATTR_NAME_MAP = {
-        [resmng.ATK] = resmng.language(resmng.LG_ATTR_ATK),
-        [resmng.MAX_HP] = resmng.language(resmng.LG_ATTR_HP),
-        [resmng.AF] = resmng.language(resmng.LG_ATTR_AF),
-        [resmng.DEF] = resmng.language(resmng.LG_ATTR_DEF),
-        [resmng.MAX_SHIELD] = resmng.language(resmng.LG_ATTR_SHIELD),
-        [resmng.SHIELD_RECOVER] = resmng.language(resmng.LG_ATTR_SHIELD_RECOVER),
-        [resmng.CHC] = resmng.language(resmng.LG_ATTR_CHC),
-        [resmng.CHD] = resmng.language(resmng.LG_ATTR_CHD),
-        [resmng.SPEED] = resmng.language(resmng.LG_ATTR_SPEED),
-        [resmng.DODGE] = resmng.language(resmng.LG_ATTR_DODGE),
-    }
-
-    ATTR_VALUE_UNIT_MAP = {
-        [resmng.AF] = resmng.language(resmng.LG_ATTR_SECOND)
-    }
-end
-
-function M.get_attr_name(attr_code)
-    return ATTR_NAME_MAP[attr_code] or ""
-end
-
-function M.get_attr_format_name(attr_code)
-    if ATTR_NAME_MAP[attr_code] then
-        return ATTR_NAME_MAP[attr_code]
-    else
-        return ""
-    end
-end
-
-function M.get_attr_value_str(attr, val)
-    local str = ""
-    if ATTR_SHOW_THOUSAND_TIMES_PERCENT[attr] then
-        str = str .. string.format("%.2f%%", val / 100)
-    elseif ATTR_SHOW_PERCENT[attr] then
-        str = str .. string.format("%.1f", val / 100)
-    else
-        str = str .. util.format_number(val)
-    end
-
-    if ATTR_VALUE_UNIT_MAP[attr] then
-        str = str .. ATTR_VALUE_UNIT_MAP[attr]
-    end
-
-    return str
-end
-
-M.refresh_attr_name_map()
 
 return M

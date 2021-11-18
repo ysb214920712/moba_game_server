@@ -68,6 +68,7 @@
      <Compile Include="Assets\Linked\Scripts\Components\UI\ButtonAnimation.cs" />
      <Compile Include="Assets\Linked\Scripts\Components\UI\ButtonSpriteSwap.cs" />
      <Compile Include="Assets\Linked\Scripts\Components\UI\DoubleClickButton.cs" />
+     <Compile Include="Assets\Linked\Scripts\Components\UI\LoadingRotate.cs" />
      <Compile Include="Assets\Linked\Scripts\Components\UI\UILocalize.cs" />
      <Compile Include="Assets\Linked\Scripts\Components\UI\VirtualList.cs" />
      <Compile Include="Assets\Linked\Scripts\Game\EnumFlagsAttribute.cs" />
@@ -334,8 +335,9 @@
      <Compile Include="Assets\Scripts\game\Helper\UnityHelper.cs" />
      <Compile Include="Assets\Scripts\game\Helper\VibrateHelper.cs" />
      <Compile Include="Assets\Scripts\game\Helper\XOR.cs" />
-     <Compile Include="Assets\Scripts\game\login_scene\login_scene.cs" />
+     <Compile Include="Assets\Scripts\game\modules\ugame.cs" />
      <Compile Include="Assets\Scripts\game\modules\user_login.cs" />
+     <Compile Include="Assets\Scripts\game\netLuaBridgeCS.cs" />
      <Compile Include="Assets\Scripts\game\Respones.cs" />
      <Compile Include="Assets\Scripts\game\ResSystem\BufferAsset.cs" />
      <Compile Include="Assets\Scripts\game\ResSystem\LuaBigFileBufferAsset.cs" />
@@ -389,6 +391,7 @@
      <Compile Include="Assets\XLua\Gen\DG_Tweening_TweenWrap.cs" />
      <Compile Include="Assets\XLua\Gen\DownloadHelperWrap.cs" />
      <Compile Include="Assets\XLua\Gen\EnumWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\event_managerWrap.cs" />
      <Compile Include="Assets\XLua\Gen\EventTriggerListenerWrap.cs" />
      <Compile Include="Assets\XLua\Gen\GameReloaderWrap.cs" />
      <Compile Include="Assets\XLua\Gen\GHelperWrap.cs" />
@@ -400,12 +403,14 @@
      <Compile Include="Assets\XLua\Gen\LuaBridgePressUIWrap.cs" />
      <Compile Include="Assets\XLua\Gen\LuaJsonWrap.cs" />
      <Compile Include="Assets\XLua\Gen\LuaTableDelegateWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\netLuaBridgeCSWrap.cs" />
      <Compile Include="Assets\XLua\Gen\NotificationHelperWrap.cs" />
      <Compile Include="Assets\XLua\Gen\PackUnpack.cs" />
      <Compile Include="Assets\XLua\Gen\ParticleHelperWrap.cs" />
      <Compile Include="Assets\XLua\Gen\PhoneHelperWrap.cs" />
      <Compile Include="Assets\XLua\Gen\PrefsHelperWrap.cs" />
      <Compile Include="Assets\XLua\Gen\ReferGameObjectsWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\ResponesWrap.cs" />
      <Compile Include="Assets\XLua\Gen\SRGameOptionsWrap.cs" />
      <Compile Include="Assets\XLua\Gen\System_ArrayWrap.cs" />
      <Compile Include="Assets\XLua\Gen\System_Collections_Generic_List_1_System_Int32_Wrap.cs" />
@@ -421,6 +426,7 @@
      <Compile Include="Assets\XLua\Gen\Tutorial_DerivedClassExtensionsWrap.cs" />
      <Compile Include="Assets\XLua\Gen\Tutorial_DerivedClassWrap.cs" />
      <Compile Include="Assets\XLua\Gen\Tutorial_ICalcWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\ugameWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UILocalizeWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_AI_NavMeshAgentWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_AnimationClipWrap.cs" />
@@ -514,6 +520,7 @@
      <Compile Include="Assets\XLua\Gen\UnityEngine_WWWFormWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngineObjectExtentionWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityHelperWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\user_loginWrap.cs" />
      <Compile Include="Assets\XLua\Gen\VibrateHelperWrap.cs" />
      <Compile Include="Assets\XLua\Gen\VirtualList_ListItemWrap.cs" />
      <Compile Include="Assets\XLua\Gen\VirtualListWrap.cs" />
@@ -566,27 +573,45 @@
      <Compile Include="Assets\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
      <Compile Include="Assets\XLua\util\Xxtea.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources\cs_coroutine.lua.txt" />
      <None Include="Assets\Scripts\3rd\Sirenix\Assemblies\Sirenix.Serialization.Config.xml" />
      <None Include="Assets\Scripts\3rd\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.xml" />
      <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\Scripts\3rd\StompyRobot\SRDebugger\README.txt" />
      <None Include="Assets\Scripts\3rd\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.xml" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
      <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
      <None Include="Assets\Scripts\3rd\StompyRobot\SRDebugger\UI\Fonts\FONT LICENSE.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Scripts\3rd\Sirenix\Readme.txt" />
      <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\Scripts\3rd\Sirenix\Assemblies\Sirenix.Utilities.Editor.xml" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\XLua\Gen\link.xml" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\XLua\Resources\perf\profiler.lua.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\Scripts\3rd\Sirenix\Assemblies\Sirenix.Utilities.xml" />
      <None Include="Assets\Scripts\3rd\Sirenix\Assemblies\link.xml" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\XLua\CHANGELOG.txt" />
      <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\Scripts\3rd\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -809,6 +834,24 @@
  <Reference Include="GLog">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/GLog/GLog.dll</HintPath>
  </Reference>
+ <Reference Include="Sirenix.OdinInspector.Attributes">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.OdinInspector.Editor">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Serialization.Config">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Serialization">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities.Editor">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/ZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
@@ -823,24 +866,6 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Serialization">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities.Editor">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Editor">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Attributes">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Serialization.Config">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Unity/2018.4.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -1191,14 +1216,14 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{2D4662E4-F2C0-9553-1B38-0F89BB63995F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="NativeGallery.Editor.csproj">
-      <Project>{35D081C0-1398-A814-7581-9AD36A852766}</Project>      <Name>NativeGallery.Editor</Name>    </ProjectReference>
-    <ProjectReference Include="NativeGallery.Runtime.csproj">
-      <Project>{208F7A47-207C-B4B4-D8AC-3C177D933595}</Project>      <Name>NativeGallery.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
       <Project>{CB75503F-671A-CA51-1FA4-076C9F78D8F4}</Project>      <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Editor.csproj">
+      <Project>{35D081C0-1398-A814-7581-9AD36A852766}</Project>      <Name>NativeGallery.Editor</Name>    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
       <Project>{CE83E603-B88C-B01E-FE34-0AFC1347194D}</Project>      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Runtime.csproj">
+      <Project>{208F7A47-207C-B4B4-D8AC-3C177D933595}</Project>      <Name>NativeGallery.Runtime</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

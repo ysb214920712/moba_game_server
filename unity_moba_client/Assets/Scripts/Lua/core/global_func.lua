@@ -213,9 +213,7 @@ local function contact_parm(...)
 end
 
 _G.print = function(...)
-    if _DEBUG then
-        U.Debug.Log("Lua:" .. contact_parm(...))
-    end
+    U.Debug.Log("Lua:" .. contact_parm(...))
 end
 
 function LOG(fmt, ...)
@@ -229,9 +227,7 @@ function ELOG(fmt, ...)
 end
 
 function INFO(fmt, ...)
-    if not _PUBLISH or _ENABLE_GM then
-        U.Debug.Log(_beautify_log(string.format(fmt,...), "red"))
-    end
+    U.Debug.Log(_beautify_log(string.format(fmt,...), "red"))
 end
 
 ERROR = ELOG

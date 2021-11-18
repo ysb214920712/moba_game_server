@@ -1,11 +1,21 @@
 local mysql_center = require("database/mysql_auth_center")
+local redis_center = require("database/redis_center")
 local Respones = require("Respones")
 local Stype = require("Stype")
 local Cmd = require("Cmd")
 
-function login(s, msg)
-    local g_key = msg[4].guest_key
-    local utag = msg[3]
+function login(s, req)
+    local g_key = req[4].guest_key
+    local utag = req[3]
+
+    if type(g_key) ~= "string" or string.len(g_key) ~= 32 then
+        local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
+            status = Respones.InvalidParams,
+        }}
+        Session.send_msg(s, msg)
+        return
+    end
+
     mysql_center.get_guest_uinfo(g_key, function(err, uinfo)
         if err then
             local msg = {Stype.Auth, Cmd.eGuestLoginRes, utag, {
@@ -25,7 +35,7 @@ function login(s, msg)
                     return 
                 end
 
-                login(s, msg)
+                login(s, req)
             end)
             return
         end
@@ -47,6 +57,9 @@ function login(s, msg)
         end
 
         print(uinfo.uid, uinfo.unick)
+
+        redis_center.set_uinfo_inredis(uinfo.uid, uinfo)
+
         local msg = {
             Stype.Auth,
             Cmd.eGuestLoginRes,

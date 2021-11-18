@@ -41,3 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: scene
+    uniqueID: 364777573
+    locked: 0
+  - name: screen
+    uniqueID: 3217887985
+    locked: 0
+  - name: top
+    uniqueID: 3706051291
+    locked: 0
+  - name: pop
+    uniqueID: 3309385779
+    locked: 0
+  - name: prompts
+    uniqueID: 3452018613
+    locked: 0
+  - name: guide
+    uniqueID: 391502947
+    locked: 0
+  - name: sysalert
+    uniqueID: 2709878747
+    locked: 0
+  - name: global
+    uniqueID: 696534559
+    locked: 0

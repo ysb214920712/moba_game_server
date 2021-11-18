@@ -7,25 +7,22 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif // __cplusplus
+#endif
 #include "tolua++.h"
 #ifdef __cplusplus
 }
-#endif // __cplusplus
+#endif
 
 #include "tolua_fix.h"
-
 #include "redis_export_to_lua.h"
 
-static void on_open_cb(const char* err, void* context, void* udata)
-{
-	if (err)
-	{
-		tolua_pushstring(lua_wrapper::lua_state(), err);
+static void
+on_open_cb(const char* err, void* context, void* udata) {
+	if (err) {
+		lua_pushstring(lua_wrapper::lua_state(), err);
 		lua_pushnil(lua_wrapper::lua_state());
 	}
-	else
-	{
+	else {
 		lua_pushnil(lua_wrapper::lua_state());
 		tolua_pushuserdata(lua_wrapper::lua_state(), context);
 	}
@@ -34,37 +31,33 @@ static void on_open_cb(const char* err, void* context, void* udata)
 	lua_wrapper::remove_script_handler((int)udata);
 }
 
-static int lua_redis_connect(lua_State* tolua_S)
-{
-	char* ip = (char*)tolua_tostring(tolua_S, 1, NULL);
-	if (ip == NULL)
-	{
+static int
+lua_redis_connect(lua_State* tolua_S) {
+	char* ip = (char*)tolua_tostring(tolua_S, 1, 0);
+	if (ip == NULL) {
 		goto lua_failed;
 	}
 
 	int port = (int)tolua_tonumber(tolua_S, 2, 0);
-
-	int handler = toluafix_ref_function(tolua_S, 3, NULL);
+	int handler = toluafix_ref_function(tolua_S, 3, 0);
 	redis_wrapper::connect(ip, port, on_open_cb, (void*)handler);
 
 lua_failed:
 	return 0;
 }
 
-static int lua_redis_close(lua_State* tolua_S)
-{
+static int
+lua_redis_close(lua_State* tolua_S) {
 	void* context = tolua_touserdata(tolua_S, 1, 0);
-	if (context)
-	{
+	if (context) {
 		redis_wrapper::close_redis(context);
 	}
 	return 0;
 }
 
-static void push_result_to_lua(redisReply* result)
-{
-	switch (result->type)
-	{
+static void
+push_result_to_lua(redisReply* result) {
+	switch (result->type) {
 	case REDIS_REPLY_STRING:
 	case REDIS_REPLY_STATUS:
 		lua_pushstring(lua_wrapper::lua_state(), result->str);
@@ -78,33 +71,27 @@ static void push_result_to_lua(redisReply* result)
 	case REDIS_REPLY_ARRAY:
 		lua_newtable(lua_wrapper::lua_state());
 		int index = 1;
-		for (int i = 0; i < result->elements; i++)
-		{
+		for (int i = 0; i < result->elements; i++) {
 			push_result_to_lua(result->element[i]);
-			lua_rawseti(lua_wrapper::lua_state(), -2, index);
+			lua_rawseti(lua_wrapper::lua_state(), -2, index);          /* table[index] = value, L: table */
 			++index;
 		}
 		break;
 	}
 }
 
-static void on_lua_query_cb(const char* err, redisReply* result, void* udata)
-{
-	if (err)
-	{
+static void
+on_lua_query_cb(const char* err, redisReply* result, void* udata) {
+	if (err) {
 		lua_pushstring(lua_wrapper::lua_state(), err);
 		lua_pushnil(lua_wrapper::lua_state());
 	}
-	else
-	{
+	else {
 		lua_pushnil(lua_wrapper::lua_state());
-		if (result)
-		{
-			// push table
+		if (result) { // 把查询得到的结果push lua
 			push_result_to_lua(result);
 		}
-		else
-		{
+		else {
 			lua_pushnil(lua_wrapper::lua_state());
 		}
 	}
@@ -113,46 +100,40 @@ static void on_lua_query_cb(const char* err, redisReply* result, void* udata)
 	lua_wrapper::remove_script_handler((int)udata);
 }
 
-static int lua_redis_query(lua_State* tolua_S)
-{
+static int
+lua_redis_query(lua_State* tolua_S) {
 	void* context = tolua_touserdata(tolua_S, 1, 0);
-	if (!context)
-	{
+	if (!context) {
+		goto lua_failed;
+	}
+	char* cmd = (char*)tolua_tostring(tolua_S, 2, 0);
+	if (cmd == NULL) {
+		goto lua_failed;
+	}
+	int handler = toluafix_ref_function(tolua_S, 3, 0);
+	if (handler == 0) {
 		goto lua_failed;
 	}
 
-	char* cmd = (char*)tolua_tostring(tolua_S, 2, NULL);
-	if (cmd == NULL)
-	{
-		goto lua_failed;
-	}
-
-	int handler = toluafix_ref_function(tolua_S, 3, NULL);
-	if (handler == 0)
-	{
-		goto lua_failed;
-	}
 	redis_wrapper::query(context, cmd, on_lua_query_cb, (void*)handler);
-
 lua_failed:
 	return 0;
 }
 
-int register_redis_export(lua_State* tolua_S)
-{
+int
+register_redis_export(lua_State* tolua_S) {
 	lua_getglobal(tolua_S, "_G");
-	if (lua_istable(tolua_S, -1))
-	{
+	if (lua_istable(tolua_S, -1)) {
 		tolua_open(tolua_S);
-
 		tolua_module(tolua_S, "Redis", 0);
 		tolua_beginmodule(tolua_S, "Redis");
+
 		tolua_function(tolua_S, "connect", lua_redis_connect);
 		tolua_function(tolua_S, "close_redis", lua_redis_close);
 		tolua_function(tolua_S, "query", lua_redis_query);
-
 		tolua_endmodule(tolua_S);
 	}
 	lua_pop(tolua_S, 1);
+
 	return 0;
 }

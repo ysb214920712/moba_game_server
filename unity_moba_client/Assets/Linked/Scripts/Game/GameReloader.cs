@@ -14,7 +14,7 @@ public class GameReloader : MonoBehaviour
     {
         GameManager.Cleanup();
 
-        GameObject game = GameObject.Find("Game");
+        GameObject game = GameObject.Find("game");
         if(game)
         {
             GameObject[] gos = game.scene.GetRootGameObjects();
@@ -36,11 +36,11 @@ public class GameReloader : MonoBehaviour
 
     IEnumerator Start() 
     {
-        yield return SceneManager.LoadSceneAsync("ReLoader");
+        yield return SceneManager.LoadSceneAsync("reloader");
         yield return Resources.UnloadUnusedAssets();
 
         GameManager.DisposeLuaEnv();
-        yield return SceneManager.LoadSceneAsync("Loader", LoadSceneMode.Single);
+        yield return SceneManager.LoadSceneAsync("login", LoadSceneMode.Single);
         
         GameObject.Destroy(goReloader);
         goReloader = null;

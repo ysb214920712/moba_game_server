@@ -300,6 +300,24 @@
  <Reference Include="GLog">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/GLog/GLog.dll</HintPath>
  </Reference>
+ <Reference Include="Sirenix.OdinInspector.Attributes">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.OdinInspector.Editor">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Serialization.Config">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Serialization">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities.Editor">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/ZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
@@ -320,24 +338,6 @@
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Serialization">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities.Editor">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Editor">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Attributes">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Serialization.Config">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Unity/2018.4.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

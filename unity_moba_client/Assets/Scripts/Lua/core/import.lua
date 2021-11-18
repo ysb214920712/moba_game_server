@@ -148,5 +148,10 @@ U.TriggerSender = CS.TriggerSender
 U.MaterialSwitch = CS.MaterialSwitch
 U.MaterialConfig = CS.MaterialConfig
 
+---------- MyFrame
+U.user_login = CS.user_login
+U.event_mgr = CS.event_manager
+U.ugame = CS.ugame
+
 _G.Json = U.LuaJson
 _G.U = U

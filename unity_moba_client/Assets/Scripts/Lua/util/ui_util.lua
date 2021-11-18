@@ -238,10 +238,6 @@ function M.get_ui_position(target, oneself)
     return v2
 end
 
-function M.show_combat_change(val)
-    M.global_screen():show_combat_change(val)
-end
-
 ---@param parent UnityEngine.Transform
 ---@param path string
 ---@param callback XLua.LuaFunction

@@ -14,6 +14,11 @@
 		<type fullname="VirtualList" preserve="all"/>
 		<type fullname="GameReloader" preserve="all"/>
 		<type fullname="XLuaHelper" preserve="all"/>
+		<type fullname="ugame" preserve="all"/>
+		<type fullname="user_login" preserve="all"/>
+		<type fullname="netLuaBridgeCS" preserve="all"/>
+		<type fullname="Respones" preserve="all"/>
+		<type fullname="event_manager" preserve="all"/>
 		<type fullname="Tutorial.BaseClass" preserve="all"/>
 		<type fullname="Tutorial.TestEnum" preserve="all"/>
 		<type fullname="Tutorial.DerivedClass" preserve="all"/>

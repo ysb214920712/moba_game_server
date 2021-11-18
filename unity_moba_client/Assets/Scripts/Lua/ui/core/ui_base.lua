@@ -60,6 +60,8 @@ end
 
 function M:on_resource_complete()
     self.messager__ = Messager.new(self)
+    self.server_messager__ = U.event_mgr.Instance
+    self.server_msg_list_ = {}
     self.gos = self:export()
     self:on_create()
     self.init_completed__ = true
@@ -118,6 +120,14 @@ function M:on_destroy()
     if self.messager__ then
         self.messager__:dispose()
     end
+
+    if self.server_msg_list_ and self.server_messager__ then
+        for k, v in pairs(self.server_msg_list_) do
+            self.server_messager__:remove_event_listener(k, v)
+        end
+        self.server_msg_list_ = {}
+    end
+
     self.rpc_listeners__ = nil
 end
 
@@ -188,6 +198,22 @@ function M:add_async_listener(mid, cb)
         return
     end
     self.messager__:add_async(mid, cb)
+end
+
+---@param mid MID
+---@param cb function
+function M:add_server_listener(str, cb)
+    if self.is_showing__ then
+        ELOG("use listener in on_create!")
+        return
+    end
+
+    if self.server_msg_list_[str] then
+        return
+    end
+
+    self.server_msg_list_[str] = cb
+    self.server_messager__:add_event_listener(str, cb)
 end
 
 ---@param protocol string
@@ -332,11 +358,11 @@ function M:update_sorting_order()
 
     self.canvas__.sortingOrder = sorting_order
 
-    local ls = util.get_comps_in_children(self.gameObject, U.Effect)
-    ---@param effect Effect
-    util.foreach_cs_array(ls, function(effect)
-        effect:SetSortOrder(sorting_layer, sorting_order)
-    end)
+    -- local ls = util.get_comps_in_children(self.gameObject, U.Effect)
+    -- ---@param effect Effect
+    -- util.foreach_cs_array(ls, function(effect)
+    --     effect:SetSortOrder(sorting_layer, sorting_order)
+    -- end)
 end
 
 function M:get_sorting_order()
@@ -513,7 +539,6 @@ function M:close_self()
         end
     end
 
-    U.AudioMgr.Play(resmng.SOUND_WINDOW_CLOSE)
     Messager.send(MID.UI_CLOSE, self:get_name())
     Messager.send(MID.GUIDE_TRIGGER, resmng.GUIDE_TRIGGER_CLOSE_UI, self:get_name())
 end

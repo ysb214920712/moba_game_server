@@ -163,20 +163,6 @@ function M.find_object_of_type(cclass)
     return U.Object.FindObjectOfType(typeof(cclass))
 end
 
-function M.create_debug_sphere(pos,raidus,parent)
-    local sphere = U.GameObject.CreatePrimitive(0)
-    sphere.transform.position = pos
-    if parent then
-        sphere.transform:SetParent(parent)
-    end
-    sphere.transform.localScale = U.Vector3(raidus*2, 1, raidus*2)
-    local mat = U.Material(U.Shader.Find("Legacy Shaders/Particles/Alpha Blended"))
-    mat:SetColor(GlobalInfo.ShaderPropertyId.TintColor, U.Color(1,0,1,0.07))
-    sphere:GetComponent(typeof(U.Renderer)).material = mat
-    sphere:GetComponent(typeof(U.Collider)).enabled = false
-    return sphere
-end
-
 function M.rand_float(min, max, precision)
     precision = precision or 100
     local rand = math.random(math.floor(min*precision), math.floor(max*precision))
@@ -205,20 +191,15 @@ function M.restart_game()
             M.print_func_ref_by_csharp()
         end
 
-        if LevelControl.battle then
-            LevelControl.battle:destroy()
-            U.EffectMgr.Instance:ClearCache()
-        end
-
         U.DOTween.KillAll(false)
         UIMgr:clear_all_ui()
 
         -- Track:quit_game()
         Game:reset_timescale_before_restart()
 
-        DownloadStrategyHelper:stop_download()
+        U.event_mgr.Instance:remove_all_event()
 
-        U.GameReloader.RestartGame({"Game", "UI", "Pool Node Container", "COROUTINES"})
+        U.GameReloader.RestartGame({"game", "UI", "Pool Node Container", "COROUTINES"})
     end)()
 end
 

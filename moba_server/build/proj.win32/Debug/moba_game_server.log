@@ -1,7 +1,2 @@
 ﻿  game.pb.cc
-  proto_man_export_to_lua.cc
-E:\CProject\moba_game_server\moba_server\lua_wrapper\proto_man_export_to_lua.cc(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-E:\CProject\moba_game_server\moba_server\lua_wrapper\proto_man_export_to_lua.cc(27,8): warning C4244: “初始化”: 从“lua_Integer”转换到“int”，可能丢失数据
-  service_export_to_lua.cc
-  正在生成代码...
   moba_game_server.vcxproj -> E:\CProject\moba_game_server\moba_server\build\proj.win32\Debug\moba_game_server.exe

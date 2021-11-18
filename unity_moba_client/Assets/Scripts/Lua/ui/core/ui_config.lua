@@ -90,11 +90,41 @@ function M:get_global_font()
     return self.global_font_, self.rtl_
 end
 
--- M.add_setting({
---     lua_file = "ui/ui_global_screen",
---     res = "ui/global_screen",
---     cache_mode = M.CacheModeByUseFrequency.VeryHigh,
---     layer = M.LayerType.Global,
--- })
+M.add_setting({
+    lua_file = "ui/ui_global_screen",
+    res = "ui/global_screen",
+    cache_mode = M.CacheModeByUseFrequency.VeryHigh,
+    layer = M.LayerType.Global,
+})
+
+M.add_setting({
+    lua_file = "ui/ui_login",
+    res = "ui/login",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Screen,
+})
+
+M.add_setting({
+    lua_file = "ui/ui_entrance",
+    res = "ui/entrance",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Screen,
+})
+
+M.add_setting({
+    lua_file = "ui/ui_user_info",
+    res = "ui/user_info",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Pop,
+    -- mask = true,
+})
+
+M.add_setting({
+    lua_file = "ui/ui_guest_bind",
+    res = "ui/guest_bind",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Pop,
+    mask = true,
+})
 
 return M

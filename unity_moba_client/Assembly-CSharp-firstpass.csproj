@@ -294,6 +294,24 @@
  <Reference Include="GLog">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/GLog/GLog.dll</HintPath>
  </Reference>
+ <Reference Include="Sirenix.OdinInspector.Attributes">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.OdinInspector.Editor">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Serialization.Config">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Serialization">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities.Editor">
+ <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/ZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
@@ -308,24 +326,6 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>E:/CProject/moba_game_server/unity_moba_client/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Serialization">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities.Editor">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Editor">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Attributes">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Serialization.Config">
- <HintPath>E:/CProject/moba_game_server/unity_moba_client/Assets/Scripts/3rd/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Unity/2018.4.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -674,14 +674,14 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NativeGallery.Editor.csproj">
-      <Project>{35D081C0-1398-A814-7581-9AD36A852766}</Project>      <Name>NativeGallery.Editor</Name>    </ProjectReference>
-    <ProjectReference Include="NativeGallery.Runtime.csproj">
-      <Project>{208F7A47-207C-B4B4-D8AC-3C177D933595}</Project>      <Name>NativeGallery.Runtime</Name>    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
       <Project>{CB75503F-671A-CA51-1FA4-076C9F78D8F4}</Project>      <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Editor.csproj">
+      <Project>{35D081C0-1398-A814-7581-9AD36A852766}</Project>      <Name>NativeGallery.Editor</Name>    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
       <Project>{CE83E603-B88C-B01E-FE34-0AFC1347194D}</Project>      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Runtime.csproj">
+      <Project>{208F7A47-207C-B4B4-D8AC-3C177D933595}</Project>      <Name>NativeGallery.Runtime</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

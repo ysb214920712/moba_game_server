@@ -28,6 +28,19 @@ struct GuestLoginReqDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GuestLoginReqDefaultTypeInternal _GuestLoginReq_default_instance_;
+constexpr UnameLoginReq::UnameLoginReq(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : uname_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , upwd_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+struct UnameLoginReqDefaultTypeInternal {
+  constexpr UnameLoginReqDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~UnameLoginReqDefaultTypeInternal() {}
+  union {
+    UnameLoginReq _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UnameLoginReqDefaultTypeInternal _UnameLoginReq_default_instance_;
 constexpr UserCenterInfo::UserCenterInfo(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : unick_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
@@ -57,7 +70,83 @@ struct GuestLoginResDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GuestLoginResDefaultTypeInternal _GuestLoginRes_default_instance_;
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_game_2eproto[3];
+constexpr UnameLoginRes::UnameLoginRes(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : uinfo_(nullptr)
+  , status_(0){}
+struct UnameLoginResDefaultTypeInternal {
+  constexpr UnameLoginResDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~UnameLoginResDefaultTypeInternal() {}
+  union {
+    UnameLoginRes _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UnameLoginResDefaultTypeInternal _UnameLoginRes_default_instance_;
+constexpr EditProfileReq::EditProfileReq(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : unick_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , uface_(0)
+  , usex_(0){}
+struct EditProfileReqDefaultTypeInternal {
+  constexpr EditProfileReqDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~EditProfileReqDefaultTypeInternal() {}
+  union {
+    EditProfileReq _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT EditProfileReqDefaultTypeInternal _EditProfileReq_default_instance_;
+constexpr EditProfileRes::EditProfileRes(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : status_(0){}
+struct EditProfileResDefaultTypeInternal {
+  constexpr EditProfileResDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~EditProfileResDefaultTypeInternal() {}
+  union {
+    EditProfileRes _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT EditProfileResDefaultTypeInternal _EditProfileRes_default_instance_;
+constexpr AccountUpgradeReq::AccountUpgradeReq(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : uname_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , upwd_md5_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+struct AccountUpgradeReqDefaultTypeInternal {
+  constexpr AccountUpgradeReqDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AccountUpgradeReqDefaultTypeInternal() {}
+  union {
+    AccountUpgradeReq _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AccountUpgradeReqDefaultTypeInternal _AccountUpgradeReq_default_instance_;
+constexpr AccountUpgradeRes::AccountUpgradeRes(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : status_(0){}
+struct AccountUpgradeResDefaultTypeInternal {
+  constexpr AccountUpgradeResDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AccountUpgradeResDefaultTypeInternal() {}
+  union {
+    AccountUpgradeRes _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AccountUpgradeResDefaultTypeInternal _AccountUpgradeRes_default_instance_;
+constexpr LoginOutRes::LoginOutRes(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : status_(0){}
+struct LoginOutResDefaultTypeInternal {
+  constexpr LoginOutResDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~LoginOutResDefaultTypeInternal() {}
+  union {
+    LoginOutRes _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LoginOutResDefaultTypeInternal _LoginOutRes_default_instance_;
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_game_2eproto[10];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_game_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_game_2eproto = nullptr;
 
@@ -70,6 +159,16 @@ const uint32_t TableStruct_game_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(pro
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::GuestLoginReq, guest_key_),
   0,
+  PROTOBUF_FIELD_OFFSET(::UnameLoginReq, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::UnameLoginReq, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::UnameLoginReq, uname_),
+  PROTOBUF_FIELD_OFFSET(::UnameLoginReq, upwd_),
+  0,
+  1,
   PROTOBUF_FIELD_OFFSET(::UserCenterInfo, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::UserCenterInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -96,34 +195,117 @@ const uint32_t TableStruct_game_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(pro
   PROTOBUF_FIELD_OFFSET(::GuestLoginRes, uinfo_),
   1,
   0,
+  PROTOBUF_FIELD_OFFSET(::UnameLoginRes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::UnameLoginRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::UnameLoginRes, status_),
+  PROTOBUF_FIELD_OFFSET(::UnameLoginRes, uinfo_),
+  1,
+  0,
+  PROTOBUF_FIELD_OFFSET(::EditProfileReq, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::EditProfileReq, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::EditProfileReq, unick_),
+  PROTOBUF_FIELD_OFFSET(::EditProfileReq, uface_),
+  PROTOBUF_FIELD_OFFSET(::EditProfileReq, usex_),
+  0,
+  1,
+  2,
+  PROTOBUF_FIELD_OFFSET(::EditProfileRes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::EditProfileRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::EditProfileRes, status_),
+  0,
+  PROTOBUF_FIELD_OFFSET(::AccountUpgradeReq, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::AccountUpgradeReq, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::AccountUpgradeReq, uname_),
+  PROTOBUF_FIELD_OFFSET(::AccountUpgradeReq, upwd_md5_),
+  0,
+  1,
+  PROTOBUF_FIELD_OFFSET(::AccountUpgradeRes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::AccountUpgradeRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::AccountUpgradeRes, status_),
+  0,
+  PROTOBUF_FIELD_OFFSET(::LoginOutRes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::LoginOutRes, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::LoginOutRes, status_),
+  0,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, -1, sizeof(::GuestLoginReq)},
-  { 8, 19, -1, sizeof(::UserCenterInfo)},
-  { 24, 32, -1, sizeof(::GuestLoginRes)},
+  { 8, 16, -1, sizeof(::UnameLoginReq)},
+  { 18, 29, -1, sizeof(::UserCenterInfo)},
+  { 34, 42, -1, sizeof(::GuestLoginRes)},
+  { 44, 52, -1, sizeof(::UnameLoginRes)},
+  { 54, 63, -1, sizeof(::EditProfileReq)},
+  { 66, 73, -1, sizeof(::EditProfileRes)},
+  { 74, 82, -1, sizeof(::AccountUpgradeReq)},
+  { 84, 91, -1, sizeof(::AccountUpgradeRes)},
+  { 92, 99, -1, sizeof(::LoginOutRes)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_GuestLoginReq_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_UnameLoginReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_UserCenterInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_GuestLoginRes_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_UnameLoginRes_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_EditProfileReq_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_EditProfileRes_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_AccountUpgradeReq_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_AccountUpgradeRes_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_LoginOutRes_default_instance_),
 };
 
 const char descriptor_table_protodef_game_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\ngame.proto\"\"\n\rGuestLoginReq\022\021\n\tguest_k"
-  "ey\030\001 \002(\t\"W\n\016UserCenterInfo\022\r\n\005unick\030\001 \002("
-  "\t\022\r\n\005uface\030\002 \002(\005\022\014\n\004usex\030\003 \002(\005\022\014\n\004uvip\030\004"
-  " \002(\005\022\013\n\003uid\030\005 \002(\005\"\?\n\rGuestLoginRes\022\016\n\006st"
-  "atus\030\001 \002(\005\022\036\n\005uinfo\030\002 \001(\0132\017.UserCenterIn"
-  "fo*;\n\005Stype\022\021\n\rINVALIDI_TYPE\020\000\022\010\n\004Auth\020\001"
-  "\022\n\n\006System\020\002\022\t\n\005Logic\020\003*_\n\003Cmd\022\017\n\013INVALI"
-  "D_CMD\020\000\022\022\n\016eGuestLoginReq\020\001\022\022\n\016eGuestLog"
-  "inRes\020\002\022\014\n\010eRelogin\020\003\022\021\n\reUserLostConn\020\004"
+  "ey\030\001 \002(\t\",\n\rUnameLoginReq\022\r\n\005uname\030\001 \002(\t"
+  "\022\014\n\004upwd\030\002 \002(\t\"W\n\016UserCenterInfo\022\r\n\005unic"
+  "k\030\001 \002(\t\022\r\n\005uface\030\002 \002(\005\022\014\n\004usex\030\003 \002(\005\022\014\n\004"
+  "uvip\030\004 \002(\005\022\013\n\003uid\030\005 \002(\005\"\?\n\rGuestLoginRes"
+  "\022\016\n\006status\030\001 \002(\005\022\036\n\005uinfo\030\002 \001(\0132\017.UserCe"
+  "nterInfo\"\?\n\rUnameLoginRes\022\016\n\006status\030\001 \002("
+  "\005\022\036\n\005uinfo\030\002 \001(\0132\017.UserCenterInfo\"<\n\016Edi"
+  "tProfileReq\022\r\n\005unick\030\001 \002(\t\022\r\n\005uface\030\002 \002("
+  "\005\022\014\n\004usex\030\003 \002(\005\" \n\016EditProfileRes\022\016\n\006sta"
+  "tus\030\001 \002(\005\"4\n\021AccountUpgradeReq\022\r\n\005uname\030"
+  "\001 \002(\t\022\020\n\010upwd_md5\030\002 \002(\t\"#\n\021AccountUpgrad"
+  "eRes\022\016\n\006status\030\001 \002(\005\"\035\n\013LoginOutRes\022\016\n\006s"
+  "tatus\030\001 \002(\005*;\n\005Stype\022\021\n\rINVALIDI_TYPE\020\000\022"
+  "\010\n\004Auth\020\001\022\n\n\006System\020\002\022\t\n\005Logic\020\003*\205\002\n\003Cmd"
+  "\022\017\n\013INVALID_CMD\020\000\022\022\n\016eGuestLoginReq\020\001\022\022\n"
+  "\016eGuestLoginRes\020\002\022\014\n\010eRelogin\020\003\022\021\n\reUser"
+  "LostConn\020\004\022\023\n\017eEditProfileReq\020\005\022\023\n\017eEdit"
+  "ProfileRes\020\006\022\026\n\022eAccountUpgradeReq\020\007\022\026\n\022"
+  "eAccountUpgradeRes\020\010\022\022\n\016eUnameLoginReq\020\t"
+  "\022\022\n\016eUnameLoginRes\020\n\022\020\n\014eLoginOutReq\020\013\022\020"
+  "\n\014eLoginOutRes\020\014"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_game_2eproto = {
-  false, false, 360, descriptor_table_protodef_game_2eproto, "game.proto", 
-  &descriptor_table_game_2eproto_once, nullptr, 0, 3,
+  false, false, 856, descriptor_table_protodef_game_2eproto, "game.proto", 
+  &descriptor_table_game_2eproto_once, nullptr, 0, 10,
   schemas, file_default_instances, TableStruct_game_2eproto::offsets,
   file_level_metadata_game_2eproto, file_level_enum_descriptors_game_2eproto, file_level_service_descriptors_game_2eproto,
 };
@@ -160,6 +342,14 @@ bool Cmd_IsValid(int value) {
     case 2:
     case 3:
     case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
       return true;
     default:
       return false;
@@ -386,6 +576,309 @@ void GuestLoginReq::InternalSwap(GuestLoginReq* other) {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
       file_level_metadata_game_2eproto[0]);
+}
+
+// ===================================================================
+
+class UnameLoginReq::_Internal {
+ public:
+  using HasBits = decltype(std::declval<UnameLoginReq>()._has_bits_);
+  static void set_has_uname(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_upwd(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
+  }
+};
+
+UnameLoginReq::UnameLoginReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:UnameLoginReq)
+}
+UnameLoginReq::UnameLoginReq(const UnameLoginReq& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  uname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    uname_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (from._internal_has_uname()) {
+    uname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_uname(), 
+      GetArenaForAllocation());
+  }
+  upwd_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    upwd_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (from._internal_has_upwd()) {
+    upwd_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_upwd(), 
+      GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(copy_constructor:UnameLoginReq)
+}
+
+inline void UnameLoginReq::SharedCtor() {
+uname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  uname_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+upwd_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  upwd_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+UnameLoginReq::~UnameLoginReq() {
+  // @@protoc_insertion_point(destructor:UnameLoginReq)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void UnameLoginReq::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  uname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  upwd_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void UnameLoginReq::ArenaDtor(void* object) {
+  UnameLoginReq* _this = reinterpret_cast< UnameLoginReq* >(object);
+  (void)_this;
+}
+void UnameLoginReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void UnameLoginReq::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void UnameLoginReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:UnameLoginReq)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      uname_.ClearNonDefaultToEmpty();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      upwd_.ClearNonDefaultToEmpty();
+    }
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* UnameLoginReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required string uname = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_uname();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "UnameLoginReq.uname");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // required string upwd = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          auto str = _internal_mutable_upwd();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "UnameLoginReq.upwd");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* UnameLoginReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:UnameLoginReq)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required string uname = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_internal_uname().data(), static_cast<int>(this->_internal_uname().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
+      "UnameLoginReq.uname");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_uname(), target);
+  }
+
+  // required string upwd = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_internal_upwd().data(), static_cast<int>(this->_internal_upwd().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
+      "UnameLoginReq.upwd");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_upwd(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:UnameLoginReq)
+  return target;
+}
+
+size_t UnameLoginReq::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:UnameLoginReq)
+  size_t total_size = 0;
+
+  if (_internal_has_uname()) {
+    // required string uname = 1;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_uname());
+  }
+
+  if (_internal_has_upwd()) {
+    // required string upwd = 2;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_upwd());
+  }
+
+  return total_size;
+}
+size_t UnameLoginReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:UnameLoginReq)
+  size_t total_size = 0;
+
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+    // required string uname = 1;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_uname());
+
+    // required string upwd = 2;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_upwd());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UnameLoginReq::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    UnameLoginReq::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UnameLoginReq::GetClassData() const { return &_class_data_; }
+
+void UnameLoginReq::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<UnameLoginReq *>(to)->MergeFrom(
+      static_cast<const UnameLoginReq &>(from));
+}
+
+
+void UnameLoginReq::MergeFrom(const UnameLoginReq& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:UnameLoginReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      _internal_set_uname(from._internal_uname());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _internal_set_upwd(from._internal_upwd());
+    }
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void UnameLoginReq::CopyFrom(const UnameLoginReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:UnameLoginReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UnameLoginReq::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  return true;
+}
+
+void UnameLoginReq::InternalSwap(UnameLoginReq* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &uname_, lhs_arena,
+      &other->uname_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &upwd_, lhs_arena,
+      &other->upwd_, rhs_arena
+  );
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata UnameLoginReq::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
+      file_level_metadata_game_2eproto[1]);
 }
 
 // ===================================================================
@@ -760,7 +1253,7 @@ void UserCenterInfo::InternalSwap(UserCenterInfo* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata UserCenterInfo::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
-      file_level_metadata_game_2eproto[1]);
+      file_level_metadata_game_2eproto[2]);
 }
 
 // ===================================================================
@@ -1013,7 +1506,1456 @@ void GuestLoginRes::InternalSwap(GuestLoginRes* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata GuestLoginRes::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
-      file_level_metadata_game_2eproto[2]);
+      file_level_metadata_game_2eproto[3]);
+}
+
+// ===================================================================
+
+class UnameLoginRes::_Internal {
+ public:
+  using HasBits = decltype(std::declval<UnameLoginRes>()._has_bits_);
+  static void set_has_status(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static const ::UserCenterInfo& uinfo(const UnameLoginRes* msg);
+  static void set_has_uinfo(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
+  }
+};
+
+const ::UserCenterInfo&
+UnameLoginRes::_Internal::uinfo(const UnameLoginRes* msg) {
+  return *msg->uinfo_;
+}
+UnameLoginRes::UnameLoginRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:UnameLoginRes)
+}
+UnameLoginRes::UnameLoginRes(const UnameLoginRes& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_uinfo()) {
+    uinfo_ = new ::UserCenterInfo(*from.uinfo_);
+  } else {
+    uinfo_ = nullptr;
+  }
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:UnameLoginRes)
+}
+
+inline void UnameLoginRes::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&uinfo_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&status_) -
+    reinterpret_cast<char*>(&uinfo_)) + sizeof(status_));
+}
+
+UnameLoginRes::~UnameLoginRes() {
+  // @@protoc_insertion_point(destructor:UnameLoginRes)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void UnameLoginRes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete uinfo_;
+}
+
+void UnameLoginRes::ArenaDtor(void* object) {
+  UnameLoginRes* _this = reinterpret_cast< UnameLoginRes* >(object);
+  (void)_this;
+}
+void UnameLoginRes::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void UnameLoginRes::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void UnameLoginRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:UnameLoginRes)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(uinfo_ != nullptr);
+    uinfo_->Clear();
+  }
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* UnameLoginRes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required int32 status = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_status(&has_bits);
+          status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .UserCenterInfo uinfo = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_uinfo(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* UnameLoginRes::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:UnameLoginRes)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_status(), target);
+  }
+
+  // optional .UserCenterInfo uinfo = 2;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        2, _Internal::uinfo(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:UnameLoginRes)
+  return target;
+}
+
+size_t UnameLoginRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:UnameLoginRes)
+  size_t total_size = 0;
+
+  // required int32 status = 1;
+  if (_internal_has_status()) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_status());
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // optional .UserCenterInfo uinfo = 2;
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *uinfo_);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UnameLoginRes::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    UnameLoginRes::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UnameLoginRes::GetClassData() const { return &_class_data_; }
+
+void UnameLoginRes::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<UnameLoginRes *>(to)->MergeFrom(
+      static_cast<const UnameLoginRes &>(from));
+}
+
+
+void UnameLoginRes::MergeFrom(const UnameLoginRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:UnameLoginRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      _internal_mutable_uinfo()->::UserCenterInfo::MergeFrom(from._internal_uinfo());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      status_ = from.status_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void UnameLoginRes::CopyFrom(const UnameLoginRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:UnameLoginRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UnameLoginRes::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_uinfo()) {
+    if (!uinfo_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void UnameLoginRes::InternalSwap(UnameLoginRes* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(UnameLoginRes, status_)
+      + sizeof(UnameLoginRes::status_)
+      - PROTOBUF_FIELD_OFFSET(UnameLoginRes, uinfo_)>(
+          reinterpret_cast<char*>(&uinfo_),
+          reinterpret_cast<char*>(&other->uinfo_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata UnameLoginRes::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
+      file_level_metadata_game_2eproto[4]);
+}
+
+// ===================================================================
+
+class EditProfileReq::_Internal {
+ public:
+  using HasBits = decltype(std::declval<EditProfileReq>()._has_bits_);
+  static void set_has_unick(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_uface(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_usex(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
+  }
+};
+
+EditProfileReq::EditProfileReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:EditProfileReq)
+}
+EditProfileReq::EditProfileReq(const EditProfileReq& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  unick_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    unick_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (from._internal_has_unick()) {
+    unick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_unick(), 
+      GetArenaForAllocation());
+  }
+  ::memcpy(&uface_, &from.uface_,
+    static_cast<size_t>(reinterpret_cast<char*>(&usex_) -
+    reinterpret_cast<char*>(&uface_)) + sizeof(usex_));
+  // @@protoc_insertion_point(copy_constructor:EditProfileReq)
+}
+
+inline void EditProfileReq::SharedCtor() {
+unick_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  unick_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&uface_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&usex_) -
+    reinterpret_cast<char*>(&uface_)) + sizeof(usex_));
+}
+
+EditProfileReq::~EditProfileReq() {
+  // @@protoc_insertion_point(destructor:EditProfileReq)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void EditProfileReq::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  unick_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void EditProfileReq::ArenaDtor(void* object) {
+  EditProfileReq* _this = reinterpret_cast< EditProfileReq* >(object);
+  (void)_this;
+}
+void EditProfileReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void EditProfileReq::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void EditProfileReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:EditProfileReq)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    unick_.ClearNonDefaultToEmpty();
+  }
+  if (cached_has_bits & 0x00000006u) {
+    ::memset(&uface_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&usex_) -
+        reinterpret_cast<char*>(&uface_)) + sizeof(usex_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* EditProfileReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required string unick = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_unick();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "EditProfileReq.unick");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // required int32 uface = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_uface(&has_bits);
+          uface_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // required int32 usex = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_usex(&has_bits);
+          usex_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* EditProfileReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:EditProfileReq)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required string unick = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_internal_unick().data(), static_cast<int>(this->_internal_unick().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
+      "EditProfileReq.unick");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_unick(), target);
+  }
+
+  // required int32 uface = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_uface(), target);
+  }
+
+  // required int32 usex = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_usex(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:EditProfileReq)
+  return target;
+}
+
+size_t EditProfileReq::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:EditProfileReq)
+  size_t total_size = 0;
+
+  if (_internal_has_unick()) {
+    // required string unick = 1;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_unick());
+  }
+
+  if (_internal_has_uface()) {
+    // required int32 uface = 2;
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_uface());
+  }
+
+  if (_internal_has_usex()) {
+    // required int32 usex = 3;
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_usex());
+  }
+
+  return total_size;
+}
+size_t EditProfileReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:EditProfileReq)
+  size_t total_size = 0;
+
+  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+    // required string unick = 1;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_unick());
+
+    // required int32 uface = 2;
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_uface());
+
+    // required int32 usex = 3;
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_usex());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData EditProfileReq::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    EditProfileReq::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*EditProfileReq::GetClassData() const { return &_class_data_; }
+
+void EditProfileReq::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<EditProfileReq *>(to)->MergeFrom(
+      static_cast<const EditProfileReq &>(from));
+}
+
+
+void EditProfileReq::MergeFrom(const EditProfileReq& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:EditProfileReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    if (cached_has_bits & 0x00000001u) {
+      _internal_set_unick(from._internal_unick());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      uface_ = from.uface_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      usex_ = from.usex_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void EditProfileReq::CopyFrom(const EditProfileReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:EditProfileReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EditProfileReq::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  return true;
+}
+
+void EditProfileReq::InternalSwap(EditProfileReq* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &unick_, lhs_arena,
+      &other->unick_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(EditProfileReq, usex_)
+      + sizeof(EditProfileReq::usex_)
+      - PROTOBUF_FIELD_OFFSET(EditProfileReq, uface_)>(
+          reinterpret_cast<char*>(&uface_),
+          reinterpret_cast<char*>(&other->uface_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata EditProfileReq::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
+      file_level_metadata_game_2eproto[5]);
+}
+
+// ===================================================================
+
+class EditProfileRes::_Internal {
+ public:
+  using HasBits = decltype(std::declval<EditProfileRes>()._has_bits_);
+  static void set_has_status(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
+  }
+};
+
+EditProfileRes::EditProfileRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:EditProfileRes)
+}
+EditProfileRes::EditProfileRes(const EditProfileRes& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:EditProfileRes)
+}
+
+inline void EditProfileRes::SharedCtor() {
+status_ = 0;
+}
+
+EditProfileRes::~EditProfileRes() {
+  // @@protoc_insertion_point(destructor:EditProfileRes)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void EditProfileRes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void EditProfileRes::ArenaDtor(void* object) {
+  EditProfileRes* _this = reinterpret_cast< EditProfileRes* >(object);
+  (void)_this;
+}
+void EditProfileRes::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void EditProfileRes::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void EditProfileRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:EditProfileRes)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* EditProfileRes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required int32 status = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_status(&has_bits);
+          status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* EditProfileRes::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:EditProfileRes)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_status(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:EditProfileRes)
+  return target;
+}
+
+size_t EditProfileRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:EditProfileRes)
+  size_t total_size = 0;
+
+  // required int32 status = 1;
+  if (_internal_has_status()) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_status());
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData EditProfileRes::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    EditProfileRes::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*EditProfileRes::GetClassData() const { return &_class_data_; }
+
+void EditProfileRes::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<EditProfileRes *>(to)->MergeFrom(
+      static_cast<const EditProfileRes &>(from));
+}
+
+
+void EditProfileRes::MergeFrom(const EditProfileRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:EditProfileRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_status()) {
+    _internal_set_status(from._internal_status());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void EditProfileRes::CopyFrom(const EditProfileRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:EditProfileRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool EditProfileRes::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  return true;
+}
+
+void EditProfileRes::InternalSwap(EditProfileRes* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(status_, other->status_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata EditProfileRes::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
+      file_level_metadata_game_2eproto[6]);
+}
+
+// ===================================================================
+
+class AccountUpgradeReq::_Internal {
+ public:
+  using HasBits = decltype(std::declval<AccountUpgradeReq>()._has_bits_);
+  static void set_has_uname(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_upwd_md5(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
+  }
+};
+
+AccountUpgradeReq::AccountUpgradeReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:AccountUpgradeReq)
+}
+AccountUpgradeReq::AccountUpgradeReq(const AccountUpgradeReq& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  uname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    uname_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (from._internal_has_uname()) {
+    uname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_uname(), 
+      GetArenaForAllocation());
+  }
+  upwd_md5_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    upwd_md5_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (from._internal_has_upwd_md5()) {
+    upwd_md5_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_upwd_md5(), 
+      GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(copy_constructor:AccountUpgradeReq)
+}
+
+inline void AccountUpgradeReq::SharedCtor() {
+uname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  uname_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+upwd_md5_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  upwd_md5_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+AccountUpgradeReq::~AccountUpgradeReq() {
+  // @@protoc_insertion_point(destructor:AccountUpgradeReq)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void AccountUpgradeReq::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  uname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  upwd_md5_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void AccountUpgradeReq::ArenaDtor(void* object) {
+  AccountUpgradeReq* _this = reinterpret_cast< AccountUpgradeReq* >(object);
+  (void)_this;
+}
+void AccountUpgradeReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void AccountUpgradeReq::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void AccountUpgradeReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:AccountUpgradeReq)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      uname_.ClearNonDefaultToEmpty();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      upwd_md5_.ClearNonDefaultToEmpty();
+    }
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* AccountUpgradeReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required string uname = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_uname();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "AccountUpgradeReq.uname");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // required string upwd_md5 = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          auto str = _internal_mutable_upwd_md5();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "AccountUpgradeReq.upwd_md5");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* AccountUpgradeReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:AccountUpgradeReq)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required string uname = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_internal_uname().data(), static_cast<int>(this->_internal_uname().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
+      "AccountUpgradeReq.uname");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_uname(), target);
+  }
+
+  // required string upwd_md5 = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_internal_upwd_md5().data(), static_cast<int>(this->_internal_upwd_md5().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
+      "AccountUpgradeReq.upwd_md5");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_upwd_md5(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:AccountUpgradeReq)
+  return target;
+}
+
+size_t AccountUpgradeReq::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:AccountUpgradeReq)
+  size_t total_size = 0;
+
+  if (_internal_has_uname()) {
+    // required string uname = 1;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_uname());
+  }
+
+  if (_internal_has_upwd_md5()) {
+    // required string upwd_md5 = 2;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_upwd_md5());
+  }
+
+  return total_size;
+}
+size_t AccountUpgradeReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:AccountUpgradeReq)
+  size_t total_size = 0;
+
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+    // required string uname = 1;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_uname());
+
+    // required string upwd_md5 = 2;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_upwd_md5());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AccountUpgradeReq::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    AccountUpgradeReq::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AccountUpgradeReq::GetClassData() const { return &_class_data_; }
+
+void AccountUpgradeReq::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<AccountUpgradeReq *>(to)->MergeFrom(
+      static_cast<const AccountUpgradeReq &>(from));
+}
+
+
+void AccountUpgradeReq::MergeFrom(const AccountUpgradeReq& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:AccountUpgradeReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      _internal_set_uname(from._internal_uname());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _internal_set_upwd_md5(from._internal_upwd_md5());
+    }
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void AccountUpgradeReq::CopyFrom(const AccountUpgradeReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:AccountUpgradeReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountUpgradeReq::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  return true;
+}
+
+void AccountUpgradeReq::InternalSwap(AccountUpgradeReq* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &uname_, lhs_arena,
+      &other->uname_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &upwd_md5_, lhs_arena,
+      &other->upwd_md5_, rhs_arena
+  );
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata AccountUpgradeReq::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
+      file_level_metadata_game_2eproto[7]);
+}
+
+// ===================================================================
+
+class AccountUpgradeRes::_Internal {
+ public:
+  using HasBits = decltype(std::declval<AccountUpgradeRes>()._has_bits_);
+  static void set_has_status(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
+  }
+};
+
+AccountUpgradeRes::AccountUpgradeRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:AccountUpgradeRes)
+}
+AccountUpgradeRes::AccountUpgradeRes(const AccountUpgradeRes& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:AccountUpgradeRes)
+}
+
+inline void AccountUpgradeRes::SharedCtor() {
+status_ = 0;
+}
+
+AccountUpgradeRes::~AccountUpgradeRes() {
+  // @@protoc_insertion_point(destructor:AccountUpgradeRes)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void AccountUpgradeRes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void AccountUpgradeRes::ArenaDtor(void* object) {
+  AccountUpgradeRes* _this = reinterpret_cast< AccountUpgradeRes* >(object);
+  (void)_this;
+}
+void AccountUpgradeRes::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void AccountUpgradeRes::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void AccountUpgradeRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:AccountUpgradeRes)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* AccountUpgradeRes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required int32 status = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_status(&has_bits);
+          status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* AccountUpgradeRes::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:AccountUpgradeRes)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_status(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:AccountUpgradeRes)
+  return target;
+}
+
+size_t AccountUpgradeRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:AccountUpgradeRes)
+  size_t total_size = 0;
+
+  // required int32 status = 1;
+  if (_internal_has_status()) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_status());
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AccountUpgradeRes::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    AccountUpgradeRes::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AccountUpgradeRes::GetClassData() const { return &_class_data_; }
+
+void AccountUpgradeRes::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<AccountUpgradeRes *>(to)->MergeFrom(
+      static_cast<const AccountUpgradeRes &>(from));
+}
+
+
+void AccountUpgradeRes::MergeFrom(const AccountUpgradeRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:AccountUpgradeRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_status()) {
+    _internal_set_status(from._internal_status());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void AccountUpgradeRes::CopyFrom(const AccountUpgradeRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:AccountUpgradeRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountUpgradeRes::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  return true;
+}
+
+void AccountUpgradeRes::InternalSwap(AccountUpgradeRes* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(status_, other->status_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata AccountUpgradeRes::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
+      file_level_metadata_game_2eproto[8]);
+}
+
+// ===================================================================
+
+class LoginOutRes::_Internal {
+ public:
+  using HasBits = decltype(std::declval<LoginOutRes>()._has_bits_);
+  static void set_has_status(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
+  }
+};
+
+LoginOutRes::LoginOutRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:LoginOutRes)
+}
+LoginOutRes::LoginOutRes(const LoginOutRes& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  status_ = from.status_;
+  // @@protoc_insertion_point(copy_constructor:LoginOutRes)
+}
+
+inline void LoginOutRes::SharedCtor() {
+status_ = 0;
+}
+
+LoginOutRes::~LoginOutRes() {
+  // @@protoc_insertion_point(destructor:LoginOutRes)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void LoginOutRes::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void LoginOutRes::ArenaDtor(void* object) {
+  LoginOutRes* _this = reinterpret_cast< LoginOutRes* >(object);
+  (void)_this;
+}
+void LoginOutRes::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void LoginOutRes::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void LoginOutRes::Clear() {
+// @@protoc_insertion_point(message_clear_start:LoginOutRes)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  status_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* LoginOutRes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required int32 status = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_status(&has_bits);
+          status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* LoginOutRes::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:LoginOutRes)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required int32 status = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_status(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:LoginOutRes)
+  return target;
+}
+
+size_t LoginOutRes::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:LoginOutRes)
+  size_t total_size = 0;
+
+  // required int32 status = 1;
+  if (_internal_has_status()) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32SizePlusOne(this->_internal_status());
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LoginOutRes::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    LoginOutRes::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LoginOutRes::GetClassData() const { return &_class_data_; }
+
+void LoginOutRes::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<LoginOutRes *>(to)->MergeFrom(
+      static_cast<const LoginOutRes &>(from));
+}
+
+
+void LoginOutRes::MergeFrom(const LoginOutRes& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:LoginOutRes)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_status()) {
+    _internal_set_status(from._internal_status());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void LoginOutRes::CopyFrom(const LoginOutRes& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:LoginOutRes)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LoginOutRes::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  return true;
+}
+
+void LoginOutRes::InternalSwap(LoginOutRes* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(status_, other->status_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata LoginOutRes::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_game_2eproto_getter, &descriptor_table_game_2eproto_once,
+      file_level_metadata_game_2eproto[9]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
@@ -1021,11 +2963,32 @@ PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::GuestLoginReq* Arena::CreateMaybeMessage< ::GuestLoginReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::GuestLoginReq >(arena);
 }
+template<> PROTOBUF_NOINLINE ::UnameLoginReq* Arena::CreateMaybeMessage< ::UnameLoginReq >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::UnameLoginReq >(arena);
+}
 template<> PROTOBUF_NOINLINE ::UserCenterInfo* Arena::CreateMaybeMessage< ::UserCenterInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::UserCenterInfo >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GuestLoginRes* Arena::CreateMaybeMessage< ::GuestLoginRes >(Arena* arena) {
   return Arena::CreateMessageInternal< ::GuestLoginRes >(arena);
+}
+template<> PROTOBUF_NOINLINE ::UnameLoginRes* Arena::CreateMaybeMessage< ::UnameLoginRes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::UnameLoginRes >(arena);
+}
+template<> PROTOBUF_NOINLINE ::EditProfileReq* Arena::CreateMaybeMessage< ::EditProfileReq >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::EditProfileReq >(arena);
+}
+template<> PROTOBUF_NOINLINE ::EditProfileRes* Arena::CreateMaybeMessage< ::EditProfileRes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::EditProfileRes >(arena);
+}
+template<> PROTOBUF_NOINLINE ::AccountUpgradeReq* Arena::CreateMaybeMessage< ::AccountUpgradeReq >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::AccountUpgradeReq >(arena);
+}
+template<> PROTOBUF_NOINLINE ::AccountUpgradeRes* Arena::CreateMaybeMessage< ::AccountUpgradeRes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::AccountUpgradeRes >(arena);
+}
+template<> PROTOBUF_NOINLINE ::LoginOutRes* Arena::CreateMaybeMessage< ::LoginOutRes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LoginOutRes >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
