@@ -13,4 +13,5 @@ public class Respones
     public static int InvalidParams = -103;
     public static int UnameIsExist = -104;
     public static int UnameOrUpwdError = -105;
+    public static int InvalidOpt = -106;
 }

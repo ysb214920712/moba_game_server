@@ -1,0 +1,196 @@
+20211119 10:07:31 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211119 10:07:31 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211119 10:07:31 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211119 10:07:31 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211119 10:08:06 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211119 10:08:06 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb2
+20211119 10:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb2 usex 0 uface 5 uvip 0 is_guest 0
+20211119 10:09:27 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211119 10:09:27 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211119 10:09:33 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211119 10:09:33 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb2
+20211119 10:09:33 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb2 usex 0 uface 5 uvip 0 is_guest 0
+20211119 10:09:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211119 10:09:49 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 10:09:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211119 10:09:58 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211119 10:10:16 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211119 10:10:16 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 10:10:16 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 10:10:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211119 10:10:49 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 10:10:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	11	1	nil
+20211119 10:10:51 DEBUG ../../apps/lua/scripts/auth_server/login_out.lua:9  
+user1 login out
+20211119 10:10:57 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	4	table
+20211119 10:10:57 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 10:10:57 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 11:30:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211119 11:30:58 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211119 11:30:58 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211119 11:30:58 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211119 11:31:44 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211119 11:31:44 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 11:31:44 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 11:36:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211119 11:36:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211119 11:36:29 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211119 11:36:29 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211119 11:36:45 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211119 11:36:45 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 11:36:45 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 11:37:47 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211119 11:37:47 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 11:37:47 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 11:39:40 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211119 11:39:40 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 11:39:40 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 5 uvip 0 is_guest 0
+20211119 11:40:34 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211119 11:40:34 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 11:43:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211119 11:43:50 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 11:43:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:45:00 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211119 14:45:00 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211119 14:45:00 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211119 14:45:05 ERROR ../../apps/lua/scripts/database/redis_center.lua:12  
+系统试图将驱动器合并到合并驱动器上的目录。
+20211119 14:45:10 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211119 14:45:22 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211119 14:45:22 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:45:22 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:49:05 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211119 14:49:05 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:49:05 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:51:28 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211119 14:51:28 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:51:28 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:53:16 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	4	table
+20211119 14:53:16 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:53:16 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:54:19 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	5	table
+20211119 14:54:19 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:54:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:55:10 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	6	table
+20211119 14:55:10 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:55:10 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:55:37 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	7	table
+20211119 14:55:37 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:55:37 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:55:49 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211119 14:55:49 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:57:13 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	8	table
+20211119 14:57:13 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 14:57:13 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 14:57:16 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	5	1	table
+20211119 14:57:16 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 15:21:04 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211119 15:21:04 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211119 15:21:04 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211119 15:21:04 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211119 15:21:19 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211119 15:21:19 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 15:21:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0
+20211119 17:08:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211119 17:08:44 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211119 17:08:44 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211119 17:08:44 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:14  
+connect to auth center db success
+20211119 17:09:15 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211119 17:09:15 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211119 17:09:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:39  
+hmset moba_auth_center_user_uid_1 unick ysb1 usex 0 uface 6 uvip 0 is_guest 0

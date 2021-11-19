@@ -13,6 +13,8 @@ local cmd_name_map = {
     "LoginOutRes",
     "GetUgameInfoReq",
     "GetUgameInfoRes",
+    "RecvLoginBonuesReq",
+    "RecvLoginBonuesRes",
 }
 
 return cmd_name_map

@@ -313,6 +313,27 @@ namespace gprotocol
       get { return _udata3; }
       set { _udata3 = value; }
     }
+    private int _bonues_status;
+    [global::ProtoBuf.ProtoMember(9, IsRequired = true, Name=@"bonues_status", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int bonues_status
+    {
+      get { return _bonues_status; }
+      set { _bonues_status = value; }
+    }
+    private int _bonues;
+    [global::ProtoBuf.ProtoMember(10, IsRequired = true, Name=@"bonues", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int bonues
+    {
+      get { return _bonues; }
+      set { _bonues = value; }
+    }
+    private int _days;
+    [global::ProtoBuf.ProtoMember(11, IsRequired = true, Name=@"days", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int days
+    {
+      get { return _days; }
+      set { _days = value; }
+    }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
@@ -337,6 +358,23 @@ namespace gprotocol
     {
       get { return _uinfo; }
       set { _uinfo = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"RecvLoginBonuesRes")]
+  public partial class RecvLoginBonuesRes : global::ProtoBuf.IExtensible
+  {
+    public RecvLoginBonuesRes() {}
+    
+    private int _status;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"status", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int status
+    {
+      get { return _status; }
+      set { _status = value; }
     }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
@@ -407,7 +445,13 @@ namespace gprotocol
       eGetUgameInfoReq = 13,
             
       [global::ProtoBuf.ProtoEnum(Name=@"eGetUgameInfoRes", Value=14)]
-      eGetUgameInfoRes = 14
+      eGetUgameInfoRes = 14,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eRecvLoginBonuesReq", Value=15)]
+      eRecvLoginBonuesReq = 15,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eRecvLoginBonuesRes", Value=16)]
+      eRecvLoginBonuesRes = 16
     }
   
 }

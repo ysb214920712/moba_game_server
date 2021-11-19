@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         GameObject.DontDestroyOnLoad(GameObject.Find("UI"));
 
         event_manager.Instance.init();
+        ulevel.Instance.init();
         auth_service_proxy.Instance.init();
         system_service_proxy.Instance.init();
 

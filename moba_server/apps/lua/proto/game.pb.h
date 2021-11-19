@@ -47,7 +47,7 @@ struct TableStruct_game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[13]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -78,6 +78,9 @@ extern GuestLoginResDefaultTypeInternal _GuestLoginRes_default_instance_;
 class LoginOutRes;
 struct LoginOutResDefaultTypeInternal;
 extern LoginOutResDefaultTypeInternal _LoginOutRes_default_instance_;
+class RecvLoginBonuesRes;
+struct RecvLoginBonuesResDefaultTypeInternal;
+extern RecvLoginBonuesResDefaultTypeInternal _RecvLoginBonuesRes_default_instance_;
 class UnameLoginReq;
 struct UnameLoginReqDefaultTypeInternal;
 extern UnameLoginReqDefaultTypeInternal _UnameLoginReq_default_instance_;
@@ -99,6 +102,7 @@ template<> ::GetUgameInfoRes* Arena::CreateMaybeMessage<::GetUgameInfoRes>(Arena
 template<> ::GuestLoginReq* Arena::CreateMaybeMessage<::GuestLoginReq>(Arena*);
 template<> ::GuestLoginRes* Arena::CreateMaybeMessage<::GuestLoginRes>(Arena*);
 template<> ::LoginOutRes* Arena::CreateMaybeMessage<::LoginOutRes>(Arena*);
+template<> ::RecvLoginBonuesRes* Arena::CreateMaybeMessage<::RecvLoginBonuesRes>(Arena*);
 template<> ::UnameLoginReq* Arena::CreateMaybeMessage<::UnameLoginReq>(Arena*);
 template<> ::UnameLoginRes* Arena::CreateMaybeMessage<::UnameLoginRes>(Arena*);
 template<> ::UserCenterInfo* Arena::CreateMaybeMessage<::UserCenterInfo>(Arena*);
@@ -145,11 +149,13 @@ enum Cmd : int {
   eLoginOutReq = 11,
   eLoginOutRes = 12,
   eGetUgameInfoReq = 13,
-  eGetUgameInfoRes = 14
+  eGetUgameInfoRes = 14,
+  eRecvLoginBonuesReq = 15,
+  eRecvLoginBonuesRes = 16
 };
 bool Cmd_IsValid(int value);
 constexpr Cmd Cmd_MIN = INVALID_CMD;
-constexpr Cmd Cmd_MAX = eGetUgameInfoRes;
+constexpr Cmd Cmd_MAX = eRecvLoginBonuesRes;
 constexpr int Cmd_ARRAYSIZE = Cmd_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Cmd_descriptor();
@@ -2092,6 +2098,9 @@ class UserGameInfo final :
     kUdata1FieldNumber = 6,
     kUdata2FieldNumber = 7,
     kUdata3FieldNumber = 8,
+    kBonuesStatusFieldNumber = 9,
+    kBonuesFieldNumber = 10,
+    kDaysFieldNumber = 11,
   };
   // required int32 uchip = 1;
   bool has_uchip() const;
@@ -2197,6 +2206,45 @@ class UserGameInfo final :
   void _internal_set_udata3(int32_t value);
   public:
 
+  // required int32 bonues_status = 9;
+  bool has_bonues_status() const;
+  private:
+  bool _internal_has_bonues_status() const;
+  public:
+  void clear_bonues_status();
+  int32_t bonues_status() const;
+  void set_bonues_status(int32_t value);
+  private:
+  int32_t _internal_bonues_status() const;
+  void _internal_set_bonues_status(int32_t value);
+  public:
+
+  // required int32 bonues = 10;
+  bool has_bonues() const;
+  private:
+  bool _internal_has_bonues() const;
+  public:
+  void clear_bonues();
+  int32_t bonues() const;
+  void set_bonues(int32_t value);
+  private:
+  int32_t _internal_bonues() const;
+  void _internal_set_bonues(int32_t value);
+  public:
+
+  // required int32 days = 11;
+  bool has_days() const;
+  private:
+  bool _internal_has_days() const;
+  public:
+  void clear_days();
+  int32_t days() const;
+  void set_days(int32_t value);
+  private:
+  int32_t _internal_days() const;
+  void _internal_set_days(int32_t value);
+  public:
+
   // @@protoc_insertion_point(class_scope:UserGameInfo)
  private:
   class _Internal;
@@ -2217,6 +2265,9 @@ class UserGameInfo final :
   int32_t udata1_;
   int32_t udata2_;
   int32_t udata3_;
+  int32_t bonues_status_;
+  int32_t bonues_;
+  int32_t days_;
   friend struct ::TableStruct_game_2eproto;
 };
 // -------------------------------------------------------------------
@@ -2394,6 +2445,164 @@ class GetUgameInfoRes final :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::UserGameInfo* uinfo_;
+  int32_t status_;
+  friend struct ::TableStruct_game_2eproto;
+};
+// -------------------------------------------------------------------
+
+class RecvLoginBonuesRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:RecvLoginBonuesRes) */ {
+ public:
+  inline RecvLoginBonuesRes() : RecvLoginBonuesRes(nullptr) {}
+  ~RecvLoginBonuesRes() override;
+  explicit constexpr RecvLoginBonuesRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  RecvLoginBonuesRes(const RecvLoginBonuesRes& from);
+  RecvLoginBonuesRes(RecvLoginBonuesRes&& from) noexcept
+    : RecvLoginBonuesRes() {
+    *this = ::std::move(from);
+  }
+
+  inline RecvLoginBonuesRes& operator=(const RecvLoginBonuesRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline RecvLoginBonuesRes& operator=(RecvLoginBonuesRes&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const RecvLoginBonuesRes& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const RecvLoginBonuesRes* internal_default_instance() {
+    return reinterpret_cast<const RecvLoginBonuesRes*>(
+               &_RecvLoginBonuesRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    12;
+
+  friend void swap(RecvLoginBonuesRes& a, RecvLoginBonuesRes& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(RecvLoginBonuesRes* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(RecvLoginBonuesRes* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  RecvLoginBonuesRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<RecvLoginBonuesRes>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const RecvLoginBonuesRes& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const RecvLoginBonuesRes& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RecvLoginBonuesRes* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "RecvLoginBonuesRes";
+  }
+  protected:
+  explicit RecvLoginBonuesRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kStatusFieldNumber = 1,
+  };
+  // required int32 status = 1;
+  bool has_status() const;
+  private:
+  bool _internal_has_status() const;
+  public:
+  void clear_status();
+  int32_t status() const;
+  void set_status(int32_t value);
+  private:
+  int32_t _internal_status() const;
+  void _internal_set_status(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:RecvLoginBonuesRes)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   int32_t status_;
   friend struct ::TableStruct_game_2eproto;
 };
@@ -3643,6 +3852,90 @@ inline void UserGameInfo::set_udata3(int32_t value) {
   // @@protoc_insertion_point(field_set:UserGameInfo.udata3)
 }
 
+// required int32 bonues_status = 9;
+inline bool UserGameInfo::_internal_has_bonues_status() const {
+  bool value = (_has_bits_[0] & 0x00000100u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_bonues_status() const {
+  return _internal_has_bonues_status();
+}
+inline void UserGameInfo::clear_bonues_status() {
+  bonues_status_ = 0;
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline int32_t UserGameInfo::_internal_bonues_status() const {
+  return bonues_status_;
+}
+inline int32_t UserGameInfo::bonues_status() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.bonues_status)
+  return _internal_bonues_status();
+}
+inline void UserGameInfo::_internal_set_bonues_status(int32_t value) {
+  _has_bits_[0] |= 0x00000100u;
+  bonues_status_ = value;
+}
+inline void UserGameInfo::set_bonues_status(int32_t value) {
+  _internal_set_bonues_status(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.bonues_status)
+}
+
+// required int32 bonues = 10;
+inline bool UserGameInfo::_internal_has_bonues() const {
+  bool value = (_has_bits_[0] & 0x00000200u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_bonues() const {
+  return _internal_has_bonues();
+}
+inline void UserGameInfo::clear_bonues() {
+  bonues_ = 0;
+  _has_bits_[0] &= ~0x00000200u;
+}
+inline int32_t UserGameInfo::_internal_bonues() const {
+  return bonues_;
+}
+inline int32_t UserGameInfo::bonues() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.bonues)
+  return _internal_bonues();
+}
+inline void UserGameInfo::_internal_set_bonues(int32_t value) {
+  _has_bits_[0] |= 0x00000200u;
+  bonues_ = value;
+}
+inline void UserGameInfo::set_bonues(int32_t value) {
+  _internal_set_bonues(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.bonues)
+}
+
+// required int32 days = 11;
+inline bool UserGameInfo::_internal_has_days() const {
+  bool value = (_has_bits_[0] & 0x00000400u) != 0;
+  return value;
+}
+inline bool UserGameInfo::has_days() const {
+  return _internal_has_days();
+}
+inline void UserGameInfo::clear_days() {
+  days_ = 0;
+  _has_bits_[0] &= ~0x00000400u;
+}
+inline int32_t UserGameInfo::_internal_days() const {
+  return days_;
+}
+inline int32_t UserGameInfo::days() const {
+  // @@protoc_insertion_point(field_get:UserGameInfo.days)
+  return _internal_days();
+}
+inline void UserGameInfo::_internal_set_days(int32_t value) {
+  _has_bits_[0] |= 0x00000400u;
+  days_ = value;
+}
+inline void UserGameInfo::set_days(int32_t value) {
+  _internal_set_days(value);
+  // @@protoc_insertion_point(field_set:UserGameInfo.days)
+}
+
 // -------------------------------------------------------------------
 
 // GetUgameInfoRes
@@ -3765,9 +4058,43 @@ inline void GetUgameInfoRes::set_allocated_uinfo(::UserGameInfo* uinfo) {
   // @@protoc_insertion_point(field_set_allocated:GetUgameInfoRes.uinfo)
 }
 
+// -------------------------------------------------------------------
+
+// RecvLoginBonuesRes
+
+// required int32 status = 1;
+inline bool RecvLoginBonuesRes::_internal_has_status() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool RecvLoginBonuesRes::has_status() const {
+  return _internal_has_status();
+}
+inline void RecvLoginBonuesRes::clear_status() {
+  status_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline int32_t RecvLoginBonuesRes::_internal_status() const {
+  return status_;
+}
+inline int32_t RecvLoginBonuesRes::status() const {
+  // @@protoc_insertion_point(field_get:RecvLoginBonuesRes.status)
+  return _internal_status();
+}
+inline void RecvLoginBonuesRes::_internal_set_status(int32_t value) {
+  _has_bits_[0] |= 0x00000001u;
+  status_ = value;
+}
+inline void RecvLoginBonuesRes::set_status(int32_t value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:RecvLoginBonuesRes.status)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -1,9 +1,11 @@
 local Stype = require("Stype")
 local Cmd = require("Cmd")
 local ugame = require("system_server/ugame")
+local login_bonues = require("system_server/login_bonues")
 
 local system_service_hanlders = {}
 system_service_hanlders[Cmd.eGetUgameInfoReq] = ugame.get_ugame_info
+system_service_hanlders[Cmd.eRecvLoginBonuesReq] = login_bonues.recv_login_bonues
 
 
 -- {stype, ctype, utag, body}

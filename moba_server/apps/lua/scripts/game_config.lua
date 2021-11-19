@@ -47,6 +47,12 @@ local game_config = {
         uname = "root",
         upwd = "ysb214920712",
     },
+
+    game_redis = {
+        host = "127.0.0.1",
+        port = 6379,
+        db_index = 2,
+    },
 }
 
 return game_config

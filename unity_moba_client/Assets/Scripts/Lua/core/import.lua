@@ -153,6 +153,7 @@ U.auth_service_proxy = CS.auth_service_proxy
 U.system_service_proxy = CS.system_service_proxy
 U.event_mgr = CS.event_manager
 U.ugame = CS.ugame
+U.ulevel = CS.ulevel
 
 _G.Json = U.LuaJson
 _G.U = U

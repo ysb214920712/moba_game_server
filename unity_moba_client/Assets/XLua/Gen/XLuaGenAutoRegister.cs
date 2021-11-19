@@ -64,6 +64,9 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(ugame), ugameWrap.__Register);
         
         
+            translator.DelayWrapLoader(typeof(ulevel), ulevelWrap.__Register);
+        
+        
             translator.DelayWrapLoader(typeof(netLuaBridgeCS), netLuaBridgeCSWrap.__Register);
         
         
@@ -171,13 +174,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(Tutorial.DerivedClassExtensions), TutorialDerivedClassExtensionsWrap.__Register);
         
-        
-            translator.DelayWrapLoader(typeof(XLuaTest.LuaBehaviour), XLuaTestLuaBehaviourWrap.__Register);
-        
         }
         
         static void wrapInit1(LuaEnv luaenv, ObjectTranslator translator)
         {
+        
+            translator.DelayWrapLoader(typeof(XLuaTest.LuaBehaviour), XLuaTestLuaBehaviourWrap.__Register);
+        
         
             translator.DelayWrapLoader(typeof(XLuaTest.Pedding), XLuaTestPeddingWrap.__Register);
         
@@ -328,13 +331,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.RectTransformUtility), UnityEngineRectTransformUtilityWrap.__Register);
         
-        
-            translator.DelayWrapLoader(typeof(UnityEngine.QualitySettings), UnityEngineQualitySettingsWrap.__Register);
-        
         }
         
         static void wrapInit2(LuaEnv luaenv, ObjectTranslator translator)
         {
+        
+            translator.DelayWrapLoader(typeof(UnityEngine.QualitySettings), UnityEngineQualitySettingsWrap.__Register);
+        
         
             translator.DelayWrapLoader(typeof(UnityEngine.RuntimePlatform), UnityEngineRuntimePlatformWrap.__Register);
         
@@ -485,13 +488,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(DownloadHelper), DownloadHelperWrap.__Register);
         
-        
-            translator.DelayWrapLoader(typeof(ReferGameObjects), ReferGameObjectsWrap.__Register);
-        
         }
         
         static void wrapInit3(LuaEnv luaenv, ObjectTranslator translator)
         {
+        
+            translator.DelayWrapLoader(typeof(ReferGameObjects), ReferGameObjectsWrap.__Register);
+        
         
             translator.DelayWrapLoader(typeof(VibrateTypes), VibrateTypesWrap.__Register);
         

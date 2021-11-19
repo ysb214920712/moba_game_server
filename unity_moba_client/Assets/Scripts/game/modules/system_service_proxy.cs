@@ -28,12 +28,36 @@ public class system_service_proxy : Singleton<system_service_proxy>
         event_manager.Instance.dispatch_event("sync_ugame_info", null);
     }
 
+    void on_recv_login_bonues_return(cmd_msg msg)
+    {
+        RecvLoginBonuesRes res = proto_man.protobuf_deserialize<RecvLoginBonuesRes>(msg.body);
+        if (res == null)
+        {
+            return;
+        }
+
+        if (res.status != Respones.OK)
+        {
+            Debug.Log("Recv Login Bonues Status:" + res.status);
+            return;
+        }
+
+        ugame.Instance.ugame_info.uchip += ugame.Instance.ugame_info.bonues;
+        ugame.Instance.ugame_info.bonues_status = 1;
+
+        event_manager.Instance.dispatch_event("sync_ugame_info", null);
+    }
+
     void on_system_server_return(cmd_msg msg)
     {
         switch (msg.ctype)
         {
             case (int)Cmd.eGetUgameInfoRes:
                 this.on_get_ugame_info_return(msg);
+                break;
+
+            case (int)Cmd.eRecvLoginBonuesRes:
+                this.on_recv_login_bonues_return(msg);
                 break;
 
             default:
@@ -49,5 +73,10 @@ public class system_service_proxy : Singleton<system_service_proxy>
     public void load_user_ugame_info()
     {
         network.Instance.send_protobuf_cmd((int)Stype.System, (int)Cmd.eGetUgameInfoReq, null);
+    }
+
+    public void recv_login_bonues()
+    {
+        network.Instance.send_protobuf_cmd((int)Stype.System, (int)Cmd.eRecvLoginBonuesReq, null);
     }
 }

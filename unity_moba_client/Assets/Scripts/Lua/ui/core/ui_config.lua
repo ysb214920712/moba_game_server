@@ -127,4 +127,12 @@ M.add_setting({
     mask = true,
 })
 
+M.add_setting({
+    lua_file = "ui/ui_login_bonues",
+    res = "ui/login_bonues",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Pop,
+    mask = true,
+})
+
 return M

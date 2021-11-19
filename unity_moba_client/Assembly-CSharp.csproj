@@ -338,6 +338,7 @@
      <Compile Include="Assets\Scripts\game\modules\auth_service_proxy.cs" />
      <Compile Include="Assets\Scripts\game\modules\system_service_proxy.cs" />
      <Compile Include="Assets\Scripts\game\modules\ugame.cs" />
+     <Compile Include="Assets\Scripts\game\modules\ulevel.cs" />
      <Compile Include="Assets\Scripts\game\netLuaBridgeCS.cs" />
      <Compile Include="Assets\Scripts\game\Respones.cs" />
      <Compile Include="Assets\Scripts\game\ResSystem\BufferAsset.cs" />
@@ -431,6 +432,7 @@
      <Compile Include="Assets\XLua\Gen\Tutorial_ICalcWrap.cs" />
      <Compile Include="Assets\XLua\Gen\ugameWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UILocalizeWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\ulevelWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_AI_NavMeshAgentWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_AnimationClipWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_AnimationCurveWrap.cs" />

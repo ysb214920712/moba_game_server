@@ -31,7 +31,7 @@ namespace XLua.CSObjectWrap
 			Utils.EndObjectRegister(type, L, translator, null, null,
 			    null, null, null);
 
-		    Utils.BeginClassRegister(type, L, __CreateInstance, 1, 7, 7);
+		    Utils.BeginClassRegister(type, L, __CreateInstance, 1, 8, 8);
 			
 			
             
@@ -42,6 +42,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.CLS_GETTER_IDX, "InvalidParams", _g_get_InvalidParams);
             Utils.RegisterFunc(L, Utils.CLS_GETTER_IDX, "UnameIsExist", _g_get_UnameIsExist);
             Utils.RegisterFunc(L, Utils.CLS_GETTER_IDX, "UnameOrUpwdError", _g_get_UnameOrUpwdError);
+            Utils.RegisterFunc(L, Utils.CLS_GETTER_IDX, "InvalidOpt", _g_get_InvalidOpt);
             
 			Utils.RegisterFunc(L, Utils.CLS_SETTER_IDX, "OK", _s_set_OK);
             Utils.RegisterFunc(L, Utils.CLS_SETTER_IDX, "SystemErr", _s_set_SystemErr);
@@ -50,6 +51,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.CLS_SETTER_IDX, "InvalidParams", _s_set_InvalidParams);
             Utils.RegisterFunc(L, Utils.CLS_SETTER_IDX, "UnameIsExist", _s_set_UnameIsExist);
             Utils.RegisterFunc(L, Utils.CLS_SETTER_IDX, "UnameOrUpwdError", _s_set_UnameOrUpwdError);
+            Utils.RegisterFunc(L, Utils.CLS_SETTER_IDX, "InvalidOpt", _s_set_InvalidOpt);
             
 			
 			Utils.EndClassRegister(type, L, translator);
@@ -172,6 +174,18 @@ namespace XLua.CSObjectWrap
             return 1;
         }
         
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _g_get_InvalidOpt(RealStatePtr L)
+        {
+		    try {
+            
+			    LuaAPI.xlua_pushinteger(L, Respones.InvalidOpt);
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 1;
+        }
+        
         
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
@@ -258,6 +272,19 @@ namespace XLua.CSObjectWrap
 		    try {
                 
 			    Respones.UnameOrUpwdError = LuaAPI.xlua_tointeger(L, 1);
+            
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            return 0;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _s_set_InvalidOpt(RealStatePtr L)
+        {
+		    try {
+                
+			    Respones.InvalidOpt = LuaAPI.xlua_tointeger(L, 1);
             
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);

@@ -46,6 +46,7 @@ function get_uinfo_inredis(uid, ret_handler)
     local redis_cmd = "hgetall moba_auth_center_user_uid_" .. uid
     Redis.query(redis_conn, redis_cmd, function(err, ret)
         if err then
+            Logger.error(err)
             if ret_handler then
                 ret_handler(err, nil)
             end

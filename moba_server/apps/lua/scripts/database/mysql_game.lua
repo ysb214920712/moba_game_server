@@ -32,6 +32,7 @@ function get_ugame_info(uid, ret_handler)
 
     Mysql.query(mysql_conn, sql_cmd, function(err, ret)
         if err then
+            Logger.error(err)
             if ret_handler then
                 ret_handler(err, nil)
             end
@@ -77,6 +78,135 @@ function insert_ugame_info(uid, ret_handler)
 
     Mysql.query(mysql_conn, sql_cmd, function(err, ret)
         if err then
+            Logger.error(err)
+            ret_handler(err, nil)
+            return
+        else
+            ret_handler(nil, nil) 
+        end
+    end)
+end
+
+function get_bonues_info(uid, ret_handler)
+    if mysql_conn == nil then
+        if ret_handler then
+            ret_handler("mysql is not connected", nil)
+        end
+        return
+    end
+
+    local sql = "select bonues, status, bonues_time, days from login_bonues where uid = %d limit 1"
+    local sql_cmd = string.format(sql, uid)
+
+    Mysql.query(mysql_conn, sql_cmd, function(err, ret)
+        if err then
+            Logger.error(err)
+            if ret_handler then
+                ret_handler(err, nil)
+            end
+            return
+        end
+
+        if ret == nil or #ret <= 0 then
+            if ret_handler then
+                ret_handler(nil, nil)
+            end
+            return
+        end
+
+        local result = ret[1]
+        local bonues_info = {}
+        bonues_info.bonues = tonumber(result[1])
+		bonues_info.status = tonumber(result[2])
+		bonues_info.bonues_time = tonumber(result[3])
+		bonues_info.days = tonumber(result[4])
+
+        if ret_handler then
+            ret_handler(nil, bonues_info)
+        end
+    end)
+end
+
+function insert_bonues_info(uid, ret_handler)
+    if mysql_conn == nil then
+        if ret_handler then
+            ret_handler("mysql is not connected", nil)
+        end
+        return
+    end
+
+    local sql = "insert into login_bonues(`uid`, `bonues_time`, `status`)values(%d, %d, 1)"
+	local sql_cmd = string.format(sql, uid, Utils.timestamp())
+
+    Mysql.query(mysql_conn, sql_cmd, function(err, ret)
+        if err then
+            Logger.error(err)
+            ret_handler(err, nil)
+            return
+        else
+            ret_handler(nil, nil) 
+        end
+    end)
+end
+
+function update_login_bonues(uid, bonues_info, ret_handler)
+    if mysql_conn == nil then
+        if ret_handler then
+            ret_handler("mysql is not connected", nil)
+        end
+        return
+    end
+
+    local sql = "update login_bonues set status = 0, bonues = %d, bonues_time = %d, days = %d where uid = %d"
+    local sql_cmd = string.format(sql, bonues_info.bonues, bonues_info.bonues_time, bonues_info.days, uid)
+
+    Mysql.query(mysql_conn, sql_cmd, function(err, ret)
+        if err then
+            Logger.error(err)
+            ret_handler(err, nil)
+            return
+        else
+            ret_handler(nil, nil) 
+        end
+    end)
+end
+
+function update_login_bonues_status(uid, ret_handler)
+    if mysql_conn == nil then
+        if ret_handler then
+            ret_handler("mysql is not connected", nil)
+        end
+        return
+    end
+
+    local sql = "update login_bonues set status = 1 where uid = %d"
+    local sql_cmd = string.format(sql, uid)
+
+    Mysql.query(mysql_conn, sql_cmd, function(err, ret)
+        if err then
+            Logger.error(err)
+            ret_handler(err, nil)
+            return
+        else
+            ret_handler(nil, nil) 
+        end
+    end)
+end
+
+function add_chip(uid, chip, ret_handler)
+    if mysql_conn == nil then
+        if ret_handler then
+            ret_handler("mysql is not connected", nil)
+        end
+        return
+    end
+
+    local sql = "update ugame set uchip = uchip + %d where uid = %d"
+    local sql_cmd = string.format(sql, chip, uid)
+
+    Mysql.query(mysql_conn, sql_cmd, function(err, ret)
+        if err then
+            Logger.error(err)
             ret_handler(err, nil)
             return
         else
@@ -88,6 +218,11 @@ end
 local mysql_game = {
     get_ugame_info = get_ugame_info,
     insert_ugame_info = insert_ugame_info,
+    get_bonues_info = get_bonues_info,
+    insert_bonues_info = insert_bonues_info,
+    update_login_bonues = update_login_bonues,
+    update_login_bonues_status = update_login_bonues_status,
+    add_chip = add_chip,
 }
 
 return mysql_game
