@@ -17,7 +17,7 @@ The development environment to be prepared:
   6.Lua5.3.
   
 
-Server Startup Process:
+## Server Startup Process:
 
 1.start the MySQL database  
 
