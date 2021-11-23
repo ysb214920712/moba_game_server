@@ -17,6 +17,13 @@ remote_servers[Stype.System] = {
     desic = "System server",
 }
 
+remote_servers[Stype.Logic] = {
+    stype = Stype.Logic,
+    ip = "127.0.0.1",
+    port = 8002,
+    desic = "Logic server",
+}
+
 local game_config = {
     gateway_tcp_ip = "127.0.0.1",
     gateway_tcp_port = 6080,

@@ -37,6 +37,11 @@ enum Cmd {
   eGetWorldRankUchipReq = 17;
   eGetWorldRankUchipRes = 18;
 
+  eGetSysMsgReq = 19;
+  eGetSysMsgRes = 20;
+
+  eLoginLogicReq = 21;
+  eLoginLogicRes = 22;
 }
 
 message GuestLoginReq {
@@ -125,4 +130,18 @@ message WorldChipRankInfo {
 message GetWorldRankUchipRes {
   required int32 status = 1;
   repeated WorldChipRankInfo rank_info = 2;
+}
+
+message GetSysMsgReq {
+  required int32 ver_num = 1;
+}
+
+message GetSysMsgRes {
+  required int32 status = 1;
+  optional int32 ver_num = 2;
+  repeated string sys_msgs = 3;
+}
+
+message LoginLogicRes {
+  required int32 status = 1;
 }

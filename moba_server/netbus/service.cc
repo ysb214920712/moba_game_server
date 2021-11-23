@@ -27,6 +27,11 @@ void service::on_session_disconnect(session* s, int stype)
 
 }
 
+void service::on_session_connect(session* s, int stype)
+{
+
+}
+
 bool service::on_session_recv_raw_cmd(session* s, struct raw_cmd* raw)
 {
 	return false;

@@ -41,6 +41,8 @@ function M:refresh_ui()
 		today_go:SetActive(day == i)
 		pass_go:SetActive(day > i or (day == i and status == 1))
 	end
+	self.gos.btn_get_.interactable = status == 0
+	self.gos.txt_get_.text = status == 0 and "领取" or "已领取"
 end
 
 function M:get_bonues()

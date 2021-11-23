@@ -151,6 +151,7 @@ U.MaterialConfig = CS.MaterialConfig
 ---------- MyFrame
 U.auth_service_proxy = CS.auth_service_proxy
 U.system_service_proxy = CS.system_service_proxy
+U.logic_service_proxy = CS.logic_service_proxy
 U.event_mgr = CS.event_manager
 U.ugame = CS.ugame
 U.ulevel = CS.ulevel

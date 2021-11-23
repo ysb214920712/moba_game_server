@@ -336,6 +336,7 @@
      <Compile Include="Assets\Scripts\game\Helper\VibrateHelper.cs" />
      <Compile Include="Assets\Scripts\game\Helper\XOR.cs" />
      <Compile Include="Assets\Scripts\game\modules\auth_service_proxy.cs" />
+     <Compile Include="Assets\Scripts\game\modules\logic_service_proxy.cs" />
      <Compile Include="Assets\Scripts\game\modules\system_service_proxy.cs" />
      <Compile Include="Assets\Scripts\game\modules\ugame.cs" />
      <Compile Include="Assets\Scripts\game\modules\ulevel.cs" />
@@ -398,6 +399,7 @@
      <Compile Include="Assets\XLua\Gen\EventTriggerListenerWrap.cs" />
      <Compile Include="Assets\XLua\Gen\GameReloaderWrap.cs" />
      <Compile Include="Assets\XLua\Gen\GHelperWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\logic_service_proxyWrap.cs" />
      <Compile Include="Assets\XLua\Gen\LuaBridgeAnimatorEventWrap.cs" />
      <Compile Include="Assets\XLua\Gen\LuaBridgeApplicationWrap.cs" />
      <Compile Include="Assets\XLua\Gen\LuaBridgeBaseWrap.cs" />

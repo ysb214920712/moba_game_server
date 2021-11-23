@@ -215,6 +215,34 @@ function add_chip(uid, chip, ret_handler)
     end)
 end
 
+function get_sys_msg(ret_handler)
+    if mysql_conn == nil then
+        if ret_handler then
+            ret_handler("mysql is not connected", nil)
+        end
+        return
+    end
+
+    local sql = "select msg from sys_msg"
+
+    Mysql.query(mysql_conn, sql, function(err, ret)
+        if err then
+            Logger.error(err)
+            ret_handler(err, nil)
+            return
+        elseif ret == nil or #ret <= 0 then
+            ret_handler(nil, nil) 
+            return
+        end
+
+        local result = {}
+        for k, v in pairs(ret) do
+            result[k] = v[1]
+        end
+        ret_handler(nil, result)
+    end)
+end
+
 local mysql_game = {
     get_ugame_info = get_ugame_info,
     insert_ugame_info = insert_ugame_info,
@@ -223,6 +251,7 @@ local mysql_game = {
     update_login_bonues = update_login_bonues,
     update_login_bonues_status = update_login_bonues_status,
     add_chip = add_chip,
+    get_sys_msg = get_sys_msg,
 }
 
 return mysql_game

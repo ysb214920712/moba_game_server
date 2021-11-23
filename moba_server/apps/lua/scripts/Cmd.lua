@@ -17,6 +17,10 @@ local Cmd = {
     eRecvLoginBonuesRes = 16,
     eGetWorldRankUchipReq = 17,
     eGetWorldRankUchipRes = 18,
+    eGetSysMsgReq = 19,
+    eGetSysMsgRes = 20,
+    eLoginLogicReq = 21,
+    eLoginLogicRes = 22,
 }
 
 return Cmd

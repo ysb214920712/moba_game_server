@@ -7,6 +7,9 @@ using XLua;
 [LuaCallCSharp]
 public class system_service_proxy : Singleton<system_service_proxy>
 {
+    private int ver_num = 0;
+    private List<string> sys_msgs = null;
+
     void on_get_ugame_info_return(cmd_msg msg)
     {
         GetUgameInfoRes res = proto_man.protobuf_deserialize<GetUgameInfoRes>(msg.body);
@@ -65,6 +68,40 @@ public class system_service_proxy : Singleton<system_service_proxy>
         event_manager.Instance.dispatch_event("get_rank_list", res.rank_info);
     }
 
+    void on_get_sys_msg_return(cmd_msg msg)
+    {
+        GetSysMsgRes res = proto_man.protobuf_deserialize<GetSysMsgRes>(msg.body);
+        if (res == null)
+        {
+            return;
+        }
+
+        if (res.status != Respones.OK)
+        {
+            Debug.Log("Get Sys Msg Status:" + res.status);
+            return;
+        }
+
+        if (this.ver_num == res.ver_num)
+        {
+
+        }
+        else
+        {
+            this.ver_num = res.ver_num;
+            this.sys_msgs = res.sys_msgs;
+        }
+
+        if (this.sys_msgs != null)
+        {
+            // for (int i = 0; i < this.sys_msgs.Count; i++)
+            // {
+            //     Debug.Log(this.sys_msgs[i]);
+            // }
+            event_manager.Instance.dispatch_event("get_sys_msg", this.sys_msgs);
+        }
+    }
+
     void on_system_server_return(cmd_msg msg)
     {
         switch (msg.ctype)
@@ -79,6 +116,10 @@ public class system_service_proxy : Singleton<system_service_proxy>
 
             case (int)Cmd.eGetWorldRankUchipRes:
                 this.on_get_world_uchip_rank_info_return(msg);
+                break;
+
+            case (int)Cmd.eGetSysMsgRes:
+                this.on_get_sys_msg_return(msg);
                 break;
 
             default:
@@ -104,5 +145,13 @@ public class system_service_proxy : Singleton<system_service_proxy>
     public void get_world_uchip_rank_info()
     {
         network.Instance.send_protobuf_cmd((int)Stype.System, (int)Cmd.eGetWorldRankUchipReq, null);
+    }
+
+    public void get_sys_msg()
+    {
+        GetSysMsgReq req = new GetSysMsgReq();
+        req.ver_num = this.ver_num;
+
+        network.Instance.send_protobuf_cmd((int)Stype.System, (int)Cmd.eGetSysMsgReq, req);
     }
 }

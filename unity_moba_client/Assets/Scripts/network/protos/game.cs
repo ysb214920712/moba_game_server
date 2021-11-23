@@ -450,6 +450,72 @@ namespace gprotocol
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
   }
   
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"GetSysMsgReq")]
+  public partial class GetSysMsgReq : global::ProtoBuf.IExtensible
+  {
+    public GetSysMsgReq() {}
+    
+    private int _ver_num;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"ver_num", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int ver_num
+    {
+      get { return _ver_num; }
+      set { _ver_num = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"GetSysMsgRes")]
+  public partial class GetSysMsgRes : global::ProtoBuf.IExtensible
+  {
+    public GetSysMsgRes() {}
+    
+    private int _status;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"status", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int status
+    {
+      get { return _status; }
+      set { _status = value; }
+    }
+    private int _ver_num = default(int);
+    [global::ProtoBuf.ProtoMember(2, IsRequired = false, Name=@"ver_num", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int ver_num
+    {
+      get { return _ver_num; }
+      set { _ver_num = value; }
+    }
+    private readonly global::System.Collections.Generic.List<string> _sys_msgs = new global::System.Collections.Generic.List<string>();
+    [global::ProtoBuf.ProtoMember(3, Name=@"sys_msgs", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public global::System.Collections.Generic.List<string> sys_msgs
+    {
+      get { return _sys_msgs; }
+    }
+  
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"LoginLogicRes")]
+  public partial class LoginLogicRes : global::ProtoBuf.IExtensible
+  {
+    public LoginLogicRes() {}
+    
+    private int _status;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"status", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int status
+    {
+      get { return _status; }
+      set { _status = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
     [global::ProtoBuf.ProtoContract(Name=@"Stype")]
     public enum Stype
     {
@@ -526,7 +592,19 @@ namespace gprotocol
       eGetWorldRankUchipReq = 17,
             
       [global::ProtoBuf.ProtoEnum(Name=@"eGetWorldRankUchipRes", Value=18)]
-      eGetWorldRankUchipRes = 18
+      eGetWorldRankUchipRes = 18,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eGetSysMsgReq", Value=19)]
+      eGetSysMsgReq = 19,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eGetSysMsgRes", Value=20)]
+      eGetSysMsgRes = 20,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eLoginLogicReq", Value=21)]
+      eLoginLogicReq = 21,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eLoginLogicRes", Value=22)]
+      eLoginLogicRes = 22
     }
   
 }

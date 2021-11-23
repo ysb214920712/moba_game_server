@@ -274,7 +274,7 @@ lua_send_msg(lua_State* tolua_S) {
 	struct cmd_msg msg;
 
 	int n = luaL_len(tolua_S, 2);
-	if (n != 4) {
+	if (n != 4 && n != 3) {
 		goto lua_failed;
 	}
 
@@ -289,6 +289,13 @@ lua_send_msg(lua_State* tolua_S) {
 	lua_pushnumber(tolua_S, 3);
 	lua_gettable(tolua_S, 2);
 	msg.utag = luaL_checkinteger(tolua_S, -1);
+
+	if (n == 3)
+	{
+		msg.body = NULL;
+		s->send_msg(&msg);
+		return 0;
+	}
 
 	lua_pushnumber(tolua_S, 4);
 	lua_gettable(tolua_S, 2);

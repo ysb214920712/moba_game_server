@@ -18,7 +18,10 @@ MID.HIDE_LOWER_UI = 1004
 MID.REFRESH_USER_INFO = 600
 MID.LOGIN_ACCOUNT_SUCCESS = 601
 MID.ACCOUNT_BIND_RESULT = 602
+MID.LOGIN_LOGIC_SUCCESS = 603
+
 -----------------------------------NetToUI----------------------------------
 -----------------------------------UI---------------------------------------
 MID.REFRESH_RANK_LIST = 700
+MID.REFRESH_SYS_MSG = 701
 -----------------------------------UI---------------------------------------

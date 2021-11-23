@@ -4526,11 +4526,13 @@ MonoBehaviour:
   - btn_get_
   - days_list_
   - txt_title_
+  - txt_get_
   monos:
   - {fileID: 332079139846500228}
   - {fileID: 7447186011694696841}
   - {fileID: 2272770144087179130}
   - {fileID: 8445280035850157092}
+  - {fileID: 2012559818460128149}
   isDestroyed: 0
 --- !u!1001 &5441128971548028158
 PrefabInstance:
@@ -4721,6 +4723,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2012559818460128149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5795228394840821611, guid: 0cb81a240cc29c547a784b64ba554e0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5441128971548028158}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8495600637295068704

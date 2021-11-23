@@ -15,8 +15,20 @@ function M:init_btn_clickevent()
 		UIUserInfo:open()
 	end)
 
-	ui_util.set_clickevent(self.gos.btn_friend_, function()
+	ui_util.set_clickevent(self.gos.btn_rank_, function()
 		UIRank:open()
+	end)
+
+	ui_util.set_clickevent(self.gos.btn_mail_, function()
+		UINotice:open()
+	end)
+
+	ui_util.set_clickevent(self.gos.btn_sign_, function()
+		UILoginBonues:open()
+	end)
+
+	ui_util.set_clickevent(self.gos.btn_battle_, function()
+		UIBattleEntrance:open()
 	end)
 end
 

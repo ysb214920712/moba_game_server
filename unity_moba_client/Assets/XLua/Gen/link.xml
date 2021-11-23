@@ -15,6 +15,7 @@
 		<type fullname="GameReloader" preserve="all"/>
 		<type fullname="XLuaHelper" preserve="all"/>
 		<type fullname="auth_service_proxy" preserve="all"/>
+		<type fullname="logic_service_proxy" preserve="all"/>
 		<type fullname="system_service_proxy" preserve="all"/>
 		<type fullname="ugame" preserve="all"/>
 		<type fullname="ulevel" preserve="all"/>

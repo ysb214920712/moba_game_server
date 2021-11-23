@@ -47,7 +47,7 @@ struct TableStruct_game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[15]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[18]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -66,6 +66,12 @@ extern EditProfileReqDefaultTypeInternal _EditProfileReq_default_instance_;
 class EditProfileRes;
 struct EditProfileResDefaultTypeInternal;
 extern EditProfileResDefaultTypeInternal _EditProfileRes_default_instance_;
+class GetSysMsgReq;
+struct GetSysMsgReqDefaultTypeInternal;
+extern GetSysMsgReqDefaultTypeInternal _GetSysMsgReq_default_instance_;
+class GetSysMsgRes;
+struct GetSysMsgResDefaultTypeInternal;
+extern GetSysMsgResDefaultTypeInternal _GetSysMsgRes_default_instance_;
 class GetUgameInfoRes;
 struct GetUgameInfoResDefaultTypeInternal;
 extern GetUgameInfoResDefaultTypeInternal _GetUgameInfoRes_default_instance_;
@@ -78,6 +84,9 @@ extern GuestLoginReqDefaultTypeInternal _GuestLoginReq_default_instance_;
 class GuestLoginRes;
 struct GuestLoginResDefaultTypeInternal;
 extern GuestLoginResDefaultTypeInternal _GuestLoginRes_default_instance_;
+class LoginLogicRes;
+struct LoginLogicResDefaultTypeInternal;
+extern LoginLogicResDefaultTypeInternal _LoginLogicRes_default_instance_;
 class LoginOutRes;
 struct LoginOutResDefaultTypeInternal;
 extern LoginOutResDefaultTypeInternal _LoginOutRes_default_instance_;
@@ -104,10 +113,13 @@ template<> ::AccountUpgradeReq* Arena::CreateMaybeMessage<::AccountUpgradeReq>(A
 template<> ::AccountUpgradeRes* Arena::CreateMaybeMessage<::AccountUpgradeRes>(Arena*);
 template<> ::EditProfileReq* Arena::CreateMaybeMessage<::EditProfileReq>(Arena*);
 template<> ::EditProfileRes* Arena::CreateMaybeMessage<::EditProfileRes>(Arena*);
+template<> ::GetSysMsgReq* Arena::CreateMaybeMessage<::GetSysMsgReq>(Arena*);
+template<> ::GetSysMsgRes* Arena::CreateMaybeMessage<::GetSysMsgRes>(Arena*);
 template<> ::GetUgameInfoRes* Arena::CreateMaybeMessage<::GetUgameInfoRes>(Arena*);
 template<> ::GetWorldRankUchipRes* Arena::CreateMaybeMessage<::GetWorldRankUchipRes>(Arena*);
 template<> ::GuestLoginReq* Arena::CreateMaybeMessage<::GuestLoginReq>(Arena*);
 template<> ::GuestLoginRes* Arena::CreateMaybeMessage<::GuestLoginRes>(Arena*);
+template<> ::LoginLogicRes* Arena::CreateMaybeMessage<::LoginLogicRes>(Arena*);
 template<> ::LoginOutRes* Arena::CreateMaybeMessage<::LoginOutRes>(Arena*);
 template<> ::RecvLoginBonuesRes* Arena::CreateMaybeMessage<::RecvLoginBonuesRes>(Arena*);
 template<> ::UnameLoginReq* Arena::CreateMaybeMessage<::UnameLoginReq>(Arena*);
@@ -161,11 +173,15 @@ enum Cmd : int {
   eRecvLoginBonuesReq = 15,
   eRecvLoginBonuesRes = 16,
   eGetWorldRankUchipReq = 17,
-  eGetWorldRankUchipRes = 18
+  eGetWorldRankUchipRes = 18,
+  eGetSysMsgReq = 19,
+  eGetSysMsgRes = 20,
+  eLoginLogicReq = 21,
+  eLoginLogicRes = 22
 };
 bool Cmd_IsValid(int value);
 constexpr Cmd Cmd_MIN = INVALID_CMD;
-constexpr Cmd Cmd_MAX = eGetWorldRankUchipRes;
+constexpr Cmd Cmd_MAX = eLoginLogicRes;
 constexpr int Cmd_ARRAYSIZE = Cmd_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Cmd_descriptor();
@@ -3020,6 +3036,521 @@ class GetWorldRankUchipRes final :
   int32_t status_;
   friend struct ::TableStruct_game_2eproto;
 };
+// -------------------------------------------------------------------
+
+class GetSysMsgReq final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GetSysMsgReq) */ {
+ public:
+  inline GetSysMsgReq() : GetSysMsgReq(nullptr) {}
+  ~GetSysMsgReq() override;
+  explicit constexpr GetSysMsgReq(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  GetSysMsgReq(const GetSysMsgReq& from);
+  GetSysMsgReq(GetSysMsgReq&& from) noexcept
+    : GetSysMsgReq() {
+    *this = ::std::move(from);
+  }
+
+  inline GetSysMsgReq& operator=(const GetSysMsgReq& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetSysMsgReq& operator=(GetSysMsgReq&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetSysMsgReq& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetSysMsgReq* internal_default_instance() {
+    return reinterpret_cast<const GetSysMsgReq*>(
+               &_GetSysMsgReq_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    15;
+
+  friend void swap(GetSysMsgReq& a, GetSysMsgReq& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetSysMsgReq* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetSysMsgReq* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetSysMsgReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetSysMsgReq>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const GetSysMsgReq& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const GetSysMsgReq& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GetSysMsgReq* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "GetSysMsgReq";
+  }
+  protected:
+  explicit GetSysMsgReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kVerNumFieldNumber = 1,
+  };
+  // required int32 ver_num = 1;
+  bool has_ver_num() const;
+  private:
+  bool _internal_has_ver_num() const;
+  public:
+  void clear_ver_num();
+  int32_t ver_num() const;
+  void set_ver_num(int32_t value);
+  private:
+  int32_t _internal_ver_num() const;
+  void _internal_set_ver_num(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:GetSysMsgReq)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  int32_t ver_num_;
+  friend struct ::TableStruct_game_2eproto;
+};
+// -------------------------------------------------------------------
+
+class GetSysMsgRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GetSysMsgRes) */ {
+ public:
+  inline GetSysMsgRes() : GetSysMsgRes(nullptr) {}
+  ~GetSysMsgRes() override;
+  explicit constexpr GetSysMsgRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  GetSysMsgRes(const GetSysMsgRes& from);
+  GetSysMsgRes(GetSysMsgRes&& from) noexcept
+    : GetSysMsgRes() {
+    *this = ::std::move(from);
+  }
+
+  inline GetSysMsgRes& operator=(const GetSysMsgRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GetSysMsgRes& operator=(GetSysMsgRes&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GetSysMsgRes& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GetSysMsgRes* internal_default_instance() {
+    return reinterpret_cast<const GetSysMsgRes*>(
+               &_GetSysMsgRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    16;
+
+  friend void swap(GetSysMsgRes& a, GetSysMsgRes& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GetSysMsgRes* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GetSysMsgRes* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GetSysMsgRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetSysMsgRes>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const GetSysMsgRes& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const GetSysMsgRes& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GetSysMsgRes* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "GetSysMsgRes";
+  }
+  protected:
+  explicit GetSysMsgRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSysMsgsFieldNumber = 3,
+    kStatusFieldNumber = 1,
+    kVerNumFieldNumber = 2,
+  };
+  // repeated string sys_msgs = 3;
+  int sys_msgs_size() const;
+  private:
+  int _internal_sys_msgs_size() const;
+  public:
+  void clear_sys_msgs();
+  const std::string& sys_msgs(int index) const;
+  std::string* mutable_sys_msgs(int index);
+  void set_sys_msgs(int index, const std::string& value);
+  void set_sys_msgs(int index, std::string&& value);
+  void set_sys_msgs(int index, const char* value);
+  void set_sys_msgs(int index, const char* value, size_t size);
+  std::string* add_sys_msgs();
+  void add_sys_msgs(const std::string& value);
+  void add_sys_msgs(std::string&& value);
+  void add_sys_msgs(const char* value);
+  void add_sys_msgs(const char* value, size_t size);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>& sys_msgs() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>* mutable_sys_msgs();
+  private:
+  const std::string& _internal_sys_msgs(int index) const;
+  std::string* _internal_add_sys_msgs();
+  public:
+
+  // required int32 status = 1;
+  bool has_status() const;
+  private:
+  bool _internal_has_status() const;
+  public:
+  void clear_status();
+  int32_t status() const;
+  void set_status(int32_t value);
+  private:
+  int32_t _internal_status() const;
+  void _internal_set_status(int32_t value);
+  public:
+
+  // optional int32 ver_num = 2;
+  bool has_ver_num() const;
+  private:
+  bool _internal_has_ver_num() const;
+  public:
+  void clear_ver_num();
+  int32_t ver_num() const;
+  void set_ver_num(int32_t value);
+  private:
+  int32_t _internal_ver_num() const;
+  void _internal_set_ver_num(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:GetSysMsgRes)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> sys_msgs_;
+  int32_t status_;
+  int32_t ver_num_;
+  friend struct ::TableStruct_game_2eproto;
+};
+// -------------------------------------------------------------------
+
+class LoginLogicRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LoginLogicRes) */ {
+ public:
+  inline LoginLogicRes() : LoginLogicRes(nullptr) {}
+  ~LoginLogicRes() override;
+  explicit constexpr LoginLogicRes(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  LoginLogicRes(const LoginLogicRes& from);
+  LoginLogicRes(LoginLogicRes&& from) noexcept
+    : LoginLogicRes() {
+    *this = ::std::move(from);
+  }
+
+  inline LoginLogicRes& operator=(const LoginLogicRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline LoginLogicRes& operator=(LoginLogicRes&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const LoginLogicRes& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const LoginLogicRes* internal_default_instance() {
+    return reinterpret_cast<const LoginLogicRes*>(
+               &_LoginLogicRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    17;
+
+  friend void swap(LoginLogicRes& a, LoginLogicRes& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(LoginLogicRes* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(LoginLogicRes* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  LoginLogicRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<LoginLogicRes>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const LoginLogicRes& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const LoginLogicRes& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LoginLogicRes* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "LoginLogicRes";
+  }
+  protected:
+  explicit LoginLogicRes(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kStatusFieldNumber = 1,
+  };
+  // required int32 status = 1;
+  bool has_status() const;
+  private:
+  bool _internal_has_status() const;
+  public:
+  void clear_status();
+  int32_t status() const;
+  void set_status(int32_t value);
+  private:
+  int32_t _internal_status() const;
+  void _internal_set_status(int32_t value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:LoginLogicRes)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  int32_t status_;
+  friend struct ::TableStruct_game_2eproto;
+};
 // ===================================================================
 
 
@@ -4761,9 +5292,214 @@ GetWorldRankUchipRes::rank_info() const {
   return rank_info_;
 }
 
+// -------------------------------------------------------------------
+
+// GetSysMsgReq
+
+// required int32 ver_num = 1;
+inline bool GetSysMsgReq::_internal_has_ver_num() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool GetSysMsgReq::has_ver_num() const {
+  return _internal_has_ver_num();
+}
+inline void GetSysMsgReq::clear_ver_num() {
+  ver_num_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline int32_t GetSysMsgReq::_internal_ver_num() const {
+  return ver_num_;
+}
+inline int32_t GetSysMsgReq::ver_num() const {
+  // @@protoc_insertion_point(field_get:GetSysMsgReq.ver_num)
+  return _internal_ver_num();
+}
+inline void GetSysMsgReq::_internal_set_ver_num(int32_t value) {
+  _has_bits_[0] |= 0x00000001u;
+  ver_num_ = value;
+}
+inline void GetSysMsgReq::set_ver_num(int32_t value) {
+  _internal_set_ver_num(value);
+  // @@protoc_insertion_point(field_set:GetSysMsgReq.ver_num)
+}
+
+// -------------------------------------------------------------------
+
+// GetSysMsgRes
+
+// required int32 status = 1;
+inline bool GetSysMsgRes::_internal_has_status() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool GetSysMsgRes::has_status() const {
+  return _internal_has_status();
+}
+inline void GetSysMsgRes::clear_status() {
+  status_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline int32_t GetSysMsgRes::_internal_status() const {
+  return status_;
+}
+inline int32_t GetSysMsgRes::status() const {
+  // @@protoc_insertion_point(field_get:GetSysMsgRes.status)
+  return _internal_status();
+}
+inline void GetSysMsgRes::_internal_set_status(int32_t value) {
+  _has_bits_[0] |= 0x00000001u;
+  status_ = value;
+}
+inline void GetSysMsgRes::set_status(int32_t value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:GetSysMsgRes.status)
+}
+
+// optional int32 ver_num = 2;
+inline bool GetSysMsgRes::_internal_has_ver_num() const {
+  bool value = (_has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool GetSysMsgRes::has_ver_num() const {
+  return _internal_has_ver_num();
+}
+inline void GetSysMsgRes::clear_ver_num() {
+  ver_num_ = 0;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline int32_t GetSysMsgRes::_internal_ver_num() const {
+  return ver_num_;
+}
+inline int32_t GetSysMsgRes::ver_num() const {
+  // @@protoc_insertion_point(field_get:GetSysMsgRes.ver_num)
+  return _internal_ver_num();
+}
+inline void GetSysMsgRes::_internal_set_ver_num(int32_t value) {
+  _has_bits_[0] |= 0x00000002u;
+  ver_num_ = value;
+}
+inline void GetSysMsgRes::set_ver_num(int32_t value) {
+  _internal_set_ver_num(value);
+  // @@protoc_insertion_point(field_set:GetSysMsgRes.ver_num)
+}
+
+// repeated string sys_msgs = 3;
+inline int GetSysMsgRes::_internal_sys_msgs_size() const {
+  return sys_msgs_.size();
+}
+inline int GetSysMsgRes::sys_msgs_size() const {
+  return _internal_sys_msgs_size();
+}
+inline void GetSysMsgRes::clear_sys_msgs() {
+  sys_msgs_.Clear();
+}
+inline std::string* GetSysMsgRes::add_sys_msgs() {
+  std::string* _s = _internal_add_sys_msgs();
+  // @@protoc_insertion_point(field_add_mutable:GetSysMsgRes.sys_msgs)
+  return _s;
+}
+inline const std::string& GetSysMsgRes::_internal_sys_msgs(int index) const {
+  return sys_msgs_.Get(index);
+}
+inline const std::string& GetSysMsgRes::sys_msgs(int index) const {
+  // @@protoc_insertion_point(field_get:GetSysMsgRes.sys_msgs)
+  return _internal_sys_msgs(index);
+}
+inline std::string* GetSysMsgRes::mutable_sys_msgs(int index) {
+  // @@protoc_insertion_point(field_mutable:GetSysMsgRes.sys_msgs)
+  return sys_msgs_.Mutable(index);
+}
+inline void GetSysMsgRes::set_sys_msgs(int index, const std::string& value) {
+  sys_msgs_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set:GetSysMsgRes.sys_msgs)
+}
+inline void GetSysMsgRes::set_sys_msgs(int index, std::string&& value) {
+  sys_msgs_.Mutable(index)->assign(std::move(value));
+  // @@protoc_insertion_point(field_set:GetSysMsgRes.sys_msgs)
+}
+inline void GetSysMsgRes::set_sys_msgs(int index, const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  sys_msgs_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:GetSysMsgRes.sys_msgs)
+}
+inline void GetSysMsgRes::set_sys_msgs(int index, const char* value, size_t size) {
+  sys_msgs_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:GetSysMsgRes.sys_msgs)
+}
+inline std::string* GetSysMsgRes::_internal_add_sys_msgs() {
+  return sys_msgs_.Add();
+}
+inline void GetSysMsgRes::add_sys_msgs(const std::string& value) {
+  sys_msgs_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:GetSysMsgRes.sys_msgs)
+}
+inline void GetSysMsgRes::add_sys_msgs(std::string&& value) {
+  sys_msgs_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:GetSysMsgRes.sys_msgs)
+}
+inline void GetSysMsgRes::add_sys_msgs(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  sys_msgs_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:GetSysMsgRes.sys_msgs)
+}
+inline void GetSysMsgRes::add_sys_msgs(const char* value, size_t size) {
+  sys_msgs_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:GetSysMsgRes.sys_msgs)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
+GetSysMsgRes::sys_msgs() const {
+  // @@protoc_insertion_point(field_list:GetSysMsgRes.sys_msgs)
+  return sys_msgs_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
+GetSysMsgRes::mutable_sys_msgs() {
+  // @@protoc_insertion_point(field_mutable_list:GetSysMsgRes.sys_msgs)
+  return &sys_msgs_;
+}
+
+// -------------------------------------------------------------------
+
+// LoginLogicRes
+
+// required int32 status = 1;
+inline bool LoginLogicRes::_internal_has_status() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool LoginLogicRes::has_status() const {
+  return _internal_has_status();
+}
+inline void LoginLogicRes::clear_status() {
+  status_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline int32_t LoginLogicRes::_internal_status() const {
+  return status_;
+}
+inline int32_t LoginLogicRes::status() const {
+  // @@protoc_insertion_point(field_get:LoginLogicRes.status)
+  return _internal_status();
+}
+inline void LoginLogicRes::_internal_set_status(int32_t value) {
+  _has_bits_[0] |= 0x00000001u;
+  status_ = value;
+}
+inline void LoginLogicRes::set_status(int32_t value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:LoginLogicRes.status)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

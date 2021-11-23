@@ -143,4 +143,26 @@ M.add_setting({
     mask = true,
 })
 
+M.add_setting({
+    lua_file = "ui/ui_notice",
+    res = "ui/notice",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Pop,
+    mask = true,
+})
+
+M.add_setting({
+    lua_file = "ui/ui_battle_entrance",
+    res = "ui/battle_entrance",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Pop,
+})
+
+M.add_setting({
+    lua_file = "ui/ui_team_match",
+    res = "ui/team_match",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Prompts,
+})
+
 return M

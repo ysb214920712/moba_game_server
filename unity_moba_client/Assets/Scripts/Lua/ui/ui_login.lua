@@ -20,12 +20,18 @@ end
 function M:init_listener()
 	self:add_server_listener("login_success", self.on_login_success)
 	self:add_server_listener("get_ugame_info_success", self.on_get_ugame_info_success)
+	self:add_server_listener("login_logic_server", self.on_login_logic_success)
 
-	self:add_listener(MID.LOGIN_ACCOUNT_SUCCESS, self.close)
+	self:add_listener(MID.LOGIN_LOGIC_SUCCESS, self.close)
+end
+
+function M.on_login_logic_success(name, udata)
+	Messager.send(MID.LOGIN_LOGIC_SUCCESS)
 end
 
 function M.on_get_ugame_info_success(name, udata)
-	Messager.send(MID.LOGIN_ACCOUNT_SUCCESS)
+	-- Messager.send(MID.LOGIN_ACCOUNT_SUCCESS)
+	U.logic_service_proxy.Instance:login_logic_server()
 end
 
 function M.on_login_success(str, udata)

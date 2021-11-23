@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
         ulevel.Instance.init();
         auth_service_proxy.Instance.init();
         system_service_proxy.Instance.init();
+        logic_service_proxy.Instance.init();
 
         yield return UpdateGame();
     }
