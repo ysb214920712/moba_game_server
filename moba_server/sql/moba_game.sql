@@ -17,6 +17,19 @@
 CREATE DATABASE IF NOT EXISTS `moba_game` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `moba_game`;
 
+-- 导出  表 moba_game.login_bonues 结构
+CREATE TABLE IF NOT EXISTS `login_bonues` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) DEFAULT NULL COMMENT '用户uid',
+  `bonues` int(11) DEFAULT '0' COMMENT '奖励数目',
+  `status` int(11) DEFAULT '0' COMMENT '是否领取，0未领取， 1已领取',
+  `bonues_time` int(11) DEFAULT NULL COMMENT '发放奖励的时间',
+  `days` int(11) DEFAULT '0' COMMENT '连续登陆天数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='登陆奖励管理';
+
+-- 数据导出被取消选择。
+
 -- 导出  表 moba_game.ugame 结构
 CREATE TABLE IF NOT EXISTS `ugame` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '全局唯一ID',
@@ -32,7 +45,17 @@ CREATE TABLE IF NOT EXISTS `ugame` (
   `uexp` int(11) DEFAULT '0' COMMENT '用户经验值',
   `ustatus` int(11) DEFAULT '0' COMMENT '0正常',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='存放用户在moba游戏中的数据\r\nuid标识玩家\r\nid自增长的唯一ID';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='存放用户在moba游戏中的数据\r\nuid标识玩家\r\nid自增长的唯一ID';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 moba_game.ulevel 结构
+CREATE TABLE IF NOT EXISTS `ulevel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ulevel` int(11) NOT NULL DEFAULT '0',
+  `uexp` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='玩家经验等级配置表';
 
 -- 数据导出被取消选择。
 

@@ -21,11 +21,12 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(system_service_proxy);
-			Utils.BeginObjectRegister(type, L, translator, 0, 3, 0, 0);
+			Utils.BeginObjectRegister(type, L, translator, 0, 4, 0, 0);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "init", _m_init);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "load_user_ugame_info", _m_load_user_ugame_info);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "recv_login_bonues", _m_recv_login_bonues);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "get_world_uchip_rank_info", _m_get_world_uchip_rank_info);
 			
 			
 			
@@ -143,6 +144,33 @@ namespace XLua.CSObjectWrap
                 {
                     
                     gen_to_be_invoked.recv_login_bonues(  );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_get_world_uchip_rank_info(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                system_service_proxy gen_to_be_invoked = (system_service_proxy)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    
+                    gen_to_be_invoked.get_world_uchip_rank_info(  );
                     
                     
                     

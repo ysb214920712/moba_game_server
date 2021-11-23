@@ -1,0 +1,148 @@
+20211122 14:02:05 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211122 14:02:05 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211122 14:02:05 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211122 14:02:05 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:18  
+connect to redis rank db success
+20211122 14:02:05 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211122 14:03:17 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:13  
+System 2	13	1	nil
+20211122 14:03:35 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:13  
+System 2	15	1	nil
+20211122 14:03:35 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/database/mysql_game.lua:213: upvalue 'ret_handler' is not callable (a nil value)
+20211122 14:24:08 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211122 14:24:08 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211122 14:24:08 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211122 14:24:08 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:18  
+connect to redis rank db success
+20211122 14:24:08 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211122 14:24:28 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 15:04:28 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211122 15:04:28 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211122 15:04:28 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211122 15:04:28 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:18  
+connect to redis rank db success
+20211122 15:04:28 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211122 15:04:28 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211122 15:04:44 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 15:04:48 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 15:06:37 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211122 15:06:37 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211122 15:06:37 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211122 15:06:37 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:18  
+connect to redis rank db success
+20211122 15:06:37 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211122 15:06:38 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211122 15:06:48 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 15:06:50 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 15:54:13 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211122 15:54:13 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211122 15:54:13 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211122 15:54:13 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:18  
+connect to redis rank db success
+20211122 15:54:13 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211122 15:54:13 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211122 15:54:53 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 15:56:13 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 15:56:16 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 15:57:55 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 15:57:57 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 15:59:23 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 15:59:24 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:00:13 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 16:00:16 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:31:34 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 16:31:37 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:32:02 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 16:32:04 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:32:15 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:32:17 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:32:29 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	3	nil
+20211122 16:33:08 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	3	nil
+20211122 16:33:08 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/system_server/game_rank.lua:20: upvalue 'success_func' is not callable (a nil value)
+20211122 16:34:13 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 16:34:14 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:34:14 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/system_server/game_rank.lua:20: upvalue 'success_func' is not callable (a nil value)
+20211122 16:38:35 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211122 16:38:35 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211122 16:38:35 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211122 16:38:35 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:18  
+connect to redis rank db success
+20211122 16:38:35 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211122 16:38:35 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211122 16:38:47 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 16:38:49 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil
+20211122 16:38:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/system_server/game_rank.lua:33: upvalue 'success_func' is not callable (a nil value)
+20211122 18:09:41 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211122 18:09:41 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211122 18:09:41 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211122 18:09:41 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:18  
+connect to redis rank db success
+20211122 18:09:41 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211122 18:09:41 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211122 18:09:58 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	13	1	nil
+20211122 18:10:01 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:15  
+System 2	17	1	nil

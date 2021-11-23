@@ -53,6 +53,12 @@ local game_config = {
         port = 6379,
         db_index = 2,
     },
+
+    rank_redis = {
+        host = "127.0.0.1",
+        port = 6379,
+        db_index = 3,
+    },
 }
 
 return game_config

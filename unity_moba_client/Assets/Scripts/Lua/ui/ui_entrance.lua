@@ -14,6 +14,10 @@ function M:init_btn_clickevent()
 	ui_util.set_clickevent(self.gos.btn_uinfo_, function()
 		UIUserInfo:open()
 	end)
+
+	ui_util.set_clickevent(self.gos.btn_friend_, function()
+		UIRank:open()
+	end)
 end
 
 function M:init_listener()

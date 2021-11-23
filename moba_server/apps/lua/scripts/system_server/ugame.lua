@@ -1,10 +1,11 @@
-local mysql_game = require("database/mysql_game")
-local redis_game = require("database/redis_game")
 local Respones = require("Respones")
 local Stype = require("Stype")
 local Cmd = require("Cmd")
 
 local login_bonues = require("system_server/login_bonues")
+local mysql_game = require("database/mysql_game")
+local redis_game = require("database/redis_game")
+local redis_rank = require("database/redis_rank")
 
 function get_ugame_info(s, req)
     local uid = req[3]
@@ -44,6 +45,8 @@ function get_ugame_info(s, req)
         end
 
         redis_game.set_ugame_info_inredis(uid, ugame_info)
+        
+        redis_rank.flush_world_rank_with_uchip_inredis(uid, ugame_info.uchip)
 
         login_bonues.check_login_bonues(uid, function(err, bonues_info)
             if err then

@@ -48,6 +48,23 @@ public class system_service_proxy : Singleton<system_service_proxy>
         event_manager.Instance.dispatch_event("sync_ugame_info", null);
     }
 
+    void on_get_world_uchip_rank_info_return(cmd_msg msg)
+    {
+        GetWorldRankUchipRes res = proto_man.protobuf_deserialize<GetWorldRankUchipRes>(msg.body);
+        if (res == null)
+        {
+            return;
+        }
+
+        if (res.status != Respones.OK)
+        {
+            Debug.Log("Get World Rank Uchip Status:" + res.status);
+            return;
+        }
+
+        event_manager.Instance.dispatch_event("get_rank_list", res.rank_info);
+    }
+
     void on_system_server_return(cmd_msg msg)
     {
         switch (msg.ctype)
@@ -58,6 +75,10 @@ public class system_service_proxy : Singleton<system_service_proxy>
 
             case (int)Cmd.eRecvLoginBonuesRes:
                 this.on_recv_login_bonues_return(msg);
+                break;
+
+            case (int)Cmd.eGetWorldRankUchipRes:
+                this.on_get_world_uchip_rank_info_return(msg);
                 break;
 
             default:
@@ -78,5 +99,10 @@ public class system_service_proxy : Singleton<system_service_proxy>
     public void recv_login_bonues()
     {
         network.Instance.send_protobuf_cmd((int)Stype.System, (int)Cmd.eRecvLoginBonuesReq, null);
+    }
+
+    public void get_world_uchip_rank_info()
+    {
+        network.Instance.send_protobuf_cmd((int)Stype.System, (int)Cmd.eGetWorldRankUchipReq, null);
     }
 }

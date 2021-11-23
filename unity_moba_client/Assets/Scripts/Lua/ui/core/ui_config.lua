@@ -135,4 +135,12 @@ M.add_setting({
     mask = true,
 })
 
+M.add_setting({
+    lua_file = "ui/ui_rank",
+    res = "ui/rank",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Pop,
+    mask = true,
+})
+
 return M

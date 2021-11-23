@@ -42,6 +42,11 @@ function set_ugame_info_inredis(uid, ugame_info)
 end
 
 function get_ugame_info_inredis(uid, ret_handler)
+    if redis_conn == nil then
+        Logger.error("redis game disconnected")
+        return
+    end
+
     local redis_cmd = "hgetall moba_ugame_user_uid_" .. uid
     Redis.query(redis_conn, redis_cmd, function(err, ret)
         if err then
@@ -63,6 +68,11 @@ function get_ugame_info_inredis(uid, ret_handler)
 end
 
 function add_chip_inredis(uid, add_chip)
+    if redis_conn == nil then
+        Logger.error("redis game disconnected")
+        return
+    end
+
     get_ugame_info_inredis(uid, function(err, ugame_info)
         if err then
             Logger.error("get uinfo in redis error")
