@@ -26,7 +26,16 @@ CREATE TABLE IF NOT EXISTS `login_bonues` (
   `bonues_time` int(11) DEFAULT NULL COMMENT '发放奖励的时间',
   `days` int(11) DEFAULT '0' COMMENT '连续登陆天数',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='登陆奖励管理';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='登陆奖励管理';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 moba_game.sys_msg 结构
+CREATE TABLE IF NOT EXISTS `sys_msg` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(256) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='系统消息';
 
 -- 数据导出被取消选择。
 
