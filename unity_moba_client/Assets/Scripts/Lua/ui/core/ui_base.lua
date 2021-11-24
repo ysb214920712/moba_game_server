@@ -532,6 +532,13 @@ function M:close_self()
     UIMgr:do_close_ui(self)
     self:on_close()
 
+    if self.server_msg_list_ and self.server_messager__ then
+        for k, v in pairs(self.server_msg_list_) do
+            self.server_messager__:remove_event_listener(k, v)
+        end
+        self.server_msg_list_ = {}
+    end
+
     local instances = self.setting__.lua_object.Instances
     for k, v in ipairs(instances) do
         if v == self then

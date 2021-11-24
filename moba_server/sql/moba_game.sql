@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `login_bonues` (
   `bonues_time` int(11) DEFAULT NULL COMMENT '发放奖励的时间',
   `days` int(11) DEFAULT '0' COMMENT '连续登陆天数',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='登陆奖励管理';
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='登陆奖励管理';
 
 -- 数据导出被取消选择。
 
@@ -53,8 +53,9 @@ CREATE TABLE IF NOT EXISTS `ugame` (
   `udata3` int(11) DEFAULT '0' COMMENT '道具3',
   `uexp` int(11) DEFAULT '0' COMMENT '用户经验值',
   `ustatus` int(11) DEFAULT '0' COMMENT '0正常',
+  `is_robot` int(11) DEFAULT '0' COMMENT '0为玩家，1为机器人',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='存放用户在moba游戏中的数据\r\nuid标识玩家\r\nid自增长的唯一ID';
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COMMENT='存放用户在moba游戏中的数据\r\nuid标识玩家\r\nid自增长的唯一ID';
 
 -- 数据导出被取消选择。
 

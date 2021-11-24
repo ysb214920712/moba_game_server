@@ -13,11 +13,13 @@ function M:init_btn_clickevent()
 	end)
 
 	ui_util.set_clickevent(self.gos.btn_lpl_, function()
-		UITeamMatch:open()
+		U.ugame.Instance.zid = U.Zone.XGZD
+		UITeamMatch:open(nil, U.Zone.XGZD)
 	end)
 
 	ui_util.set_clickevent(self.gos.btn_ldl_, function()
-		UITeamMatch:open()
+		U.ugame.Instance.zid = U.Zone.JDDLD
+		UITeamMatch:open(nil, U.Zone.JDDLD)
 	end)
 end
 

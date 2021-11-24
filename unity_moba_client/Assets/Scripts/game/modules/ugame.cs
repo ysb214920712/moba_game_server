@@ -13,6 +13,7 @@ public class ugame : Singleton<ugame>
     public int uvip = 0;
     public bool is_guest = false;
     public string guest_key = null;
+    public int zid = -1;
 
     public UserGameInfo ugame_info;
 

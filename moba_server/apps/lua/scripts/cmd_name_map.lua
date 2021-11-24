@@ -21,6 +21,13 @@ local cmd_name_map = {
     "GetSysMsgRes",
     "LoginLogicReq",
     "LoginLogicRes",
+    "EnterZoneReq",
+    "EnterZoneRes",
+    "EnterMatch",
+    "UserArrived",
+    "ExitMatchReq",
+    "ExitMatchRes",
+    "UserExitMatch",
 }
 
 return cmd_name_map

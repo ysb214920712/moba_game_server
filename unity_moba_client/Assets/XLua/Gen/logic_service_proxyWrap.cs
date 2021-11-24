@@ -21,10 +21,12 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(logic_service_proxy);
-			Utils.BeginObjectRegister(type, L, translator, 0, 2, 0, 0);
+			Utils.BeginObjectRegister(type, L, translator, 0, 4, 0, 0);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "init", _m_init);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "login_logic_server", _m_login_logic_server);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "enter_zone", _m_enter_zone);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "exit_match", _m_exit_match);
 			
 			
 			
@@ -115,6 +117,61 @@ namespace XLua.CSObjectWrap
                 {
                     
                     gen_to_be_invoked.login_logic_server(  );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_enter_zone(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                logic_service_proxy gen_to_be_invoked = (logic_service_proxy)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    int _zid = LuaAPI.xlua_tointeger(L, 2);
+                    
+                    gen_to_be_invoked.enter_zone( _zid );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_exit_match(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                logic_service_proxy gen_to_be_invoked = (logic_service_proxy)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    
+                    gen_to_be_invoked.exit_match(  );
                     
                     
                     

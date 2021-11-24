@@ -42,6 +42,17 @@ enum Cmd {
 
   eLoginLogicReq = 21;
   eLoginLogicRes = 22;
+
+  eEnterZoneReq = 23;
+  eEnterZoneRes = 24;
+
+  eEnterMatch = 25;
+  eUserArrived = 26;
+
+  eExitMatchReq = 27;
+  eExitMatchRes = 28;
+  eUserExitMatch = 29;
+
 }
 
 message GuestLoginReq {
@@ -144,4 +155,32 @@ message GetSysMsgRes {
 
 message LoginLogicRes {
   required int32 status = 1;
+}
+
+message EnterZoneReq {
+  required int32 zid = 1;
+}
+
+message EnterZoneRes {
+  required int32 status = 1;
+}
+
+message EnterMatch {
+  required int32 zid = 1;
+  required int32 matchid = 2;
+}
+
+message UserArrived {
+  required string unick = 1;
+  required int32 uface = 2;
+  required int32 usex = 3;
+  required int32 seatid = 4;
+}
+
+message ExitMatchRes {
+  required int32 status = 1;
+}
+
+message UserExitMatch {
+  required int32 seatid = 1;
 }

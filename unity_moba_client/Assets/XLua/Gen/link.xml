@@ -21,6 +21,7 @@
 		<type fullname="ulevel" preserve="all"/>
 		<type fullname="netLuaBridgeCS" preserve="all"/>
 		<type fullname="Respones" preserve="all"/>
+		<type fullname="Zone" preserve="all"/>
 		<type fullname="event_manager" preserve="all"/>
 		<type fullname="Tutorial.BaseClass" preserve="all"/>
 		<type fullname="Tutorial.TestEnum" preserve="all"/>

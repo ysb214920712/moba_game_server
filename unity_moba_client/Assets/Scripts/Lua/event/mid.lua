@@ -24,4 +24,9 @@ MID.LOGIN_LOGIC_SUCCESS = 603
 -----------------------------------UI---------------------------------------
 MID.REFRESH_RANK_LIST = 700
 MID.REFRESH_SYS_MSG = 701
+MID.ENTER_ZONE_SUCCESS = 702
+MID.ENTER_MATCH_SUCCESS = 703
+MID.USER_ARRIVED_SUCCESS = 704
+MID.EXIT_MATCH_SUCCESS = 705
+MID.USER_EXIT_SUCCESS = 706
 -----------------------------------UI---------------------------------------

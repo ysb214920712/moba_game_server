@@ -346,6 +346,7 @@
      <Compile Include="Assets\Scripts\game\ResSystem\LuaBigFileBufferAsset.cs" />
      <Compile Include="Assets\Scripts\game\ResSystem\LuaFilePicker.cs" />
      <Compile Include="Assets\Scripts\game\ResSystem\XLoader.cs" />
+     <Compile Include="Assets\Scripts\game\Zone.cs" />
      <Compile Include="Assets\Scripts\managers\audio_manager.cs" />
      <Compile Include="Assets\Scripts\managers\event_manager.cs" />
      <Compile Include="Assets\Scripts\network\data_viewer.cs" />
@@ -548,6 +549,7 @@
      <Compile Include="Assets\XLua\Gen\XLuaTest_NoGcWrap.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_PeddingWrap.cs" />
      <Compile Include="Assets\XLua\Gen\XORWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\ZoneWrap.cs" />
      <Compile Include="Assets\XLua\Src\CodeEmit.cs" />
      <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
      <Compile Include="Assets\XLua\Src\DelegateBridge.cs" />

@@ -76,6 +76,9 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(Respones), ResponesWrap.__Register);
         
         
+            translator.DelayWrapLoader(typeof(Zone), ZoneWrap.__Register);
+        
+        
             translator.DelayWrapLoader(typeof(event_manager), event_managerWrap.__Register);
         
         
@@ -171,13 +174,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(Tutorial.DerivedClass), TutorialDerivedClassWrap.__Register);
         
-        
-            translator.DelayWrapLoader(typeof(Tutorial.ICalc), TutorialICalcWrap.__Register);
-        
         }
         
         static void wrapInit1(LuaEnv luaenv, ObjectTranslator translator)
         {
+        
+            translator.DelayWrapLoader(typeof(Tutorial.ICalc), TutorialICalcWrap.__Register);
+        
         
             translator.DelayWrapLoader(typeof(Tutorial.DerivedClassExtensions), TutorialDerivedClassExtensionsWrap.__Register);
         
@@ -328,13 +331,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(UnityEngine.LineRenderer), UnityEngineLineRendererWrap.__Register);
         
-        
-            translator.DelayWrapLoader(typeof(AmbientSound), AmbientSoundWrap.__Register);
-        
         }
         
         static void wrapInit2(LuaEnv luaenv, ObjectTranslator translator)
         {
+        
+            translator.DelayWrapLoader(typeof(AmbientSound), AmbientSoundWrap.__Register);
+        
         
             translator.DelayWrapLoader(typeof(UnityEngine.RectTransformUtility), UnityEngineRectTransformUtilityWrap.__Register);
         
@@ -485,13 +488,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(LuaTableDelegate), LuaTableDelegateWrap.__Register);
         
-        
-            translator.DelayWrapLoader(typeof(EventTriggerListener), EventTriggerListenerWrap.__Register);
-        
         }
         
         static void wrapInit3(LuaEnv luaenv, ObjectTranslator translator)
         {
+        
+            translator.DelayWrapLoader(typeof(EventTriggerListener), EventTriggerListenerWrap.__Register);
+        
         
             translator.DelayWrapLoader(typeof(DownloadHelper), DownloadHelperWrap.__Register);
         

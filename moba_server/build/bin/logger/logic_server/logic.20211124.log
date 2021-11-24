@@ -1,0 +1,2093 @@
+20211124 10:28:27 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 10:28:27 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 10:28:27 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211124 10:28:27 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211124 10:28:30 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 10:28:43 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 10:28:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:36  
+uid: 1 online  current online num:[1]
+20211124 10:29:06 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 10:29:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:59  
+uid: 1 disconnect  current online num:[0]
+20211124 10:29:29 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 10:29:29 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:36  
+uid: 1 online  current online num:[1]
+20211124 10:29:38 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 10:29:43 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 10:29:43 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:166  
+cant find required field status
+
+20211124 10:30:03 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 10:30:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:59  
+uid: 1 disconnect  current online num:[0]
+20211124 10:34:03 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 10:34:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:36  
+uid: 1 online  current online num:[1]
+20211124 10:34:07 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 10:34:15 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 10:34:15 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\session_export_to_lua.cc:166  
+cant find required field status
+
+20211124 10:34:27 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 10:34:27 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:59  
+uid: 1 disconnect  current online num:[0]
+20211124 10:35:12 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:21  
+logic service disconnect with gateway
+20211124 11:38:37 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 11:38:37 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 11:38:37 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211124 11:38:37 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211124 11:38:37 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211124 11:38:39 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 11:38:53 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:21  
+logic service disconnect with gateway
+20211124 11:55:26 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 11:55:26 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 11:55:26 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211124 11:55:26 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211124 11:55:26 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211124 11:55:27 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 11:56:07 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 11:56:07 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 1 online  current online num:[1]
+20211124 11:56:11 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 11:56:12 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:17 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:22 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:27 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:32 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:37 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:42 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:47 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:52 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:56:57 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:02 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:07 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:12 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:17 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:22 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:27 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:32 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:37 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:59: field 'send_cmd' is not callable (a nil value)
+20211124 11:57:46 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 11:57:46 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 11:57:46 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211124 11:57:46 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211124 11:57:46 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211124 11:57:47 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 11:57:55 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 11:57:55 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 1 online  current online num:[1]
+20211124 11:57:59 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 11:58:02 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:07 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:12 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:17 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:22 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:27 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:32 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:37 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:42 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:47 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:52 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:58:57 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:59:02 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:59:07 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:59:12 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:39: attempt to index a nil value (field '?')
+20211124 11:59:18 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 11:59:18 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 11:59:18 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211124 11:59:18 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211124 11:59:18 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211124 11:59:18 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 11:59:19 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 11:59:27 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 11:59:27 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 1 online  current online num:[1]
+20211124 11:59:34 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 11:59:39 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:66: attempt to index a nil value (field '?')
+20211124 11:59:44 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:66: attempt to index a nil value (field '?')
+20211124 11:59:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:66: attempt to index a nil value (field '?')
+20211124 11:59:54 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:66: attempt to index a nil value (field '?')
+20211124 11:59:59 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/match_mgr.lua:66: attempt to index a nil value (field '?')
+20211124 12:00:05 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 12:00:05 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 12:00:05 DEBUG ../../apps/lua/scripts/database/redis_game.lua:18  
+connect to redis game db success
+20211124 12:00:05 DEBUG ../../apps/lua/scripts/database/redis_center.lua:18  
+connect to redis center db success
+20211124 12:00:05 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:15  
+connect to moba game db success
+20211124 12:00:07 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 12:00:15 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 12:00:15 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 1 online  current online num:[1]
+20211124 12:00:18 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 12:08:57 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 12:08:57 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:106  
+uid: 1 disconnect  current online num:[0]
+20211124 13:51:52 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 13:51:52 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 13:51:52 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 13:51:52 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 13:51:52 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 13:51:52 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 13:52:01 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	4	nil
+20211124 13:52:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 4 online  current online num:[1]
+20211124 13:52:04 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	5	nil
+20211124 13:52:04 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 5 online  current online num:[2]
+20211124 13:52:08 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	6	nil
+20211124 13:52:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 6 online  current online num:[3]
+20211124 13:52:10 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	7	nil
+20211124 13:52:10 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 7 online  current online num:[4]
+20211124 13:52:13 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	8	nil
+20211124 13:52:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 8 online  current online num:[5]
+20211124 13:52:16 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	9	nil
+20211124 13:52:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 9 online  current online num:[6]
+20211124 13:52:19 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	10	nil
+20211124 13:52:19 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 10 online  current online num:[7]
+20211124 13:52:23 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	11	nil
+20211124 13:52:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 11 online  current online num:[8]
+20211124 13:52:26 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	12	nil
+20211124 13:52:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 12 online  current online num:[9]
+20211124 13:52:29 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	13	nil
+20211124 13:52:29 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 13 online  current online num:[10]
+20211124 13:52:32 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	14	nil
+20211124 13:52:32 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:83  
+uid: 14 online  current online num:[11]
+20211124 14:14:20 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:21  
+logic service disconnect with gateway
+20211124 14:42:45 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 14:42:45 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 14:42:45 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 14:42:45 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 14:42:45 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 14:42:45 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 14:42:48 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 14:42:50 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 14:43:04 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 14:43:04 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 14:43:09 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 14:43:12 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:43:17 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:43:22 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:43:27 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:43:32 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:48:58 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 14:48:58 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 14:48:58 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 14:48:58 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 14:48:58 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 14:48:58 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 14:48:59 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 14:49:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 14:49:19 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 14:49:19 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 14:49:26 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 14:49:30 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:49:30 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:49:30 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:49:30 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:49:35 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:49:35 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:49:35 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:49:40 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:49:40 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:49:40 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:49:45 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:49:45 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:49:45 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:49:50 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:49:50 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:49:50 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:51:10 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 14:51:10 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 14:51:10 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 14:51:10 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 14:51:10 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 14:51:10 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 14:51:13 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 14:51:14 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 14:51:15 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 14:51:26 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 14:51:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 14:51:30 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 14:51:32 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:51:32 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:51:32 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:51:32 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 14:51:32 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:51:32 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:51:32 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:51:37 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:51:37 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 14:51:37 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:51:37 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:51:37 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:51:42 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:51:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 14:51:42 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:51:42 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:51:42 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:51:47 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:51:47 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 14:51:47 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:51:47 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:51:47 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:51:51 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 14:51:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 14:51:52 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:51:52 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 14:51:52 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:51:52 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:51:52 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:54:09 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 14:54:09 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 14:54:09 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 14:54:09 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 14:54:09 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 14:54:09 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 14:54:13 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 14:54:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 14:54:23 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 14:54:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 14:54:27 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 14:54:31 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:54:31 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:54:31 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:54:31 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:54:31 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:54:31 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:54:36 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:54:36 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:54:36 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:54:36 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:54:41 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:54:41 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:54:41 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:54:41 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:54:46 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:54:46 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:54:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:54:46 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 14:54:51 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:58  
+00000000000000	table
+20211124 14:54:51 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:39  
+333333333333333	table
+20211124 14:54:51 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 14:54:51 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:01:07 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 15:01:07 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 15:01:07 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 15:01:07 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 15:01:07 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 15:01:07 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 15:01:08 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 15:01:09 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 15:01:12 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 15:01:21 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 15:01:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 15:01:27 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 15:01:29 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:57  
+00000000000000	table
+20211124 15:01:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 15:01:29 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:57  
+00000000000000	table
+20211124 15:01:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 15:01:29 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 15:01:29 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:01:34 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:57  
+00000000000000	table
+20211124 15:01:34 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 15:01:34 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 15:01:34 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:01:39 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:57  
+00000000000000	table
+20211124 15:01:39 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 15:01:39 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 15:01:39 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:01:44 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:57  
+00000000000000	table
+20211124 15:01:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 15:01:44 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 15:01:44 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:01:49 DEBUG ../../apps/lua/scripts/logic_server/match_mgr.lua:57  
+00000000000000	table
+20211124 15:01:49 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+true
+20211124 15:01:49 DEBUG ../../apps/lua/scripts/logic_server/player.lua:62  
+false
+20211124 15:01:49 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:04:19 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 15:04:19 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 15:04:19 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 15:04:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 15:04:19 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 15:04:19 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 15:04:19 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 15:04:21 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 15:04:24 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 15:04:30 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 15:04:30 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 15:04:34 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 15:04:36 DEBUG ../../apps/lua/scripts/logic_server/player.lua:66  
+lightuserdata
+20211124 15:04:36 DEBUG ../../apps/lua/scripts/logic_server/player.lua:66  
+lightuserdata
+20211124 15:04:36 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:69: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:04:41 DEBUG ../../apps/lua/scripts/logic_server/player.lua:66  
+lightuserdata
+20211124 15:04:41 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:69: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:04:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:66  
+lightuserdata
+20211124 15:04:46 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:69: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:04:51 DEBUG ../../apps/lua/scripts/logic_server/player.lua:66  
+lightuserdata
+20211124 15:04:51 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:69: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:04:56 DEBUG ../../apps/lua/scripts/logic_server/player.lua:66  
+lightuserdata
+20211124 15:04:56 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:69: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:06:01 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 15:06:01 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 15:06:01 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 15:06:01 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 15:06:01 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 15:06:01 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 15:06:03 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 15:06:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 15:06:14 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 15:06:23 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 15:06:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 15:06:26 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 15:06:28 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:06:33 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:06:38 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:06:43 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:06:48 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:67: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:08:01 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 15:08:01 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 15:08:01 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 15:08:01 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 15:08:01 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 15:08:01 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 15:08:03 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 15:08:04 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	4	1	nil
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 15:08:06 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 15:08:15 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 15:08:15 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 15:08:18 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 15:08:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	25	1	table
+20211124 15:08:23 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	nil	1	table
+20211124 15:08:23 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:08:28 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	nil	1	table
+20211124 15:08:28 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:08:33 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	nil	1	table
+20211124 15:08:33 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:08:38 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	nil	1	table
+20211124 15:08:38 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:08:43 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	nil	1	table
+20211124 15:08:43 ERROR E:\CProject\moba_game_server\moba_server\lua_wrapper\lua_wrapper.cc:338  
+[LUA ERROR] ../../apps/lua/scripts/logic_server/player.lua:68: bad argument #-1 to 'send_msg' (number expected, got nil)
+20211124 15:09:14 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 15:09:14 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 15:09:14 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 15:09:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 15:09:14 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 15:09:14 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 15:09:18 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_4 unick gst758648 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_5 unick gst913313 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_6 unick gst561672 usex 0 uface 3 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_7 unick gst308918 usex 1 uface 1 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_8 unick gst535130 usex 0 uface 9 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_9 unick gst104163 usex 0 uface 2 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_10 unick gst600358 usex 1 uface 2 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_11 unick gst382469 usex 0 uface 5 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_12 unick gst928046 usex 1 uface 8 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_13 unick gst709277 usex 1 uface 6 uvip 0 is_guest 1
+20211124 15:09:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:47  
+hmset moba_auth_center_user_uid_14 unick gst554093 usex 1 uface 7 uvip 0 is_guest 1
+20211124 15:09:24 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	21	1	nil
+20211124 15:09:24 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 15:09:27 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:14  
+3	23	1	table
+20211124 15:09:31 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	25	1	table
+20211124 15:09:31 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	26	1	table
+20211124 15:09:36 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	26	1	table
+20211124 15:09:41 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	26	1	table
+20211124 15:09:46 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	26	1	table
+20211124 15:09:51 DEBUG ../../apps/lua/scripts/logic_server/player.lua:67  
+3	26	1	table
+20211124 15:38:54 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 15:38:54 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 15:38:54 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 15:38:54 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 15:38:54 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 15:38:54 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 15:38:55 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:25  
+gateway connect to Logic
+20211124 15:39:29 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 16:29:05 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 16:42:27 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 16:42:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 16:43:09 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 16:43:09 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 16:43:09 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 16:43:09 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 16:43:09 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 16:43:09 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 16:43:11 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:25  
+gateway connect to Logic
+20211124 16:43:22 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 16:44:17 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 16:44:30 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 16:44:30 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 16:44:30 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 16:44:30 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 16:44:30 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 16:44:30 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 16:44:31 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:25  
+gateway connect to Logic
+20211124 16:44:42 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 16:45:37 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:18:21 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:18:22 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:18:22 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:18:22 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:18:22 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:18:22 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:18:24 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:25  
+gateway connect to Logic
+20211124 17:18:39 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:19:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:19:34 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:21:17 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:21:17 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:21:17 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:21:17 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:21:17 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:21:17 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:21:19 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:21:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:24:16 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:24:16 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:24:16 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:24:16 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:24:16 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:24:16 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:24:19 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:24:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:26:19 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:26:43 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:26:43 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:26:43 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:26:43 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:26:43 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:26:43 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:26:44 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:28:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:31:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:31:14 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:31:14 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:31:14 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:31:14 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:31:14 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:31:14 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:31:15 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:31:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:31:44 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:33:48 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:33:48 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:33:48 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:33:48 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:33:48 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:33:48 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:33:49 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:33:59 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:34:39 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:36:39 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:36:39 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:36:39 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:36:39 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:36:39 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:36:39 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:36:39 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:36:49 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:37:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:37:47 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:37:47 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:37:47 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:37:47 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:37:47 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:37:47 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:37:49 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:37:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:38:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:38:17 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:38:17 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:38:17 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:38:17 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:38:17 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:38:17 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:38:19 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:38:42 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:39:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:41:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:42:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:46:34 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:46:34 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:46:34 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:46:34 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:46:34 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:46:34 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:46:34 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:46:47 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:47:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 17:48:19 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 17:48:19 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 17:48:19 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 17:48:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 17:48:19 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 17:48:19 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 17:48:20 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 17:48:22 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:195  
+uid: 1 online  current online num:[1]
+20211124 17:49:14 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:218  
+uid: 1 disconnect  current online num:[0]
+20211124 18:04:06 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:04:06 ERROR trunk:0  
+error loading module 'logic_server/game_mgr' from file '../../apps/lua/scripts/logic_server/game_mgr.lua':
+	../../apps/lua/scripts/logic_server/game_mgr.lua:267: 'then' expected near '='
+20211124 18:04:06 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:04:27 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:04:27 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:04:27 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:04:27 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:04:27 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:04:27 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:04:28 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:16:42 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:21  
+logic service disconnect with gateway
+20211124 18:16:54 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:16:54 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:16:54 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:16:54 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:16:54 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:16:54 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:16:56 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:17:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:204  
+uid: 1 online  current online num:[1]
+20211124 18:17:32 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:227  
+uid: 1 disconnect  current online num:[0]
+20211124 18:18:03 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:18:03 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:18:03 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:18:03 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:18:03 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:18:03 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:18:06 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:18:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:204  
+uid: 1 online  current online num:[1]
+20211124 18:19:25 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:227  
+uid: 1 disconnect  current online num:[0]
+20211124 18:19:29 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:19:29 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:19:29 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:19:29 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:19:29 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:19:29 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:19:31 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:19:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:204  
+uid: 1 online  current online num:[1]
+20211124 18:20:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:227  
+uid: 1 disconnect  current online num:[0]
+20211124 18:21:27 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:21:27 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:21:27 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:21:27 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:21:27 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:21:27 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:21:27 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:21:40 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:204  
+uid: 1 online  current online num:[1]
+20211124 18:22:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:227  
+uid: 1 disconnect  current online num:[0]
+20211124 18:22:57 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:22:57 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:22:57 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:22:57 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:22:57 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:22:57 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:22:57 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:23:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:204  
+uid: 1 online  current online num:[1]
+20211124 18:25:40 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:25:40 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:25:40 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:25:40 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:25:40 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:25:40 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:25:42 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:25:52 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:204  
+uid: 1 online  current online num:[1]
+20211124 18:32:39 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:32:39 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:32:39 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:32:39 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:32:40 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:32:40 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:32:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:32:42 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:32:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:32:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:32:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:32:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:197  
+uid: 1 online  current online num:[1]
+20211124 18:33:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:33:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:34:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:35:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:166  
+scheduler_do_robot_to_match
+20211124 18:36:51 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:36:51 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:36:51 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:36:51 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:36:52 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:36:52 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:36:52 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:36:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:36:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:198  
+uid: 1 online  current online num:[1]
+20211124 18:37:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:33 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:37:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:33 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:38:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:33 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:39:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:33 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:40:48 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:21  
+logic service disconnect with gateway
+20211124 18:40:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:43:31 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:43:31 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:43:31 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:43:31 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:43:31 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:43:31 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:43:32 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:43:33 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:43:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:43:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:43:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:199  
+uid: 1 online  current online num:[1]
+20211124 18:43:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:43:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:43:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:43:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:43:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:33 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:33 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:38 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:43 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:48 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:53 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:44:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:44:58 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:45:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:03 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:45:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:45:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:13 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:45:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:18 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:45:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:23 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:45:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:28 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state2
+20211124 18:45:34 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:45:34 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:45:34 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:45:34 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:45:34 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:45:34 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:45:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:36 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:45:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:45 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:199  
+uid: 1 online  current online num:[1]
+20211124 18:45:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:45:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot-1
+20211124 18:45:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:174  
+push_robot
+20211124 18:45:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:45:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:45:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:45:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot-1
+20211124 18:45:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:174  
+push_robot
+20211124 18:46:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot-1
+20211124 18:46:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:174  
+push_robot
+20211124 18:46:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot-1
+20211124 18:46:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:174  
+push_robot
+20211124 18:46:08 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:222  
+uid: 1 disconnect  current online num:[0]
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot-1
+20211124 18:46:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:174  
+push_robot
+20211124 18:46:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:46:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:46:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:46:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:21 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:26 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:31 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:36 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:41 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:46 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:51 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:47:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:47:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:47:56 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:48:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:48:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:01 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:48:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:48:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:48:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:48:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:11 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:167  
+scheduler_do_robot_to_match
+20211124 18:48:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:170  
+match_list match id1:state1
+20211124 18:48:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:16 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:158  
+search_idle_robot1
+20211124 18:48:23 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211124 18:48:23 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211124 18:48:23 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211124 18:48:23 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211124 18:48:23 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211124 18:48:23 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211124 18:48:23 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:26  
+gateway connect to Logic
+20211124 18:48:34 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:204  
+uid: 1 online  current online num:[1]
+20211124 18:49:06 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:227  
+uid: 1 disconnect  current online num:[0]

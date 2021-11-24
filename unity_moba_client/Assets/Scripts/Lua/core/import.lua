@@ -155,6 +155,8 @@ U.logic_service_proxy = CS.logic_service_proxy
 U.event_mgr = CS.event_manager
 U.ugame = CS.ugame
 U.ulevel = CS.ulevel
+U.Zone = CS.Zone
+U.Respones = CS.Respones
 
 _G.Json = U.LuaJson
 _G.U = U

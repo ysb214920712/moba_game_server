@@ -1,15 +1,17 @@
+local Respones = require("Respones")
 local Stype = require("Stype")
 local Cmd = require("Cmd")
 local game_mgr = require("logic_server/game_mgr")
-local Respones = require("Respones")
 
 local logic_service_hanlders = {}
 logic_service_hanlders[Cmd.eLoginLogicReq] = game_mgr.login_logic_server
 logic_service_hanlders[Cmd.eUserLostConn] = game_mgr.on_player_disconnect
+logic_service_hanlders[Cmd.eEnterZoneReq] = game_mgr.enter_zone
+logic_service_hanlders[Cmd.eExitMatchReq] = game_mgr.do_exit_match
+
 
 -- {stype, ctype, utag, body}
 function on_logic_recv_cmd(s, msg)
-	print(msg[1], msg[2], msg[3], msg[4])
 	if logic_service_hanlders[msg[2]] then
 		logic_service_hanlders[msg[2]](s, msg)
 	end

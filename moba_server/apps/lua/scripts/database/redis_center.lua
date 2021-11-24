@@ -2,6 +2,14 @@ local game_config = require("game_config")
 
 local redis_conn = nil
 
+local function is_connected()
+    if not redis_conn then
+        return false
+    end
+
+    return true
+end
+
 function redis_coonect_to_center()
     local host = game_config.center_redis.host
     local port = game_config.center_redis.port
@@ -36,7 +44,6 @@ function set_uinfo_inredis(uid, uinfo)
                       " uvip " .. uinfo.uvip ..
                       " is_guest " .. uinfo.is_guest
 
-    print(redis_cmd)
     Redis.query(redis_conn, redis_cmd, function(err, ret)
 
     end)
@@ -84,6 +91,7 @@ local redis_center = {
     set_uinfo_inredis = set_uinfo_inredis,
     get_uinfo_inredis = get_uinfo_inredis,
     edit_profile = edit_profile,
+    is_connected = is_connected,
 }
 
 return redis_center
