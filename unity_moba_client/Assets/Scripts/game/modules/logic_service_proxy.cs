@@ -65,7 +65,6 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
     void on_exit_match_return(cmd_msg msg)
     {
         ExitMatchRes res = proto_man.protobuf_deserialize<ExitMatchRes>(msg.body);
-
         if (res.status != Respones.OK)
         {
             Debug.Log("Exit Match Status:" + res.status);
@@ -82,6 +81,27 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
             return;
         }
         event_manager.Instance.dispatch_event("user_exit", res.seatid);
+    }
+
+    void on_game_start_return(cmd_msg msg)
+    {
+        GameStart res = proto_man.protobuf_deserialize<GameStart>(msg.body);
+        if (res == null)
+        {
+            return;
+        }
+        event_manager.Instance.dispatch_event("game_start", res.heroes);
+    }
+
+    void on_udp_test(cmd_msg msg)
+    {
+        UdpTest res = proto_man.protobuf_deserialize<UdpTest>(msg.body);
+        if (res == null)
+        {
+            return;
+        }
+
+        Debug.Log("udp_test" + res.content);
     }
 
     void on_logic_server_return(cmd_msg msg)
@@ -111,6 +131,14 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
             case (int)Cmd.eUserExitMatch:
                 this.on_user_exit_match_return(msg);
                 break; 
+
+            case (int)Cmd.eGameStart:
+                this.on_game_start_return(msg);
+                break; 
+
+            case (int)Cmd.eUdpTest:
+                this.on_udp_test(msg);
+                break;
 
             default:
                 break;
@@ -142,5 +170,14 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
     public void exit_match()
     {
         network.Instance.send_protobuf_cmd((int)Stype.Logic, (int)Cmd.eExitMatchReq, null);
+    }
+
+    public void send_udp_test(string content)
+    {
+        UdpTest req = new UdpTest();
+        req.content = content;
+        Debug.Log("send_udp_test" + content);
+
+        network.Instance.udp_send_protobuf_cmd((int)Stype.Logic, (int)Cmd.eUdpTest, req);
     }
 }

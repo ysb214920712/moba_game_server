@@ -24,6 +24,8 @@ function player:init(uid, s, ret_handler)
     self.zid = -1 
     self.matchid = -1
     self.seatid = -1
+    self.side = -1
+    self.heroid = -1
     self.state = State.InView
     self.is_robot = false
 
@@ -74,6 +76,7 @@ function player:get_user_arrived()
         uface = self.uinfo.uface,
         usex = self.uinfo.usex,
         seatid = self.seatid,
+        side = self.side,
     }
     return body
 end

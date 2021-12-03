@@ -44,6 +44,23 @@ function M:init_listener()
 
 	self:add_server_listener("user_exit", self.on_user_exit)
 	self:add_listener(MID.USER_EXIT_SUCCESS, self.on_user_exit_success)
+
+	self:add_server_listener("game_start", self.on_game_start)
+	self:add_listener(MID.GAME_START_SUCCESS, self.on_game_start_success)
+end
+
+function M.on_game_start(name, udata)
+	Messager.send(MID.GAME_START_SUCCESS, udata)
+end
+
+function M:on_game_start_success(udata)
+	for i = 0, udata.Count - 1 do
+		print(udata[i])
+	end
+
+	BattleMgr:enter_battle(UIBattle, function()
+		
+	end)
 end
 
 function M.on_user_exit(name, udata)

@@ -1,0 +1,170 @@
+20211203 10:18:30 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211203 10:18:30 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211203 10:18:30 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211203 10:18:30 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211203 10:18:30 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211203 10:18:30 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211203 10:18:53 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:18:56 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	15	1	nil
+20211203 10:20:40 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:21:14 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:22:58 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:23:44 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:24:23 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:25:04 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:27:11 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:27:39 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:28:47 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:29:38 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:30:45 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:31:12 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:33:23 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:35:22 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:36:26 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 10:36:58 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 10:37:38 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 14:44:26 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211203 14:44:26 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211203 14:44:26 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211203 14:44:26 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211203 14:44:26 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211203 14:44:26 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211203 14:44:39 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 14:45:34 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 15:51:52 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211203 15:51:52 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211203 15:51:52 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211203 15:51:52 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211203 15:51:52 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211203 15:51:52 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211203 15:52:07 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 15:53:44 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 17:27:39 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211203 17:27:39 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211203 17:27:39 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211203 17:27:44 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:27:44 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:27:44 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:27:54 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:27:54 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:27:54 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:04 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:04 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:04 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý8EA
+20211203 17:28:14 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:14 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:14 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:24 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:24 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:24 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:34 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:34 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:34 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:44 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:44 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:44 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:54 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:28:54 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«ÇýxÿA
+20211203 17:28:54 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:29:04 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:29:04 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:29:04 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:29:14 ERROR ../../apps/lua/scripts/database/redis_game.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:29:14 ERROR ../../apps/lua/scripts/database/redis_rank.lua:20  
+ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£
+20211203 17:29:14 ERROR ../../apps/lua/scripts/database/redis_center.lua:20  
+ÏµÍ³ÊÔÍ¼½«ÇýxÿA
+20211203 17:29:19 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211203 17:29:19 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211203 17:29:19 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211203 17:29:34 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211203 17:30:35 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211203 17:32:26 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211203 17:32:26 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211203 17:32:26 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211203 17:32:26 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211203 17:32:26 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211203 17:32:26 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success

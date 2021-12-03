@@ -14,6 +14,7 @@
 		<type fullname="VirtualList" preserve="all"/>
 		<type fullname="GameReloader" preserve="all"/>
 		<type fullname="XLuaHelper" preserve="all"/>
+		<type fullname="GameZygote" preserve="all"/>
 		<type fullname="auth_service_proxy" preserve="all"/>
 		<type fullname="logic_service_proxy" preserve="all"/>
 		<type fullname="system_service_proxy" preserve="all"/>

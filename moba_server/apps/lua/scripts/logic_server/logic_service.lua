@@ -8,6 +8,7 @@ logic_service_hanlders[Cmd.eLoginLogicReq] = game_mgr.login_logic_server
 logic_service_hanlders[Cmd.eUserLostConn] = game_mgr.on_player_disconnect
 logic_service_hanlders[Cmd.eEnterZoneReq] = game_mgr.enter_zone
 logic_service_hanlders[Cmd.eExitMatchReq] = game_mgr.do_exit_match
+logic_service_hanlders[Cmd.eUdpTest] = game_mgr.do_udp_test
 
 
 -- {stype, ctype, utag, body}

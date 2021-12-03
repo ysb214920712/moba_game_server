@@ -28,6 +28,8 @@ local cmd_name_map = {
     "ExitMatchReq",
     "ExitMatchRes",
     "UserExitMatch",
+    "GameStart",
+    "UdpTest",
 }
 
 return cmd_name_map

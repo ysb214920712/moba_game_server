@@ -9,6 +9,7 @@ using XLua;
 public class GameManager : MonoBehaviour
 {
     public static LuaEnv currentLuaEnv { get; private set; }
+    public static Canvas UICanvas;
 
     IEnumerator Start()
     {
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
 
         GameObject.DontDestroyOnLoad(gameObject);
         GameObject.DontDestroyOnLoad(GameObject.Find("UI"));
+        UICanvas = GameObject.Find("UI/Canvas").GetComponent<Canvas>();
 
         event_manager.Instance.init();
         ulevel.Instance.init();

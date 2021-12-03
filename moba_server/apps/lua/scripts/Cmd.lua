@@ -28,6 +28,8 @@ local Cmd = {
     eExitMatchReq = 27,
     eExitMatchRes = 28,
     eUserExitMatch = 29,
+    eGameStart = 30,
+    eUdpTest = 31,
 }
 
 return Cmd

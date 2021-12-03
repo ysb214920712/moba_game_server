@@ -265,10 +265,14 @@ function add_chip(uid, chip, ret_handler)
     Mysql.query(mysql_conn, sql_cmd, function(err, ret)
         if err then
             Logger.error(err)
-            ret_handler(err, nil)
+            if ret_handler then
+                ret_handler(err, nil)
+            end
             return
         else
-            ret_handler(nil, nil) 
+            if ret_handler then
+                ret_handler(nil, nil) 
+            end
         end
     end)
 end

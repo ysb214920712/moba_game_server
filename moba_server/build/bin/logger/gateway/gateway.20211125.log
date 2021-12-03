@@ -1,0 +1,108 @@
+20211125 09:49:22 DEBUG ../../apps/lua/scripts/gateway/main.lua:21  
+Tcp Server listen at 6080
+20211125 09:49:22 DEBUG ../../apps/lua/scripts/gateway/main.lua:23  
+Ws Server listen at 6081
+20211125 09:49:22 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[1] success
+20211125 09:49:22 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[2] success
+20211125 09:49:22 DEBUG ../../apps/lua/scripts/gateway/main.lua:31  
+register gw_service:[3] success
+20211125 09:49:23 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Auth server]127.0.0.1:8000
+20211125 09:49:23 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [System server]127.0.0.1:8001
+20211125 09:49:23 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Logic server]127.0.0.1:8002
+20211125 09:49:23 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Auth server]127.0.0.1:8000
+20211125 09:49:24 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Logic server]127.0.0.1:8002
+20211125 09:49:24 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [System server]127.0.0.1:8001
+20211125 09:49:28 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [System server]127.0.0.1:8001
+20211125 09:49:28 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [System server]127.0.0.1:8001
+20211125 09:50:17 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+1	9	0
+20211125 09:50:17 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+2	13	0
+20211125 09:50:17 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	21	0
+20211125 09:50:19 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+2	15	0
+20211125 09:50:22 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	23	0
+20211125 09:52:26 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:164  
+gateway disconnect [System server]
+20211125 09:52:29 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [System server]127.0.0.1:8001
+20211125 09:52:30 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [System server]127.0.0.1:8001
+20211125 09:52:34 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [System server]127.0.0.1:8001
+20211125 09:52:35 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [System server]127.0.0.1:8001
+20211125 09:52:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [System server]127.0.0.1:8001
+20211125 09:52:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [System server]127.0.0.1:8001
+20211125 09:52:46 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	27	0
+20211125 09:54:29 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:164  
+gateway disconnect [Logic server]
+20211125 09:54:34 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Logic server]127.0.0.1:8002
+20211125 09:54:35 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Logic server]127.0.0.1:8002
+20211125 09:54:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Logic server]127.0.0.1:8002
+20211125 09:54:40 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Logic server]127.0.0.1:8002
+20211125 09:54:44 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Logic server]127.0.0.1:8002
+20211125 09:54:44 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Logic server]127.0.0.1:8002
+20211125 09:54:46 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+1	9	0
+20211125 09:54:46 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+2	13	0
+20211125 09:54:46 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	21	0
+20211125 09:54:50 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	23	0
+20211125 09:55:15 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	27	0
+20211125 09:57:30 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:164  
+gateway disconnect [Logic server]
+20211125 09:57:34 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Logic server]127.0.0.1:8002
+20211125 09:57:35 ERROR ../../apps/lua/scripts/gateway/gw_service.lua:20  
+connect error to server [Logic server]127.0.0.1:8002
+20211125 09:57:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Logic server]127.0.0.1:8002
+20211125 09:57:39 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Logic server]127.0.0.1:8002
+20211125 09:57:47 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+1	9	0
+20211125 09:57:47 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+2	13	0
+20211125 09:57:47 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	21	0
+20211125 09:57:52 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	23	0
+20211125 09:58:21 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	27	0
+20211125 09:58:30 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:121  
+3	27	0
+20211125 09:59:17 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:164  
+gateway disconnect [Logic server]
+20211125 09:59:19 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:33  
+connecting to server [Logic server]127.0.0.1:8002
+20211125 09:59:19 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:24  
+connect success to server [Logic server]127.0.0.1:8002
+20211125 10:03:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:164  
+gateway disconnect [Logic server]
+20211125 10:03:10 DEBUG ../../apps/lua/scripts/gateway/gw_service.lua:164  
+gateway disconnect [Auth server]

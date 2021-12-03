@@ -53,6 +53,8 @@ enum Cmd {
   eExitMatchRes = 28;
   eUserExitMatch = 29;
 
+  eGameStart = 30;
+  eUdpTest = 31;
 }
 
 message GuestLoginReq {
@@ -168,6 +170,8 @@ message EnterZoneRes {
 message EnterMatch {
   required int32 zid = 1;
   required int32 matchid = 2;
+  required int32 seatid = 3;
+  required int32 side = 4;
 }
 
 message UserArrived {
@@ -175,6 +179,7 @@ message UserArrived {
   required int32 uface = 2;
   required int32 usex = 3;
   required int32 seatid = 4;
+  required int32 side = 5;
 }
 
 message ExitMatchRes {
@@ -183,4 +188,12 @@ message ExitMatchRes {
 
 message UserExitMatch {
   required int32 seatid = 1;
+}
+
+message GameStart {
+  repeated int32 heroes = 1;
+}
+
+message UdpTest {
+  required string content = 1;
 }

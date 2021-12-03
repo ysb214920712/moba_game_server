@@ -165,4 +165,18 @@ M.add_setting({
     layer = M.LayerType.Prompts,
 })
 
+M.add_setting({
+    lua_file = "ui/ui_loading",
+    res = "ui/loading",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Guide,
+})
+
+M.add_setting({
+    lua_file = "ui/ui_battle",
+    res = "ui/battle",
+    cache_mode = M.CacheModeByUseFrequency.Common,
+    layer = M.LayerType.Screen,
+})
+
 return M

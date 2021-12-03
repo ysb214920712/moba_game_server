@@ -99,6 +99,12 @@ extern "C" {
 				break;
 			}
 
+			if (pkg_size <= head_size)
+			{
+				s->close();
+				break;
+			}
+
 			if (s->recved < pkg_size) {
 				break;
 			}

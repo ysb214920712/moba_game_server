@@ -70,7 +70,7 @@ add_require("event/mid")
 add_require("event/messager")
 
 --- battle
-
+add_require("battle/battle_mgr")
 
 -- web
 

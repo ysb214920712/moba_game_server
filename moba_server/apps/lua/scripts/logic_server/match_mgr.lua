@@ -51,8 +51,22 @@ function match_mgr:exit_player(p)
     p.zid = -1
     p.matchid = -1
     p.seatid = -1
+    p.side = -1
+    p.heroid = -1
     local body = {status = Respones.OK}
     p:send_cmd(Stype.Logic, Cmd.eExitMatchRes, body)
+end
+
+function match_mgr:game_start()
+    local heroes = {}
+    for k, v in pairs(self.inview_players) do
+        table.insert(heroes, v.heroid)
+    end
+
+    local body = {
+        heroes = heroes,
+    }
+    self:broadcast_cmd_inview_players(Stype.Logic, Cmd.eGameStart, body)
 end
 
 function match_mgr:enter_player(p)
@@ -66,6 +80,10 @@ function match_mgr:enter_player(p)
         if not self.inview_players[i] then
             self.inview_players[i] = p
             p.seatid = i
+            p.side = 0
+            if i > PLAYER_NUM then
+                p.side = 1
+            end
             break
         end
     end
@@ -74,8 +92,9 @@ function match_mgr:enter_player(p)
     local body = {
         zid = self.zid,
         matchid = self.matchid,
+        seatid = p.seatid,
+        side = p.side,
     }
-
     p:send_cmd(Stype.Logic, Cmd.eEnterMatch, body)
 
     --通知其他客户端
@@ -95,6 +114,14 @@ function match_mgr:enter_player(p)
         for k, v in pairs(self.inview_players) do
             v.state = State.Ready
         end
+
+        --TODO 选英雄流程
+        --暂时处理为服务器随机生成英雄ID
+        for k, v in pairs(self.inview_players) do
+            v.heroid = math.floor(math.random() * 5 + 1)
+        end
+
+        self:game_start()
     end
 
     return true

@@ -8,10 +8,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class network : UnitySingleton<network> {
+    // TCP
     private string server_ip = "127.0.0.1";
     private int port = 6080;
-
-    
     private Socket client_socket = null;
     private bool is_connect = false;
     private Thread recv_thread = null;
@@ -21,6 +20,14 @@ public class network : UnitySingleton<network> {
     private int recved;
     private byte[] long_pkg = null;
     private int long_pkg_size = 0;
+
+    // UDP
+    private string udp_server_ip = "127.0.0.1";
+    private int udp_port = 8800;
+    IPEndPoint udp_remote_point;
+    Socket udp_socket = null;
+    private byte[] udp_recv_buf = new byte[60 * 1024];
+    private Thread udp_recv_thread = null;
 
     // event queque
     private Queue<cmd_msg> net_events = new Queue<cmd_msg>();
@@ -32,16 +39,27 @@ public class network : UnitySingleton<network> {
 	// Use this for initialization
 	void Start () {
         this.connect_to_server();
+        this.udp_socket_init();
+
+        this.InvokeRepeating("test_udp", 5, 5);
 	}
+
+    void test_udp()
+    {
+        Debug.Log("test_udp");
+        logic_service_proxy.Instance.send_udp_test("HellowUdp");
+    }
 
     void OnDestroy() {
         // Debug.Log("network onDestroy!");
         this.close();
+        this.udp_close();
     }
 
     void OnApplicaitonQuit() {
         // Debug.Log("OnApplicaitonQuit");
         this.close();
+        this.udp_close();
     }
 	
 	// Update is called once per frame
@@ -82,7 +100,7 @@ public class network : UnitySingleton<network> {
         }
     }
 
-    void on_recv_tcp_cmd(byte[] data, int start, int data_len) {
+    void on_recv_cmd(byte[] data, int start, int data_len) {
         cmd_msg msg;
         proto_man.unpack_cmd_msg(data, start, data_len, out msg);
         if (msg != null) { 
@@ -110,7 +128,7 @@ public class network : UnitySingleton<network> {
             int raw_data_start = head_size;
             int raw_data_len = pkg_size - head_size;
 
-            on_recv_tcp_cmd(pkg_data, raw_data_start, raw_data_len);
+            on_recv_cmd(pkg_data, raw_data_start, raw_data_len);
 			// end 
 
 			if (this.recved > pkg_size) {
@@ -195,14 +213,18 @@ public class network : UnitySingleton<network> {
             return;
         }
 
+        this.is_connect = false;
         // abort recv thread
         if (this.recv_thread != null) {
+            this.recv_thread.Interrupt();
             this.recv_thread.Abort();
+            this.recv_thread = null;
         }
         // end
 
         if (this.client_socket != null && this.client_socket.Connected) {
             this.client_socket.Close();
+            this.client_socket = null;
         }
     }
 
@@ -263,5 +285,67 @@ public class network : UnitySingleton<network> {
         if (this.event_listeners[stype] == null) {
             this.event_listeners.Remove(stype);
         }
+    }
+
+    void udp_thread_recv_worker()
+    {
+        while(true)
+        {
+            EndPoint remote = (EndPoint)new IPEndPoint(IPAddress.Any, 0);
+            int recved = this.udp_socket.ReceiveFrom(this.udp_recv_buf, ref remote);
+            this.on_recv_cmd(this.udp_recv_buf, 0, recved);
+        }
+    }
+
+    void udp_close() {
+        // abort recv thread
+        if (this.udp_recv_thread != null) {
+            this.udp_recv_thread.Interrupt();
+            this.udp_recv_thread.Abort();
+            this.udp_recv_thread = null;
+        }
+        // end
+
+        if (this.udp_socket != null) {
+            this.client_socket.Close();
+            this.client_socket = null;
+        }
+    }
+
+    public void udp_socket_init()
+    {
+        // UDP 远程端口
+        this.udp_remote_point = new IPEndPoint(IPAddress.Parse(this.udp_server_ip), this.udp_port);
+        //创建UDPSocket
+        this.udp_socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        //绑定端口
+        IPEndPoint local_point = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888);
+        this.udp_socket.Bind(local_point);
+
+        //启动一个线程监听
+        this.udp_recv_thread = new Thread(new ThreadStart(this.udp_thread_recv_worker));
+        this.udp_recv_thread.Start();
+    }
+
+    private void on_udp_send_data(IAsyncResult iar)
+    {
+        try
+        {
+            Socket client = (Socket)iar.AsyncState;
+            client.EndSendTo(iar);
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e.ToString());
+        }
+    }
+
+    public void udp_send_protobuf_cmd(int stype, int ctype, ProtoBuf.IExtensible body)
+    {
+        byte[] cmd_data = proto_man.pack_protobuf_cmd(stype, ctype, body);
+        if (cmd_data == null) {
+            return;
+        }
+        this.udp_socket.BeginSendTo(cmd_data, 0, cmd_data.Length, SocketFlags.None, this.udp_remote_point, new AsyncCallback(this.on_udp_send_data), this.udp_socket);
     }
 }

@@ -269,22 +269,37 @@ function do_exit_match(s, req)
     local uid = req[3]
     local p = logic_server_players[uid]
     if not p then
-        send_status(req[1], Cmd.eExitMatchRes, uid, Respones.InvalidOpt)
+        send_status(s, req[1], Cmd.eExitMatchRes, uid, Respones.InvalidOpt)
         return
     end
 
     if p.state ~= State.InView or p.zid == -1 or p.matchid == -1 or p.seatid == -1 then
-        send_status(req[1], Cmd.eExitMatchRes, uid, Respones.InvalidOpt)
+        send_status(s, req[1], Cmd.eExitMatchRes, uid, Respones.InvalidOpt)
         return
     end
 
     local match = zone_match_list[p.zid][p.matchid]
     if not match or match.state ~= State.InView then
-        send_status(req[1], Cmd.eExitMatchRes, uid, Respones.InvalidOpt)
+        send_status(s, req[1], Cmd.eExitMatchRes, uid, Respones.InvalidOpt)
         return
     end
 
     match:exit_player(p)
+end
+
+function do_udp_test(s, req)
+    local stype = req[1]
+    local ctype = req[2]
+    local body = req[4]
+
+    print(body.content)
+    local msg = {
+        stype, ctype, 0, {
+            content = body.content,
+        }
+    }
+
+    Session.send_msg(s, msg)
 end
 
 local game_mgr = {
@@ -295,6 +310,7 @@ local game_mgr = {
 
     enter_zone = enter_zone,
     do_exit_match = do_exit_match,
+    do_udp_test = do_udp_test,
 }
 
 return game_mgr

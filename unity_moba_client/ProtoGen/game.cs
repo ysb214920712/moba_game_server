@@ -569,6 +569,20 @@ namespace gprotocol
       get { return _matchid; }
       set { _matchid = value; }
     }
+    private int _seatid;
+    [global::ProtoBuf.ProtoMember(3, IsRequired = true, Name=@"seatid", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int seatid
+    {
+      get { return _seatid; }
+      set { _seatid = value; }
+    }
+    private int _side;
+    [global::ProtoBuf.ProtoMember(4, IsRequired = true, Name=@"side", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int side
+    {
+      get { return _side; }
+      set { _side = value; }
+    }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
@@ -607,6 +621,13 @@ namespace gprotocol
       get { return _seatid; }
       set { _seatid = value; }
     }
+    private int _side;
+    [global::ProtoBuf.ProtoMember(5, IsRequired = true, Name=@"side", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int side
+    {
+      get { return _side; }
+      set { _side = value; }
+    }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
@@ -640,6 +661,40 @@ namespace gprotocol
     {
       get { return _seatid; }
       set { _seatid = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"GameStart")]
+  public partial class GameStart : global::ProtoBuf.IExtensible
+  {
+    public GameStart() {}
+    
+    private readonly global::System.Collections.Generic.List<int> _heroes = new global::System.Collections.Generic.List<int>();
+    [global::ProtoBuf.ProtoMember(1, Name=@"heroes", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public global::System.Collections.Generic.List<int> heroes
+    {
+      get { return _heroes; }
+    }
+  
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"UdpTest")]
+  public partial class UdpTest : global::ProtoBuf.IExtensible
+  {
+    public UdpTest() {}
+    
+    private string _content;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"content", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public string content
+    {
+      get { return _content; }
+      set { _content = value; }
     }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
@@ -755,7 +810,13 @@ namespace gprotocol
       eExitMatchRes = 28,
             
       [global::ProtoBuf.ProtoEnum(Name=@"eUserExitMatch", Value=29)]
-      eUserExitMatch = 29
+      eUserExitMatch = 29,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eGameStart", Value=30)]
+      eGameStart = 30,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"eUdpTest", Value=31)]
+      eUdpTest = 31
     }
   
 }

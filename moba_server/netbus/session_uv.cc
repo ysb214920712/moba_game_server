@@ -68,11 +68,21 @@ extern "C" {
 	}
 }
 
+void* uv_session::operator new(size_t size)
+{
+	return cache_alloc(session_allocer, sizeof(uv_session));
+}
+
+void  uv_session::operator delete(void* mem)
+{
+	cache_free(session_allocer, mem);
+}
+
 uv_session* uv_session::create()
 {
-	//uv_session* uv_s = new uv_session();
-	uv_session* uv_s = (uv_session*)cache_alloc(session_allocer, sizeof(uv_session));
-	uv_s->uv_session::uv_session();
+	uv_session* uv_s = new uv_session();
+	//uv_session* uv_s = (uv_session*)cache_alloc(session_allocer, sizeof(uv_session));
+	//uv_s->uv_session::uv_session();
 	uv_s->init();
 	return uv_s;
 }
@@ -80,9 +90,9 @@ uv_session* uv_session::create()
 void uv_session::destroy(uv_session* s)
 {
 	s->exit();
-	//delete s;
-	s->uv_session::~uv_session();
-	cache_free(session_allocer, s);
+	delete s;
+	//s->uv_session::~uv_session();
+	//cache_free(session_allocer, s);
 }
 
 void uv_session::init()
@@ -114,7 +124,11 @@ void uv_session::close()
 	this->is_shutdown = true;
 	uv_shutdown_t* reg = &this->shutdown;
 	memset(reg, 0, sizeof(uv_shutdown_t));
-	uv_shutdown(reg,(uv_stream_t*)&this->tcp_handler, on_shutdown);
+	int ret =  uv_shutdown(reg,(uv_stream_t*)&this->tcp_handler, on_shutdown);
+	if (ret != 0)
+	{
+		uv_close((uv_handle_t*)&this->tcp_handler, on_close);
+	}
 }
 
 void uv_session::send_data(unsigned char* body, int len)
