@@ -47,7 +47,11 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
         {
             return;
         }
-        Debug.Log("EnterMatch: zid" + res.zid + "  roomid" + res.matchid);
+        // Debug.Log("EnterMatch: zid" + res.zid + "  roomid" + res.matchid);
+        ugame.Instance.zid = res.zid;
+        ugame.Instance.matchid = res.matchid;
+        ugame.Instance.self_seatid = res.seatid;
+        ugame.Instance.self_side = res.side;
         event_manager.Instance.dispatch_event("enter_match", res);
     }
 
@@ -59,6 +63,7 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
             return;
         }
         Debug.Log("UserArrived unick:" + res.unick);
+        ugame.Instance.other_users.Add(res);
         event_manager.Instance.dispatch_event("user_arrived", res);
     }
 
@@ -69,7 +74,6 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
         {
             Debug.Log("Exit Match Status:" + res.status);
         }
-
         event_manager.Instance.dispatch_event("exit_match", res != null && res.status == Respones.OK);
     }
 
@@ -80,6 +84,14 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
         {
             return;
         }
+
+        for (int i = 0; i < ugame.Instance.other_users.Count; i++) {
+            if (ugame.Instance.other_users[i].seatid == res.seatid) {
+                ugame.Instance.other_users.RemoveAt(i);
+                return;
+            }
+        }
+
         event_manager.Instance.dispatch_event("user_exit", res.seatid);
     }
 
@@ -90,7 +102,9 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
         {
             return;
         }
-        event_manager.Instance.dispatch_event("game_start", res.heroes);
+
+        ugame.Instance.players_match_info = res.players_match_info;
+        event_manager.Instance.dispatch_event("game_start", res.players_match_info);
     }
 
     void on_udp_test(cmd_msg msg)
@@ -102,6 +116,18 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
         }
 
         Debug.Log("udp_test" + res.content);
+    }
+
+    void on_server_logic_frame(cmd_msg msg)
+    {
+        LogicFrame res = proto_man.protobuf_deserialize<LogicFrame>(msg.body);
+        if (res == null)
+        {
+            return;
+        }
+
+        // Debug.Log("logic_frame" + res.frameid);
+        event_manager.Instance.dispatch_event("on_logic_update", res);
     }
 
     void on_logic_server_return(cmd_msg msg)
@@ -140,6 +166,10 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
                 this.on_udp_test(msg);
                 break;
 
+            case (int)Cmd.eLogicFrame:
+                this.on_server_logic_frame(msg);
+                break;
+
             default:
                 break;
         }
@@ -152,7 +182,10 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
 
     public void login_logic_server()
     {
-        network.Instance.send_protobuf_cmd((int)Stype.Logic, (int)Cmd.eLoginLogicReq, null);
+        LoginLogicReq req = new LoginLogicReq();
+        req.udp_ip = "127.0.0.1";
+        req.udp_port = network.Instance.local_udp_port;
+        network.Instance.send_protobuf_cmd((int)Stype.Logic, (int)Cmd.eLoginLogicReq, req);
     }
 
     public void enter_zone(int zid)
@@ -179,5 +212,10 @@ public class logic_service_proxy : Singleton<logic_service_proxy>
         Debug.Log("send_udp_test" + content);
 
         network.Instance.udp_send_protobuf_cmd((int)Stype.Logic, (int)Cmd.eUdpTest, req);
+    }
+
+    public void send_next_frame_opts(NextFrameOpts next_frame)
+    {
+        network.Instance.udp_send_protobuf_cmd((int)Stype.Logic, (int)Cmd.eNextFrameOpts, next_frame);
     }
 }

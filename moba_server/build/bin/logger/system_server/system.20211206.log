@@ -1,0 +1,150 @@
+20211206 10:44:37 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211206 10:44:37 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211206 10:44:37 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211206 10:44:37 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211206 10:44:37 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 10:44:37 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211206 10:45:13 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 10:45:15 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	15	1	nil
+20211206 10:46:13 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:24:55 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211206 14:24:55 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211206 14:24:55 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211206 14:24:55 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211206 14:24:55 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 14:24:55 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211206 14:25:22 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:26:10 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:28:21 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:29:12 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:34:09 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:34:51 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:41:31 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211206 14:41:31 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211206 14:41:31 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211206 14:41:31 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211206 14:41:31 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 14:41:31 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211206 14:41:42 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:42:35 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:45:00 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:46:11 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:48:42 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:49:28 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:51:32 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:52:27 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 14:54:14 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 14:54:58 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 15:27:01 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211206 15:27:01 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211206 15:27:01 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211206 15:27:01 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211206 15:27:01 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 15:27:01 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211206 15:27:23 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 15:28:25 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 16:26:11 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211206 16:26:11 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211206 16:26:11 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211206 16:26:11 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211206 16:26:11 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 16:26:11 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211206 16:26:26 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 16:28:42 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 17:10:31 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211206 17:10:31 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211206 17:10:31 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211206 17:10:31 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211206 17:10:31 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 17:10:31 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211206 17:10:54 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 17:12:10 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 17:37:07 DEBUG ../../apps/lua/scripts/system_server/main.lua:28  
+System Server Start at 8001
+20211206 17:37:07 DEBUG ../../apps/lua/scripts/system_server/main.lua:35  
+register System service:[2] success!!!
+20211206 17:37:07 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211206 17:37:07 DEBUG ../../apps/lua/scripts/database/redis_rank.lua:26  
+connect to redis rank db success
+20211206 17:37:07 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 17:37:07 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211206 17:37:22 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 17:37:58 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 17:38:16 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 17:38:50 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 17:39:44 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 17:40:23 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil
+20211206 17:43:01 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	13	1	nil
+20211206 17:43:52 DEBUG ../../apps/lua/scripts/system_server/system_service.lua:17  
+System 2	4	1	nil

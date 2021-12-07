@@ -133,6 +133,20 @@ function send_to_server(client_session, raw_cmd)
 			Session.set_utag(client_session, utag)
 		end
 		client_sessions_ukey[utag] = client_session
+	elseif ctype == Cmd.eLoginLogicReq then
+		local uid = Session.get_uid(client_session)
+		utag = uid
+		if utag == 0 then
+			return
+		end
+
+		local tcp_ip, tcp_port = Session.get_address(client_session)
+		local body = RawCmd.read_body(raw_cmd)
+		body.udp_ip = tcp_ip
+		-- body.udp_port = tcp_port
+		local login_logic_cmd = {stype, ctype, utag, body}
+		Session.send_msg(server_session, login_logic_cmd)
+		return
 	else
 		local uid = Session.get_uid(client_session)
 		utag = uid

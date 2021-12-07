@@ -21,12 +21,14 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(logic_service_proxy);
-			Utils.BeginObjectRegister(type, L, translator, 0, 4, 0, 0);
+			Utils.BeginObjectRegister(type, L, translator, 0, 6, 0, 0);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "init", _m_init);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "login_logic_server", _m_login_logic_server);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "enter_zone", _m_enter_zone);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "exit_match", _m_exit_match);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "send_udp_test", _m_send_udp_test);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "send_next_frame_opts", _m_send_next_frame_opts);
 			
 			
 			
@@ -172,6 +174,62 @@ namespace XLua.CSObjectWrap
                 {
                     
                     gen_to_be_invoked.exit_match(  );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_send_udp_test(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                logic_service_proxy gen_to_be_invoked = (logic_service_proxy)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    string _content = LuaAPI.lua_tostring(L, 2);
+                    
+                    gen_to_be_invoked.send_udp_test( _content );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_send_next_frame_opts(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                logic_service_proxy gen_to_be_invoked = (logic_service_proxy)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    gprotocol.NextFrameOpts _next_frame = (gprotocol.NextFrameOpts)translator.GetObject(L, 2, typeof(gprotocol.NextFrameOpts));
+                    
+                    gen_to_be_invoked.send_next_frame_opts( _next_frame );
                     
                     
                     

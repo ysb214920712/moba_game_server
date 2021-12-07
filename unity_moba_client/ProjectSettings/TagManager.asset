@@ -6,6 +6,7 @@ TagManager:
   tags:
   - jianta
   - posui
+  - trail
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - Effect
   - TFUI
   - PostProcessing
-  - 
-  - 
-  - 
+  - Bullet
+  - Hero
+  - Tower
   - 
   - 
   - 

@@ -55,7 +55,7 @@ end
 
 function M:on_game_start_success(udata)
 	for i = 0, udata.Count - 1 do
-		print(udata[i])
+		print(udata[i].heroid)
 	end
 
 	BattleMgr:enter_battle(UIBattle, function()

@@ -318,8 +318,14 @@
      <Compile Include="Assets\Scripts\3rd\StompyRobot\SRF\Scripts\UI\StyleSheet.cs" />
      <Compile Include="Assets\Scripts\3rd\StompyRobot\SRF\Scripts\UI\Unselectable.cs" />
      <Compile Include="Assets\Scripts\3rd\ZXingQRCode\ZXingQRCodeTool.cs" />
-     <Compile Include="Assets\Scripts\game\CharacterCtrl.cs" />
+     <Compile Include="Assets\Scripts\game\Config\GameConfig.cs" />
      <Compile Include="Assets\Scripts\game\Defines.cs" />
+     <Compile Include="Assets\Scripts\game\Entity\Bullet.cs" />
+     <Compile Include="Assets\Scripts\game\Entity\Hero.cs" />
+     <Compile Include="Assets\Scripts\game\Entity\MainTower.cs" />
+     <Compile Include="Assets\Scripts\game\Entity\NormalBullet.cs" />
+     <Compile Include="Assets\Scripts\game\Entity\NormalTower.cs" />
+     <Compile Include="Assets\Scripts\game\Entity\Tower.cs" />
      <Compile Include="Assets\Scripts\game\GameManager.cs" />
      <Compile Include="Assets\Scripts\game\GameZygote.cs" />
      <Compile Include="Assets\Scripts\game\Helper\CallbackHelp.cs" />

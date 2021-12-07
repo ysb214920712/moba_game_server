@@ -189,9 +189,11 @@ Scheduler.schedule(scheduler_do_robot_to_match, 2000, -1, 5000)
 function login_logic_server(s, req)
     local stype = req[1]
     local uid = req[3]
+    local body = req[4]
     local p = logic_server_players[uid]
     if p then -- 玩家已存在 更新session
         p:set_session(s)
+        p:set_udp_addr(body.udp_ip, body.udp_port)
         send_status(s, stype, Cmd.eLoginLogicRes, uid, Respones.OK)
         return
     end
@@ -205,6 +207,8 @@ function login_logic_server(s, req)
         end
         send_status(s, stype, Cmd.eLoginLogicRes, uid, status)
     end)
+
+    p:set_udp_addr(body.udp_ip, body.udp_port)
 end
 
 function on_player_disconnect(s, req)
@@ -214,10 +218,15 @@ function on_player_disconnect(s, req)
         return
     end
 
+    p:set_session(nil)
+    p:set_udp_addr(nil, 0)
+
     if p.zid ~= -1 then
         if zone_wait_list[p.zid][p.uid] then
             zone_wait_list[p.zid][p.uid] = nil
             p.zid = -1
+        else
+
         end
     end
 
@@ -302,6 +311,19 @@ function do_udp_test(s, req)
     Session.send_msg(s, msg)
 end
 
+function on_next_frame_event(s, req)
+    local stype = req[1]
+    local ctype = req[2]
+    local body = req[4]
+
+    local match = zone_match_list[body.zid][body.matchid]
+    if not match or match.state ~= State.Playing then
+        return
+    end
+
+    match:on_next_frame_event(body)
+end
+
 local game_mgr = {
     login_logic_server = login_logic_server,
     on_player_disconnect = on_player_disconnect,
@@ -311,6 +333,7 @@ local game_mgr = {
     enter_zone = enter_zone,
     do_exit_match = do_exit_match,
     do_udp_test = do_udp_test,
+    on_next_frame_event = on_next_frame_event,
 }
 
 return game_mgr

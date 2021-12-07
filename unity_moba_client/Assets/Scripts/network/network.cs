@@ -28,6 +28,7 @@ public class network : UnitySingleton<network> {
     Socket udp_socket = null;
     private byte[] udp_recv_buf = new byte[60 * 1024];
     private Thread udp_recv_thread = null;
+    public int local_udp_port = 8888;
 
     // event queque
     private Queue<cmd_msg> net_events = new Queue<cmd_msg>();
@@ -41,7 +42,7 @@ public class network : UnitySingleton<network> {
         this.connect_to_server();
         this.udp_socket_init();
 
-        this.InvokeRepeating("test_udp", 5, 5);
+        // this.InvokeRepeating("test_udp", 5, 5);
 	}
 
     void test_udp()
@@ -319,7 +320,7 @@ public class network : UnitySingleton<network> {
         //创建UDPSocket
         this.udp_socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
         //绑定端口
-        IPEndPoint local_point = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888);
+        IPEndPoint local_point = new IPEndPoint(IPAddress.Parse("127.0.0.1"), this.local_udp_port);
         this.udp_socket.Bind(local_point);
 
         //启动一个线程监听

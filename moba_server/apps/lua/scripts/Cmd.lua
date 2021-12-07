@@ -30,6 +30,8 @@ local Cmd = {
     eUserExitMatch = 29,
     eGameStart = 30,
     eUdpTest = 31,
+    eLogicFrame = 32,
+    eNextFrameOpts = 33,
 }
 
 return Cmd

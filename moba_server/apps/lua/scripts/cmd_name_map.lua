@@ -30,6 +30,8 @@ local cmd_name_map = {
     "UserExitMatch",
     "GameStart",
     "UdpTest",
+    "LogicFrame",
+    "NextFrameOpts",
 }
 
 return cmd_name_map

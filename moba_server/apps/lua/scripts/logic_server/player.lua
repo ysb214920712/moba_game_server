@@ -29,6 +29,11 @@ function player:init(uid, s, ret_handler)
     self.state = State.InView
     self.is_robot = false
 
+    self.client_ip = nil
+    self.client_udp_port = 0
+
+    self.sync_frameid = 0
+
     -- 数据库读取玩家信息
     mysql_game.get_ugame_info(uid, function(err, ugame_info)
         if err then
@@ -57,6 +62,11 @@ function player:init(uid, s, ret_handler)
     end)
 end
 
+function player:set_udp_addr(ip, port)
+    self.client_ip = ip
+    self.client_udp_port = port
+end
+
 function player:set_session(s)
     self.session = s
 end
@@ -68,6 +78,19 @@ function player:send_cmd(stype, ctype, body)
 
     local msg = {stype, ctype, self.uid, body}
     Session.send_msg(self.session, msg)
+end
+
+function player:udp_send_cmd(stype, ctype, body)
+    if not self.session or self.is_robot then
+        return
+    end
+
+    if not self.client_ip or self.client_udp_port == 0 then
+        return
+    end
+
+    local msg = {stype, ctype, 0, body}
+    Session.udp_send_msg(self.client_ip, self.client_udp_port, msg)
 end
 
 function player:get_user_arrived()

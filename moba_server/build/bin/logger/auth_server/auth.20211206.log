@@ -1,0 +1,152 @@
+20211206 10:44:34 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211206 10:44:34 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211206 10:44:34 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 10:44:34 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211206 10:45:13 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211206 10:45:13 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 10:46:13 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:24:52 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211206 14:24:52 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211206 14:24:52 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 14:24:52 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211206 14:25:22 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211206 14:25:22 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:26:10 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:28:21 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211206 14:28:21 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:29:12 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:34:09 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211206 14:34:09 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:34:51 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:41:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211206 14:41:29 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211206 14:41:29 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 14:41:29 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211206 14:41:41 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211206 14:41:41 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:42:35 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:45:00 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211206 14:45:00 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:46:11 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:48:42 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211206 14:48:42 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:49:28 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:51:32 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	4	table
+20211206 14:51:32 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:52:27 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 14:54:14 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	5	table
+20211206 14:54:14 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 14:54:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 15:26:59 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211206 15:26:59 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211206 15:26:59 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 15:26:59 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211206 15:27:22 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211206 15:27:23 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 15:28:25 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 16:26:09 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211206 16:26:09 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211206 16:26:09 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 16:26:09 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211206 16:26:26 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211206 16:26:26 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 16:28:42 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 17:10:28 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211206 17:10:28 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211206 17:10:28 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 17:10:28 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211206 17:10:54 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211206 17:10:54 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 17:12:10 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 17:37:05 DEBUG ../../apps/lua/scripts/auth_server/main.lua:28  
+Auth Server Start at 8000
+20211206 17:37:05 DEBUG ../../apps/lua/scripts/auth_server/main.lua:35  
+register Auth service:[1] success!!!
+20211206 17:37:05 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211206 17:37:05 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211206 17:37:22 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	1	table
+20211206 17:37:22 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 17:37:58 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 17:38:16 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	2	table
+20211206 17:38:16 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 17:38:50 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 17:39:43 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	3	table
+20211206 17:39:43 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 17:40:23 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
+20211206 17:43:01 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	9	4	table
+20211206 17:43:01 DEBUG ../../apps/lua/scripts/auth_server/uname_login.lua:46  
+1	ysb1
+20211206 17:43:52 DEBUG ../../apps/lua/scripts/auth_server/auth_service.lua:19  
+1	4	1	nil
