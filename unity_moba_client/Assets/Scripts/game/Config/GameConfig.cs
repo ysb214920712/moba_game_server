@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using XLua;
 
 public class TowerConfig
 {
@@ -25,6 +25,7 @@ public class HeroConfig
     public int EXP;
 }
 
+[LuaCallCSharp]
 public class GameConfig
 {
     public static TowerConfig main_tower_config = new TowerConfig() 
@@ -57,17 +58,50 @@ public class GameConfig
 
     public static HeroConfig[] normal_hero_level_config = new HeroConfig[]
     {
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
-        new HeroConfig(){DEF = 1, ATK = 1, MAX_HP = 1, ADD_HP = 1, EXP = 1,},
+        new HeroConfig(){DEF = 5, ATK = 1, MAX_HP = 100, ADD_HP = 0, EXP = 0,},
+        new HeroConfig(){DEF = 10, ATK = 1, MAX_HP = 200, ADD_HP = 100, EXP = 100,},
+        new HeroConfig(){DEF = 15, ATK = 1, MAX_HP = 300, ADD_HP = 100, EXP = 200,},
+        new HeroConfig(){DEF = 20, ATK = 1, MAX_HP = 400, ADD_HP = 100, EXP = 300,},
+        new HeroConfig(){DEF = 25, ATK = 1, MAX_HP = 500, ADD_HP = 100, EXP = 400,},
+        new HeroConfig(){DEF = 30, ATK = 1, MAX_HP = 600, ADD_HP = 100, EXP = 500,},
+        new HeroConfig(){DEF = 35, ATK = 1, MAX_HP = 700, ADD_HP = 100, EXP = 600,},
+        new HeroConfig(){DEF = 40, ATK = 1, MAX_HP = 800, ADD_HP = 100, EXP = 700,},
+        new HeroConfig(){DEF = 45, ATK = 1, MAX_HP = 900, ADD_HP = 100, EXP = 800,},
+        new HeroConfig(){DEF = 50, ATK = 1, MAX_HP = 1000, ADD_HP = 100, EXP = 900,},
     };
 
-    public static int normal_hero_exp_k = (1 << 15); //fixed 表示小数 16.16 1 << 16; 0.1 ---> 1 << 15
+    public static int add_exp_per_logic = 1;
+    public static int gen_monster_frame = 15 * 33;
+
+    public static int exp_to_level(HeroConfig[] configs, int exp)
+    {
+        int level = 0;
+        while (level + 1 < configs.Length && exp >= configs[level + 1].EXP)
+        {
+            exp -= configs[level + 1].EXP;
+            level++;
+        }
+
+        return level;
+    }
+
+    public static void upgrade_level_info(HeroConfig[] configs, int exp, ref int now, ref int total)
+    {
+        int level = 0;
+        while (level + 1 < configs.Length && exp >= configs[level + 1].EXP)
+        {
+            exp -= configs[level + 1].EXP;
+            level++;
+        }
+
+        if (level + 1 > configs.Length)
+        {
+            now = total = configs[level].EXP;
+        }
+        else
+        {
+            now = exp;
+            total = configs[level + 1].EXP;
+        }
+    }
 }

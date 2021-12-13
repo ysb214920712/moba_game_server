@@ -158,6 +158,7 @@ U.ulevel = CS.ulevel
 U.Zone = CS.Zone
 U.Respones = CS.Respones
 U.GameZygote = CS.GameZygote
+U.GameConfig = CS.GameConfig
 
 _G.Json = U.LuaJson
 _G.U = U

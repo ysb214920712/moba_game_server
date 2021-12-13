@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using XLua;
 using gprotocol;
+using SWS;
 
 public enum OptType {
     JoyStick = 1,
@@ -23,6 +24,17 @@ public enum ObjectType {
     Bullet = 13,
     Hero = 14,
     Tower = 15,
+}
+
+public enum MonsterType {
+    Monster1 = 0,
+    Monster2 = 1,
+    Monster3 = 2,
+}
+
+public struct RoadData {
+    public Vector3[] path_sideA;
+    public Vector3[] path_sideB;
 }
 
 [LuaCallCSharp]
@@ -57,10 +69,33 @@ public class GameZygote : UnitySingleton<GameZygote>
     public GameObject[] B_tower_objects;
 
     private List<Bullet> tower_bullets = new List<Bullet>();
+    private List<Monster> monsters = new List<Monster>();
+
+    private int now_gen_monster_frame = GameConfig.gen_monster_frame;
+
+    public PathManager[] monster_roads;
+    public GameObject[] monster_prefabs;
+    private RoadData[] road_data_set;
 
     private void Start() {
         // this.Init();
         event_manager.Instance.add_event_listener("on_logic_update", this.on_logic_update);
+    }
+
+    void load_road_data()
+    {
+        this.road_data_set = new RoadData[this.monster_roads.Length];
+        for (int i = 0; i < this.road_data_set.Length; i++)
+        {
+            this.road_data_set[i].path_sideA = WaypointManager.GetCurved(this.monster_roads[i].GetPathPoints());
+            
+            int len = this.road_data_set[i].path_sideA.Length;
+            this.road_data_set[i].path_sideB = new Vector3[len];
+            for (int j = 0; j < len; j++)
+            {
+                this.road_data_set[i].path_sideB[len - j - 1] = this.road_data_set[i].path_sideA[j];
+            }
+        }
     }
 
     public Bullet alloc_bullet(int side, int type)
@@ -104,10 +139,63 @@ public class GameZygote : UnitySingleton<GameZygote>
         return this.heroes;
     }
 
+    void place_monster(int type, int side, int road_index)
+    {
+        if (type < (int)MonsterType.Monster1 || type > (int)MonsterType.Monster3)
+        {
+            return;
+        }
+
+        if (side != (int)SideType.SideA && side != (int)SideType.SideB)
+        {
+            return;
+        }
+
+        if (road_index < 0 || road_index >= this.monster_roads.Length)
+        {
+            return;
+        }
+
+        if (type >= this.monster_prefabs.Length)
+        {
+            return;
+        }
+
+        GameObject m = GameObject.Instantiate(this.monster_prefabs[type]);
+        m.transform.SetParent(this.transform, false);
+        monster_move agent =  m.AddComponent<monster_move>();
+        Vector3[] road_data = null;
+        if (side == (int)SideType.SideA)
+        {
+            road_data = this.road_data_set[road_index].path_sideA;
+        }
+        else
+        {
+            road_data = this.road_data_set[road_index].path_sideB;
+        }
+
+        Monster monster = m.AddComponent<Monster>();
+        monster.init(type, side, road_data);
+        this.monsters.Add(monster);
+    }
+
+    public void remove_monster(Monster m)
+    {
+        this.monsters.Remove(m);
+        GameObject.Destroy(m.gameObject);
+    }
+
     public void Init()
     {
-       this.place_heroes();
-       this.place_towers();
+        this.load_road_data();
+        this.place_heroes();
+        this.place_towers();
+    }
+
+    void gen_monster()
+    {
+        this.place_monster((int)MonsterType.Monster1, (int)SideType.SideA, 0);
+        this.place_monster((int)MonsterType.Monster1, (int)SideType.SideB, 0);
     }
 
     void place_towers()
@@ -219,6 +307,22 @@ public class GameZygote : UnitySingleton<GameZygote>
         }
     }
 
+    void on_frame_handle_monster_logic()
+    {
+        for (int i = 0; i < this.monsters.Count; i++)
+        {
+            this.monsters[i].on_logic_update(LOGIC_FRAME_TIME);
+        }
+    }
+
+    void on_frame_handle_monster_ai()
+    {
+        for (int i = 0; i < this.monsters.Count; i++)
+        {
+            this.monsters[i].do_ai(LOGIC_FRAME_TIME);
+        }
+    }
+
     void capture_player_opts()
     {
         NextFrameOpts next_frame = new NextFrameOpts();
@@ -272,6 +376,9 @@ public class GameZygote : UnitySingleton<GameZygote>
             h.on_jump_to_next_frame(frame_opt.opts[i]);
         }
 
+        // 怪物位置
+        this.on_frame_handle_monster_logic();
+
         // 子弹AI
         this.on_frame_handle_tower_bullet_logic();
 
@@ -279,6 +386,10 @@ public class GameZygote : UnitySingleton<GameZygote>
         this.on_frame_handle_tower_logic();
 
         // 怪物AI
+        this.on_frame_handle_monster_ai();
+
+        //产生怪物
+        this.gen_monster_by_frame();
     }
 
     void on_logic_update(string name, object udata)
@@ -314,7 +425,8 @@ public class GameZygote : UnitySingleton<GameZygote>
                 break;
             }
 
-            this.on_jump_to_next_frame(frame.unsync_frames[i]);            
+            this.on_jump_to_next_frame(frame.unsync_frames[i]);        
+            this.upgrade_exp_by_time();    
         }
 
         // 获取最后一帧操作
@@ -323,6 +435,7 @@ public class GameZygote : UnitySingleton<GameZygote>
         {
             this.last_frame_opt = frame.unsync_frames[frame.unsync_frames.Count - 1];
             this.on_handler_frame_event(this.last_frame_opt);
+            this.upgrade_exp_by_time();
         }
         else
         {
@@ -331,6 +444,24 @@ public class GameZygote : UnitySingleton<GameZygote>
         // 采集下一帧事件， 发送到服务器
         
         this.capture_player_opts();
+    }
+
+    void upgrade_exp_by_time()
+    {
+        for (int i = 0; i < this.heroes.Count; i++)
+        {
+            this.heroes[i].add_exp(GameConfig.add_exp_per_logic);
+        }
+    }
+
+    void gen_monster_by_frame()
+    {
+        this.now_gen_monster_frame++;
+        if (this.now_gen_monster_frame >= GameConfig.gen_monster_frame)
+        {
+            this.now_gen_monster_frame = 0;
+            this.gen_monster();
+        }
     }
 
     void on_handler_frame_event(FrameOpts frame_opt)
@@ -348,13 +479,20 @@ public class GameZygote : UnitySingleton<GameZygote>
             h.on_handler_frame_event(frame_opt.opts[i]);
         }
 
+        // 怪物AI
+        this.on_frame_handle_monster_logic();
+
         // 子弹AI
         this.on_frame_handle_tower_bullet_logic();
 
         // 防御塔AI
         this.on_frame_handle_tower_logic();
-        // 怪物AI
 
+        // 怪物AI
+        this.on_frame_handle_monster_ai();
+
+        //产生怪物
+        this.gen_monster_by_frame();
     }
 
     private void Update() {

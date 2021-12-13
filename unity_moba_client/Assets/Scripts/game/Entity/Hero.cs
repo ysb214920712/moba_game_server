@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using gprotocol;
+using XLua;
 
 enum CharacterState {
     walk = 1,
@@ -13,6 +14,18 @@ enum CharacterState {
     skill = 7,
     skill2 = 8,
     death = 9,
+}
+
+[LuaCallCSharp]
+public class ui_hp_info {
+    public int hp;
+    public int max_hp;
+}
+
+[LuaCallCSharp]
+public class ui_exp_info {
+    public int exp;
+    public int total;
 }
 
 public class Hero : MonoBehaviour
@@ -39,6 +52,66 @@ public class Hero : MonoBehaviour
     public int seatid = -1;
     public int side = -1;
 
+    private int max_hp;
+    private int hp;
+    private int level;
+    private int exp;
+
+    public void init_herp_params()
+    {
+        this.level = 0;
+        this.max_hp = GameConfig.normal_hero_level_config[this.level].MAX_HP;
+        this.hp = GameConfig.normal_hero_level_config[this.level].MAX_HP;
+        this.exp = 0;
+
+        this.sync_exp_ui();
+        this.sync_hp_ui();
+    }
+
+    public void add_exp(int exp)
+    {
+        this.exp += exp;
+        int level = GameConfig.exp_to_level(GameConfig.normal_hero_level_config, this.exp);
+        if (level != this.level)
+        {
+            this.level = level;
+            this.max_hp = GameConfig.normal_hero_level_config[this.level].MAX_HP;
+            this.hp += GameConfig.normal_hero_level_config[this.level].ADD_HP;
+
+            int max_hp = GameConfig.normal_hero_level_config[this.level].MAX_HP;
+            this.hp = (this.hp > max_hp) ? max_hp : this.hp;
+
+            this.sync_hp_ui();
+        }
+
+        this.sync_exp_ui();
+    }
+
+    void sync_hp_ui()
+    {
+        if (!this.is_ghost)
+        {
+            ui_hp_info info = new ui_hp_info();
+            info.hp = this.hp;
+            info.max_hp = this.max_hp;
+
+            event_manager.Instance.dispatch_event("hp_ui_sync", info);
+        }
+    }
+
+    void sync_exp_ui()
+    {
+        if (!this.is_ghost)
+        {
+            ui_exp_info info = new ui_exp_info();
+            int now = 0, total = 0;
+            GameConfig.upgrade_level_info(GameConfig.normal_hero_level_config, this.exp, ref now, ref total);
+            info.exp = now;
+            info.total = total;
+
+            event_manager.Instance.dispatch_event("exp_ui_sync", info);
+        }
+    }
 
     private void Start() {
         GameObject ring = Resources.Load<GameObject>("effect/other/guangquan_fanwei");
@@ -63,12 +136,24 @@ public class Hero : MonoBehaviour
             this.camera_offset = Camera.main.transform.position - this.transform.position;
         }
 
+        this.init_herp_params();
         this.anim.Play("idle");
     }
 
     public void on_attacked(int attack_value)
     {
         Debug.Log("Hero " + this.gameObject.name + "was attacked" + attack_value);
+        int def = GameConfig.normal_hero_level_config[this.level].DEF;
+        attack_value -= def;
+        if (attack_value <= 0)
+        {
+            return;
+        }
+
+        this.hp -= attack_value;
+        //TODO death
+        this.hp = (this.hp < 0) ? 0 : this.hp;
+        this.sync_hp_ui();
     }
 
     public void logic_init(Vector3 logic_pos)

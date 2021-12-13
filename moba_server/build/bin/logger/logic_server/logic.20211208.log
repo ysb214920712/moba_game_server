@@ -1,0 +1,20 @@
+20211208 11:29:51 DEBUG ../../apps/lua/scripts/logic_server/main.lua:28  
+Logic Server Start at 8002
+20211208 11:29:51 DEBUG ../../apps/lua/scripts/logic_server/main.lua:35  
+register Logic service:[3] success!!!
+20211208 11:29:51 DEBUG ../../apps/lua/scripts/database/redis_game.lua:26  
+connect to redis game db success
+20211208 11:29:51 DEBUG ../../apps/lua/scripts/database/redis_center.lua:26  
+connect to redis center db success
+20211208 11:29:52 DEBUG ../../apps/lua/scripts/database/mysql_auth_center.lua:22  
+connect to auth center db success
+20211208 11:29:52 DEBUG ../../apps/lua/scripts/database/mysql_game.lua:23  
+connect to moba game db success
+20211208 11:29:52 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:28  
+gateway connect to Logic
+20211208 11:30:22 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:206  
+uid: 1 online  current online num:[1]
+20211208 11:32:07 DEBUG ../../apps/lua/scripts/logic_server/game_mgr.lua:236  
+uid: 1 disconnect  current online num:[0]
+20211208 12:14:44 DEBUG ../../apps/lua/scripts/logic_server/logic_service.lua:23  
+logic service disconnect with gateway

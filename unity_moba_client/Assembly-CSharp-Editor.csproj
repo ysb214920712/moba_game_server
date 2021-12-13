@@ -85,6 +85,14 @@
      <Compile Include="Assets\Scripts\3rd\StompyRobot\SRF\Scripts\UI\Editor\SRNumberButtonEditor.cs" />
      <Compile Include="Assets\Scripts\3rd\StompyRobot\SRF\Scripts\UI\Editor\StyleComponentEditor.cs" />
      <Compile Include="Assets\Scripts\3rd\StompyRobot\SRF\Scripts\UI\Editor\StyleSheetEditor.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\AboutSWSEditor.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\BezierPathEditor.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\CreateWPManager.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\moveEditor.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\PathEditor.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\ReviewWindowEditor.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\splineMoveEditor.cs" />
+     <Compile Include="Assets\Scripts\3rd\SWS\Scripts\Editor\WaypointEditor.cs" />
      <Compile Include="Assets\Scripts\Editor\EmmyLua\EmmyLuaGenerator.cs" />
      <Compile Include="Assets\Scripts\Editor\EmmyLua\EmmyLuaService.cs" />
      <Compile Include="Assets\XLua\Editor\ExampleConfig.cs" />

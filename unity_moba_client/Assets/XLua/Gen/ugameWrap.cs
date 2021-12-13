@@ -21,8 +21,10 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(ugame);
-			Utils.BeginObjectRegister(type, L, translator, 0, 4, 13, 13);
+			Utils.BeginObjectRegister(type, L, translator, 0, 6, 13, 13);
 			
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "get_user_info", _m_get_user_info);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "get_player_match_info", _m_get_player_match_info);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "save_ugame_info", _m_save_ugame_info);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "save_uinfo", _m_save_uinfo);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "save_edit_profile", _m_save_edit_profile);
@@ -100,6 +102,64 @@ namespace XLua.CSObjectWrap
         
         
         
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_get_user_info(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                ugame gen_to_be_invoked = (ugame)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    int _seatid = LuaAPI.xlua_tointeger(L, 2);
+                    
+                        var gen_ret = gen_to_be_invoked.get_user_info( _seatid );
+                        translator.Push(L, gen_ret);
+                    
+                    
+                    
+                    return 1;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_get_player_match_info(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                ugame gen_to_be_invoked = (ugame)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    int _seatid = LuaAPI.xlua_tointeger(L, 2);
+                    
+                        var gen_ret = gen_to_be_invoked.get_player_match_info( _seatid );
+                        translator.Push(L, gen_ret);
+                    
+                    
+                    
+                    return 1;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _m_save_ugame_info(RealStatePtr L)
